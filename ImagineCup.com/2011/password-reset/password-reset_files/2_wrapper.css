@@ -1,0 +1,871 @@
+/*-----------------------------------------
+	Backgrounds
+-----------------------------------------*/
+ 
+html, body {	
+	width: 100%;
+	height: 100%;
+	background: #1a75bb url(imgs/bkgrds_body.jpg) 0 0 repeat-x;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	line-height: 0;
+}
+
+#backgrounds {
+	position: absolute;
+	width: 100%;
+	height: 901px;
+	min-width: 1006px;
+	background: url(imgs/bkgrds_rays.png) center 0 no-repeat;
+}
+
+html#teaminvitepopup, body#teaminvitepopupbody {
+	background: none;
+}
+
+/* v1 elements ---------------------------*/
+
+	.v1 #bkgrd_element_1 {
+		position: absolute;
+		z-index: 5;
+		width: 315px;
+		height: 295px;
+		top:0px;
+		left: 50%;
+		margin-left: -744px;
+		background: url(imgs/bkgrds_ball1.png) 0 0 no-repeat;
+	}
+	
+	.v1 #bkgrd_element_2 {
+		position: absolute;
+		z-index: 4;
+		width: 445px;
+		height: 198px;
+		top:194px;
+		left: 50%;
+		margin-left: -974px;
+		background: url(imgs/bkgrds_cloud1.png) 0 0 no-repeat;
+	}
+
+	.v1 #bkgrd_element_3 {
+		position: absolute;
+		z-index: 3;
+		width: 153px;
+		height: 98px;
+		top:315px;
+		left: 50%;
+		margin-left: -610px;
+		background: url(imgs/bkgrds_cloud2.png) 0 0 no-repeat;
+	}
+
+	.v1 #bkgrd_element_4 {
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		top:0px;
+		left:0px;
+		background: url(imgs/bkgrds_burst1.png) 50% 0 no-repeat;
+	}
+	
+	.v1 #bkgrd_element_5 {display: none;}
+/* v2 elements ---------------------------*/
+
+	.v2 #bkgrd_element_1 {
+		position: absolute;
+		z-index: 5;
+		width: 764px;
+		height: 630px;
+		top:0px;
+		left: 50%;
+		margin-left: -844px;
+		background: url(imgs/bkgrds_rightburst1.png) 0 0 no-repeat;
+	}
+	
+	.v2 #bkgrd_element_2  {display: none;}
+
+	.v2 #bkgrd_element_3 {
+		position: absolute;
+		z-index: 3;
+		width: 351px;
+		height: 156px;
+		top:315px;
+		left: 50%;
+		margin-left: -910px;
+		background: url(imgs/bkgrds_cloud3.png) 0 0 no-repeat;
+	}
+
+	.v2 #bkgrd_element_4 {
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		top:0px;
+		left:0px;
+		background: url(imgs/bkgrds_cloudright1.png) 50% 0 no-repeat;
+	}
+	
+	.v2 #bkgrd_element_5 {display: none;}
+
+/* v3 elements ---------------------------*/
+
+	.v3 #bkgrd_element_1 {
+		position: absolute;
+		z-index: 5;
+		width: 326px;
+		height: 306px;
+		top:104px;
+		left: 50%;
+		margin-left: -700px;
+		background: url(imgs/bkgrds_balls1.png) 0 0 no-repeat;
+	}
+	
+	.v3 #bkgrd_element_2 {
+		display:block;
+		position: absolute;
+		z-index: 4;
+		width: 731px;
+		height: 542px;
+		top:0px;
+		left: 50%;
+		margin-left: -954px;
+		background: url(imgs/bkgrds_burst2.png) 0 0 no-repeat;
+	}
+
+	.v3 #bkgrd_element_3 {
+		position: absolute;
+		z-index: 3;
+		width: 153px;
+		height: 98px;
+		top:315px;
+		left: 50%;
+		margin-left: -610px;
+		background: url(imgs/bkgrds_cloud2.png) 0 0 no-repeat;
+	}
+
+	.v3 #bkgrd_element_4 {
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		top:0px;
+		left:0px;
+		background: url(imgs/bkgrds_rightburst2.png) 50% 0 no-repeat;
+	}
+	
+	.v3 #bkgrd_element_5 {display: none;}
+
+
+/*-----------------------------------------
+	Header
+-----------------------------------------*/
+
+	#header {	
+		position: absolute;
+		z-index: 7;
+		top: 0;
+		left: 50%;
+		width: 1000px;
+		margin: 0 0 0 -500px;
+	}
+
+		.header_logo {
+			position: absolute;
+			z-index: 7;
+			top:0;
+			left: -40px;
+		}
+
+		#nav_shadow {
+			position:absolute;
+			z-index: 6;
+			top: 0;
+			right: -3px;
+			width: 880px;
+			margin: 6px 0 0 3px;
+			background: url(imgs/bkgrds_pg_shadow.png) 0 0 repeat;
+		}
+		
+			#nav_bkgrd {
+				position: relative;
+				bottom: 6px;
+				right: 6px;
+				width: 880px;
+				height: 77px;
+				background: white;
+			}
+
+			
+			/* Main Nav ---------------------------*/
+			
+				#header .nav_main {
+					position: absolute;
+					bottom: 2px;
+					right: 2px;
+					float: right;
+				}
+
+					#header .nav_main li {
+						position: relative;
+						float: left;
+						margin: 0 0 0 1px;
+					}
+					
+						#header .nav_main li a {
+							display: block;
+							padding: 9px 23px 8px 23px;
+							color: #fff;
+							background: #333;
+							font-size: 12px;
+							line-height: 12px;
+							font-weight: bold;
+							text-transform: uppercase;
+							text-decoration: none;
+							text-shadow: -1px -1px 0px #202020;
+						}
+						
+							#header .nav_main li.active2 a,
+							#header .nav_main li:hover a,
+							#header .nav_main li a:hover {
+								background: #e3082d;
+								text-shadow: -1px -1px 0px #8d051c;
+							}
+						
+						#header .nav_main li.skip a,
+						#header .nav_main li.skip a:hover {
+							color: #333;
+							background: #333;
+							text-indent: -9999px;
+							overflow: hidden;
+							width: 100px;
+						}
+
+						#header .nav_main .subnav {
+							display: none;
+							position: absolute;
+							top:33px;
+							left: 4px;
+							width: 180px;
+							margin: 0;
+							padding: 0;
+							background: url(imgs/bkgrds_pg_shadow.png) 0 0 repeat;			
+						}
+						
+						#header .nav_main .last .subnav {left: -106px;}
+						
+						#header .nav_main li:hover .subnav {
+							display: block;
+						}
+						
+							#header .nav_main .subnav ul {
+								position:relative;
+								float: left;
+								top:-4px;
+								left: -4px;
+								padding: 2px 3px 3px 3px;
+								background: #999999;
+								
+							}
+							
+								#header .nav_main .subnav li {
+									width: 180px;
+									margin: 1px 0 0 0;
+								}
+								
+									#header .nav_main .subnav li a {
+										padding: 9px 10px 8px 10px;
+										color: #333;
+										font-weight: normal;
+										text-shadow: none;
+										background: #fff;
+									}
+										
+									#header .nav_main .subnav li.active a {
+										font-weight: bold;
+										color: #e3082d;
+									}
+
+										#header .nav_main .subnav li a:hover {
+											color: #e3082d;
+										}
+
+
+			/* Secondary Nav ----------------------*/
+								
+				#header .nav_secondary {
+					position: absolute;
+					top: 8px;
+					right: 2px;
+					float: right;
+					line-height: 16px;
+				}
+				
+					#header .nav_secondary li {
+						position: relative;
+						float: left;
+						margin: 2px 0 0 0;
+						padding: 0px 10px;
+						border-right: 1px solid #ccc;
+					}
+
+						#header .nav_secondary li a {
+							color: #777;
+							text-decoration: none;
+						}
+						
+							#header .nav_secondary li:hover a,
+							#header .nav_secondary li a:hover,
+							#header .nav_secondary li a.on {
+								color: #e3082d;
+							}
+				
+					
+						#header .nav_secondary li.language a.language_button {
+							padding-right: 16px;
+							background: url(imgs/header_lang_dwn.png) right 0 no-repeat;
+						}
+	
+							#header .nav_secondary li:hover.language a.language_button,
+							#header .nav_secondary li.language a:hover.language_button {
+								background: url(imgs/header_lang_dwn.png) right -16px no-repeat;
+							}
+					
+					#header .nav_secondary li.profile {
+						margin: -2px 0 0 -1px;
+						border-left: 1px solid #ccc;
+					}
+					
+						#header a.profile_button {
+							float: left;
+							padding: 0 26px 0 0;
+							background: url(imgs/button_profile-right.png) right top no-repeat;
+						}
+						#header .nav_secondary li:hover.profile a.profile_button,
+						#header .nav_secondary li.profile a:hover.profile_button {
+							background-position: right -26px;
+						}
+						
+							#header a.profile_button span {
+								float: left;
+								padding: 2px 5px 3px 2px;
+								line-height: 0;
+								color: #FFF;
+								font-weight: bold;
+								font-size: 12px;
+								line-height: 22px;
+								text-shadow: 0 -1px 0 #333;
+								text-transform: uppercase;
+								background: url(imgs/button_profile.png) left top no-repeat;
+							}
+							
+							#header .nav_secondary li:hover.profile a.profile_button span,
+							#header .nav_secondary li.profile a:hover.profile_button span {
+								background-position: left -26px;
+							}
+	
+								#header .profile_button img {
+									float: left;
+									margin: 0 5px 0 0;
+								}
+
+
+					#header .nav_secondary li label {
+						position: absolute;
+						top:3px;
+						left:2px;
+						color: #777;
+						font-size: 12px;
+						line-height: 12px;
+						padding: 2px 5px;
+						background: white !IE;
+					}
+				
+					#header .nav_secondary li.checkbox label {
+						position: static;
+						float: left;
+						margin: 0 0 0 5px;
+						padding: 0;
+						line-height: 14px;
+					}				
+				
+					#header .nav_secondary li input {
+						float: left;
+						width: 168px;
+						color: #333;
+						font-size: 12px;
+						line-height: 19px;
+						margin: 0;
+						padding: 2px 5px;
+						border: 1px solid #ccc;
+					}
+
+					#header .nav_secondary li.checkbox input {
+						width: 14px;
+						height: 14px;
+						border: none;
+						padding: 0;
+						margin: 0;
+						line-height: 14px;
+					}
+					
+
+
+
+
+				/* Secondary Nav Dropdowns ---------------------------*/
+
+					#header .nav_secondary .dropdown_menu {
+						display: none;
+						position: absolute;
+						z-index: 1;
+						top:16px;
+						left: 0px;
+						margin: 0;
+						padding: 4px 3px 0 4px;
+					}
+					
+					#header .nav_secondary li:hover .dropdown_menu {
+						display: block;
+					}
+	
+						#header .nav_secondary .dropdown_menu .dropdown_arrow {
+							position:relative;
+							z-index: 1;
+							top: 0;
+							width: 15px;
+							height: 12px;
+							text-indent: -9999px;
+							overflow: hidden;
+							background: url(imgs/header_drowdown_arrow.gif) 0 0 no-repeat;
+						}
+												
+						#header .nav_secondary .dropdown_menu .dropdown_bkgrd {
+							position: relative;
+							float: left;
+							background: url(imgs/bkgrds_pg_shadow.png) 0 0 repeat;
+						}
+						
+							#header .nav_secondary .dropdown_menu ul {
+								position:relative;
+								float: left;
+								top:-4px;
+								left: -4px;
+								padding: 5px 0;
+								border:3px solid #999999;
+								background: #fff;
+							}
+							
+							#header .nav_secondary .dropdown_menu ul.noborder {
+								border-top: none;
+							}
+							
+								#header .nav_secondary .dropdown_menu li {
+									float: left;
+									border: none;
+									margin: 0;
+									padding: 0;
+								}
+								
+									#header .nav_secondary .dropdown_menu li h5 {
+										margin: 6px 0 -4px 10px;
+										font-size: 11px;
+										font-weight: normal;
+										text-transform: uppercase;
+									}
+								
+									#header .nav_secondary .dropdown_menu li a {
+										float: left;
+										/*width: 93px;*/
+										margin: 0;
+										font-size: 11px;
+										padding: 4px 10px;
+										color: #333;
+										font-weight: normal;
+									}
+									
+									#header .nav_secondary .dropdown_menu li a {
+									    width: 93px;
+									}
+									
+									#header .nav_secondary .dropdown_menu li.selected a {
+										font-weight: bold;
+										color: #000;
+									}
+										#header .nav_secondary .dropdown_menu li.selected a:hover,
+										#header .nav_secondary .dropdown_menu li a:hover {
+											color: #e3082d;
+										}
+										
+									#header .nav_secondary .dropdown_menu li ul {
+										top:0;
+										left: 0;
+										background: none;
+										border: none;
+									}
+														
+					
+					#header .nav_secondary .profile .dropdown_menu {
+						top:24px;
+						left: 11px;
+						width: 100%;
+					}
+					
+						#header .nav_secondary .profile .dropdown_menu .dropdown_bkgrd {
+							/*width: 90%;*/
+							/*min-width: 145px;*/
+						}
+					
+							#header .nav_secondary .profile .dropdown_menu ul {
+								width: 97%;
+								/*min-width: 220px;*/
+							}
+							
+									#header .nav_secondary .profile .dropdown_menu li a {
+										min-width: 165px;
+									}
+
+                                    #header .nav_secondary .profile .dropdown_menu li a.status_links {
+										min-width: 148px;
+									}
+										#header .nav_secondary .profile .dropdown_menu li ul li a {
+											/*min-width: 182px;*/
+											padding: 3px 10px 3px 27px;
+											background: url(imgs/bullet.gif) 15px 9px no-repeat;
+										}
+							
+										
+					#header .nav_secondary .language .dropdown_menu { 
+						width: 345px;
+					}
+					
+						#header .nav_secondary .language .dropdown_menu .dropdown_arrow {left: 28px;}					
+
+							#header .nav_secondary .language .dropdown_menu ul {
+								width:339px;
+							}
+					
+					#header .nav_secondary li.login:hover .dropdown_menu,
+					#header .nav_secondary .login .dropdown_menu { 
+						display: none;
+						width: 200px;
+					}
+					
+						#header .nav_secondary .login .dropdown_menu .dropdown_arrow {left: 15px;}
+							
+							#header .nav_secondary .login .dropdown_menu ul {
+								width:180px;
+								padding: 0 8px;
+							}
+							
+								#header .nav_secondary .login li {
+									width: 180px;
+									margin: 3px 0;
+								}
+
+								#header .nav_secondary .login li.close {
+									padding: 0;
+									margin: 4px 0 1px 0;
+								}
+								
+									#header .nav_secondary .login li.close a.close {
+										float: right;
+										width: auto;
+										padding: 2px 0;
+										font-size: 10px;
+										line-height: 10px;
+										text-transform: uppercase;
+										text-decoration: none;
+										background: #FFF;
+									}
+									
+									#header .nav_secondary .login li.close a:hover.close {
+										color: #999;
+										text-decoration: none !important;
+									}
+
+								#header .nav_secondary .login li.error {
+									width: 135px;
+									padding: 0 5px 0 40px;
+									background-position: -10px 0;
+									border: none;
+								}
+
+									#header .nav_secondary .login li.error .icon {
+										top:5px;
+										left: 6px;
+									}
+									
+										#header .nav_secondary .login li.error p {
+											font-weight: bold;
+											line-height: 13px;
+										}
+					
+								#header .nav_secondary .login li.actions {
+									margin: 0;
+									padding: 4px 0 8px 0;									
+								}
+								
+								#header .nav_secondary .login li.remember_form {
+									display: none;
+								}
+						
+									#header .nav_secondary .login li a.button {
+										width: auto;
+										margin: 0;
+										font-size: 14px;
+										padding: 0 4px 0 0;
+									}
+									
+										#header .nav_secondary .login li a.button span {
+											padding: 8px 15px 11px 15px;
+										}
+
+									#header .nav_secondary .login li a.forgot {
+										float: right;
+										padding: 8px 0 0 0;
+									}
+
+
+	
+			/* Secondary Nav Search ----------------------*/
+
+				#header .nav_secondary li.search {
+					position: relative;
+					border: none;
+					margin:0;
+				}
+				
+					#header .nav_secondary li.search label {
+						left: 11px;
+					}
+					
+					#header .nav_secondary li.search a {
+						float: left;
+						width: 20px;
+						height: 20px;
+						margin: 1px 0 0 5px;
+						text-indent: -9999px;
+						overflow: hidden;
+						background: url(imgs/header_search.png) 0 0 no-repeat transparent;
+					}
+					
+						#header .nav_secondary li.search a:hover {
+							background-position: 0 -20px;
+						}
+							
+
+
+/*-----------------------------------------
+	Pg Background & General Layout
+-----------------------------------------*/
+
+	#container {
+		position: relative;
+		z-index: 6;
+		overflow: visible;
+		top: 0;
+		left: 50%;
+		width: 1000px;
+		height: 100%;
+		margin: 0 0 0 -500px;
+	}
+	
+		#pg_shadow {
+			position:absolute;
+			z-index: 6;
+			top: 133px;
+			width: 1000px;
+			margin: 6px 0 0 3px;
+			background: url(imgs/bkgrds_pg_shadow.png) 0 0 repeat;
+		}
+		
+			#pg_bkgrd {
+				position: relative;
+				bottom: 6px;
+				right: 6px;
+				width: 1000px;
+				background: white;
+			}
+
+/* Hero Graphic --------------------------*/
+
+	#pg_hero {
+		position: relative;
+		z-index: 1;
+		float: left;
+		width: 1000px;
+		padding: 0;
+		margin-top: -53px;
+
+	}
+	
+		#pg_hero h1 {
+			position: absolute;
+			left: 30px;
+			bottom: 0;
+		}
+		
+		#pg_hero img {
+			float: left;
+		}
+
+/* Page Content -------------------------*/
+	
+	#pg_content {
+	    position: relative;
+	    z-index: 2;
+		float: left;
+		width: 610px;
+		padding: 30px;
+	}
+	
+	.pg_fullwidth{
+		width: 940px !IMPORTANT;
+	}
+
+/* Sidebar ------------------------------*/
+
+	#pg_sidebar {
+		float: right;
+		width: 315px;
+		padding: 30px 0 30px 15px;
+	}
+
+/*-----------------------------------------
+	Footer
+-----------------------------------------*/
+
+#pg_footer {
+	float: left;
+	width: 940px;
+	padding: 25px 30px 15px 30px;
+	background: url(imgs/footer_bkgrd.jpg) center bottom no-repeat;
+}
+
+	#pg_footer a {
+		color:#999;
+		font-size: 11px;
+		line-height: 13px;
+		text-decoration: none;
+	}
+
+	#pg_footer a:hover {
+		color: #e3082d;
+	}
+
+/* Normal Footer ------------------------*/
+
+	#site_footer {
+		position: relative;
+		float:left;
+		width: 940px;
+		margin: 15px 0 0 0;
+	}
+	
+		#site_footer img {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -8px;
+		}
+
+		#site_footer ul {
+			display: block;
+		}
+
+				#site_footer ul li {
+					display: inline;
+					padding: 0 8px;
+					border-left: 1px solid #999;
+				}
+
+				#site_footer ul li.first {
+					padding: 0 8px 0 0;
+					border-left: none;
+				}
+				
+					#site_footer ul li a {
+						font-size: 12px;
+					}
+
+		#site_footer p {
+			color: #999;
+			font-size: 11px;
+			margin: 0;
+			padding: 4px 0 0 0;
+		}
+
+/* Extended Footer ----------------------*/
+
+
+	#extended_footer {
+		float: left;
+		width: 910px;
+		padding: 15px 10px 15px 20px;
+		background: url(imgs/footer_extendedbkgrd.png) 0 0 repeat;
+	}
+	
+		#extended_footer .col {
+			float: left;
+			width: 140px;
+			margin: 0 5px;
+		}
+	
+		#extended_footer #sponsors {
+			margin-right: 15px;
+		}
+		
+			#sponsors li { display: none; margin-top: 3px; }
+				
+			#extended_footer .col h5,
+			#extended_footer .col h5 a {
+				color: #666666;
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 14px;
+				padding: 0 0 5px 0;
+				margin: 0;
+				text-decoration: none;
+			}
+				
+			#extended_footer .col h5 a:hover {
+				color: #e3082d;
+			}
+	
+				#extended_footer .col li {
+					padding: 2px 0;
+					line-height: 15px;
+				}
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

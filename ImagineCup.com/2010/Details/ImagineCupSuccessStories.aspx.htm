@@ -1,0 +1,1190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_ctl00_Head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+<title>
+	Imagine Cup Student Competition: Success Stories
+</title>
+    <script language="JavaScript" type="text/javascript" src="ImagineCupSuccessStories.aspx_files/broker.js"></script>
+    <link href="ImagineCupSuccessStories.aspx_files/IC2010.css" type="text/css" rel="Stylesheet">
+    
+    <!--[if IE 6]>    
+        <script type="text/javascript" src="../script/DD_belatedPNG.min.js"></script>
+        <script>
+          /* EXAMPLE */
+          DD_belatedPNG.fix('img');
+        </script>
+    <![endif]-->  
+        <script type="text/javascript">
+            function swapImage() {
+            
+                theimages = new Array("technology_poster.png", "education_poster.png", "environment_poster.png", "medical_poster.png");
+            
+                //theimages = new Array("sign_girl.png", "sign_guy.png");
+                whichImageSecond = null;
+                whichImage = Math.floor(Math.random() * theimages.length);
+                whichImageSecond = Math.floor(Math.random() * theimages.length);
+
+                document.write('<img src="/App_Themes/Default/Images/' + theimages[whichImage] + '" />');
+               
+                if (whichImage == whichImageSecond) {
+                    if (whichImage == 0) {
+                        whichImageSecond = 1;
+                    }
+                    else {
+                        whichImageSecond = 0;
+                    }
+                }
+              
+                if (whichImageSecond != null) {
+                    document.write('<img src="/App_Themes/Default/Images/' + theimages[whichImageSecond] + '" />');
+                }
+            }
+    </script>   
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <script charset="utf-8" id="injection_graph_func" src="ImagineCupSuccessStories.aspx_files/injection_graph_func.js"></script><script id="_nameHighlight_injection"></script><link class="skype_name_highlight_style" href="ImagineCupSuccessStories.aspx_files/injection_nh_graph.css" type="text/css" rel="stylesheet" charset="utf-8" id="_injection_graph_nh_css"><link href="ImagineCupSuccessStories.aspx_files/skypeplugin_dropdownmenu.css" type="text/css" rel="stylesheet" charset="utf-8" id="_skypeplugin_dropdownmenu_css"></head><body id="ctl00_ctl00_Master_Body" class="body3">
+ <script type="text/javascript">
+
+       function LaguageDDFunction(dropdownValue, fn_hidden_CMSChangeFlag_id, fn_DropDownList_PageLanguage_id) {
+           var CMSChangeFlag_1 = false;
+           CMSChangeFlag_1 = document.getElementById(fn_hidden_CMSChangeFlag_id);
+
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";
+           
+           if (CMSChangeFlag_1.value == 'true') {
+               
+               if (confirm('Are you sure you want to navigate away from this page?\n\nPage content will be saved and page will be unlocked.\n\nPress OK to continue, or Cancel to stay on the current page.')) {
+                   CMSChangeFlag_1.value = false;
+                   setTimeout('__doPostBack(\'' + fn_hidden_CMSChangeFlag_id + '\',\'\')', 0);
+               }
+               else {
+                   document.getElementById(fn_DropDownList_PageLanguage_id).value = dropdownValue;
+               }
+           }
+           else {
+               setTimeout('__doPostBack(\'' + fn_hidden_CMSChangeFlag_id + '\',\'\')', 0);
+           }
+       }
+
+       function ConfirmRevertDraft(CMSChangeFlag) {
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";
+           if (confirm('Do you really want to revert to earlier draft version of the page?')) {
+               DisableWarning(CMSChangeFlag);
+               return true;
+           }
+           else {
+               return false;
+           }
+       }
+       function DisableWarning(CMSChangeFlag) {
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";
+           document.getElementById(CMSChangeFlag).value = false;
+           return true;
+       }
+       // To show ConfirmCancel dialog box
+       function ConfirmRevertToLive(CMSChangeFlag) {
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";           
+           if (confirm('Warning: Changes have been made to this page. If you revert to live, these changes will be discarded, whether made by you or by others. Continue?')) {
+               DisableWarning(CMSChangeFlag)
+               return true;
+           }
+           else {
+               return false;
+           }
+       }
+
+       function GoTo(id) {
+           if (document.getElementById(id) != null) {
+               document.getElementById(id).focus();
+           }
+       }
+
+       function findX(obj) {
+           var curLeft = 0;
+           if (obj.offsetParent) {
+               while (1) {
+                   curLeft += obj.offsetLeft;
+                   if (!obj.offsetParent)
+                       break;
+                   obj = obj.offsetParent;
+               }
+           }
+           else {
+               if (obj.x)
+                   curLeft += obj.x;
+           }
+           return curLeft;
+       }
+
+       function Timer() {
+           this.obj = (arguments.length) ? arguments[0] : window;
+           return this;
+       }
+
+       // The set functions should be called with:
+       // - The name of the object method (as a string) (required)
+       // - The millisecond delay (required)
+       // - Any number of extra arguments, which will all be
+       //   passed to the method when it is evaluated.
+
+       Timer.prototype.setInterval = function(func, msec) {
+           var i = Timer.getNew();
+           var t = Timer.buildCall(this.obj, i, arguments);
+           Timer.set[i].timer = window.setInterval(t, msec);
+           return i;
+       }
+       Timer.prototype.setTimeout = function(func, msec) {
+           var i = Timer.getNew();
+           Timer.buildCall(this.obj, i, arguments);
+           Timer.set[i].timer = window.setTimeout("Timer.callOnce(" + i + ");", msec);
+           return i;
+       }
+
+       // The clear functions should be called with
+       // the return value from the equivalent set function.
+
+       Timer.prototype.clearInterval = function(i) {
+           if (!Timer.set[i]) return;
+           window.clearInterval(Timer.set[i].timer);
+           Timer.set[i] = null;
+       }
+       Timer.prototype.clearTimeout = function(i) {
+           if (!Timer.set[i]) return;
+           window.clearTimeout(Timer.set[i].timer);
+           Timer.set[i] = null;
+       }
+
+       // Private data
+
+       Timer.set = new Array();
+       Timer.buildCall = function(obj, i, args) {
+           var t = "";
+           Timer.set[i] = new Array();
+           if (obj != window) {
+               Timer.set[i].obj = obj;
+               t = "Timer.set[" + i + "].obj.";
+           }
+           t += args[0] + "(";
+           if (args.length > 2) {
+               Timer.set[i][0] = args[2];
+               t += "Timer.set[" + i + "][0]";
+               for (var j = 1; (j + 2) < args.length; j++) {
+                   Timer.set[i][j] = args[j + 2];
+                   t += ", Timer.set[" + i + "][" + j + "]";
+               } 
+           }
+           t += ");";
+           Timer.set[i].call = t;
+           return t;
+       }
+       Timer.callOnce = function(i) {
+           if (!Timer.set[i]) return;
+           eval(Timer.set[i].call);
+           Timer.set[i] = null;
+       }
+       Timer.getNew = function() {
+           var i = 0;
+           while (Timer.set[i]) i++;
+           return i;
+       }
+
+       startList = function() {
+           menus = document.getElementById("nav").getElementsByTagName("LI");
+           //alert('hi =>' + menus.length.toString());
+           for (i = 0; i < menus.length; i++) 
+           {
+               //alert(menus[i].Text);
+               menus[i].onmouseover = function() 
+               {
+                   //alert('menu');
+                   this.style.cursor = "pointer";
+
+                   //Start: menu to open up left or right
+                   winsize = document.body.offsetWidth;
+                   menusize = findX(this) + this.offsetWidth;
+                   if (((menusize + 100) >= winsize) && (this.offsetWidth > 100)) {
+                       this.className += " overleft";
+                   }
+                   else {
+                       this.className += " over";
+                   }
+                   //End: menu to open up left or right
+
+                   var pagename = window.location.pathname;
+                   var sPage = pagename.substring(pagename.lastIndexOf('/') + 1);
+
+                   sPage = sPage.toLowerCase();
+
+                   //                        if (sPage == "leaderboard.aspx")
+                   //                        {
+                   //                            window.document.getElementById("ctl00_ContentPlaceHolder_DropDownList_Competition").style.display="none";                            
+                   //                        }
+               }
+               menus[i].onmouseout = function() 
+               {
+                   this.style.cursor = "default";
+
+                   //Start: menu to open up left or right
+                   this.timer = new Timer(this);
+                   this.timer.setTimeout("out", 0);
+                   //End: menu to open up left or right
+
+                   var pagename = window.location.pathname;
+                   var sPage = pagename.substring(pagename.lastIndexOf('/') + 1);
+
+                   sPage = sPage.toLowerCase();
+
+                   if (sPage == "leaderboard.aspx") {
+                       if (window.document.getElementById("ctl00_ContentPlaceHolder_DropDownList_Competition") != null) {
+                           window.document.getElementById("ctl00_ContentPlaceHolder_DropDownList_Competition").style.display = "block";
+                       }
+                   }
+               }
+               menus[i].out = function() 
+               {
+                   this.className = this.className.replace("over", "");
+               }
+           }
+       }
+
+       window.onload = startList;
+
+       //Added by Deepali Shah to resolve issue 8610.
+       function SetFocus(ctrl) {
+           var o = document.getElementById(ctrl);
+           if ((o != undefined) && (o != null)) o.focus();
+       }
+
+       //Functions added by Dhawal
+       function ShowPopUp(DivPopUpID, SignInStripID, divLoginID, textboxEmailID) {
+           var DivPopUp = document.getElementById(DivPopUpID);
+           if (DivPopUp != null) {
+               //Following lines written by Dhawal for setting the position of the signin div 
+               var BrowserType = navigator.appName;
+               var BrowserVersion = parseInt(navigator.appVersion);
+               var SignInStrip = document.getElementById(SignInStripID);
+               var divLogin = document.getElementById(divLoginID);
+               divLogin.style.position = "absolute";
+               divLogin.style.top = findPosY(SignInStrip) + 0;
+               divLogin.style.left = findPosX(SignInStrip) - 21;
+               if (BrowserType == "Netscape") {
+                   var divLogin_top = findPosY(SignInStrip) + 0;
+                   divLogin.style.top = divLogin_top + '' + 'px';
+                   var divLogin_left = findPosX(SignInStrip) - 21;
+                   divLogin.style.left = divLogin_left + '' + 'px';
+               }
+               //Above lines written by Dhawal for setting the position of the signin div      
+               DivPopUp.style.display = "block";
+               //For setting the focus on the email textbox
+               //                    var textboxEmail = document.getElementById(textboxEmailID);
+               //                    textboxEmail.focus();                    
+           }
+       }
+
+       function ShowFrame() {
+       
+            //Modified the function By shivkant as the name of the Div is changed and also added few controls which are to be positioned.
+       
+           //var frame = document.getElementById("LoginFrame");
+           var BrowserType = navigator.appName;
+           //alert(BrowserType.toString());
+           var BrowserVersion = parseInt(navigator.appVersion);
+           //alert(BrowserVersion.toString());
+           var div_frame = document.getElementById('ctl00_ctl00_Div_CloseFrame');
+           var btn_close = document.getElementById('ctl00_ctl00_closeLink');
+           var frame = document.getElementById('ctl00_ctl00_LoginFrame');
+           var SignInStrip = document.getElementById('ctl00_ctl00_header_login');
+           div_frame.style.position = "absolute";
+           div_frame.style.top = findPosY(SignInStrip) + 0;
+           div_frame.style.left = findPosX(SignInStrip) - 21;
+            if (BrowserType == "Netscape")
+            {   
+                var frame_top = findPosY(SignInStrip) + 0;
+                div_frame.style.top = frame_top + '' + 'px';
+                var frame_left = findPosX(SignInStrip) - 21;
+                div_frame.style.left = frame_left + '' + 'px';
+            }
+            frame_left = frame_left + 200
+            frame_top = frame_top + 8
+            btn_close.style.display.left = frame_left + 'px';
+            btn_close.style.display.top = '8px';
+           btn_close.style.position = "absolute";
+           frame.style.display = "block";
+           frame.visible = true;
+           document.getElementById('ctl00_ctl00_closeLink').style.display='block';
+           document.getElementById('ctl00_ctl00_Iframe_Lock').style.display='block';
+       }
+
+       /*Functions added by Dhawal on 25th June 2008 to set the position of the login div*/
+       /*START*/
+       function findPosX(obj) {
+           var curleft = 0;
+           if (obj.offsetParent) {
+               while (1) {
+                   curleft += obj.offsetLeft;
+                   if (!obj.offsetParent) {
+                       break;
+                   }
+                   obj = obj.offsetParent;
+               }
+           }
+           else if (obj.x) {
+               curleft += obj.x;
+           }
+           return curleft;
+       }
+
+       function findPosY(obj) {
+           var curtop = 0;
+           if (obj.offsetParent) {
+               while (1) {
+                   curtop += obj.offsetTop;
+                   if (!obj.offsetParent) {
+                       break;
+                   }
+                   obj = obj.offsetParent;
+               }
+           }
+           else if (obj.y) {
+               curtop += obj.y;
+           }
+           return curtop;
+       }
+       /*END*/
+       /*Functions added by Dhawal on 25th June 2008 to set the position of the login div*/
+
+       function enableCompeteForITQuiz() {
+           //This function is added by Dhawal for resolving the javascript error from the IT Challenge Portal.
+       }
+       
+       function CloseIframe()
+       {
+            //FUnction added by shivkant for hiding the Iframe and the close button displayed on the Iframe.
+            //alert ('The function is Called');
+            window.document.getElementById('ctl00_ctl00_LoginFrame').style.display = 'none';
+            window.document.getElementById('ctl00_ctl00_Iframe_Lock').style.display = 'none';
+            window.document.getElementById('ctl00_ctl00_closeLink').style.display = 'none';
+
+        }
+
+
+        function ClearAllLinks() {
+            var a = document.getElementsByTagName("A");
+            for (var i = 0; i < a.length; i++) {
+                a[i].onclick = function() { return false; };
+            }
+
+            var b = document.getElementsByTagName("IMG");
+            for (var i = 0; i < b.length; i++) {
+                b[i].onclick = function() { return false; };
+            }
+        }
+
+       
+    </script> 
+    <form name="aspnetForm" method="post" action="ImagineCupSuccessStories.aspx" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__LASTFOCUS" id="__LASTFOCUS" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4MjI5MDA5MjQPZBYCZg9kFgJmDw8WAh4ORWRpdGFibGVQYWdlSWQCpjFkFgICAw8WAh4FY2xhc3MFBWJvZHkzFgJmD2QWDgIHD2QWAgIBDxAPFgYeDkRhdGFWYWx1ZUZpZWxkBQZsb2NhbGUeDURhdGFUZXh0RmllbGQFBG5hbWUeC18hRGF0YUJvdW5kZ2QQFRoGQmFoYXNhCUJ1bGdhcmlhbgbEjGVza3kHRGV1dHNjaAVFZXN0aQdFbmdsaXNoCEVzcGHDsW9sCUZyYW7Dp2FpcwhIcnZhdHNraQhJdGFsaWFubwhNYWd5YXLCoAZQb2xza2kKUG9ydHVndcOqcxVQb3J0dWd1w6pzIEJyYXNpbGVpcm8Lc2xvdmVuxI1pbmEJc2xvdmVuc2tpBlNycHNraRBUacOqzIFuZyBWacOqzKN0CFTDvHJrw6dlEM6VzrvOu863zr3Ouc66zqwO0KDRg9GB0YHQutC40LkR2KfZhNi52LHYqNmK2KnigI8J7ZWc6rWt7Ja0CeaXpeacrOiqngznroDkvZPkuK3mlocM57mB6auU5Lit5paHFRoFaWQtaWQFYmctYmcFY3MtY3oFZGUtZGUFZXQtZWUFZW4tdXMFZXMtZXMFZnItZnIFaHItaHIFaXQtaXQFaHUtaHUFcGwtcGwFcHQtcHQFcHQtYnIFc2stc2sCc2wKc3ItbGF0bi1jcwV2aS12bgV0ci10cgVlbC1ncgVydS1ydQVhci1hZQVrby1rcgVqYS1qcAV6aC1jbgV6aC10dxQrAxpnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBAgVkAggPFgIeB1Zpc2libGVoFgwCAw8PFgIeDU9uQ2xpZW50Q2xpY2sFSWphdmFzY3JpcHQ6cmV0dXJuIENvbmZpcm1SZXZlcnREcmFmdCgnY3RsMDBfY3RsMDBfaGlkZGVuX0NNU0NoYW5nZUZsYWcnKTtkZAIFDw8WAh8GBUVqYXZhc2NyaXB0OnJldHVybiBEaXNhYmxlV2FybmluZygnY3RsMDBfY3RsMDBfaGlkZGVuX0NNU0NoYW5nZUZsYWcnKTtkZAIHDw8WAh8GBUVqYXZhc2NyaXB0OnJldHVybiBEaXNhYmxlV2FybmluZygnY3RsMDBfY3RsMDBfaGlkZGVuX0NNU0NoYW5nZUZsYWcnKTtkZAIJDw8WAh8GBUpqYXZhc2NyaXB0OnJldHVybiBDb25maXJtUmV2ZXJ0VG9MaXZlKCdjdGwwMF9jdGwwMF9oaWRkZW5fQ01TQ2hhbmdlRmxhZycpO2RkAgsPDxYCHwYFRWphdmFzY3JpcHQ6cmV0dXJuIERpc2FibGVXYXJuaW5nKCdjdGwwMF9jdGwwMF9oaWRkZW5fQ01TQ2hhbmdlRmxhZycpO2RkAg8PDxYCHgRUZXh0ZWRkAgkPZBYCAgUPD2QWBB4Hb25jbGljawUaU2hvd0ZyYW1lKCk7IHJldHVybiBmYWxzZTseC29ubW91c2VvdmVyBRt0aGlzLnN0eWxlLmN1cnNvcj0ncG9pbnRlcidkAgoPZBYGAgEPDxYCHwcFBFRydWVkZAIDDw8WAh8FaGRkAgUPDxYCHwdlZGQCCw9kFgICAQ9kFgICAQ8WAh4Dc3JjBXVodHRwczovL2ltYWdpbmVjdXAuY29tL0xvZ2luUG9wVXAuYXNweD9yZXR1cmw9aHR0cDovL2ltYWdpbmVjdXAuY29tL0NvbXBldGl0aW9uc0NvbnRlbnQvSW1hZ2luZUN1cFN1Y2Nlc3NTdG9yaWVzLmFzcHhkAgwPZBYEAgEPFgIfAQUVQ01TUGFnZUJhY2tHcm91bmRHcmF5FgICAQ8WAh4JaW5uZXJodG1sBRtJbWFnaW5lIEN1cCBTdWNjZXNzIFN0b3JpZXNkAgMPZBYEAgEPFgIfCwXcmwE8ZGl2IF90ZW1wY3NzdGV4dD0ibnVsbCI+PGZvbnQgY29sb3I9ImJsYWNrIj48YnIgLz4NCjxhIGhyZWY9Ii9Db21wZXRpdGlvbnNDb250ZW50L0ltYWdpbmVDdXBTdWNjZXNzU3Rvcmllcy5hc3B4I1N1Ym1pdCI+PHN0cm9uZz5Db250YWN0IFVzPC9zdHJvbmc+PC9hPiZuYnNwO3RvIHN1Ym1pdCB5b3VyIHN1Y2Nlc3Mgc3RvcnkhICZuYnNwOzwvZm9udD48L2Rpdj4NCjxkaXYgX3RlbXBjc3N0ZXh0PSJudWxsIj48Zm9udCBjb2xvcj0iYmxhY2siPiZuYnNwOzwvZGl2Pg0KPGRpdj4NCjxkaXY+DQo8ZGl2PiZuYnNwOzwvZGl2Pg0KPC9kaXY+DQo8L2Rpdj4NCjxkaXY+DQo8aDI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMjBwdCI+Sm91cm5leXMmbmJzcDthbmQgU3VjY2VzcyBTdG9yaWVzIDwvc3Bhbj48L2gyPg0KPC9kaXY+DQo8ZGl2PiZuYnNwOzwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxzdHJvbmc+DQo8ZGl2PjxiciAvPg0KPGJyIC8+DQo8L3N0cm9uZz48c3Ryb25nPjxpbWcgYm9yZGVyPSIwIiBoc3BhY2U9IjUiIGFsdD0iIiB2c3BhY2U9IjUiIGFsaWduPSJyaWdodCIgc3JjPSIvQ3V0ZUVkaXRvckltYWdlcy9QRUFSTC5qcGciIHdpZHRoPSIxNzUiIGhlaWdodD0iMTI3IiAvPklORElBOiZuYnNwOzxiciAvPg0KPGJyIC8+DQpQRUFSTCZuYnNwOzxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PkltYWdpbmUgQ3VwIDIwMDkgU29mdHdhcmUgRGVzaWduPGJyIC8+DQo8c3Ryb25nPlRlYW0gTWVtYmVyczwvc3Ryb25nPjo8YnIgLz4NCllvZ2l0YSBSb2NobGFuaTxzdHJvbmc+PC9zdHJvbmc+LCBTdWpheSBLYWthcm1hdGg8c3Ryb25nPjwvc3Ryb25nPiwgU2FtZWV0IFNpbmdoPHN0cm9uZz48L3N0cm9uZz4sJm5ic3A7Tm9lbCBTZXF1ZWlyYTxzdHJvbmc+PC9zdHJvbmc+IGFuZCZuYnNwO0RyLiBTdW5pdGEgU2hhbmJoYWcgKE1lbnRvcik8c3Ryb25nPjwvc3Ryb25nPiZuYnNwOzxiciAvPg0KPGJyIC8+DQo8c3Ryb25nPjwvc3Ryb25nPjxiciAvPg0KSW1hZ2luZSBDdXAgMjAwOSB3YXMgYW4gYW1hemluZyBqb3VybmV5IGZvciB0ZWFtIFBFQVJMLiBGcm9tIHRoZSBvdXRzZXQsIG91ciBtZW50b3IgaGVscGVkIHVzIGFzayBzb21lIHZlcnkgZnVuZGFtZW50YWwgcXVlc3Rpb25zIGFuZCBncm91bmQgb3VyIHBlcmNlcHRpb25zIHRocm91Z2ggcnVyYWwgdmlzaXRzLiBXZSdyZSBhIHRlYW0gb2YgbWVkaWNhbCBhbmQgZW5naW5lZXJpbmcgc3R1ZGVudHM7IHdlIGJlbGlldmUgdGhlIHdvcmxkJ3MgdG91Z2hlc3QgY2hhbGxlbmdlcyBjYW4gYmUgYWRkcmVzc2VkIGJlc3QgYnkgd2VsbC1yb3VuZGVkIHRlYW1zIHRoYXQgY2FuIGJyaW5nIGRpZmZlcmVudCBwZXJzcGVjdGl2ZXMgdG8gdGhlIHRhYmxlLiBQRUFSTCBpcyBhbiBhY3JvbnltIGZvciBQcm9hY3RpdmUgRW1lcmdlbmN5IEFsZXJ0aW5nIGFuZCBSZXNwb25zZSBMb29wLiBUaGUgY29uY2VwdCB3YXMgc28gd2VsbCByZWNlaXZlZCB0aGF0IFByb25leHVzLCB0aGUgY29tcGFueSBiZWhpbmQgVkJWb2ljZSAtIGFuIGludGVncmFsIGNvZyBpbiBvdXIgc29sdXRpb24sIGFncmVlZCB0byBleHRlbmQgdGhlIHNvZnR3YXJlIHRvIHVzIGZyZWUgb2YgY29zdCEgV2UncmUgbG9va2luZyBmb3J3YXJkIHRvIHJ1bm5pbmcgYSBwaWxvdCBzb29uLiBTYW1lZXQgYW5kIE5vZWwgaGF2ZSBiZWVuIHRocm91Z2ggdGhlIEltYWdpbmUgQ3VwIGV4cGVyaWVuY2UgYmVmb3JlLCB3aW5uaW5nIHRoZSBJbnRlcm9wZXJhYmlsaXR5IEF3YXJkIGF0IEltYWdpbmUgQ3VwIDIwMDguIDxiciAvPg0KPGJyIC8+DQo8aW1nIGJvcmRlcj0iMCIgaHNwYWNlPSI1IiBhbHQ9IiIgdnNwYWNlPSI1IiBhbGlnbj0icmlnaHQiIHNyYz0iL0N1dGVFZGl0b3JJbWFnZXMvZWd5cHQgZ2FtZSBkZXYgdGVhbS5qcGciIHdpZHRoPSIyMDAiIGhlaWdodD0iMTUwIiAvPjxiciAvPg0KPGJyIC8+DQo8c3Ryb25nPkVHWVBUOiZuYnNwOzxiciAvPg0KPGJyIC8+DQpBVE9NJm5ic3A7PGJyIC8+DQo8L3N0cm9uZz48L2Rpdj4NCjxkaXY+SW1hZ2luZSBDdXAgMjAwOSBHYW1lIERldmVsb3BtZW50PGJyIC8+DQo8c3Ryb25nPlRlYW0gTWVtYmVyczwvc3Ryb25nPjo8YnIgLz4NCkFobWVkIE11c3RhZmEgVGFsYXQsIEdpbmEgU2FmYWEgRWxkaW4gTWFobW91ZCwgS2hhbGlkIE1lZGhhdCBTYWlkLCBNb2hhbWVkIFNhZmFhIGFuZCBFbGRpbiBNYWhtb3VkPHN0cm9uZz48L3N0cm9uZz4mbmJzcDs8YnIgLz4NCjxiciAvPg0KV2UgYXJlIGZyaWVuZHMgZnJvbSBvbmUgc2Nob29sLiBPdXIgc3Rvcnkgc3RhcnRlZCB3aGVuIEFobWVkIGFuZCBNb2hhbWVkIG1ldCBpbiBKdW5lIDIwMDggYW5kIGRlY2lkZWQgdG8gbWFrZSB0aGVpciBvd24gZ2FtZS4gQWhtZWQgbG92ZXMgd3JpdGluZyBhbmQgZHJhd2luZy4gSGUgaXMgYWx3YXlzIGRyYXdpbmcgbWFueSBjaGFyYWN0ZXJzIHRoYXQgaGUgd2FudHMgdG8gc2VlIGNvbWUgYWxpdmUuIE1vaGFtZWQgaGFzIHRoZSBwYXNzaW9uIHRvIGJ1aWxkIGhpcyBvd24gZ2FtZS4gR2luYSBqb2luZWQgdXMgYmVjYXVzZSBzaGUgYWxzbyZuYnNwO2xvdmVzIGRyYXdpbmcuIFdlIGludml0ZWQgS2hhbGlkIGluIEF1Z3VzdCAyMDA5LiZuYnNwOyBXaGVuIEltYWdpbmUgQ3VwIDIwMDcgc3RhcnRlZCBLaGFsaWQgam9pbmVkIFNvZnR3YXJlIERldmVsb3BtZW50IGFzIGhlIGxvdmVzIGNvbXB1dGVycyBidXQgaGUgaGFkIG5vIGlkZWEgYWJvdXQgaG93IHRvIHByb2dyYW0gc28mbmJzcDtoZSBkZWNpZGVkIHRvIGxlYXJuIGEgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2UgYW5kIHBpY2tlZCBDIy4gV2hlbiBLaGFsaWQgam9pbmVkIHVzIGhlIGZhY2VkIGEgcHJvYmxlbSB0byBoZWxwIHVzIHVzaW5nIHRoZSBwbGF0Zm9ybSB3ZSBjaG9zZSBiZWZvcmUuIGhlIHRoZW4gcmVjb2duaXplZCB0aGF0IE1pY3Jvc29mdCBvZmZlcnMgYW4gZWFzeSBwbGF0Zm9ybSAmIzgyMjA7R0RLLiYjODIyMTsgV2hpbGUgaGUgd2FzIHZpc2l0aW5nIHRoZSBwYWdlIG9mIEdESyBoZSBmb3VuZCB0aGF0IE1pY3Jvc29mdCBvZmZlcnMgYSBuZXcgcGxhdGZvcm0gWE5BIHdpdGggQyMgdGhhdCB0YXJnZXQgWGJveDM2MCB3ZSB0aGVuIHN0YXJ0ZWQgdG8gYnVpbGQgb3VyIGdhbWUgdXNpbmcgWE5BLiZuYnNwOyBGb3Igb3VyIGdvb2QgbHVjaywgd2UgZm91bmQgdGhhdCB0aGUgSW1hZ2luZSBDdXAgMjAwOSBHYW1lIERldmVsb3BtZW50IGNvbXBldGl0aW9uIHJ1bGVzIGFsbG93ZWQgdXMgdG8gdXNlIFhOQSB3aGljaCBnYXZlIHVzIGV4cGVyaWVuY2UgYW5kIHNlbGYtY29uZmlkZW5jZSB0aGF0IHdlJm5ic3A7c3VyZSB3ZXJlJm5ic3A7b24gdGhlIHJpZ2h0IHJvYWQuPGJyIC8+DQo8YnIgLz4NCjwvZGl2Pg0KPGRpdj48YnIgLz4NCjxzdHJvbmc+PGltZyBib3JkZXI9IjAiIGhzcGFjZT0iNSIgYWx0PSIiIHZzcGFjZT0iNSIgYWxpZ249InJpZ2h0IiBzcmM9Ii9DdXRlRWRpdG9ySW1hZ2VzL05JVEguanBnIiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjExOSIgLz5OT1JXQVk6IDxiciAvPg0KPGJyIC8+DQpOSVRIV2Fsa2VycyZuYnNwOzxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PkltYWdpbmUgQ3VwIDIwMDkgR2FtZSBEZXZlbG9wbWVudDxiciAvPg0KPHN0cm9uZz5UZWFtIE1lbWJlcnM8L3N0cm9uZz46PGJyIC8+DQpCam9ybmFyIEhlcnN0YWQsIFN0aWcgUnVlIFNrYW5zZyYjMjI5O3JkLCBNYXJpdXMgQnJlbmRtb2UsIGFuZCBNaWNoYWVsIEl2ZXJzZW4mbmJzcDs8YnIgLz4NCiZuYnNwOzxiciAvPg0KVHdvIG9mIHVzIHBhcnRpY2lwYXRlZCBpbiB0aGUgSW1hZ2luZSBDdXAgMjAwOCB3aXRoIGdvb2QgcmVzdWx0cy4gV2UgdGhlbiBkZWNpZGVkIHRvIG1ha2UgYSBuZXcgdGVhbSB3aXRoIHRoZSBiZXN0IHN0dWRlbnRzIGF0Jm5ic3A7b3VyIHNjaG9vbC4gV2UgZ2FpbmVkIGEgbG90IG9mIGV4cGVyaWVuY2UgZnJvbSBwYXJ0aWNpcGF0aW5nIGluIHRoZSBJbWFnaW5lIEN1cC4gQXMgYSBkZXNpZ25lciBJJm5ic3A7Z2FpbmVkIHJlYWwgZXhwZXJpZW5jZSBmcm9tIHdyaXRpbmcgdGhlIGRlc2lnbiBhbmQgZGV2ZWxvcGluZyB0aGlzIHRocm91Z2ggYSBsb25nIHBlcmlvZC4gQXQgc2Nob29sIHlvdSBuZXZlciBnZXQgdGhpcyBraW5kIG9mIGV4cGVyaWVuY2UsIHNvIEkgc3Ryb25nbHkgcmVjb21tZW5kIGV2ZXJ5IHN0dWRlbnQgcGFydGljaXBhdGUgaW4gSW1hZ2luZSBDdXAmbmJzcDthbmQgZ2FpbiB0aGlzIHJlYWwgZXhwZXJpZW5jZS4gVGhlIHByb2dyYW1tZXJzJm5ic3A7aGF2ZSBsZWFybmVkIG1vcmUgdGhhbiB0aGV5IGV2ZXIgd291bGQgYXMgbm9ybWFsIHN0dWRlbnRzIGFuZCB0aGV5IGJvdGggaGF2ZSBhIHBhcnQtdGltZSBqb2IgYXMgYSByZXN1bHQgZnJvbSB0aGVpciBJbWFnaW5lIEN1cCBlbnRyeS48L2Rpdj4NCjxzdHJvbmc+PC9zdHJvbmc+DQo8ZGl2PjxiciAvPg0KPGJyIC8+DQo8c3Ryb25nPjxpbWcgYm9yZGVyPSIwIiBoc3BhY2U9IjUiIGFsdD0iIiB2c3BhY2U9IjUiIGFsaWduPSJyaWdodCIgc3JjPSIvQ3V0ZUVkaXRvckltYWdlcy9Qb29sSUMlMjBmb3IlMjBzdWNjZXNzc3RvcnkuanBnIiB3aWR0aD0iMTkwIiBoZWlnaHQ9IjE0MyIgLz5BUkdFTlRJTkE6IDxiciAvPg0KPGJyIC8+DQo8L2Rpdj4NCjwvc3Ryb25nPg0KPGRpdj48c3Ryb25nPlVOREVSRE9HUyZuYnNwOzxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PkltYWdpbmUgQ3VwIDIwMDkgR2FtZSBEZXZlbG9wbWVudCA8YnIgLz4NCjxzdHJvbmc+VGVhbSBNZW1iZXJzOiA8YnIgLz4NCjwvc3Ryb25nPkp1bGlldGEgQ2hlc2luaSwgQXVndXN0byBDaGVzaW5pIGFuZCBKYXZpZXIgTGVuYXJkJiMyNDM7biA8L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PldlIGRlY2lkZWQgdG8gcGFydGljaXBhdGUgaW4gdGhlIEltYWdpbmUgQ3VwIGJhY2sgaW4gQXVndXN0IG9mIDIwMDguIFdlIG1ldCB0byB0YWxrIGFuZCBkaXNjdXNzIHRoZSBleHBlcmllbmNlJm5ic3A7dGhhdCBlYWNoIG9mIHVzJm5ic3A7aGFkLiBUaGlzIGRpc2N1c3Npb24mbmJzcDtndWlkZWQgdXMgdG8gcGFydGljaXBhdGUgaW4gdGhlIEdhbWUgRGV2ZWxvcG1lbnQgY29tcGV0aXRpb24gY2F0ZWdvcnkuJm5ic3A7IEl0IHRvb2sgdXMgMiBtb250aHMgdG8gZGVjaWRlIG9uIG9uZSBpZGVhLiBJdCB3YXMmbmJzcDthdCBhbiBhbm51YWwgZXhoaWJpdGlvbiBvZiBib29rcywgd2hlcmUgdGhlIHRoZW1lIG9mIGVkdWNhdGlvbiBhbmQgcHJvYmxlbXMgb2YgdGhlIHdvcmxkIHVuaXRlZCBhbmQgZW1lcmdlZCBpbiB0byZuYnNwO3RoZSBjb25jZXB0IHRoYXQgd2UgcHJlc2VudGVkIGF0IHRoZSBJbWFnaW5lIEN1cCAyMDA5IFdvcmxkd2lkZSBGaW5hbHMgY29udGVzdC4mbmJzcDsgSW4gZWl0aGVyIGNhc2Ugd2UmbmJzcDt0b29rIGEgcGljdHVyZSAocmlnaHQpLCB3aGVyZSBpdCBsb29rcyBsaWtlIHdlIGFncmVlZCB0byBwYXJ0aWNpcGF0ZSBvbiB0aGUgaWRlYSBhbmQgd2hhdCB3ZSB3YW50ZWQgdG8gYWNoaWV2ZSB3aXRoIG91ciBwcm9qZWN0ITwvZGl2Pg0KPGRpdj48YnIgLz4NCjxzdHJvbmc+PC9zdHJvbmc+PGltZyBib3JkZXI9IjAiIGhzcGFjZT0iNSIgYWx0PSIiIHZzcGFjZT0iNSIgYWxpZ249InJpZ2h0IiBzcmM9Ii9DdXRlRWRpdG9ySW1hZ2VzL0xFVlZfSVRfQnJhemlsX3N1Y2Nlc3NzdG9yeS5qcGciIHdpZHRoPSIxODgiIGhlaWdodD0iMjUxIiAvPjxiciAvPg0KPGJyIC8+DQo8c3Ryb25nPkJSQVpJTDogPGJyIC8+DQo8YnIgLz4NCkxFVlYgSVQgPGJyIC8+DQo8L3N0cm9uZz5JbWFnaW5lIEN1cCAyMDA5IEdhbWUgRGV2ZWxvcG1lbnQgPGJyIC8+DQo8c3Ryb25nPlRlYW0gTWVtYmVyczogPGJyIC8+DQo8L3N0cm9uZz5MdWNpYW5vIEpvcyYjMjMzOywgRWRnYXIgTmV0bywgVmluJiMyMzc7Y2l1cyBPdHRvbmksIGFuZCBWaWN0b3IgUmFmYWVsPC9kaXY+DQo8ZGl2Pg0KPGRpdj48c3Ryb25nPjwvc3Ryb25nPjwvZGl2Pg0KPHN0cm9uZz4mbmJzcDs8L3N0cm9uZz48L2Rpdj4NCjxkaXY+V2UncmUgZm91ciBzdHVkZW50cyBmcm9tIGZvdXIgZGlmZmVyZW50IHVuaXZlcnNpdGllcyB0aGF0IGdvdCB0b2dldGhlciB3aXRoIHRoZSBnb2FsIG9mIHBhcnRpY2lwYXRpbmcgaW4gdGhpcyBjb21wZXRpdGlvbi4gVGhyb3VnaG91dCB0aGUgZGV2ZWxvcG1lbnQgcHJvY2VzcyB3ZSd2ZSB3b3JrZWQgcmVhbGx5IGhhcmQgYW5kIGxlYXJuZWQgYSBsb3QgYWJvdXQgZ2FtZSBkZXNpZ24sIGFib3V0IG91ciB3b3JsZCBhbmQgYWJvdXQgb3Vyc2VsdmVzLiBBIHByb2plY3QgdGhhdCBkZW1hbmRzIHRoaXMga2luZCBvZiBkZWRpY2F0aW9uIGFuZCB0ZWFtd29yayBpcyBhIHVuaXF1ZSBleHBlcmllbmNlIGFuZCBvcHBvcnR1bml0eSB0byBsZWFybiBhbmQgZ3JvdyBib3RoIHBlcnNvbmFsbHkgYW5kIHByb2Zlc3Npb25hbGx5LjxiciAvPg0KPC9kaXY+DQo8ZGl2PjxiciAvPg0KPGJyIC8+DQo8c3Ryb25nPkNISU5BOjwvc3Ryb25nPiA8L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PjxzdHJvbmc+PGltZyBib3JkZXI9IjAiIGhzcGFjZT0iNSIgYWx0PSIiIHZzcGFjZT0iNSIgYWxpZ249InJpZ2h0IiBzcmM9Ii9DdXRlRWRpdG9ySW1hZ2VzL2NoaW5lc2UlMjBjb21wZXRpdG9ycyUyMHN1Y2Nlc3MuanBnIiB3aWR0aD0iMjUyIiBoZWlnaHQ9IjE4OCIgLz5QZW5nIEd1bzwvc3Ryb25nPiBhbmQgPHN0cm9uZz5KaWF6ZSBIdWE8L3N0cm9uZz4gPC9kaXY+DQo8ZGl2PkltYWdpbmUgQ3VwIDIwMDgmbmJzcDsmbmJzcDsgPC9kaXY+DQo8ZGl2PlByb2plY3QgSG9zaGltaSAtIFNpbHZlciBNZWRhbCA8L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PlBlbmcgYW5kIEppYXplIGFyZSBncmVhdCBtb2RlbHMgZm9yIGFsbCBJbWFnaW5lIEN1cCBjb21wZXRpdG9ycy4gQWZ0ZXIgd2lubmluZyBhIHNpbHZlciBtZWRhbCBhdCB0aGUgSW1hZ2luZSBDdXAgbGFzdCB5ZWFyIGluIFBhcmlzLCB0aGV5Jm5ic3A7ZmVsdCBzdHJvbmdlciBhbmQgbW9yZSBjb25maWRlbnQgYXMgY29tcGV0aXRvcnMuJm5ic3A7IFBlbmcgR3VvLCB3aWxsIGdyYWR1YXRlIHRoaXMgc3VtbWVyLCBhbmQgaGFzIGFuIG9mZmVyIGZyb20gQWxpYmFiYSAoYSB2ZXJ5IGdvb2QgY29tcGFueSBpbiBDaGluYSkuJm5ic3A7IEppYXplIEh1YSwgaXMgam9pbmluZyB0aGUgU29mdHdhcmUgRGVzaWduIGNvbXBldGl0aW9uIGZvciBJbWFnaW5lIEN1cCAyMDA5IGFzIGEgdGVhbSBsZWFkZXIsIGFuZCB0cnlpbmcgaGlzIGJlc3QgdG8gbWFrZSBhIGhpZ2gtcXVhbGl0eSBlbnRyeS4mbmJzcDsgUmVnYXJkaW5nIHRoZWlyIDIwMDggSW1hZ2luZSBDdXAgZXhwZXJpZW5jZSwgdGhleSBzaGFyZWQgdGhlIGZvbGxvd2luZzogIlRoZXJlIHdlcmUgNCB3YXJtIHVwIGNvbXBldGl0aW9ucyBiZWZvcmUgdGhlIHR1cm4gMiBzZWxlY3Rpb24uIEluIHRoZSAybmQgb2YgdGhlJm5ic3A7d2FybSB1cHMsIHdlIGxvc3QgYWxsIG9mIHRoZSBnYW1lcy4gSW4gdGhlIDR0aCB3YXJtIHVwLCB3ZSBvbmx5IGRlZmVhdGVkIG9uZSB0ZWFtLiBXZSBkaWRuJiM4MjE3O3QgZ2l2ZSB1cCAmIzgyMTE7IHdlIGtlcHQgbW92aW5nIGZvcndhcmQuIFNvIHdoZW4gd2UgZ290IHRoZSBjaGFuY2UgdG8gZ28gdG8gUGFyaXMgZm9yIHRoZSBXb3JsZCBGaW5hbHMtIGl0IHdhcyBhIHJvbGxlciBjb2FzdGVyIHJpZGUhIE9uZSBtaW51dGUgd2Ugd2VyZSB1cCBhbmQgdGhlbiB3ZSB3ZXJlIGRvd24uJm5ic3A7IEluIHRoZSBlbmQgd2UgZ290IHRoZSBzaWx2ZXIgbWVkYWwhIFRoZSBleHBlcmllbmNlIG9mIHRoaXMgY29tcGV0aXRpb24gdGF1Z2h0IHVzOiBuZXZlciBnaXZlIHVwLCBqdXN0IGRvIHRoZSBiZXN0LiBBbmQmIzgyMzA7IGRvbiYjODIxNzt0IGZvcmdldCB0byBlbmpveSB0aGUgZ2FtZSEiIDxiciAvPg0KPGJyIC8+DQo8c3Ryb25nPjxiciAvPg0KVUdBTkRBOiA8L3N0cm9uZz48L2Rpdj4NCjxkaXYgX3RlbXBjc3N0ZXh0PSJudWxsIj4mbmJzcDs8YnIgLz4NCjxzdHJvbmc+PGltZyBib3JkZXI9IjAiIGhzcGFjZT0iNSIgYWx0PSIiIHZzcGFjZT0iNSIgYWxpZ249InJpZ2h0IiBzcmM9Ii9DdXRlRWRpdG9ySW1hZ2VzL3VnYW5kYS5qcGciIHdpZHRoPSIyMzkiIGhlaWdodD0iMTYyIiAvPk5hdGl2ZSBHcmVlbjwvc3Ryb25nPjxiciAvPg0KSW1hZ2luZSBDdXAgMjAwOC0gU29mdHdhcmUgRGVzaWduIDxiciAvPg0KQ29tcGV0ZWQgaW4gSW1hZ2luZSBDdXAgMjAwOSA8L2Rpdj4NCjxkaXYgX3RlbXBjc3N0ZXh0PSJudWxsIj48c3Ryb25nPlRlYW0gTWVtYmVyczwvc3Ryb25nPjogSXZhbiBPa29yaSwgRGF2aWQgTXVzb2tlLCBXeWNsaWZmZSBTYWdpbmkgYW5kIEpvc2VwaCBLYXNvbG88L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PkFmdGVyIGNvbXBldGluZyBpbiBJbWFnaW5lIEN1cCAyMDA4LCB0aGUgbWVtYmVycyBvZiBOYXRpdmUgR3JlZW4gZXhwZWN0ZWQgZXZlbiBtb3JlIGVudHJpZXMgZm9yIDIwMDkgYW5kIGl0IHdhcyBhIHRvdWdoZXIgY29tcGV0aXRpb24uJm5ic3A7VGhlIDIwMDkgV29ybGR3aWRlIEZpbmFscyB0b29rIHBsYWNlIGluIEFmcmljYSwmbmJzcDthbmQgdGhleSBleHBlY3RlZCBhIGNsZWFyIHdpbiBieSBhbiBBZnJpY2FuIHRlYW0sIG5vdCBvbmx5IGJlY2F1c2UmbmJzcDtvZiBhJm5ic3A7aG9tZSBhZHZhbnRhZ2UsIGJ1dCB0byBzaG93IHRoZSByZXN0IG9mIHRoZSB3b3JsZCB0aGF0IHRoZXJlIGlzIGdyZWF0IHRlY2hub2xvZ2ljYWwgdGFsZW50IGluIEFmcmljYS4gQWZyaWNhJm5ic3A7Y2FuJiM4MjMwO3llcywgd2UgYWxsIGNhbi48L2Rpdj4NCjxkaXY+PGJyIC8+DQpUaGUgbWVtYmVycyBvZiBOYXRpdmUgR3JlZW4gYXJlIGluIHRoZWlyIGZpbmFsIHllYXIgQmFjaGVsb3JzIG9mIFNjaWVuY2UgaW4gQ29tcHV0ZXIgU2NpZW5jZSBzdHVkZW50cyBhdCBNYWtlcmVyZSBVbml2ZXJzaXR5LiBKb3NlcGggYW5kIEl2YW4gaGF2ZSBhIHByaXZhdGUgZmlybSBWaXJnb01lZGlhIGluIEthbXBhbGEgdGhhdCBjb25jZW50cmF0ZXMgb24gc29mdHdhcmUgZGVzaWduLCB3ZWJzaXRlIGRldmVsb3BtZW50IGFuZCBJVCBzb2x1dGlvbnMuIERhdmlkIGhhcyBoaXMgb3duIGNvbXBhbnkgdGhhdCB3b3JrcyB3aXRoaW4gdGhlIHNhbWUgc29sdXRpb25zLiBXeWNsaWZmZSB3b3JrcyBvbiBjb250cmFjdCB3aXRoIEtlYW5lIENvbnN1bHRpbmcgVGVjaG5vbG9naWVzIGFzIGEgc29mdHdhcmUgZGV2ZWxvcGVyLiZuYnNwOyA8L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PjxzdHJvbmc+PGJyIC8+DQpGUkFOQ0U6PC9zdHJvbmc+IDwvZGl2Pg0KPGRpdj48c3Ryb25nPjxpbWcgc3R5bGU9ImZsb2F0OiByaWdodCIgYm9yZGVyPSIwIiBoc3BhY2U9IjUiIGFsdD0iIiB2c3BhY2U9IjUiIGFsaWduPSJsZWZ0IiBzcmM9Ii9DdXRlRWRpdG9ySW1hZ2VzL3Jvd2UuanBnIiB3aWR0aD0iMjQ0IiBoZWlnaHQ9IjE2MiIgLz48YnIgLz4NCkpvaGFubmEgUm93ZTwvc3Ryb25nPjwvZGl2Pg0KPGRpdj5JbWFnaW5lIEN1cCAyMDA4IDxiciAvPg0KQnJvbnplIE1lZGFsIC0gSW50ZXJmYWNlIERlc2lnbiA8L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PkkgYW0gaW4gbXkgZmlmdGggYW5kIGxhc3QgeWVhciBvZiBzdHVkaWVzIGluIFN0cmF0ZSBDb2xsZWdlIERlc2lnbmVycyAoRGVzaWduIFNjaG9vbCkuJm5ic3A7IFRoZSBJbWFnaW5lIEN1cCBleHBlcmllbmNlIGFsbG93ZWQgbWUgdG8gbWVldCBhIGxhcmdlIG51bWJlciBvZiBwZW9wbGUgZnJvbSBtYW55IGRpZmZlcmVudCBwbGFjZXMgYXJvdW5kIHRoZSB3b3JsZC4gVGhlIGNvbXBldGl0aW9uIHdhcyBhbiBvcHBvcnR1bml0eSB0byBkZXNpZ24gYSBzb2x1dGlvbiBmb3Igb25lIG9mIHRoZSBtYWpvciBpc3N1ZXMgZmFjaW5nIGFsbCBvZiB1cyB0b2RheSA6IHByb3RlY3RpbmcgdGhlIGVudmlyb25tZW50LiBJbiBwbGFubmluZyBteSBkZXNpZ24sIEkgZGlzY292ZXJlZCBuZXcgZGVzaWduIHRvb2xzIGxpa2UgRXhwcmVzc2lvbiBEZXNpZ24gYW5kIEV4cHJlc3Npb24gQmxlbmQgLSBib3RoIHdoaWNoIHByb3ZlZCB2ZXJ5IGludGVyZXN0aW5nIGZyb20gYSBjcmVhdGlvbiBwZXJzcGVjdGl2ZS4gVGhlIEltYWdpbmUgQ3VwIGhhcyBiZWVuIGEgdHJ1ZSByYW1wIHVwIGZvciBteSBjYXJlZXIsIGFuZCBvdmVyYWxsIGl0IHdhcyBhIHZlcnkgZnVsZmlsbGluZyBleHBlcmllbmNlLiZuYnNwOyBUaGUgV29ybGR3aWRlIEZpbmFscyB3YXMgdGhlIGRlZmluaXRlIGNsaW1heCBvZiB0aGF0IGV4cGVyaWVuY2U6Jm5ic3A7IGEgY3JhemVkIHdlZWsgZmlsbGVkIHdpdGggZW5jb3VudGVycywgcGFydGllcywgZXhjdXJzaW9ucyBpbiBzbyBtYW55IHVuZm9yZ2V0dGFibGUgcGxhY2VzIHdpdGggdW5mb3JnZXR0YWJsZSBwZW9wbGUuPGJyIC8+DQo8L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PjxzdHJvbmc+PGltZyBzdHlsZT0idGV4dC1hbGlnbjogbGVmdDsgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjsgZmxvYXQ6IHJpZ2h0IiBib3JkZXI9IjUiIGhzcGFjZT0iNSIgYWx0PSIiIHZzcGFjZT0iNSIgYWxpZ249InJpZ2h0IiBzcmM9Ii9DdXRlRWRpdG9ySW1hZ2VzL3N1Y2Nlc3NlcyUyMC0lMjBQYXV4LmpwZyIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIyNDEiIC8+SmVhbi1CZW5vaXQgUGF1eDwvc3Ryb25nPjwvZGl2Pg0KPGRpdj5JbWFnaW5lIEN1cCAyMDA3IGFuZCBJbWFnaW5lIEN1cCAyMDA4IDwvZGl2Pg0KPGRpdj5Hb2xkIE1lZGFsICYjODIxMTsgSVQgQ2hhbGxlbmdlIDIwMDg8L2Rpdj4NCjxwPkkmIzgyMTc7bSBjdXJyZW50bHkgd29ya2luZyBhcyBhIFN5c3RlbSBFbmdpbmVlciBhdCBBdmFuYWRlLCB0aGUgZmlyc3QgaW50ZWdyYXRvciBvZiBNaWNyb3NvZnQgdGVjaG5vbG9naWVzLiBNeSByb2xlIGFzIGEgY29uc3VsdGFudCwgaXMgdG8gZ2l2ZSBjbGllbnRzIHRoZSBvcHBvcnR1bml0eSB0byBsZXZlcmFnZSBNaWNyb3NvZnQgcHJvZHVjdHMgdG8gdGhlaXIgbmVlZHMgYW5kIGludGVncmF0ZSB0aGVtIGludG8gdGhlaXIgZXhpc3RpbmcgYXJjaGl0ZWN0dXJlLiBTaW5jZSB0aGUgSVQgQ2hhbGxlbmdlIHdhcyBjcmVhdGVkLCBteSBzY2hvb2wgaGFzIGhhZCBhdCBsZWFzdCBvbmUgcGFydGljaXBhbnQgb24gdGhlIFdvcmxkd2lkZSBGaW5hbHMgcG9kaXVtLiBJIHdhcyBlbmNvdXJhZ2VkIHRvIHBhcnRpY2lwYXRlLiBUaGUgcXVpenplcyB3ZXJlIHRoZSB0cmFpbmluZyBhbmQgdGhlIGNvbXBldGl0aW9uIHJlYWxseSBiZWdhbiB3aXRoIHRoZSBiZWdpbm5pbmcgb2YgUm91bmQgMi4gSXQmIzgyMTc7cyBhIHJlYWxseSBpbnRlcmVzdGluZyBleGVyY2lzZSB0byB3cml0ZSBhIGJ1c2luZXNzIHByb3Bvc2FsIGFuZCB0byBkaXNjb3ZlciBhdCBsZWFzdCAzMCBNaWNyb3NvZnQgcHJvZHVjdHMuJm5ic3A7IFRyeWluZyB0byB1bmRlcnN0YW5kIGhvdyB0byBpbnRlZ3JhdGUgdGhlbSBpbnRvIGEgdmlhYmxlIHNvbHV0aW9uIG1lZXRpbmcgdGhlIHJlcXVlc3RlZCBmdW5jdGlvbmFsaXRpZXMgYW5kIG5lZWRzIC0gdGhhdCB3YXMgdGhlIGNoYWxsZW5nZSEgVGhlbiBhdCB0aGUgZmlyc3QgZmluYWwgaW4gMjAwNyBpbiBTZW91bCwgSSBtaXNzZWQgaXQuIEkgd2FzbiYjODIxNzt0IHByZXBhcmVkIGVub3VnaCBhbmQgSSBsb3N0IHRvbyBtYW55IGhvdXJzIG1ha2luZyB0aGluZ3MgdXNlbGVzcy4gSSBwcm9taXNlZCB0byBjb21lIGJhY2sgYmVjYXVzZSBpdCB3YXMgYW4gdW5mb3JnZXR0YWJsZSBtb21lbnQgd2l0aCBmcmllbmRzLCBzdGFmZiwgY29tcGV0aXRvcnMuJm5ic3A7IEFuZCB0aGVuIHRoZSBuZXh0IHllYXIsIHZvaWxhLCZuYnNwOyBJIHBhcnRpY2lwYXRlZCBhZ2FpbiwgYW5kIEkgd2FudGVkIGl0IHRvIGJlIHBlcmZlY3QuIE15IGJ1c2luZXNzIGNhc2Ugd2FzIGNvbXBsZXRlIGFuZCBhY2N1cmF0ZS4gSW4gdGhlIGZpbmFscyBJIGRpZG4mIzgyMTc7dCBzdHJlc3Mgb3V0LiBJIG1hZGUgdGhpbmdzIHNtb290aGx5IGFuZCBjYXJlZnVsbHkgYW5kIG1hZGUgc3VyZSBpdCB3b3JrZWQuIFRoZSBJbWFnaW5lIEN1cCBnYXZlIG1lIHRoZSBmb3JjZSB0byBnbyBmdXJ0aGVyLCB0byBleGNlZWQgbXkgbGltaXRzIGFuZCB0byBhY2hpZXZlIGEgZ29hbC4gSSYjODIxNztsbCByZW1lbWJlciB0aGUgcGFydGllcywgdGhlIGRpc2N1c3Npb25zIHdpdGggb3RoZXIgc3R1ZGVudHMgYW5kIGp1ZGdlcywgdGhlIHBsYWNlcyB3ZSB2aXNpdGVkLCB0aGUgYnJpbGxpYW50IHByb2plY3RzIHdlIGRpc2NvdmVyZWQuIEl0IHdhcyBzbyB3b3J0aCBpdC48L3A+DQo8cD48c3Ryb25nPjxpbWcgc3R5bGU9ImJvcmRlci1ib3R0b20tY29sb3I6ICMzMzk5NjY7IGJvcmRlci10b3AtY29sb3I6ICMzMzk5NjY7IGZsb2F0OiByaWdodDsgYm9yZGVyLXJpZ2h0LWNvbG9yOiAjMzM5OTY2OyBib3JkZXItbGVmdC1jb2xvcjogIzMzOTk2NiIgYm9yZGVyPSI1IiBoc3BhY2U9IjUiIGFsdD0iIiB2c3BhY2U9IjUiIGFsaWduPSJsZWZ0IiBzcmM9Ii9DdXRlRWRpdG9ySW1hZ2VzL3RhbG1hcmQuanBnIiB3aWR0aD0iMjQ0IiBoZWlnaHQ9IjE2MyIgLz5CZW5qYW1pbiBUYWxtYXJkPC9zdHJvbmc+IDwvcD4NCjxkaXY+SW1hZ2luZSBDdXAgMjAwNyBhbmQgSW1hZ2luZSBDdXAgMjAwOCA8YnIgLz4NCkdvbGQgTWVkYWwgLSBXZWIgRGV2ZWxvcG1lbnQgMjAwNzwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+SSBoYXZlIGp1c3Qgam9pbmVkIE1pY3Jvc29mdCBhcyBhIFRlY2huaWNhbCBBY2NvdW50IE1hbmFnZXIgaW4gUGFyaXMsIEZyYW5jZSwgd29ya2luZyB3aXRoIGtleSBhY2NvdW50cyBpbiBkaWZmZXJlbnQgc2VjdG9ycy4gQXMgYSB0ZWFtIGZyb20gRWZyZWksIG91ciBlbmdpbmVlcmluZyBzY2hvb2wgaW4gRnJhbmNlLCB3ZSBkZWNpZGVkIHRvIHBhcnRpY2lwYXRlIHRvIEltYWdpbmUgQ3VwIDIwMDcgaW4gb3JkZXIgdG8gaGF2ZSBmdW4gYW5kIHRvIGltcHJvdmUgb3VyIGtub3dsZWRnZSBpbiBXZWIgRGV2ZWxvcG1lbnQuIEFmdGVyIHNldmVyYWwgc3RlcHMsIHdlIHF1YWxpZmllZCBmb3IgdGhlIFdvcmxkd2lkZSBGaW5hbHMgaW4gS29yZWEsIGFuZCBhY2hpZXZlZCBib3RoIGdvYWxzLiBJdCB3YXMgdmVyeSBpbnRlcmVzdGluZyB0byBtZWV0IHBlb3BsZSBmcm9tIGFsbCBvdmVyIHRoZSB3b3JsZC4mbmJzcDsgUGVvcGxlLCBmdW4gYW5kIHNraWxscyBhcmUgZGVmaW5pdGVseSAzIGtleSB3b3JkcyBJIHRha2UgZnJvbSBteSBJbWFnaW5lIEN1cCBleHBlcmllbmNlLiBBZnRlciB0aGUgZmluYWxzLCB3ZSBoYWQgYSBicmVhayBiZWZvcmUgdGhlIG5leHQgY29tcGV0aXRpb24sIEltYWdpbmUgQ3VwIDIwMDgsIGluIEZyYW5jZS4gVW5mb3J0dW5hdGVseSwgd2UgZGlkIG5vdCBwYXNzIHRoZSBGcmVuY2ggZmluYWxzLCBidXQgd2UgcmVhY2hlZCBzZWNvbmQgcGxhY2UuIEhvd2V2ZXIsIGFzIGEgUGFyaXNpYW4sIEkgd2FzIGFibGUgdG8gYXR0ZW5kIHNldmVyYWwgZXZlbnRzIGR1cmluZyB0aGUgV29ybGR3aWRlIEZpbmFscyBpbiBQYXJpcy4mbmJzcDsgSSB3YXMgcmVhbGx5IGVjc3RhdGljIHRvIGZlZWwgYWdhaW4gdGhlIGF3ZXNvbWUgSW1hZ2luZSBDdXAgYXRtb3NwaGVyZS4gPHN0cm9uZz48YnIgLz4NCjxiciAvPg0KPGltZyBzdHlsZT0iZmxvYXQ6IHJpZ2h0IiBib3JkZXI9IjAiIGhzcGFjZT0iNSIgYWx0PSIiIHZzcGFjZT0iNSIgYWxpZ249ImxlZnQiIHNyYz0iL0N1dGVFZGl0b3JJbWFnZXMvYmVsbGV0LmpwZyIgd2lkdGg9IjI0NCIgaGVpZ2h0PSIxODMiIC8+VmluY2VudCBCZWxsZXQ8L3N0cm9uZz4gPC9kaXY+DQo8ZGl2PkltYWdpbmUgQ3VwIDIwMDYgPC9kaXY+DQo8ZGl2PlNlbWktZmluYWxzIGluIEZyYW5jZSAtIFNvZnR3YXJlIERlc2lnbiA8L2Rpdj4NCjxwPkkgYW0gY3VycmVudGx5IGEgLk5ldCBjb25zdWx0YW50IGF0IE1pY3Jvc29mdCBDb25zdWx0aW5nIFNlcnZpY2VzLiBSaWdodCBhZnRlciB0aGUgSW1hZ2luZSBDdXAsIGl0IHdhcyB0aW1lIGZvciBtZSB0byBmaW5kIGEgam9iLCBhbmQgSSB3YXMgbHVja3kgZW5vdWdoIHRvIGdldCBtYW55IHByb3Bvc2Fscy4gSSBmaW5hbGx5IGpvaW5lZCBTb2NpZXRlIEdlbmVyYWwgSW52ZXN0bWVudCBCYW5raW5nIGluIExvbmRvbiBhcyBhIFRlY2huaWNhbCBMZWFkIG9uIC5ORVQgLyBTUUwgU2VydmVyIGJhc2VkIHNvbHV0aW9ucy4gSSBnb3QgcHJvbW90ZWQgYWJvdXQgYSB5ZWFyIGFmdGVyIHRoYXQgYXMgYSBwcm9qZWN0IG1hbmFnZXIgaW4gYSB0YWN0aWNhbCB3ZWIgZGV2ZWxvcG1lbnQgdGVhbSwgYW5kIEkgbWFuYWdlZCBzZXZlcmFsIHByb2plY3RzIHRoZXJlLiBBZnRlciB0aGF0LCBJIGRlY2lkZWQgdG8gam9pbiBNaWNyb3NvZnQuJm5ic3A7IEltYWdpbmUgQ3VwIHdhcyBhIHJlYWwgcmFtcCB1cCB0byBzdWNjZXNzIGZvciBtZSwgaXQgaGVscGVkIGRpc3Rpbmd1aXNoIG1lIGZyb20gb3RoZXIgY2FuZGlkYXRlcyBhdCB0aGUgZW5kIG9mIG15IHN0dWRpZXMuIEl0IGFsc28gcHJvdmlkZWQgbWUgY29udGFjdCB3aXRoIE1pY3Jvc29mdCBUZWNobm9sb2dpZXMuJm5ic3A7IFJpZ2h0IG5vdyBJIGxpdmUgYSBsaWZlIG9mIGlubm92YXRpb24sIHBhc3Npb24gYW5kIHRlY2hub2xvZ3kgLSB0aGF0IG9uZSBjYW4gb25seSBleHBlcmllbmNlIGF0IE1pY3Jvc29mdC4gVGhlIEltYWdpbmUgQ3VwIGNvbXBldGl0aW9uIHB1dHMgeW91IGluIHRoZSBzcG90bGlnaHQgbWVkaWEgd2lzZS4mbmJzcDsgSSBndWFyYW50ZWUgdGhhdCBUYWxlbnQgQWNxdWlzaXRpb24gdGVhbXMgdGFrZSBhIGxvbmcgaGFyZCBsb29rIGF0IHdoYXQgeW91IGFjY29tcGxpc2ggdGhyb3VnaCB0aGUgSUMgY29tcGV0aXRpb24uIEZyb20gYSBwZXJzb25hbCBwZXJzcGVjdGl2ZSwgdGhlIEltYWdpbmUgQ3VwIHdhcyBhIG1ham9yIHR1cm4gaW4gdGhlIGFwcGV0aXRlIEkgaGFkIGZvciBtZWV0aW5nIG5ldyBwZW9wbGUsIGRpc2NvdmVyaW5nIG5ldyBjb3VudHJpZXMsIGN1bHR1cmVzIGFuZCB0ZWNobm9sb2dpZXMuIEkgd2lsbCBhbHdheXMgcmVtZW1iZXIgdGhlIGF3ZXNvbWUgZGl2ZXJzaXR5IG9mIHNvbHV0aW9ucyBmcm9tIGRpZmZlcmVudCBjb3VudHJpZXMgdGhhdCB5b3UgY2FuIHNlZSBhdCB0aGUgV29ybGR3aWRlIEZpbmFscy4gSnVzdCBpbmNyZWRpYmxlITwvcD4NCjxwPiZuYnNwOzwvcD4NCjxkaXY+PHN0cm9uZz5SVVNTSUE6PC9zdHJvbmc+IDxiciAvPg0KPC9kaXY+DQo8ZGl2PiZuYnNwOzwvZGl2Pg0KPGRpdj4NCjxkaXYgYWxpZ249ImxlZnQiPjxzdHJvbmc+SUdOSVRJT048L3N0cm9uZz48YnIgLz4NCkltYWdpbmUgQ3VwIDIwMDg8YnIgLz4NCkVudGVycHJpc2UgRW5naW5lZXJpbmcmbmJzcDtBd2FyZCAtIFNvZnR3YXJlIERlc2lnbjwvZGl2Pg0KPGRpdiBhbGlnbj0ibGVmdCI+PHN0cm9uZz5UZWFtIE1lbWJlcnM8L3N0cm9uZz46Jm5ic3A7PGltZyBzdHlsZT0iZmxvYXQ6IHJpZ2h0IiBib3JkZXI9IjAiIGhzcGFjZT0iNSIgYWx0PSIiIHZzcGFjZT0iNSIgYWxpZ249ImxlZnQiIHNyYz0iL0N1dGVFZGl0b3JJbWFnZXMvcnVzc2lhX1NVQ0NFU1NfMi5qcGciIHdpZHRoPSIyNTQiIGhlaWdodD0iMTcxIiAvPkFuYXRvbHkgTmlraXRpbiwgUm9tYW4gQmVsb3YsIGFuZCBEYXJpYSBFbGtpbmEmbmJzcDsmbmJzcDsmbmJzcDs8L2Rpdj4NCjxkaXYgYWxpZ249ImxlZnQiPiZuYnNwOzwvZGl2Pg0KPGRpdiBhbGlnbj0ibGVmdCI+QW5hdG9seSwgUm9tYW4gYW5kIERhcmlhIGFyZSBzdGlsbCB3b3JraW5nIG9uIHRoZWlyIHByb2plY3QsIHdoaWNoIGhhcyBiZWVuIGltcGxlbWVudGVkIGFuZCB0ZXN0ZWQgaW4gU291dGhlcm4gZGlzdHJpY3Qgb2YgUnVzc2lhLiBUaGV5IGFyZSBhd2FpdGluZyB0aGVpciB0cmlwIHRvIFJlZG1vbmQgbGF0ZXIgaW4gMjAwOS4gSWduaXRpb24gd2FzIHRoZSBtb3N0IHNwZWN0YWN1bGFyIHRlYW0gaW4gSW1hZ2luZSBDdXAgMjAwOCBpbiBSdXNzaWEsIGFuZCB0aGV5IHdlcmUgd2l0aG91dCBhIGRvdWJ0IHNlbGVjdGVkIHRvIHJlcHJlc2VudCBSdXNzaWEmbmJzcDthdCB0aGUgV29ybGR3aWRlIEZpbmFscy4gVGhlaXIgcHJvamVjdCB3YXMsIGluIGZhY3QsIHZlcnkgc2NpZW50aWZpYyAmIzgyMTE7IHRoZXkgZGVzaWduZWQgYSBzeXN0ZW0gdG8gcHJlZGljdCB3aWxkIGZpcmUgYmVoYXZpb3IuIFRoZWlyIHByZXNlbnRhdGlvbiBvbi1zdGFnZSB3YXMgbGlrZSBhIHRoZWF0ZXIgcGVyZm9ybWFuY2UuIFRodXMgdGhlaXIgcHJvamVjdCB3YXMgYSBwZXJmZWN0IGRlbW9uc3RyYXRpb24gb2YgYW4gSW1hZ2luZSBDdXAgaWRlYTogbGV0IHN0dWRlbnRzIGhhdmUgZnVuLCB3aGlsZSB3b3JraW5nIG9uIHRoZSB2ZXJ5IHNlcmlvdXMgcHJvYmxlbXMuJm5ic3A7IEF0IHRoZSBJbWFnaW5lIEN1cCBXb3JsZHdpZGUgRmluYWxzLCB0aGUgdGVhbSBtZXQgYW5vdGhlciBncm91cCBvZiBzdHVkZW50cyBmcm9tIEJ1bGdhcmlhLCB3aG8gd29ya2VkIG9uIGEgc2ltaWxhciBwcm9qZWN0IG9mIGRpc2FzdGVyIGRpc2NvdmVyeSBhbmQgZWxpbWluYXRpb24uIEl0IGFsc28gaGFwcGVuZWQgdGhhdCBib3RoIHRlYW1zIHdlcmUgZ2l2ZW4gYW4gRW5naW5lZXJpbmcgRXhjZWxsZW5jZSBBd2FyZCAmIzgyMTE7IGVudGl0bGluZyB0aGVtIHRvIHZpc2l0IFJlZG1vbmQgYW5kIHdvcmsgdG9nZXRoZXIgd2l0aCBNaWNyb3NvZnQgZW5naW5lZXJzIHRvIGZ1cnRoZXIgaW1wcm92ZSB0aGVpciBwcm9qZWN0LiBUaGUgcHJvamVjdCBvZiBSdXNzaWFuIHRlYW0gd2FzIGhlYXZpbHkgY29ubmVjdGVkIHRvIGhpZ2gtcGVyZm9ybWFuY2UgY29tcHV0aW5nLCBhbmQgdGhleSBhcmUgbG9va2luZyBmb3J3YXJkIHRvIHdvcmsgb24gb25lIG9mIHRoZSBsYXJnZXN0IHdvcmxkd2lkZSBjbHVzdGVycyBpbiBSZWRtb25kIGluIHN1bW1lciAyMDA5LjwvZGl2Pg0KPC9kaXY+DQo8ZGl2PiZuYnNwOzwvZGl2Pg0KPGRpdj48c3Ryb25nPklOU1BJUkFUSU9OPC9zdHJvbmc+PGJyIC8+DQpJbWFnaW5lIEN1cCAyMDA1PGJyIC8+DQpGaXJzdCBwbGFjZSAtIFNvZnR3YXJlIERlc2lnbjwvZGl2Pg0KPGRpdj48c3Ryb25nPlRlYW0gTWVtYmVyczwvc3Ryb25nPjogPGltZyBzdHlsZT0iZmxvYXQ6IHJpZ2h0IiBib3JkZXI9IjAiIGhzcGFjZT0iNSIgYWx0PSIiIHZzcGFjZT0iNSIgYWxpZ249InJpZ2h0IiBzcmM9Ii9DdXRlRWRpdG9ySW1hZ2VzL3N0YW52b25vZ19ydXNzaWFfc3VjY2Vzcy5qcGciIHdpZHRoPSIyNDQiIGhlaWdodD0iMTk2IiAvPlN0YXMgVm9ub2csIE5pY2sgU3VyaW4sIEFsZXhhbmRlciBQb3BvdiwgYW5kIFJ1c2xhbiBHaWxmYW5vdjwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+U3RhcyBWb25vZyBhbmQgTmljayBTdXJpbiBoYXZlIG9wZW5lZCB0aGVpciBvd24gc3RhcnR1cCBjb21wYW55LCBNdXNpZ3kgYW5kIGRldmVsb3BlZCBmdXJ0aGVyIHRoZWlyIHRlY2hub2xvZ3kgdGhhdCB0aGV5IGNyZWF0ZWQgZm9yIHRoZSBJbWFnaW5lIEN1cC4gSW4gMjAwNCwgc3R1ZGVudHMgZnJvbSB0d28gZGlmZmVyZW50IE1vc2NvdyB1bml2ZXJzaXRpZXMsIE1vc2NvdyBTdGF0ZSBVbml2ZXJzaXR5IGFuZCBNb3Njb3cgSW5zdGl0dXRlIG9mIFBoeXNpY3MgYW5kIFRlY2hub2xvZ3kgZGVjaWRlZCB0byBjb21lIHRvZ2V0aGVyIHRvIGRldmVsb3AgYSBqb2ludCBwcm9qZWN0IGZvciB0aGUgSW1hZ2luZSBDdXAuIFR3byBvZiB0aGVtIHdlcmUgZ3VpdGFyIGFuZCBwaWFubyBwbGF5ZXJzLCB3aGlsZSB0aGUgb3RoZXIgdHdvIHdlcmUgbW9zdGx5IGludGVyZXN0ZWQgaW4gdGVjaG5vbG9neS4gVGhleSBkZXZlbG9wZWQgYSBwcm9qZWN0IGNhbGxlZCBPbW5pTXVzaWMsIHdoaWNoIGFsbG93ZWQgbXVzaWNpYW5zIGZyb20gcmVtb3RlIGxvY2F0aW9ucyB0byBwbGF5IHRvZ2V0aGVyIHVzaW5nIEludGVybmV0MiBjb25uZWN0aXZpdHksIG92ZXJjb21pbmcgdGhlIHNldmVyZSBsaW1pdGF0aW9ucyBvZiBzb3VuZCBkZWxheXMgaW50cm9kdWNlZCBieSBhbGwgcGFydHMgb2Ygc291bmQgc3RhY2sgaW4gV2luZG93cyBhbmQgdHJhbnNtaXR0aW5nIHNvZnR3YXJlLiBBdCB0aGUgV29ybGR3aWRlIEZpbmFscywgdGhleSBwbGF5ZWQgJiM4MjIwO0ltYWdpbmUmIzgyMjE7IGJ5IEpvaG4gTGVubm9uIG9uIHN0YWdlLCBjYXVzaW5nIHRoZSBsYXJnZXN0IHJvdW5kIG9mIGFwcGxhdXNlIGZyb20gdGhlIGF1ZGllbmNlLiZuYnNwOyZuYnNwO1RoZXkgcmVjZWl2ZWQgMXN0IHBsYWNlIGluIHRoZSBTb2Z0d2FyZSBEZXNpZ24gY2F0ZWdvcnkgYW5kIGFuIElubm92YXRpb24gQWNjZWxlcmF0b3IgYXdhcmQuIEFmdGVyIHRha2luZyBwYXJ0IGluIElubm92YXRpb24gQWNjZWxlcmF0b3IsIFN0YXMgYW5kIE5pY2sgZGVjaWRlZCB0byBjb250aW51ZSB0aGVpciBwcm9kdWN0LCBhbmQgaW52ZXN0ZWQgdGhlIGF3YXJkIG1vbmV5IGludG8gZnVydGhlciBwZXJzb25hbCBkZXZlbG9wbWVudCAmIzgyMTE7IHRoZXkgdG9vayBwYXJ0IGluIFNpbGljb24gVmFsbGV5IGNvbmZlcmVuY2UgYW5kIHdlcmUgYWJsZSB0byBmaW5kIGZpbmFuY2luZyBmb3IgdGhlaXIgcHJvamVjdCwgd2hpY2ggaGFzIGJlZW4gcmVuYW1lZCBNdXNpZ3kuIExhdGVyIG9uLCBNdXNpZ3kgdGVjaG5vbG9neSB3YXMgdXNlZCB0byBob2xkIGhhbGYtYW4taG91ciBkaXN0cmlidXRlZCBqYXp6IGNvbmNlcnQgJiM4MjIwO0phenogYXQgdGhlIFNwZWVkIG9mIExpZ2h0JiM4MjIxOywgYmV0d2VlbiBVUywgUnVzc2lhIGFuZCBVa3JhaW5lLCB3aGljaCB3YXMgb3JnYW5pemVkIGFzIGEgcGFydCBvZiBsYXJnZSBKYXp6IGZlc3RpdmFsLiBUaGVpciB0ZWNobm9sb2d5IHdhcyBkZW1vbnN0cmF0ZWQgb24gQ2VCSVQgMjAwNiwgYW5kIHByZXNlbnRlZCB0byBCaWxsIEdhdGVzIHdoZW4gaGUgdmlzaXRlZCBNb3Njb3cgaW4gMjAwNy4gTW9yZSBpbmZvcm1hdGlvbiBpcyBhdmFpbGFibGUgPGEgaHJlZj0iaHR0cDovL3d3dy5zdGFudm9ub2cuY29tLyIgdGFyZ2V0PSJfYmxhbmsiPmhlcmU8L2E+LjwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+DQo8ZGl2Pg0KPGhyIC8+DQo8L2Rpdj4NCjxkaXY+PGEgbmFtZT0iU3VibWl0Ij48L2E+PGJyIC8+DQo8c3Ryb25nPkNvbXBldGl0b3JzIC0gJm5ic3A7UHV0IHlvdXIgbmFtZSBoZXJlITwvc3Ryb25nPiBQcm92aWRlIG1vdGl2YXRpb24gdG8gY3VycmVudCBhbmQgZnV0dXJlIEltYWdpbmUgQ3VwIHBhcnRpY2lwYW50cy4mbmJzcDsmbmJzcDtBbGwgd2UgbmVlZCBhcmUgdmlkZW9zLCBwaG90b3MgYW5kIHNob3J0IHN0b3JpZXMgZmVhdHVyaW5nIHlvdSBhbmQgeW91ciB0ZWFtLiBUZWxsIHVzIGFib3V0IHRoZSZuYnNwO2hhcmQgYXQgd29yayB5b3UgZGlkIHRvIHNvbHZlIHRoZSB3b3JsZCYjODIxNztzIHRvdWdoZXN0IHByb2JsZW1zLiZuYnNwOyZuYnNwO1BsZWFzZSBhbHNvJm5ic3A7cHJvdmlkZSB0aGUgZm9sbG93aW5nOiZuYnNwOyA8YnIgLz4NCjxiciAvPg0KMS4mbmJzcDtUZWFtIG1lbWJlcnMgZnVsbCBuYW1lcyBhbmQgbWVudG9yIG5hbWUgKGlmIGFwcGxpY2FibGUpIDxiciAvPg0KMi4mbmJzcDtJbWFnaW5lIEN1cCZuYnNwO3RlYW0gbmFtZSBhbmQgdGhlIHllYXIocykgeW91IHBhcnRpY2lwYXRlZCBpbiB0aGUgSW1hZ2luZSBDdXAuIDxiciAvPg0KMy4mbmJzcDtDb3VudHJ5L1JlZ2lvbjxiciAvPg0KNC4gQSBzaG9ydCBwYXJhZ3JhcGggb24geW91ciBJbWFnaW5lIEN1cCBleHBlcmllbmNlIHRvIGRhdGUgKGluIEVuZ2xpc2gpLjwvZGl2Pg0KPGRpdj48L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2Pg0KPGRpdj48YSBocmVmPSIvU3VwcG9ydC9Db250YWN0VXMuYXNweCI+PHN0cm9uZz5Db250YWN0Jm5ic3A7dXM8L3N0cm9uZz48L2E+Jm5ic3A7dG8gc3VibWl0IHlvdXIgc3VjY2VzcyBzdG9yeSEgPGJyIC8+DQo8YnIgLz4NCiZuYnNwOzwvZGl2Pg0KPC9kaXY+DQo8L2Rpdj4NCjxkaXYgYWxpZ249ImxlZnQiPiZuYnNwOzwvZGl2Pg0KPC9mb250Pjwvc3Bhbj5kAgMPFgIfCwXKBjxoMz5IZWxwZnVsJm5ic3A7TGlua3M8L2gzPg0KPGRpdj48YnIgLz4NCjxzdHJvbmc+PGEgaHJlZj0iL1JlZ2lzdHJhdGlvbi9EZWZhdWx0LmFzcHgiPjxzdHJvbmc+UmVnaXN0ZXIgTm93ITwvc3Ryb25nPjwvYT48L3N0cm9uZz4NCjxkaXY+PGEgaHJlZj0iL0Fib3V0L1dlbGNvbWUuYXNweCI+PHN0cm9uZz48YnIgLz4NClN0YXJ0IEhlcmU8L3N0cm9uZz48L2E+PGJyIC8+DQo8L2Rpdj4NCjwvZGl2Pg0KPGRpdj48L2Rpdj4NCjxkaXY+PHN0cm9uZz48YSBocmVmPSIvU3VwcG9ydC9GQVEuYXNweCI+PHN0cm9uZz48YnIgLz4NCkZBUTwvc3Ryb25nPjwvYT48L3N0cm9uZz4gPC9kaXY+DQo8ZGl2PjwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+PGEgaHJlZj0iL0Fib3V0L1doYXRJcy5hc3B4ICI+PHN0cm9uZz5XaGF0IGlzIHRoZSBJbWFnaW5lIEN1cD88L3N0cm9uZz48L2E+Jm5ic3A7PGJyIC8+DQo8L2Rpdj4NCjxkaXY+PHN0cm9uZz48YSBocmVmPSIvQ29tcGV0aXRpb24vT3ZlcnZpZXcuYXNweCI+PHN0cm9uZz48YnIgLz4NCkNvbXBldGl0aW9uIE92ZXJ2aWV3PC9zdHJvbmc+IDwvYT4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PjxhIGhyZWY9Ii9Db21wZXRpdGlvbnNDb250ZW50L0NvbXBldGl0aW9uL2F3YXJkc19hdF9hX2dsYW5jZS5hc3B4Ij5Bd2FyZHMgQXQtQS1HbGFuY2U8L2E+PC9kaXY+DQo8L3N0cm9uZz48L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PjxzdHJvbmc+PGEgaHJlZj0iL2Jsb2dzL2ltYWdpbmVfY3VwX2ZpbmFscy9kZWZhdWx0LmFzcHgiPjxzdHJvbmc+SW1hZ2luZSBDdXAgQmxvZzwvc3Ryb25nPiA8L2E+PC9zdHJvbmc+PC9kaXY+ZAIODw8WAh8HBQVDQVJMQWRkZNBcgxQwtRKSG6LPgG3FuLLdB/CN" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="ImagineCupSuccessStories.aspx_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="ImagineCupSuccessStories.aspx_files/ScriptResource.js" type="text/javascript"></script>
+<script src="ImagineCupSuccessStories.aspx_files/ScriptResource_002.js" type="text/javascript"></script>
+<div>
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWIgK627edDAKYh6jqAQKhjNWAAgLbs6bfDwL+o4L6DgK/mqfFAQLt4ICzDwKR7cD7AQKN7YS9BgLR7eDPDgKw7NCFBwLC76gsAsLv3IQHAqjszKIMAvbgpKEGAt3gwMMOAv3g0KUGAozm3PcMAvTmvP4MAu7mlJcBAqzh5OcCAvL1naoNAp//wuoJAsTjqNYIAvLh9JULAsPviMcEAq/hyMYNArTt6OoIAp3jtIAMArrjuNsHArDnqLYGAsnmnI8LApiO/cgBAsy7q6ANVOoL1NopQ9lB39Q8g0ujjMbS4WM=" type="hidden">
+</div>
+     <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager_Login', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 600);
+//]]>
+</script>
+
+     <input name="ctl00$ctl00$hidden_CMSChangeFlag" id="ctl00_ctl00_hidden_CMSChangeFlag" value="false" type="hidden">
+    <input name="ctl00$ctl00$hidden_CMSIsReverDraftVisible" id="ctl00_ctl00_hidden_CMSIsReverDraftVisible" value="false" type="hidden">
+    <input name="ctl00$ctl00$hidden_CMSIsRevertDraftAvilableAfterEdit" id="ctl00_ctl00_hidden_CMSIsRevertDraftAvilableAfterEdit" value="false" type="hidden">
+    <input name="ctl00$ctl00$hidden_signup09_email" id="ctl00_ctl00_hidden_signup09_email" type="hidden">
+        <div id="container">
+            <div style="height: 128px;"><a href="http://imaginecup.com/Default.aspx"><img src="ImagineCupSuccessStories.aspx_files/logo.png" class="logoLink" alt="Imagine Cup"></a>
+            <script type="text/javascript" language="javascript">
+                swapImage(); 
+                </script><img src="ImagineCupSuccessStories.aspx_files/environment_poster.png"><img src="ImagineCupSuccessStories.aspx_files/medical_poster.png"> 
+            
+            </div>
+            <div id="content">
+             <noscript>
+<div id="ctl00_ctl00_no_script_nav" class="no_script_nav"> <DIV
+style='float: left; padding-left: 10px; padding-right: 10px;'><a
+href='/default.aspx'<strong>Home</strong></a><br/>&nbsp;&nbsp;<a
+href='/default.aspx'>Imagine Cup Home</a><br/></div><DIV style='float:
+left; padding-left: 10px; padding-right: 10px;'><a
+style='cursor:default;'><strong>Compete</strong></a><br/>&nbsp;&nbsp;<a
+href='/About/Welcome.aspx'>Start Here</a><br/>&nbsp;&nbsp;<a
+href='/Registration/Default.aspx'>Register</a><br/>&nbsp;&nbsp;<a
+href='/Competition/Overview.aspx'>Competition
+Overview</a><br/>&nbsp;&nbsp;<a
+style='cursor:default;'><strong>Competitions</strong></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=37'>Software
+Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=40'>Embedded
+Development</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=38'>Game
+Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=39'>Digital
+Media</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=41'>IT
+Challenge</a><br/>&nbsp;&nbsp;<a
+href='/CompetitionsContent/Competition/awards_at_a_glance.aspx'>Award
+Overview</a><br/>&nbsp;&nbsp;<a
+style='cursor:default;'><strong>Awards</strong></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=46'>Envisioning
+2020 Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=45'>Internet
+Explorer 8 Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=42'>Interoperability
+Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=44'>Next
+Generation Web Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=43'>Touch &
+Tablet Accessibility Award</a><br/>&nbsp;&nbsp;<a
+href='/Competition/Leaderboard.aspx'>Leaderboards</a><br/></div><DIV
+style='float: left; padding-left: 10px; padding-right: 10px;'><a
+style='cursor:default;'><strong>Learn</strong></a><br/>&nbsp;&nbsp;<a
+href='/Support/FAQ.aspx'>FAQ</a><br/>&nbsp;&nbsp;<a
+href='/About/WhatIs.aspx'>What is the Imagine
+Cup?</a><br/>&nbsp;&nbsp;<a
+href='/Competition/ResourcesfromMicrosoftLearning.aspx'>Microsoft
+Learning Resources</a><br/>&nbsp;&nbsp;<a
+href='/CompetitionsContent/learn/key_technologies.aspx'>Key
+Technologies</a><br/>&nbsp;&nbsp;<a
+href='/Support/MentorResources.aspx'>Mentor
+Resources</a><br/>&nbsp;&nbsp;<a
+href='http://imaginecup.com/CompetitionsContent/MDG.aspx'>2010 Theme
+and MDGs</a><br/></div><DIV style='float: left; padding-left: 10px;
+padding-right: 10px;'><a
+style='cursor:default;'><strong>Socialize</strong></a><br/>&nbsp;&nbsp;<a
+style='cursor:default;'><strong>Forums</strong></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/'>All Forums</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/18.aspx'>Software
+Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/20.aspx'>Embedded
+Development</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/63.aspx'>Game Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/113.aspx'>Digital
+Media</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/forums/16.aspx'>IT
+Challenge</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/120.aspx'>Who Owns Your Idea</a><br/>&nbsp;&nbsp;<a
+href='/blogs/imagine_cup_finals/default.aspx'>Imagine Cup
+Blog</a><br/>&nbsp;&nbsp;<a
+href='/About/MicrosoftStudentPrograms.aspx'>Student
+Programs</a><br/>&nbsp;&nbsp;<a
+href='/CompetitionsContent/ImagineCupSuccessStories.aspx'>Success
+Stories</a><br/></div><DIV style='float: left; padding-left: 10px;
+padding-right: 10px;'><a
+style='cursor:default;'><strong>Explore</strong></a><br/>&nbsp;&nbsp;<a
+href='/Support/exploreimaginecup.aspx'>Explore Our
+History</a><br/>&nbsp;&nbsp;<a href='/About/Sponsors.aspx'>Our
+Sponsors</a><br/></div> </div> </noscript>
+                <div id="menuContainer">
+                    <!--Read the dynamically genetrated HTML for the menu -->
+                <ul id="nav">
+                    <li class="navHome"><a href="http://imaginecup.com/default.aspx">Home</a><ul><li class="navAll"><a href="http://imaginecup.com/default.aspx">Imagine Cup Home</a></li></ul></li><li class="navCompete"><a style="cursor: default;">Compete</a><ul><li class="navAll"><a href="http://imaginecup.com/About/Welcome.aspx">Start Here</a></li><li class="navAll"><a href="http://imaginecup.com/Registration/Default.aspx">Register</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/Overview.aspx">Competition Overview</a></li><li><a style="cursor: default;">Competitions</a><ul><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=37">Software Design</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=40">Embedded Development</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=38">Game Design</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=39">Digital Media</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=41">IT Challenge</a></li></ul></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/Competition/awards_at_a_glance.aspx">Award Overview</a></li><li><a style="cursor: default;">Awards</a><ul><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=46">Envisioning 2020 Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=45">Internet Explorer 8 Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=42">Interoperability Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=44">Next Generation Web Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=43">Touch &amp; Tablet Accessibility Award</a></li></ul></li><li class="navAll"><a href="http://imaginecup.com/Competition/Leaderboard.aspx">Leaderboards</a></li></ul></li><li class="navLearn"><a style="cursor: default;">Learn</a><ul><li class="navAll"><a href="http://imaginecup.com/Support/FAQ.aspx">FAQ</a></li><li class="navAll"><a href="http://imaginecup.com/About/WhatIs.aspx">What is the Imagine Cup?</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/ResourcesfromMicrosoftLearning.aspx">Microsoft Learning Resources</a></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/learn/key_technologies.aspx">Key Technologies</a></li><li class="navAll"><a href="http://imaginecup.com/Support/MentorResources.aspx">Mentor Resources</a></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/MDG.aspx">2010 Theme and MDGs</a></li></ul></li><li class="navSocialize"><a style="cursor: default;">Socialize</a><ul><li><a style="cursor: default;">Forums</a><ul><li class="navAll"><a href="http://imaginecup.com/forums/">All Forums</a></li><li class="navAll"><a href="http://imaginecup.com/forums/18.aspx">Software Design</a></li><li class="navAll"><a href="http://imaginecup.com/forums/20.aspx">Embedded Development</a></li><li class="navAll"><a href="http://imaginecup.com/forums/63.aspx">Game Design</a></li><li class="navAll"><a href="http://imaginecup.com/forums/113.aspx">Digital Media</a></li><li class="navAll"><a href="http://imaginecup.com/forums/16.aspx">IT Challenge</a></li><li class="navAll"><a href="http://imaginecup.com/forums/120.aspx">Who Owns Your Idea</a></li></ul></li><li class="navAll"><a href="http://imaginecup.com/blogs/imagine_cup_finals/default.aspx">Imagine Cup Blog</a></li><li class="navAll"><a href="http://imaginecup.com/About/MicrosoftStudentPrograms.aspx">Student Programs</a></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/ImagineCupSuccessStories.aspx">Success Stories</a></li></ul></li><li class="navExplore"><a style="background: transparent none repeat scroll 0% 0%; cursor: default; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Explore</a><ul><li class="navAll"><a href="http://imaginecup.com/Support/exploreimaginecup.aspx">Explore Our History</a></li><li class="navAll"><a href="http://imaginecup.com/About/Sponsors.aspx">Our Sponsors</a></li></ul></li>
+                </ul>
+                 <div id="ctl00_ctl00_div_Language" style="padding: 7px 6px 7px 0px; text-align: right;">
+                    <div id="languageContainer">
+                        <span style="padding: 0px; width: 150px; color: rgb(110, 110, 110);">
+                            <select name="ctl00$ctl00$DropDownList_PageLanguage" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$DropDownList_PageLanguage\',\'\')', 0)" id="ctl00_ctl00_DropDownList_PageLanguage" class="masterDDL">
+	<option value="id-id">Bahasa</option>
+	<option value="bg-bg">Bulgarian</option>
+	<option value="cs-cz">Česky</option>
+	<option value="de-de">Deutsch</option>
+	<option value="et-ee">Eesti</option>
+	<option selected="selected" value="en-us">English</option>
+	<option value="es-es">Español</option>
+	<option value="fr-fr">Français</option>
+	<option value="hr-hr">Hrvatski</option>
+	<option value="it-it">Italiano</option>
+	<option value="hu-hu">Magyar&nbsp;</option>
+	<option value="pl-pl">Polski</option>
+	<option value="pt-pt">Português</option>
+	<option value="pt-br">Português Brasileiro</option>
+	<option value="sk-sk">slovenčina</option>
+	<option value="sl">slovenski</option>
+	<option value="sr-latn-cs">Srpski</option>
+	<option value="vi-vn">Tiếng Việt</option>
+	<option value="tr-tr">Türkçe</option>
+	<option value="el-gr">Ελληνικά</option>
+	<option value="ru-ru">Русский</option>
+	<option value="ar-ae">العربية‏</option>
+	<option value="ko-kr">한국어</option>
+	<option value="ja-jp">日本語</option>
+	<option value="zh-cn">简体中文</option>
+	<option value="zh-tw">繁體中文</option>
+
+</select>
+                        </span>
+                    </div>
+                </div>
+                </div>
+                
+                 <div>
+                <center>
+                    
+                </center>
+            </div>                       
+            <div class="signInStrip" style="width: 100%; height: 100%;">                    
+                <div class="signInStripLeft" style="width: 100%; background-color: rgb(232, 9, 42);">
+                        <div class="signInStripLeftPad">
+                        <div id="ctl00_ctl00_header_login" style="vertical-align: middle;">
+                            <table width="100%">
+                                <tbody><tr>
+                                    <td style="width: 40%;">
+                                        <div>
+                                            &nbsp;
+                                        </div>
+                                    </td>
+                                    <td style="width: 60%;">
+                                        <div style="text-align: right; padding-right: 5px;">
+                                            <a style="color: White;" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=10&amp;ct=1244007729&amp;rver=5.0.3265.0&amp;wp=MCMBI&amp;wreply=https:%2F%2Fprofile.microsoft.com%2FRegSysProfileCenter%2Fwizard.aspx%3Fwizid%3D9489462d-6b5c-40ed-8009-9a4f350d3703%26lcid%3D1033%26ci%3D104861&amp;lc=1033&amp;cb=LCID%3D1033%26WizID%3D9489462d-6b5c-40ed-8009-9a4f350d3703%26brand%3DMicrosoft&amp;id=74335" target="_blank">
+                                                Sign Up for Microsoft Student Newsletter 
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">
+                            You are not signed in.
+                                        <a id="ctl00_ctl00_HyperLink_Register" class="signInStrip" href="http://imaginecup.com/Registration/Default.aspx">Register</a>
+                            <span id="ctl00_ctl00_orLable"> or </span>
+                            
+                                        <a onclick="ShowFrame();ShowFrame(); return false;" id="ctl00_ctl00_HyperLink_LogIn" class="signInStrip" onmouseover="this.style.cursor='pointer'" href="javascript:__doPostBack('ctl00$ctl00$HyperLink_LogIn','')">Sign In.</a>
+                            
+                                    </td>
+                                    <td style="width: 60%;">
+                                        <div style="vertical-align: bottom; text-align: right; padding-right: 5px;">
+                                            <a id="ctl00_ctl00_HyperLink1" class="signInStrip" href="http://imaginecup.com/Competition/Rules-Regulations.aspx">Rules</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink2" class="signInStrip" href="http://imaginecup.com/Legal/CodeOfConduct.aspx">Code of Conduct</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink3" class="signInStrip" href="http://imaginecup.com/Legal/TermsOfUse.aspx">Terms of Use</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink4" class="signInStrip" href="http://imaginecup.com/Legal/PrivacyStatement.aspx">Privacy Policy</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink5" class="signInStrip" href="http://imaginecup.com/Support/ContactUs.aspx">Get Help</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        
+                                
+                        </div>
+                    </div>
+                
+            </div>            
+            <div id="ctl00_ctl00_Iframe_Lock" style="background-image: url(IC09_Background_Login_Invisible.png); z-index: 1; position: absolute; background-color: transparent; width: 100%; display: none; height: 884px; top: 0px; left: 0px;">
+                <div id="ctl00_ctl00_Div_CloseFrame" style="position: absolute; z-index: 100; top: 128px; left: 150px;">
+                    <iframe id="ctl00_ctl00_LoginFrame" style="border: medium none ; display: none;" allowtransperancy="true" src="ImagineCupSuccessStories.aspx_files/LoginPopUp.htm" width="376px" frameborder="0" height="268px" scrolling="no"></iframe>
+                    <a id="ctl00_ctl00_closeLink" onclick="CloseIframe();" style="left: 330px; top: 1px; font-size: 7pt; color: White; display: none; position: absolute; z-index: 100; cursor: pointer;">CLOSE</a>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div id="Page_Body">
+                
+    
+    
+    <div id="ctl00_ctl00_ContentPlaceHolder_HeaderBackground" class="CMSPageBackGroundGray">
+        <div id="genericHeadCMS">
+            <h2>
+                 <div id="ctl00_ctl00_ContentPlaceHolder_HeaderTitle" editable="yes">Imagine Cup Success Stories</div></h2>
+        </div>
+    </div>
+    <div class="clearL">
+    </div>
+    
+<table id="compBodyTable" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td class="compBodyLeft">
+                <div class="compBodyLeftPad" style="padding: 5px 25px 30px;">
+                    <div id="ctl00_ctl00_ContentPlaceHolder_ContentPlaceHolderCMS_div_PageContent" editable="Yes"><div _tempcsstext="null"><font color="black"><br>
+<a href="http://imaginecup.com/CompetitionsContent/ImagineCupSuccessStories.aspx#Submit"><strong>Contact Us</strong></a>&nbsp;to submit your success story! &nbsp;</font></div>
+<div _tempcsstext="null"><font color="black">&nbsp;</font></div>
+<div>
+<div>
+<div><font color="black">&nbsp;</font></div>
+</div>
+</div>
+<div>
+<h2><span style="font-size: 20pt;"><font color="black">Journeys&nbsp;and Success Stories </font></span></h2>
+</div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black">&nbsp;</font></div>
+<font color="black"><strong>
+</strong></font><div><font color="black"><strong><br>
+<br>
+</strong><strong><img alt="" src="ImagineCupSuccessStories.aspx_files/PEARL.jpg" vspace="5" width="175" align="right" border="0" height="127" hspace="5">INDIA:&nbsp;<br>
+<br>
+PEARL&nbsp;<br>
+</strong></font></div>
+<div><font color="black">Imagine Cup 2009 Software Design<br>
+<strong>Team Members</strong>:<br>
+Yogita Rochlani<strong></strong>, Sujay Kakarmath<strong></strong>, Sameet Singh<strong></strong>,&nbsp;Noel Sequeira<strong></strong> and&nbsp;Dr. Sunita Shanbhag (Mentor)<strong></strong>&nbsp;<br>
+<br>
+<strong></strong><br>
+Imagine Cup 2009 was an amazing journey for team PEARL. From the
+outset, our mentor helped us ask some very fundamental questions and
+ground our perceptions through rural visits. We're a team of medical
+and engineering students; we believe the world's toughest challenges
+can be addressed best by well-rounded teams that can bring different
+perspectives to the table. PEARL is an acronym for Proactive Emergency
+Alerting and Response Loop. The concept was so well received that
+Pronexus, the company behind VBVoice - an integral cog in our solution,
+agreed to extend the software to us free of cost! We're looking forward
+to running a pilot soon. Sameet and Noel have been through the Imagine
+Cup experience before, winning the Interoperability Award at Imagine
+Cup 2008. <br>
+<br>
+<img alt="" src="ImagineCupSuccessStories.aspx_files/egypt%2520game%2520dev%2520team.jpg" vspace="5" width="200" align="right" border="0" height="150" hspace="5"><br>
+<br>
+<strong>EGYPT:&nbsp;<br>
+<br>
+ATOM&nbsp;<br>
+</strong></font></div>
+<div><font color="black">Imagine Cup 2009 Game Development<br>
+<strong>Team Members</strong>:<br>
+Ahmed Mustafa Talat, Gina Safaa Eldin Mahmoud, Khalid Medhat Said, Mohamed Safaa and Eldin Mahmoud<strong></strong>&nbsp;<br>
+<br>
+We are friends from one school. Our story started when Ahmed and
+Mohamed met in June 2008 and decided to make their own game. Ahmed
+loves writing and drawing. He is always drawing many characters that he
+wants to see come alive. Mohamed has the passion to build his own game.
+Gina joined us because she also&nbsp;loves drawing. We invited Khalid
+in August 2009.&nbsp; When Imagine Cup 2007 started Khalid joined
+Software Development as he loves computers but he had no idea about how
+to program so&nbsp;he decided to learn a programming language and
+picked C#. When Khalid joined us he faced a problem to help us using
+the platform we chose before. he then recognized that Microsoft offers
+an easy platform “GDK.” While he was visiting the page of GDK he found
+that Microsoft offers a new platform XNA with C# that target Xbox360 we
+then started to build our game using XNA.&nbsp; For our good luck, we
+found that the Imagine Cup 2009 Game Development competition rules
+allowed us to use XNA which gave us experience and self-confidence that
+we&nbsp;sure were&nbsp;on the right road.<br>
+<br>
+</font></div>
+<div><font color="black"><br>
+<strong><img alt="" src="ImagineCupSuccessStories.aspx_files/NITH.jpg" vspace="5" width="220" align="right" border="0" height="119" hspace="5">NORWAY: <br>
+<br>
+NITHWalkers&nbsp;<br>
+</strong></font></div>
+<div><font color="black">Imagine Cup 2009 Game Development<br>
+<strong>Team Members</strong>:<br>
+Bjornar Herstad, Stig Rue Skansgård, Marius Brendmoe, and Michael Iversen&nbsp;<br>
+&nbsp;<br>
+Two of us participated in the Imagine Cup 2008 with good results. We
+then decided to make a new team with the best students at&nbsp;our
+school. We gained a lot of experience from participating in the Imagine
+Cup. As a designer I&nbsp;gained real experience from writing the
+design and developing this through a long period. At school you never
+get this kind of experience, so I strongly recommend every student
+participate in Imagine Cup&nbsp;and gain this real experience. The
+programmers&nbsp;have learned more than they ever would as normal
+students and they both have a part-time job as a result from their
+Imagine Cup entry.</font></div>
+<font color="black"><strong></strong>
+</font><div><font color="black"><br>
+<br>
+<strong><img alt="" src="ImagineCupSuccessStories.aspx_files/PoolIC%2520for%2520successstory.jpg" vspace="5" width="190" align="right" border="0" height="143" hspace="5">ARGENTINA: <br>
+<br>
+</strong></font></div>
+<font color="black"><strong></strong>
+</font><div><font color="black"><strong>UNDERDOGS&nbsp;<br>
+</strong></font></div>
+<div><font color="black">Imagine Cup 2009 Game Development <br>
+<strong>Team Members: <br>
+</strong>Julieta Chesini, Augusto Chesini and Javier Lenardón </font></div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black">We decided to participate in the Imagine Cup
+back in August of 2008. We met to talk and discuss the
+experience&nbsp;that each of us&nbsp;had. This discussion&nbsp;guided
+us to participate in the Game Development competition category.&nbsp;
+It took us 2 months to decide on one idea. It was&nbsp;at an annual
+exhibition of books, where the theme of education and problems of the
+world united and emerged in to&nbsp;the concept that we presented at
+the Imagine Cup 2009 Worldwide Finals contest.&nbsp; In either case
+we&nbsp;took a picture (right), where it looks like we agreed to
+participate on the idea and what we wanted to achieve with our project!</font></div>
+<div><font color="black"><br>
+<strong></strong><img alt="" src="ImagineCupSuccessStories.aspx_files/LEVV_IT_Brazil_successstory.jpg" vspace="5" width="188" align="right" border="0" height="251" hspace="5"><br>
+<br>
+<strong>BRAZIL: <br>
+<br>
+LEVV IT <br>
+</strong>Imagine Cup 2009 Game Development <br>
+<strong>Team Members: <br>
+</strong>Luciano José, Edgar Neto, Vinícius Ottoni, and Victor Rafael</font></div>
+<div>
+<div><font color="black"><strong></strong></font></div>
+<font color="black"><strong>&nbsp;</strong></font></div>
+<div><font color="black">We're four students from four different
+universities that got together with the goal of participating in this
+competition. Throughout the development process we've worked really
+hard and learned a lot about game design, about our world and about
+ourselves. A project that demands this kind of dedication and teamwork
+is a unique experience and opportunity to learn and grow both
+personally and professionally.<br>
+</font></div>
+<div><font color="black"><br>
+<br>
+<strong>CHINA:</strong> </font></div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black"><strong><img alt="" src="ImagineCupSuccessStories.aspx_files/chinese%2520competitors%2520success.jpg" vspace="5" width="252" align="right" border="0" height="188" hspace="5">Peng Guo</strong> and <strong>Jiaze Hua</strong> </font></div>
+<div><font color="black">Imagine Cup 2008&nbsp;&nbsp; </font></div>
+<div><font color="black">Project Hoshimi - Silver Medal </font></div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black">Peng and Jiaze are great models for all
+Imagine Cup competitors. After winning a silver medal at the Imagine
+Cup last year in Paris, they&nbsp;felt stronger and more confident as
+competitors.&nbsp; Peng Guo, will graduate this summer, and has an
+offer from Alibaba (a very good company in China).&nbsp; Jiaze Hua, is
+joining the Software Design competition for Imagine Cup 2009 as a team
+leader, and trying his best to make a high-quality entry.&nbsp;
+Regarding their 2008 Imagine Cup experience, they shared the following:
+"There were 4 warm up competitions before the turn 2 selection. In the
+2nd of the&nbsp;warm ups, we lost all of the games. In the 4th warm up,
+we only defeated one team. We didn’t give up – we kept moving forward.
+So when we got the chance to go to Paris for the World Finals- it was a
+roller coaster ride! One minute we were up and then we were down.&nbsp;
+In the end we got the silver medal! The experience of this competition
+taught us: never give up, just do the best. And… don’t forget to enjoy
+the game!" <br>
+<br>
+<strong><br>
+UGANDA: </strong></font></div>
+<div _tempcsstext="null"><font color="black">&nbsp;<br>
+<strong><img alt="" src="ImagineCupSuccessStories.aspx_files/uganda.jpg" vspace="5" width="239" align="right" border="0" height="162" hspace="5">Native Green</strong><br>
+Imagine Cup 2008- Software Design <br>
+Competed in Imagine Cup 2009 </font></div>
+<div _tempcsstext="null"><font color="black"><strong>Team Members</strong>: Ivan Okori, David Musoke, Wycliffe Sagini and Joseph Kasolo</font></div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black">After competing in Imagine Cup 2008, the
+members of Native Green expected even more entries for 2009 and it was
+a tougher competition.&nbsp;The 2009 Worldwide Finals took place in
+Africa,&nbsp;and they expected a clear win by an African team, not only
+because&nbsp;of a&nbsp;home advantage, but to show the rest of the
+world that there is great technological talent in Africa.
+Africa&nbsp;can…yes, we all can.</font></div>
+<div><font color="black"><br>
+The members of Native Green are in their final year Bachelors of
+Science in Computer Science students at Makerere University. Joseph and
+Ivan have a private firm VirgoMedia in Kampala that concentrates on
+software design, website development and IT solutions. David has his
+own company that works within the same solutions. Wycliffe works on
+contract with Keane Consulting Technologies as a software
+developer.&nbsp; </font></div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black"><strong><br>
+FRANCE:</strong> </font></div>
+<div><font color="black"><strong><img style="float: right;" alt="" src="ImagineCupSuccessStories.aspx_files/rowe.jpg" vspace="5" width="244" align="left" border="0" height="162" hspace="5"><br>
+Johanna Rowe</strong></font></div>
+<div><font color="black">Imagine Cup 2008 <br>
+Bronze Medal - Interface Design </font></div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black">I am in my fifth and last year of studies in
+Strate College Designers (Design School).&nbsp; The Imagine Cup
+experience allowed me to meet a large number of people from many
+different places around the world. The competition was an opportunity
+to design a solution for one of the major issues facing all of us today
+: protecting the environment. In planning my design, I discovered new
+design tools like Expression Design and Expression Blend - both which
+proved very interesting from a creation perspective. The Imagine Cup
+has been a true ramp up for my career, and overall it was a very
+fulfilling experience.&nbsp; The Worldwide Finals was the definite
+climax of that experience:&nbsp; a crazed week filled with encounters,
+parties, excursions in so many unforgettable places with unforgettable
+people.<br>
+</font></div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black"><strong><img style="text-align: left; background-color: rgb(255, 255, 255); float: right;" alt="" src="ImagineCupSuccessStories.aspx_files/successes%2520-%2520Paux.jpg" vspace="5" width="150" align="right" border="5" height="241" hspace="5">Jean-Benoit Paux</strong></font></div>
+<div><font color="black">Imagine Cup 2007 and Imagine Cup 2008 </font></div>
+<div><font color="black">Gold Medal – IT Challenge 2008</font></div>
+<p><font color="black">I’m currently working as a System Engineer at
+Avanade, the first integrator of Microsoft technologies. My role as a
+consultant, is to give clients the opportunity to leverage Microsoft
+products to their needs and integrate them into their existing
+architecture. Since the IT Challenge was created, my school has had at
+least one participant on the Worldwide Finals podium. I was encouraged
+to participate. The quizzes were the training and the competition
+really began with the beginning of Round 2. It’s a really interesting
+exercise to write a business proposal and to discover at least 30
+Microsoft products.&nbsp; Trying to understand how to integrate them
+into a viable solution meeting the requested functionalities and needs
+- that was the challenge! Then at the first final in 2007 in Seoul, I
+missed it. I wasn’t prepared enough and I lost too many hours making
+things useless. I promised to come back because it was an unforgettable
+moment with friends, staff, competitors.&nbsp; And then the next year,
+voila,&nbsp; I participated again, and I wanted it to be perfect. My
+business case was complete and accurate. In the finals I didn’t stress
+out. I made things smoothly and carefully and made sure it worked. The
+Imagine Cup gave me the force to go further, to exceed my limits and to
+achieve a goal. I’ll remember the parties, the discussions with other
+students and judges, the places we visited, the brilliant projects we
+discovered. It was so worth it.</font></p>
+<p><font color="black"><strong><img style="border-color: rgb(51, 153, 102); float: right;" alt="" src="ImagineCupSuccessStories.aspx_files/talmard.jpg" vspace="5" width="244" align="left" border="5" height="163" hspace="5">Benjamin Talmard</strong> </font></p>
+<div><font color="black">Imagine Cup 2007 and Imagine Cup 2008 <br>
+Gold Medal - Web Development 2007</font></div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black">I have just joined Microsoft as a Technical
+Account Manager in Paris, France, working with key accounts in
+different sectors. As a team from Efrei, our engineering school in
+France, we decided to participate to Imagine Cup 2007 in order to have
+fun and to improve our knowledge in Web Development. After several
+steps, we qualified for the Worldwide Finals in Korea, and achieved
+both goals. It was very interesting to meet people from all over the
+world.&nbsp; People, fun and skills are definitely 3 key words I take
+from my Imagine Cup experience. After the finals, we had a break before
+the next competition, Imagine Cup 2008, in France. Unfortunately, we
+did not pass the French finals, but we reached second place. However,
+as a Parisian, I was able to attend several events during the Worldwide
+Finals in Paris.&nbsp; I was really ecstatic to feel again the awesome
+Imagine Cup atmosphere. <strong><br>
+<br>
+<img style="float: right;" alt="" src="ImagineCupSuccessStories.aspx_files/bellet.jpg" vspace="5" width="244" align="left" border="0" height="183" hspace="5">Vincent Bellet</strong> </font></div>
+<div><font color="black">Imagine Cup 2006 </font></div>
+<div><font color="black">Semi-finals in France - Software Design </font></div>
+<p><font color="black">I am currently a .Net consultant at Microsoft
+Consulting Services. Right after the Imagine Cup, it was time for me to
+find a job, and I was lucky enough to get many proposals. I finally
+joined Societe General Investment Banking in London as a Technical Lead
+on .NET / SQL Server based solutions. I got promoted about a year after
+that as a project manager in a tactical web development team, and I
+managed several projects there. After that, I decided to join
+Microsoft.&nbsp; Imagine Cup was a real ramp up to success for me, it
+helped distinguish me from other candidates at the end of my studies.
+It also provided me contact with Microsoft Technologies.&nbsp; Right
+now I live a life of innovation, passion and technology - that one can
+only experience at Microsoft. The Imagine Cup competition puts you in
+the spotlight media wise.&nbsp; I guarantee that Talent Acquisition
+teams take a long hard look at what you accomplish through the IC
+competition. From a personal perspective, the Imagine Cup was a major
+turn in the appetite I had for meeting new people, discovering new
+countries, cultures and technologies. I will always remember the
+awesome diversity of solutions from different countries that you can
+see at the Worldwide Finals. Just incredible!</font></p>
+<p><font color="black">&nbsp;</font></p>
+<div><font color="black"><strong>RUSSIA:</strong> <br>
+</font></div>
+<div><font color="black">&nbsp;</font></div>
+<div>
+<div align="left"><font color="black"><strong>IGNITION</strong><br>
+Imagine Cup 2008<br>
+Enterprise Engineering&nbsp;Award - Software Design</font></div>
+<div align="left"><font color="black"><strong>Team Members</strong>:&nbsp;<img style="float: right;" alt="" src="ImagineCupSuccessStories.aspx_files/russia_SUCCESS_2.jpg" vspace="5" width="254" align="left" border="0" height="171" hspace="5">Anatoly Nikitin, Roman Belov, and Daria Elkina&nbsp;&nbsp;&nbsp;</font></div>
+<div align="left"><font color="black">&nbsp;</font></div>
+<div align="left"><font color="black">Anatoly, Roman and Daria are
+still working on their project, which has been implemented and tested
+in Southern district of Russia. They are awaiting their trip to Redmond
+later in 2009. Ignition was the most spectacular team in Imagine Cup
+2008 in Russia, and they were without a doubt selected to represent
+Russia&nbsp;at the Worldwide Finals. Their project was, in fact, very
+scientific – they designed a system to predict wild fire behavior.
+Their presentation on-stage was like a theater performance. Thus their
+project was a perfect demonstration of an Imagine Cup idea: let
+students have fun, while working on the very serious problems.&nbsp; At
+the Imagine Cup Worldwide Finals, the team met another group of
+students from Bulgaria, who worked on a similar project of disaster
+discovery and elimination. It also happened that both teams were given
+an Engineering Excellence Award – entitling them to visit Redmond and
+work together with Microsoft engineers to further improve their
+project. The project of Russian team was heavily connected to
+high-performance computing, and they are looking forward to work on one
+of the largest worldwide clusters in Redmond in summer 2009.</font></div>
+</div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black"><strong>INSPIRATION</strong><br>
+Imagine Cup 2005<br>
+First place - Software Design</font></div>
+<div><font color="black"><strong>Team Members</strong>: <img style="float: right;" alt="" src="ImagineCupSuccessStories.aspx_files/stanvonog_russia_success.jpg" vspace="5" width="244" align="right" border="0" height="196" hspace="5">Stas Vonog, Nick Surin, Alexander Popov, and Ruslan Gilfanov</font></div>
+<div><font color="black">&nbsp;</font></div>
+<div><font color="black">Stas Vonog and Nick Surin have opened their
+own startup company, Musigy and developed further their technology that
+they created for the Imagine Cup. In 2004, students from two different
+Moscow universities, Moscow State University and Moscow Institute of
+Physics and Technology decided to come together to develop a joint
+project for the Imagine Cup. Two of them were guitar and piano players,
+while the other two were mostly interested in technology. They
+developed a project called OmniMusic, which allowed musicians from
+remote locations to play together using Internet2 connectivity,
+overcoming the severe limitations of sound delays introduced by all
+parts of sound stack in Windows and transmitting software. At the
+Worldwide Finals, they played “Imagine” by John Lennon on stage,
+causing the largest round of applause from the
+audience.&nbsp;&nbsp;They received 1st place in the Software Design
+category and an Innovation Accelerator award. After taking part in
+Innovation Accelerator, Stas and Nick decided to continue their
+product, and invested the award money into further personal development
+– they took part in Silicon Valley conference and were able to find
+financing for their project, which has been renamed Musigy. Later on,
+Musigy technology was used to hold half-an-hour distributed jazz
+concert “Jazz at the Speed of Light”, between US, Russia and Ukraine,
+which was organized as a part of large Jazz festival. Their technology
+was demonstrated on CeBIT 2006, and presented to Bill Gates when he
+visited Moscow in 2007. More information is available <a href="http://www.stanvonog.com/" target="_blank">here</a>.</font></div>
+<div><font color="black">&nbsp;</font></div>
+<div>
+<div>
+<hr>
+</div>
+<div><font color="black"><a name="Submit"></a><br>
+<strong>Competitors - &nbsp;Put your name here!</strong> Provide
+motivation to current and future Imagine Cup
+participants.&nbsp;&nbsp;All we need are videos, photos and short
+stories featuring you and your team. Tell us about the&nbsp;hard at
+work you did to solve the world’s toughest problems.&nbsp;&nbsp;Please
+also&nbsp;provide the following:&nbsp; <br>
+<br>
+1.&nbsp;Team members full names and mentor name (if applicable) <br>
+2.&nbsp;Imagine Cup&nbsp;team name and the year(s) you participated in the Imagine Cup. <br>
+3.&nbsp;Country/Region<br>
+4. A short paragraph on your Imagine Cup experience to date (in English).</font></div>
+<div></div>
+<div><font color="black">&nbsp;</font></div>
+<div>
+<div><font color="black"><a href="http://imaginecup.com/Support/ContactUs.aspx"><strong>Contact&nbsp;us</strong></a>&nbsp;to submit your success story! <br>
+<br>
+&nbsp;</font></div>
+</div>
+</div>
+<div align="left"><font color="black">&nbsp;</font></div>
+<font color="black"></font></div>
+                </div>
+            </td>
+            <td id="compBodyRight">
+                <div id="compBodyRightPad">
+                    <div>
+                        <div id="ctl00_ctl00_ContentPlaceHolder_ContentPlaceHolderCMS_div_SideBox" editable="Yes"><h3>Helpful&nbsp;Links</h3>
+<div><br>
+<strong><a href="http://imaginecup.com/Registration/Default.aspx"><strong>Register Now!</strong></a></strong>
+<div><a href="http://imaginecup.com/About/Welcome.aspx"><strong><br>
+Start Here</strong></a><br>
+</div>
+</div>
+<div></div>
+<div><strong><a href="http://imaginecup.com/Support/FAQ.aspx"><strong><br>
+FAQ</strong></a></strong> </div>
+<div></div>
+<div>&nbsp;</div>
+<div><a href="http://imaginecup.com/About/WhatIs.aspx"><strong>What is the Imagine Cup?</strong></a>&nbsp;<br>
+</div>
+<div><strong><a href="http://imaginecup.com/Competition/Overview.aspx"><strong><br>
+Competition Overview</strong> </a>
+<div>&nbsp;</div>
+<div><a href="http://imaginecup.com/CompetitionsContent/Competition/awards_at_a_glance.aspx">Awards At-A-Glance</a></div>
+</strong></div>
+<div>&nbsp;</div>
+<div><strong><a href="http://imaginecup.com/blogs/imagine_cup_finals/default.aspx"><strong>Imagine Cup Blog</strong> </a></strong></div></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+
+   
+
+            </div>
+            
+            <div style="padding: 20px; background-color: White; font-size: 8pt; float: left;">
+      
+      
+      
+                <span id="ctl00_ctl00_Span_relatedLinks" editable="Yes"> 
+                    <table style="width: 760px; height: 105px;" border="0" cellpadding="2" cellspacing="2">
+                        <tbody>
+                            <tr>
+                            
+                                <td>
+                                    <h3>Software</h3>
+                                </td>
+                                <td>
+                                    <h3>Discounts</h3>
+                                </td>
+                                <td>
+                                    <h3>Student Activities</h3>
+                                </td>
+                                <td>
+                                    <h3>Student Resources</h3>
+                                </td>
+                                <td>
+                                    <h3>Fun Stuff</h3>
+                                </td>
+                            
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-7.aspx" target="_blank" class="footerMicrosoftLinks" title="Windows 7">Windows 7</a>
+                                </td>
+                                <td>
+                                    <a href="https://www.dreamspark.com/" target="_blank" class="footerMicrosoftLinks" title="DreamSpark">DreamSpark</a>
+                                </td>
+                                <td>
+                                    <a href="http://student-partners.com/default.aspx" target="_blank" class="footerMicrosoftLinks" title="Microsoft Student Partners">Microsoft Student Partners</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/default.aspx" target="_blank" class="footerMicrosoftLinks" title="MSCOM/Student">MSCOM/Student</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-media-center.aspx" target="_blank" class="footerMicrosoftLinks" title="Windows Media Center">Windows Media Center</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/expression-studio.aspx" target="_blank" class="footerMicrosoftLinks" title="Expression Studio">Expression Studio</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/learning/en/us/certification/cert-benefits.aspx" target="_blank" class="footerMicrosoftLinks" title="Certification Exams">Certification Exams</a>
+                                </td>
+                                <td>
+                                    <a href="http://imaginecup.com/Default.aspx" target="_blank" class="footerMicrosoftLinks" title="Imagine Cup">Imagine Cup</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/studentstobusiness/home/default.aspx" target="_blank" class="footerMicrosoftLinks" title="Students to Business">Students to Business</a>
+                                </td>
+                                <td>
+                                    <a href="http://research.microsoft.com/en-us/um/cambridge/projects/autocollage/" target="_blank" class="footerMicrosoftLinks" title="AutoCollage">AutoCollage</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/visual-studio.aspx" target="_blank" class="footerMicrosoftLinks" title="Visual Studio">Visual Studio</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/education/aerfind.aspx" target="_blank" class="footerMicrosoftLinks" title="Authorized Reseller Finder">Authorized Reseller Finder</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/rally/" target="_blank" class="footerMicrosoftLinks" title="Student Rally">Student Rally</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/career/own-your-future.aspx" target="_blank" class="footerMicrosoftLinks" title="Own Your Future">Own Your Future</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/funstuff/games-for-windows.aspx" target="_blank" class="footerMicrosoftLinks" title="Games for Windows">Games for Windows</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-live.aspx" target="_blank" class="footerMicrosoftLinks" title="Windows Live">Windows Live</a>
+                                </td>
+                                <td>
+                                    <a href="http://microsoft.journeyed.com/home.asp" target="_blank" class="footerMicrosoftLinks" title="JourneyEd">JourneyEd</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.facebook.com/microsoftstudent" target="_blank" class="footerMicrosoftLinks" title="Facebook">Facebook</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/learningspace/Products.aspx?prod=math" target="_blank" class="footerMicrosoftLinks" title="Microsoft Math">Microsoft Math</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/funstuff/xbox.aspx" target="_blank" class="footerMicrosoftLinks" title="Xbox">Xbox</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/office-2007.aspx" target="_blank" class="footerMicrosoftLinks" title="Microsoft Office">Microsoft Office</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/discounts/theultimatesteal-us/default.aspx" target="_blank" class="footerMicrosoftLinks" title="Microsoft Office">Microsoft Office</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.msstudentlounge.com/" target="_blank" class="footerMicrosoftLinks" title="Microsoft Student Lounge">Microsoft Student Lounge</a>
+                                </td>
+                                <td>
+                                    <a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=10&amp;ct=1243512578&amp;rver=5.0.3265.0&amp;wp=MCMBI&amp;wreply=https://profile.microsoft.com/RegSysProfileCenter/wizard.aspx?wizid=9489462d-6b5c-40ed-8009-9a4f350d3703&amp;lcid=1033&amp;ci=104861&amp;lc=1033&amp;" target="_blank" class="footerMicrosoftLinks" title="Student Newsletter">Student Newsletter</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-mobile.aspx" target="_blank" title="Windows Mobile">
+                                        Windows Mobile</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </span> 
+      
+            </div>
+            <div id="msLogo">
+                <span id="ctl00_ctl00_Label_Machinename" style="color: White; text-align: center; float: left;">CARLA</span>
+                <img src="ImagineCupSuccessStories.aspx_files/IC09_MSLogo.gif" alt="Microsoft">
+                </div>
+            <div class="footerStrip">
+                <div class="footerLeft">
+                    <div class="footerLeftPad">
+                        © Copyright 2009-2010 Microsoft Corporation. All Rights Reserved.
+                    </div>
+                </div>
+                <div class="footerRight">
+                    <div class="footerRightPad">
+                        <a id="ctl00_ctl00_A5" class="footerLink" href="http://imaginecup.com/Competition/Rules-Regulations.aspx">Rules</a>&nbsp;
+                        <a id="ctl00_ctl00_A6" class="footerLink" href="http://imaginecup.com/Legal/CodeOfConduct.aspx">Code of Conduct</a>&nbsp;
+                        <a id="ctl00_ctl00_A7" class="footerLink" href="http://imaginecup.com/Legal/TermsOfUse.aspx">Terms of Use</a>&nbsp;
+                        <a id="ctl00_ctl00_A8" class="footerLink" href="http://imaginecup.com/Legal/PrivacyStatement.aspx">Privacy Policy</a>&nbsp;
+                        <a id="ctl00_ctl00_A10" class="footerLink" href="http://imaginecup.com/Support/ContactUs.aspx">Get Help</a>&nbsp;
+                    </div>
+                </div>
+            </div>
+            <div>
+                <table width="100%">
+                    <tbody><tr>
+                        <td class="footerCredits" align="center">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footerCredits" align="center">
+                            <span id="ctl00_ctl00_Label_Credits" class="footerLeftPad">This site is developed and hosted for Microsoft by Fast Track Team, Inc.</span>
+                        </td>
+                    </tr>
+                </tbody></table>                                
+            </div>
+        </div>
+    </div>
+        
+     <input name="ctl00$ctl00$hf_TrackEdit" id="ctl00_ctl00_hf_TrackEdit" value="0" type="hidden">
+      
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+    
+    <form name="form_ITQuiz" method="post" action="">
+    <input name="ctl00$ctl00$hidden_UserId" id="ctl00_ctl00_hidden_UserId" type="hidden">
+    <input name="ctl00$ctl00$hidden_TimeStamp" id="ctl00_ctl00_hidden_TimeStamp" type="hidden">
+    <input name="ctl00$ctl00$hidden_ReturnUrl" id="ctl00_ctl00_hidden_ReturnUrl" type="hidden">
+    </form>
+    
+    
+<script src="ImagineCupSuccessStories.aspx_files/broker-config.js"></script></body></html>

@@ -1,0 +1,529 @@
+﻿html,body 
+{
+	padding:0;
+	font-family:Verdana;
+	font-size:11px;
+}
+
+img 
+{
+	border: 0;
+}
+
+.page 
+{
+	width:980px;
+	margin:0px auto;
+}
+
+.header
+{
+	text-align:right;
+	padding-bottom:15px;
+	display:table-row;
+}
+
+#headerLink
+{
+    color: #586B72;
+}
+
+#subPlatformReady
+{
+    color: #a7a7a7;
+}
+
+#subPowered
+{
+    font-size: 12px;
+}
+
+#contentHeader
+{
+	overflow:hidden;
+}
+
+#pageNav 
+{
+	float: left;
+	width: 700px;
+}
+
+#socialNav
+{
+	float: right;
+}
+
+#demoTitle
+{
+	float: right;
+}
+
+#upperDashboard
+{
+	overflow: hidden;
+	margin-top: 0px; /*was 50px;*/
+}
+#applicationContainer
+{
+	overflow: hidden; 
+	width: 270px; 
+	float: left;
+	margin-right:14px;
+	line-height:30px;
+
+}
+
+.applistwrapper
+{
+	height:120px;
+	overflow:auto;
+}
+
+.gridfooter
+{
+	font-size:11px;
+	background-color:#f8f7f7;
+	padding-top:10px;
+	overflow:hidden;
+	width:100%;
+}
+
+#appListContainer
+{
+	min-height: 160px;
+	overflow: auto;
+	width: 290px; 
+	float: left;
+	margin-right:14px;
+	line-height:30px;
+}
+
+#appListItems
+{
+	height: 129px;
+	overflow: auto;
+}
+
+#applicationContainer table
+{
+	width:100%;
+}
+
+#appListHeader
+{
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;     
+	height:29px;
+	background-color:#959595;
+	color:#333;
+	overflow:hidden;
+}
+
+.appListName
+{
+	margin-left: 14px;
+}
+
+.selected .appListName
+{
+    margin-left: 10px;
+}
+
+.appListManage
+{
+	float: right;
+	margin-right: 15px;
+}
+
+.appItem .appListManage
+{
+	margin-right: 35px;
+}
+
+.appItem, #emptyAppList, #logInAppList
+{
+	border: 1px solid #bababa;
+	border-top: none;
+	background-color: #f4f4f4;
+}
+
+.appItem
+{
+	cursor: pointer;
+}
+
+.blankAppItem
+{
+    cursor: default;
+}
+
+#appListContainer .selected
+{
+    background-color: #ffffff;
+    border-left: 5px solid  #0ea1cb;
+    cursor: default !important;
+}
+
+#techListHeader
+{
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;     
+	overflow: hidden;
+	background-color:#959595;
+	color:#333;
+	line-height:29px;
+}
+
+#techListContainer a
+{
+	color:#5F91CC;
+}
+
+#techListContainer .selected
+{
+	border-bottom:solid 1px #c5c8cb;
+}
+
+.techList
+{
+	overflow:hidden;
+	height:30px;
+}
+
+.techItem
+{
+	width: auto; 
+	height:29px;
+	background-color: #f4f4f4;
+    border: 1px solid #bababa;
+    border-top: none;
+}
+
+.techListstatus
+{
+	float:left;
+	margin:3px 0px 0px 20px;
+}
+
+.techListstatus img
+{
+	vertical-align:middle;
+}
+
+.techListName
+{
+	float:left;
+	width:164px;
+	cursor: pointer;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	white-space:nowrap;
+	padding-left:15px;
+    border-right: 1px solid #bababa;
+}
+
+.techListDevelop, .techListTest, .techListMarket
+{
+    height: 29px;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #bababa;
+}
+
+.checkImage, .editButton, .deleteButton
+{
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.facebookSmallImage
+{
+    margin-top: 6px;
+}
+
+.techListActions
+{
+    display: inline-block;
+}
+
+.selected .techListName
+{
+	border-left: solid 5px #09a2cc;
+	padding-left:10px;
+}
+
+.techListDevelop
+{
+	float:left;
+	width: 72px;
+}
+
+.techListTest
+{
+	float:left;
+	width:86px;
+	overflow:hidden;
+}
+
+.techListMarket
+{
+	float:left;
+	width: 135px;
+	overflow:hidden;
+}
+
+.techListActions
+{
+	float:left;
+	width: 108px;
+	margin-left:8px;
+	line-height:30px;
+}
+
+.manageButton
+{
+	margin-right:5px
+}
+
+.manageButton:hover
+{
+	cursor: pointer;
+}
+
+#techListContainer
+{
+	float: left;
+	width: 600px;
+	margin-left: 46px;
+	min-height:120px;
+}
+
+.techListDevelop, .techListTest, .techListMarket
+{
+	display: inline-block;
+	text-align: center;
+}
+
+.techListActions
+{
+	display: inline-block;
+}
+
+.techListActions a 
+{
+	cursor: pointer;
+}
+
+#lowerNav 
+{
+	margin-top:20px;
+	margin-left:188px;
+	margin-bottom: 0;
+	padding-left: 10px;
+	font-size: 24pt;
+}
+
+#lowerNav li
+{
+	list-style: none;
+	display: inline;
+	margin: 5px;
+	padding-bottom: 0;
+}
+
+#lowerNav li a
+{
+	text-decoration: none;
+	vertical-align: middle;
+	color:#7B98A0;
+	width: 200px;
+	line-height: 42px;
+	display: inline-block;
+	padding: 0 5px;
+	background: #E1E1E1 url('/Images/tabBackground.gif') no-repeat bottom;
+}
+
+#lowerNav li a.selected
+{
+	text-decoration: none;
+	background-color: #FFFFFF;
+	color: #385b69;
+	cursor: default;
+}
+
+.tabHeaderImage
+{
+    padding-bottom: 8px;
+}
+
+.dialog 
+{
+	display: none;
+	
+	position: fixed;
+	top: 17%;
+	left: 50%;
+	
+	margin-left: -300px;
+	width: 600px;
+	
+	background-color: White;
+}
+
+#azurePopup
+{
+    width:500px;
+    margin-left:-250px;
+    padding:30px;
+}
+
+#appDetailsPopup
+{
+    position:absolute;
+    top:100px;
+    margin-left:-325px;
+    width:650px;
+    padding:30px;
+}
+
+#appDetailsPopup .inlineerror
+{
+    margin-top:3px;
+}
+
+#languages
+{
+	overflow:hidden;
+}
+
+#languages ul
+{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+#languages li
+{
+	list-style-type:none;
+}
+
+#languages label
+{
+    font-weight:normal;
+    text-align:left;
+}
+
+.languageGroup
+{
+	float:left;
+	width:180px;
+}
+
+.tabContentWrapper
+{
+	overflow:hidden;
+}
+
+ul.leftNav 
+{
+	list-style-type:none;
+	float:left;
+	width:205px;
+	margin-right: 45px;
+	margin-left: 0;
+}
+
+ul.leftNav a, ul.leftNav .disabled
+{
+	vertical-align: middle;
+	width: 200px;
+	line-height: 50px;
+	padding-left: 5px;
+	display:block;
+	margin-top: 0;
+	background: url('/Images/leftNavGradient.gif') no-repeat top right;
+}
+
+ul.leftNav a
+{
+    text-decoration: none;
+	vertical-align: middle;
+	background-color: #385b69;
+	color: #ffffff;
+	width: 199px;
+}
+
+ul.leftNav a.selected
+{
+	background-color: #E1E1E1;
+	color: #7B98A0;
+}
+
+ul.leftNav .disabled
+{
+    background-color: #ededed;
+    color: #cacaca;
+    width: 199px;
+}
+
+ul.leftNav a.selected 
+{
+	color:Black;
+	cursor:default;
+	background-color:transparent;
+}
+
+ul.leftNav li
+{
+    list-style: none;
+    padding: 0;
+	border-right: 1px solid #7698a3;
+}
+
+ul.leftNav li.leftNavPlunge
+{
+    height: 300px;
+    border-right: none;
+    background: url('/Images/leftNavPlunge.gif') no-repeat right top;
+}
+
+.leftNavTop
+{
+	border-right: 1px solid #7698a3;
+	height: 10px;
+}
+
+.leftNavContent
+{
+	padding-top: 20px;
+	padding-left: 210px;
+	border-top: 1px solid #7698a3;
+}
+
+#whyAzureLink
+{
+    margin-left: 40px;
+}
+
+#socialLinks
+{
+	text-align:right;
+	margin-top: 60px;
+}
+
+.appTechnology
+{
+    padding-bottom:5px;
+}
+
+#appVerifyDescription, #appVerifyConfirm, #appVerifyCheckboxContainer
+{
+    margin-top: 10px;
+}
+
+.userEmail 
+{
+    width: 200px;
+    display: inline-block;
+}

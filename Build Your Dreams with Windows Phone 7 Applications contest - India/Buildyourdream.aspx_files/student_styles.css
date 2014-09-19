@@ -1,0 +1,321 @@
+﻿body
+{
+	margin:0;
+	padding:0;
+	font:normal 12px 'Segoe UI';
+	color:#000000;
+	background:url(../images/bodybgtile.jpg) repeat-x left top #619c3d;
+}
+a{
+cursor: hand;
+}
+tr 
+{
+	vertical-align:top;
+}
+
+img 
+{
+	margin:0;
+	border:none;
+}
+
+a 
+{
+	color:#006bc8;
+	text-decoration:none;
+}
+
+a:hover 
+{
+	color:#006bc8;
+	text-decoration:underline;
+}
+
+h1 
+{
+	margin:10px 0;
+	padding:0;
+	font:normal 17px 'Segoe UI';
+}
+
+.lftPad30
+{
+	padding-left:30px;
+}
+
+.main_vis_bg 
+{
+	background:url(../images/main_vis_bg.jpg) no-repeat center top;
+}
+
+.topLinks 
+{
+	background:#000000;
+	color:#ffffff;
+}
+
+.topLinks div 
+{
+	width:1047px;
+	margin:0 auto;
+	text-align:right;
+	line-height:28px;
+}
+
+.topLinks a 
+{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.topLinks a:hover 
+{
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+.wrapper 
+{
+	width:1047px;
+	margin:0 auto;
+}
+
+.mainLayoutTbl 
+{
+	margin-top:5px;
+}
+
+#lftContent 
+{
+	width:191px;
+}
+
+#lftMenu 
+{
+	margin-bottom:45px;
+}
+
+#mdlContent 
+{
+	width:678px;
+}
+
+.mdlContentBg 
+{
+	background:url(../images/mainContent_bg.jpg) repeat-y left top;
+}
+
+.mdlContentTxt
+{
+	padding:0 0px 30px 25px;
+        height:1060px;
+}
+
+#page 
+{
+	padding:0 33px;
+}
+
+.greenSep 
+{
+	border-bottom:1px solid #538e40;
+	height:5px;
+	font-size:1px;
+	margin-right:25px;
+}
+
+.ltGrnSep 
+{
+	border-bottom:1px solid #cfdfc4;
+	height:15px;
+	font-size:1px;
+	width:90%;
+	margin:0 auto;
+	margin-bottom:15px;
+}
+
+.rhsSect1
+{
+	background:url(../images/rhsBg1.png) no-repeat left top;
+	width:176px;
+	height:207px;
+	margin-bottom:25px;
+}
+
+.rhsSect1 a 
+{
+	color:#000000;
+}
+
+.rhsSect1 a:hover
+{
+	color:#000000;
+	text-decoration:underline;
+}
+
+.rhsSect2
+{
+	background:url(../images/rhsBg2.png) no-repeat left top;
+	width:175px;
+	height:249px;
+	margin-bottom:25px;
+}
+
+.rhsSect2 ul
+{
+	margin:0;
+	margin-left:25px;
+	margin-right:10px;
+	padding:0;
+}
+
+.rhsSect2 ul li 
+{
+	color:#777;
+	list-style-type:square;
+	padding-bottom:5px;
+}
+
+.rhsSect2 ul li a 
+{
+	color:#444;
+}
+
+.rhsSect2 ul li a:hover
+{
+	color:#444;
+	text-decoration:underline;
+}
+
+.rhsSect3
+{
+	background:url(../images/rhsBg3.png) no-repeat left top;
+	width:174px;
+	height:161px;
+}
+
+.rhsSect4
+{
+	background:url(../images/rhsBg4.png) no-repeat left top;
+	width:176px;
+	height:700px;
+}
+
+.rhsSect3 ul
+{
+	margin:0;
+	margin-left:25px;
+	margin-right:10px;
+	padding:0;
+}
+
+.rhsSect3 ul li 
+{
+	list-style-type:square;
+	padding-bottom:5px;
+}
+
+.btmContentBg 
+{
+	background:url(../images/btmContent_bg.jpg) repeat-y left top;
+	padding:10px 20px;
+}
+
+.btmContentBg table td 
+{
+	border-right:1px dashed #ababab;
+}
+
+.btmContentBg table td.lastTd 
+{
+	border-right:none;
+}
+
+.btmContentBg table td img 
+{
+	float:left;
+}
+
+.btmCntHd 
+{
+	padding-top:30px;
+	font-size:140%;
+	font-weight:bold;
+	color:#333333;
+}
+
+.btmHd 
+{}
+
+.btmContentBg ul 
+{
+	margin:0;
+	padding:0;
+	clear:both;
+}
+
+.btmContentBg ul li 
+{
+	list-style-type:none;
+	background:url(../images/btmContentLi.gif) no-repeat left 4px;
+	font-size:120%;
+	line-height:17px;
+	padding:0 0 15px 22px;
+}
+
+table.nat_fin
+{
+	border-collapse:collapse;
+}
+
+.nat_fin td
+{
+	background:#ffffff;
+	border:1px solid #c0c0c0;
+	text-align:center;
+	padding:10px;
+}
+
+.nat_fin td ul 
+{
+	padding-left:20px;
+	text-align:left;
+	margin-top:0;
+}
+
+.nat_fin th
+{
+	background:url(../images/th_bg.gif) repeat-x left top #ffffff;
+	border:1px solid #c0c0c0;
+	font:bold 12px 'Segoe UI';
+	line-height:26px;
+}
+
+
+#footer 
+{
+	background:url(../images/ftr_bg.gif) repeat-x left top;
+	height:64px;
+	text-align:right;
+	margin-top:10px;
+}
+
+.footerTxt 
+{
+	padding-top:13px;
+	width:1047px;
+	margin:0 auto;
+	color:#bdbdbd;
+}
+
+.footerTxt a 
+{
+	color:#bdbdbd;
+}
+
+.footerTxt a:hover
+{
+	color:#bdbdbd;
+	text-decoration:underline;
+}

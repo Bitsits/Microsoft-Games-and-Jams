@@ -1,0 +1,25 @@
+﻿#siteSearch{margin:0px 20px 12px 0}
+
+.msviLSBsform{z-index:2;min-width:305px;height:auto;margin:0;padding:0;font:100% Verdana,"Microsoft Sans Serif",sans-serif;}
+
+.msviLSBssearch{margin:0px;padding:0px;padding-top:1px}
+
+.msviLSBForm{margin:0px;padding:0px}
+
+#msBing{background:#fff;text-align:left;height:23px;padding-bottom:0px;border:solid 1px #000;position:relative;display:inline;margin:0px;padding-right:2px;padding-left:2px;padding-top:0px;}
+
+.msviLSBtbox{ border-width:0px;border-style:none;width:168px;/*vertical-align:absmiddle;*/padding-top:3px;padding-left:0px;padding-right:0px;font-size:13px;position:relative;top:-5px}
+
+.SimpleSearchWebButton{position:relative;top:0}
+
+A.SimpleSearchWebButtonText:link,A.SimpleSearchWebButtonText:visited,A.SimpleSearchWebButtonText:hover{color:white;text-decoration:none}
+
+.SimpleSearchWebButton{margin-left:4px}
+
+#msviLSBWeb{position:relative;top:-2px;width:1px;height:10px;border:0;margin:0 0 0 1px;padding:0;background:none;cursor:pointer}
+
+.msviLSBlogo{height:19px;width:47px;margin-left:0px;margin-right:0px;background-image:url(../images/logo_inside.gif);background-repeat:no-repeat;padding-bottom:0px;display:inline-block;display:inline-block;padding-bottom:2px}
+
+#msviGlobalSearch{filter:none !important;background:none !important;position:relative;visibility:visible;background-color:transparent}
+
+td#msviGlobalSearch{color:#afd7ff}

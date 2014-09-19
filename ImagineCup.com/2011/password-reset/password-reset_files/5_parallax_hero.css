@@ -1,0 +1,120 @@
+﻿
+/*-----------------------------------------
+	Hero Parallax Css
+-----------------------------------------*/
+
+
+#pg_hero {
+	
+}
+
+	#pg_hero #slide_nav {
+		position: absolute;
+		z-index:3;
+		bottom: 15px;
+		right:20px;
+		text-align: right;
+	}
+
+		#pg_hero #slide_nav li {
+			float: left;
+			margin: 0px 1px 0 2px;
+		}
+		
+			#pg_hero #slide_nav li a {
+				float: left;
+				padding: 2px 12px 8px 8px;
+				color: #fff;
+				text-decoration: none;
+				background: url(imgs/nav_off.png) no-repeat;
+			}
+
+				#pg_hero #slide_nav li a:hover,
+				#pg_hero #slide_nav li a.on {
+					color: #3571b9;
+					background: url(imgs/nav_on.png) no-repeat;
+				}
+
+	#pg_hero #slides {
+		position:relative;
+		top:0;
+		left: 0;
+		z-index:0;
+		width:1000px;
+		height:375px;
+	}
+	
+	#pg_hero #slides {
+		overflow: visible;
+	}
+	
+		#pg_hero #slides li {
+			position:absolute;
+			top:0;
+			left: 0;
+			z-index:0;
+			width:1000px;
+			height:375px;
+			overflow:hidden;
+		}	
+			
+			#pg_hero #slides li .wrapper {
+				position: relative;
+				width:3000px;
+				height: 375px;
+			}
+		
+					#pg_hero #slides li .slide { 
+						position: relative;
+						float:left;
+						width: 1000px; 
+						height: 375px;
+					}
+
+			
+		#pg_hero #slides li#layer_1 { z-index: 5;}
+			#pg_hero #slides li#layer_1 .wrapper { width:6750px; }
+				#pg_hero #slides li#layer_1 .slide { width: 2250px; }
+	
+		#pg_hero #slides li#layer_2 { z-index: 3; }
+			#pg_hero #slides li#layer_2 .wrapper { width:5250px;}
+				#pg_hero #slides li#layer_2 .slide { width: 1750px;}
+					
+		
+
+
+/*-----------------------------------------
+	Hero Content Styles
+-----------------------------------------*/		
+
+#pg_hero #slides .slide_content {
+	position: absolute;
+	width: 415px;
+	bottom:55px;
+	left:135px;
+	color: #FFF:
+}
+
+	#slides .slide_content h2,
+	#slides .slide_content h3,
+	#slides .slide_content p {
+		color: #fff;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 15px;
+		margin: 0;
+		padding:5px 0;
+	}
+
+		#slides .slide_content h2 {
+			font-size: 36px;
+			line-height: 36px;
+		}
+		
+		#slides .slide_content h3 {
+			font-size: 16px;
+			line-height: 18px;
+		}
+
+
+		

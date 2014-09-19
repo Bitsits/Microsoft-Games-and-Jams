@@ -1,0 +1,1176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_ctl00_Head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+<link href="exploreimaginecup.aspx_files/IC2010.css" type="text/css" rel="stylesheet"><link href="exploreimaginecup.aspx_files/style.css" type="text/css" rel="stylesheet"><link href="exploreimaginecup.aspx_files/subModal.css" type="text/css" rel="stylesheet"><title>
+	Imagine Cup Student Competition - Explore Imagine Cup
+</title>
+    <script language="JavaScript" type="text/javascript" src="exploreimaginecup.aspx_files/broker.js"></script>
+    <link href="exploreimaginecup.aspx_files/IC2010.css" type="text/css" rel="Stylesheet">
+    
+    <!--[if IE 6]>    
+        <script type="text/javascript" src="../script/DD_belatedPNG.min.js"></script>
+        <script>
+          /* EXAMPLE */
+          DD_belatedPNG.fix('img');
+        </script>
+    <![endif]-->  
+        <script type="text/javascript">
+            function swapImage() {
+            
+                theimages = new Array("technology_poster.png", "education_poster.png", "environment_poster.png", "medical_poster.png");
+            
+                //theimages = new Array("sign_girl.png", "sign_guy.png");
+                whichImageSecond = null;
+                whichImage = Math.floor(Math.random() * theimages.length);
+                whichImageSecond = Math.floor(Math.random() * theimages.length);
+
+                document.write('<img src="/App_Themes/Default/Images/' + theimages[whichImage] + '" />');
+               
+                if (whichImage == whichImageSecond) {
+                    if (whichImage == 0) {
+                        whichImageSecond = 1;
+                    }
+                    else {
+                        whichImageSecond = 0;
+                    }
+                }
+              
+                if (whichImageSecond != null) {
+                    document.write('<img src="/App_Themes/Default/Images/' + theimages[whichImageSecond] + '" />');
+                }
+            }
+    </script>   
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <link href="exploreimaginecup.aspx_files/IC2010.css" type="text/css" rel="stylesheet"><link href="exploreimaginecup.aspx_files/style.css" type="text/css" rel="stylesheet"><link href="exploreimaginecup.aspx_files/subModal.css" type="text/css" rel="stylesheet"><script charset="utf-8" id="injection_graph_func" src="exploreimaginecup.aspx_files/injection_graph_func.js"></script><script id="_nameHighlight_injection"></script><link class="skype_name_highlight_style" href="exploreimaginecup.aspx_files/injection_nh_graph.css" type="text/css" rel="stylesheet" charset="utf-8" id="_injection_graph_nh_css"><link href="exploreimaginecup.aspx_files/skypeplugin_dropdownmenu.css" type="text/css" rel="stylesheet" charset="utf-8" id="_skypeplugin_dropdownmenu_css"></head><body id="ctl00_ctl00_Master_Body" class="body2">
+ <script type="text/javascript">
+
+       function LaguageDDFunction(dropdownValue, fn_hidden_CMSChangeFlag_id, fn_DropDownList_PageLanguage_id) {
+           var CMSChangeFlag_1 = false;
+           CMSChangeFlag_1 = document.getElementById(fn_hidden_CMSChangeFlag_id);
+
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";
+           
+           if (CMSChangeFlag_1.value == 'true') {
+               
+               if (confirm('Are you sure you want to navigate away from this page?\n\nPage content will be saved and page will be unlocked.\n\nPress OK to continue, or Cancel to stay on the current page.')) {
+                   CMSChangeFlag_1.value = false;
+                   setTimeout('__doPostBack(\'' + fn_hidden_CMSChangeFlag_id + '\',\'\')', 0);
+               }
+               else {
+                   document.getElementById(fn_DropDownList_PageLanguage_id).value = dropdownValue;
+               }
+           }
+           else {
+               setTimeout('__doPostBack(\'' + fn_hidden_CMSChangeFlag_id + '\',\'\')', 0);
+           }
+       }
+
+       function ConfirmRevertDraft(CMSChangeFlag) {
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";
+           if (confirm('Do you really want to revert to earlier draft version of the page?')) {
+               DisableWarning(CMSChangeFlag);
+               return true;
+           }
+           else {
+               return false;
+           }
+       }
+       function DisableWarning(CMSChangeFlag) {
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";
+           document.getElementById(CMSChangeFlag).value = false;
+           return true;
+       }
+       // To show ConfirmCancel dialog box
+       function ConfirmRevertToLive(CMSChangeFlag) {
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";           
+           if (confirm('Warning: Changes have been made to this page. If you revert to live, these changes will be discarded, whether made by you or by others. Continue?')) {
+               DisableWarning(CMSChangeFlag)
+               return true;
+           }
+           else {
+               return false;
+           }
+       }
+
+       function GoTo(id) {
+           if (document.getElementById(id) != null) {
+               document.getElementById(id).focus();
+           }
+       }
+
+       function findX(obj) {
+           var curLeft = 0;
+           if (obj.offsetParent) {
+               while (1) {
+                   curLeft += obj.offsetLeft;
+                   if (!obj.offsetParent)
+                       break;
+                   obj = obj.offsetParent;
+               }
+           }
+           else {
+               if (obj.x)
+                   curLeft += obj.x;
+           }
+           return curLeft;
+       }
+
+       function Timer() {
+           this.obj = (arguments.length) ? arguments[0] : window;
+           return this;
+       }
+
+       // The set functions should be called with:
+       // - The name of the object method (as a string) (required)
+       // - The millisecond delay (required)
+       // - Any number of extra arguments, which will all be
+       //   passed to the method when it is evaluated.
+
+       Timer.prototype.setInterval = function(func, msec) {
+           var i = Timer.getNew();
+           var t = Timer.buildCall(this.obj, i, arguments);
+           Timer.set[i].timer = window.setInterval(t, msec);
+           return i;
+       }
+       Timer.prototype.setTimeout = function(func, msec) {
+           var i = Timer.getNew();
+           Timer.buildCall(this.obj, i, arguments);
+           Timer.set[i].timer = window.setTimeout("Timer.callOnce(" + i + ");", msec);
+           return i;
+       }
+
+       // The clear functions should be called with
+       // the return value from the equivalent set function.
+
+       Timer.prototype.clearInterval = function(i) {
+           if (!Timer.set[i]) return;
+           window.clearInterval(Timer.set[i].timer);
+           Timer.set[i] = null;
+       }
+       Timer.prototype.clearTimeout = function(i) {
+           if (!Timer.set[i]) return;
+           window.clearTimeout(Timer.set[i].timer);
+           Timer.set[i] = null;
+       }
+
+       // Private data
+
+       Timer.set = new Array();
+       Timer.buildCall = function(obj, i, args) {
+           var t = "";
+           Timer.set[i] = new Array();
+           if (obj != window) {
+               Timer.set[i].obj = obj;
+               t = "Timer.set[" + i + "].obj.";
+           }
+           t += args[0] + "(";
+           if (args.length > 2) {
+               Timer.set[i][0] = args[2];
+               t += "Timer.set[" + i + "][0]";
+               for (var j = 1; (j + 2) < args.length; j++) {
+                   Timer.set[i][j] = args[j + 2];
+                   t += ", Timer.set[" + i + "][" + j + "]";
+               } 
+           }
+           t += ");";
+           Timer.set[i].call = t;
+           return t;
+       }
+       Timer.callOnce = function(i) {
+           if (!Timer.set[i]) return;
+           eval(Timer.set[i].call);
+           Timer.set[i] = null;
+       }
+       Timer.getNew = function() {
+           var i = 0;
+           while (Timer.set[i]) i++;
+           return i;
+       }
+
+       startList = function() {
+           menus = document.getElementById("nav").getElementsByTagName("LI");
+           //alert('hi =>' + menus.length.toString());
+           for (i = 0; i < menus.length; i++) 
+           {
+               //alert(menus[i].Text);
+               menus[i].onmouseover = function() 
+               {
+                   //alert('menu');
+                   this.style.cursor = "pointer";
+
+                   //Start: menu to open up left or right
+                   winsize = document.body.offsetWidth;
+                   menusize = findX(this) + this.offsetWidth;
+                   if (((menusize + 100) >= winsize) && (this.offsetWidth > 100)) {
+                       this.className += " overleft";
+                   }
+                   else {
+                       this.className += " over";
+                   }
+                   //End: menu to open up left or right
+
+                   var pagename = window.location.pathname;
+                   var sPage = pagename.substring(pagename.lastIndexOf('/') + 1);
+
+                   sPage = sPage.toLowerCase();
+
+                   //                        if (sPage == "leaderboard.aspx")
+                   //                        {
+                   //                            window.document.getElementById("ctl00_ContentPlaceHolder_DropDownList_Competition").style.display="none";                            
+                   //                        }
+               }
+               menus[i].onmouseout = function() 
+               {
+                   this.style.cursor = "default";
+
+                   //Start: menu to open up left or right
+                   this.timer = new Timer(this);
+                   this.timer.setTimeout("out", 0);
+                   //End: menu to open up left or right
+
+                   var pagename = window.location.pathname;
+                   var sPage = pagename.substring(pagename.lastIndexOf('/') + 1);
+
+                   sPage = sPage.toLowerCase();
+
+                   if (sPage == "leaderboard.aspx") {
+                       if (window.document.getElementById("ctl00_ContentPlaceHolder_DropDownList_Competition") != null) {
+                           window.document.getElementById("ctl00_ContentPlaceHolder_DropDownList_Competition").style.display = "block";
+                       }
+                   }
+               }
+               menus[i].out = function() 
+               {
+                   this.className = this.className.replace("over", "");
+               }
+           }
+       }
+
+       window.onload = startList;
+
+       //Added by Deepali Shah to resolve issue 8610.
+       function SetFocus(ctrl) {
+           var o = document.getElementById(ctrl);
+           if ((o != undefined) && (o != null)) o.focus();
+       }
+
+       //Functions added by Dhawal
+       function ShowPopUp(DivPopUpID, SignInStripID, divLoginID, textboxEmailID) {
+           var DivPopUp = document.getElementById(DivPopUpID);
+           if (DivPopUp != null) {
+               //Following lines written by Dhawal for setting the position of the signin div 
+               var BrowserType = navigator.appName;
+               var BrowserVersion = parseInt(navigator.appVersion);
+               var SignInStrip = document.getElementById(SignInStripID);
+               var divLogin = document.getElementById(divLoginID);
+               divLogin.style.position = "absolute";
+               divLogin.style.top = findPosY(SignInStrip) + 0;
+               divLogin.style.left = findPosX(SignInStrip) - 21;
+               if (BrowserType == "Netscape") {
+                   var divLogin_top = findPosY(SignInStrip) + 0;
+                   divLogin.style.top = divLogin_top + '' + 'px';
+                   var divLogin_left = findPosX(SignInStrip) - 21;
+                   divLogin.style.left = divLogin_left + '' + 'px';
+               }
+               //Above lines written by Dhawal for setting the position of the signin div      
+               DivPopUp.style.display = "block";
+               //For setting the focus on the email textbox
+               //                    var textboxEmail = document.getElementById(textboxEmailID);
+               //                    textboxEmail.focus();                    
+           }
+       }
+
+       function ShowFrame() {
+       
+            //Modified the function By shivkant as the name of the Div is changed and also added few controls which are to be positioned.
+       
+           //var frame = document.getElementById("LoginFrame");
+           var BrowserType = navigator.appName;
+           //alert(BrowserType.toString());
+           var BrowserVersion = parseInt(navigator.appVersion);
+           //alert(BrowserVersion.toString());
+           var div_frame = document.getElementById('ctl00_ctl00_Div_CloseFrame');
+           var btn_close = document.getElementById('ctl00_ctl00_closeLink');
+           var frame = document.getElementById('ctl00_ctl00_LoginFrame');
+           var SignInStrip = document.getElementById('ctl00_ctl00_header_login');
+           div_frame.style.position = "absolute";
+           div_frame.style.top = findPosY(SignInStrip) + 0;
+           div_frame.style.left = findPosX(SignInStrip) - 21;
+            if (BrowserType == "Netscape")
+            {   
+                var frame_top = findPosY(SignInStrip) + 0;
+                div_frame.style.top = frame_top + '' + 'px';
+                var frame_left = findPosX(SignInStrip) - 21;
+                div_frame.style.left = frame_left + '' + 'px';
+            }
+            frame_left = frame_left + 200
+            frame_top = frame_top + 8
+            btn_close.style.display.left = frame_left + 'px';
+            btn_close.style.display.top = '8px';
+           btn_close.style.position = "absolute";
+           frame.style.display = "block";
+           frame.visible = true;
+           document.getElementById('ctl00_ctl00_closeLink').style.display='block';
+           document.getElementById('ctl00_ctl00_Iframe_Lock').style.display='block';
+       }
+
+       /*Functions added by Dhawal on 25th June 2008 to set the position of the login div*/
+       /*START*/
+       function findPosX(obj) {
+           var curleft = 0;
+           if (obj.offsetParent) {
+               while (1) {
+                   curleft += obj.offsetLeft;
+                   if (!obj.offsetParent) {
+                       break;
+                   }
+                   obj = obj.offsetParent;
+               }
+           }
+           else if (obj.x) {
+               curleft += obj.x;
+           }
+           return curleft;
+       }
+
+       function findPosY(obj) {
+           var curtop = 0;
+           if (obj.offsetParent) {
+               while (1) {
+                   curtop += obj.offsetTop;
+                   if (!obj.offsetParent) {
+                       break;
+                   }
+                   obj = obj.offsetParent;
+               }
+           }
+           else if (obj.y) {
+               curtop += obj.y;
+           }
+           return curtop;
+       }
+       /*END*/
+       /*Functions added by Dhawal on 25th June 2008 to set the position of the login div*/
+
+       function enableCompeteForITQuiz() {
+           //This function is added by Dhawal for resolving the javascript error from the IT Challenge Portal.
+       }
+       
+       function CloseIframe()
+       {
+            //FUnction added by shivkant for hiding the Iframe and the close button displayed on the Iframe.
+            //alert ('The function is Called');
+            window.document.getElementById('ctl00_ctl00_LoginFrame').style.display = 'none';
+            window.document.getElementById('ctl00_ctl00_Iframe_Lock').style.display = 'none';
+            window.document.getElementById('ctl00_ctl00_closeLink').style.display = 'none';
+
+        }
+
+
+        function ClearAllLinks() {
+            var a = document.getElementsByTagName("A");
+            for (var i = 0; i < a.length; i++) {
+                a[i].onclick = function() { return false; };
+            }
+
+            var b = document.getElementsByTagName("IMG");
+            for (var i = 0; i < b.length; i++) {
+                b[i].onclick = function() { return false; };
+            }
+        }
+
+       
+    </script> 
+    <form name="aspnetForm" method="post" action="exploreimaginecup.aspx" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__LASTFOCUS" id="__LASTFOCUS" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1NzcxMzQ3NjQPZBYCZg9kFgJmDw8WAh4ORWRpdGFibGVQYWdlSWQC4CNkFgICAw8WAh4FY2xhc3MFBWJvZHkyFgJmD2QWDgIHD2QWAgIBDxAPFgYeDkRhdGFWYWx1ZUZpZWxkBQZsb2NhbGUeDURhdGFUZXh0RmllbGQFBG5hbWUeC18hRGF0YUJvdW5kZ2QQFRoGQmFoYXNhCUJ1bGdhcmlhbgbEjGVza3kHRGV1dHNjaAVFZXN0aQdFbmdsaXNoCEVzcGHDsW9sCUZyYW7Dp2FpcwhIcnZhdHNraQhJdGFsaWFubwhNYWd5YXLCoAZQb2xza2kKUG9ydHVndcOqcxVQb3J0dWd1w6pzIEJyYXNpbGVpcm8Lc2xvdmVuxI1pbmEJc2xvdmVuc2tpBlNycHNraRBUacOqzIFuZyBWacOqzKN0CFTDvHJrw6dlEM6VzrvOu863zr3Ouc66zqwO0KDRg9GB0YHQutC40LkR2KfZhNi52LHYqNmK2KnigI8J7ZWc6rWt7Ja0CeaXpeacrOiqngznroDkvZPkuK3mlocM57mB6auU5Lit5paHFRoFaWQtaWQFYmctYmcFY3MtY3oFZGUtZGUFZXQtZWUFZW4tdXMFZXMtZXMFZnItZnIFaHItaHIFaXQtaXQFaHUtaHUFcGwtcGwFcHQtcHQFcHQtYnIFc2stc2sCc2wKc3ItbGF0bi1jcwV2aS12bgV0ci10cgVlbC1ncgVydS1ydQVhci1hZQVrby1rcgVqYS1qcAV6aC1jbgV6aC10dxQrAxpnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBAgVkAggPFgIeB1Zpc2libGVoFgwCAw8PFgIeDU9uQ2xpZW50Q2xpY2sFSWphdmFzY3JpcHQ6cmV0dXJuIENvbmZpcm1SZXZlcnREcmFmdCgnY3RsMDBfY3RsMDBfaGlkZGVuX0NNU0NoYW5nZUZsYWcnKTtkZAIFDw8WAh8GBUVqYXZhc2NyaXB0OnJldHVybiBEaXNhYmxlV2FybmluZygnY3RsMDBfY3RsMDBfaGlkZGVuX0NNU0NoYW5nZUZsYWcnKTtkZAIHDw8WAh8GBUVqYXZhc2NyaXB0OnJldHVybiBEaXNhYmxlV2FybmluZygnY3RsMDBfY3RsMDBfaGlkZGVuX0NNU0NoYW5nZUZsYWcnKTtkZAIJDw8WAh8GBUpqYXZhc2NyaXB0OnJldHVybiBDb25maXJtUmV2ZXJ0VG9MaXZlKCdjdGwwMF9jdGwwMF9oaWRkZW5fQ01TQ2hhbmdlRmxhZycpO2RkAgsPDxYCHwYFRWphdmFzY3JpcHQ6cmV0dXJuIERpc2FibGVXYXJuaW5nKCdjdGwwMF9jdGwwMF9oaWRkZW5fQ01TQ2hhbmdlRmxhZycpO2RkAg8PDxYCHgRUZXh0ZWRkAgkPZBYCAgUPD2QWBB4Hb25jbGljawUaU2hvd0ZyYW1lKCk7IHJldHVybiBmYWxzZTseC29ubW91c2VvdmVyBRt0aGlzLnN0eWxlLmN1cnNvcj0ncG9pbnRlcidkAgoPZBYGAgEPDxYCHwcFBFRydWVkZAIDDw8WAh8FaGRkAgUPDxYCHwdlZGQCCw9kFgICAQ9kFgICAQ8WAh4Dc3JjBWJodHRwczovL2ltYWdpbmVjdXAuY29tL0xvZ2luUG9wVXAuYXNweD9yZXR1cmw9aHR0cDovL2ltYWdpbmVjdXAuY29tL1N1cHBvcnQvZXhwbG9yZWltYWdpbmVjdXAuYXNweGQCDA9kFgQCAQ8WAh8BBRVDTVNQYWdlQmFja0dyb3VuZEdyYXkWAgIBDxYCHglpbm5lcmh0bWwFJkV4cGxvcmUgdGhlJm5ic3A7SW1hZ2luZSBDdXAncyBIaXN0b3J5ZAIDD2QWBgIBDxYCHwsFhJMBPGgyPlRoZSBXb3JsZCdzIFByZW1pZXIgU3R1ZGVudCBUZWNobm9sb2d5IENvbXBldGl0aW9uPC9oMj4NCjxiciAvPg0KPGRpdj5UaGUgSW1hZ2luZSBDdXAgaXMgb25lIHdheSBNaWNyb3NvZnQgaXMgZW5jb3VyYWdpbmcgeW91bmcgcGVvcGxlIHRvIGFwcGx5IHRoZWlyIGltYWdpbmF0aW9uLCB0aGVpciBwYXNzaW9uLCBhbmQgdGhlaXIgY3JlYXRpdml0eSB0byB0ZWNobm9sb2d5IGlubm92YXRpb25zIHRoYXQgY2FuIGhlbHAgbWFrZSBhIGRpZmZlcmVuY2UgaW4gdGhlIHdvcmxkLiBOb3cgaW4gaXRzIGVpZ2h0aCB5ZWFyLCB0aGUgSW1hZ2luZSBDdXAgaGFzIGdyb3duIHRvIGJlIGEgdHJ1bHkgZ2xvYmFsIGNvbXBldGl0aW9uIGZvY3VzZWQgb24gZmluZGluZyBzb2x1dGlvbnMgdG8gZ2xvYmFsIGlzc3Vlcy4mbmJzcDsmbmJzcDtCZWxvdyBpcyBhIGxpc3Qgb2YmbmJzcDt0aGUgMjAwOSBhbmQgMjAwOCB3aW5uZXJzLiBGb3IgaW5mb3JtYXRpb24gb24gdGhlIHdpbm5lcnMgb2YgdGhlIEltYWdpbmUgQ3VwIGZyb20gMjAwMyB0aHJvdWdoIDIwMDcsIHBsZWFzZSBzZWUgdGhlIGxpbmtzIG9uIHRoZSByaWdodCBzaWRlIG9mIHRoaXMgcGFnZS4gPC9kaXY+DQo8YnIgLz4NCjxoMj5JbWFnaW5lIEN1cCAyMDA5Jm5ic3A7V2lubmVycyA8L2gyPg0KPGRpdj48c3Ryb25nPldvcmxkd2lkZSBGaW5hbHM8L3N0cm9uZz46IENhaXJvLCBFZ3lwdDxiciAvPg0KPHN0cm9uZz5UaGVtZTo8L3N0cm9uZz4gIkltYWdpbmUgYSB3b3JsZCB3aGVyZSB0ZWNobm9sb2d5IGhlbHBzIHNvbHZlIHRoZSB3b3JsZCdzIHRvdWdoZXN0IHByb2JsZW1zLiI8L2Rpdj4NCjxiciAvPg0KPGgzPjx1PlNvZnR3YXJlIERlc2lnbjwvdT48L2gzPg0KPC91PjxzdHJvbmc+Rmlyc3QgcGxhY2U6IFJvbWFuaWEsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNTcwNCI+PHN0cm9uZz5TWVRFQ0g8L3N0cm9uZz48L2E+PHN0cm9uZz4gJm5ic3A7IDwvc3Ryb25nPg0KPGRpdj48L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+U2Vjb25kIHBsYWNlOiBSdXNzaWEsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNTg2MCI+PHN0cm9uZz5WaXRhbCBMYWI8L3N0cm9uZz48L2E+PHN0cm9uZz4gJm5ic3A7IDwvc3Ryb25nPg0KPGRpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+VGhpcmQgcGxhY2U6IEJyYXppbCwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE2MzgxIj48c3Ryb25nPlZpcnR1YWwgRHJlYW1zPC9zdHJvbmc+PC9hPjxzdHJvbmc+IDwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8YnIgLz4NCjxoMz48dT5FbWJlZGRlZCBEZXZlbG9wbWVudDwvdT48L2gzPg0KPGRpdj48c3Ryb25nPkZpcnN0IHBsYWNlOiZuYnNwO0tvcmVhLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSWQ9MTYzMzciPjxzdHJvbmc+V2FmcmVlPC9zdHJvbmc+PC9hPjxiciAvPg0KPHN0cm9uZz5TZWNvbmQgcGxhY2U6Jm5ic3A7Q2hpbmEsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNzIxMSI+PHN0cm9uZz5pU2VlPC9zdHJvbmc+PC9hPjxzdHJvbmc+Jm5ic3A7IDxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+VGhpcmQgcGxhY2U6IFVrcmFpbmUsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNDE1NiI+PHN0cm9uZz5JbnRlbGxlY3Ryb25pY3M8L3N0cm9uZz48L2E+PHN0cm9uZz4gPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjwvZGl2Pg0KPGJyIC8+DQo8aDM+PHU+R2FtZSBEZXZlbG9wbWVudDwvdT48L2gzPg0KPGRpdj48c3Ryb25nPkZpcnN0IHBsYWNlOiBCcmF6aWwsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNjk0OCI+PHN0cm9uZz5MRVZWIEl0PC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48L2Rpdj4NCjxkaXY+PHN0cm9uZz5TZWNvbmQgcGxhY2U6IFVuaXRlZCBTdGF0ZXMsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNjYxMSI+PHN0cm9uZz5FcHN5bG9uIEdhbWVzPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48c3Ryb25nPlRoaXJkIHBsYWNlOiZuYnNwO1VuaXRlZCBLaW5nZG9tLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSWQ9MTQzNzgiPjxzdHJvbmc+U2FucXVpbmUgTGFiczwvc3Ryb25nPjwvYT48YnIgLz4NCjxiciAvPg0KPC9kaXY+DQo8aDM+PHU+SVQgQ2hhbGxlbmdlPC91PjwvaDM+DQo8ZGl2PjxzdHJvbmc+Rmlyc3QgcGxhY2U6IFJvbWFuaWEsIDwvc3Ryb25nPjxhIGhyZWY9Ii91c2VyL1Byb2ZpbGUuYXNweD9Vc2VySUQ9MTIwNTM5Ij48c3Ryb25nPkNvc21pbiBJbGllPC9zdHJvbmc+PC9hPjxiciAvPg0KPHN0cm9uZz5TZWNvbmQgcGxhY2U6Jm5ic3A7Q2hpbmEsIDwvc3Ryb25nPjxhIGhyZWY9Ii91c2VyL1Byb2ZpbGUuYXNweD9Vc2VySUQ9Mzg0NTI3Ij48c3Ryb25nPld1IENoYW5nPC9zdHJvbmc+PC9hPjxzdHJvbmc+Jm5ic3A7Jm5ic3A7PGJyIC8+DQo8L3N0cm9uZz48L2Rpdj4NCjxkaXY+PHN0cm9uZz5UaGlyZCBwbGFjZTogQm9saXZpYSwmbmJzcDs8L3N0cm9uZz48YSBocmVmPSIvdXNlci9Qcm9maWxlLmFzcHg/VXNlcklEPTE0OTQzOSI+PHN0cm9uZz5NaWtsb3MgQ2FyaSBTaXZpbGE8L3N0cm9uZz48L2E+PHN0cm9uZz4gPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTc5MTUiPjxiciAvPg0KPC9hPjwvZGl2Pg0KPGRpdj48c3Ryb25nPjxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8aDM+PHU+Um9ib3RpY3MgJmFtcDsgQWxnb3JpdGhtPC91PiA8L2gzPg0KPGRpdj48c3Ryb25nPkZpcnN0Jm5ic3A7cGxhY2U6IEN6ZWNoIFJlcHVibGljLCA8L3N0cm9uZz48YSBocmVmPSIvdXNlci9Qcm9maWxlLmFzcHg/VXNlcklEPTEwNzY5Ij48c3Ryb25nPkx1a2FzIFBlcnV0a2E8L3N0cm9uZz48L2E+PGJyIC8+DQo8L2Rpdj4NCjxkaXY+PHN0cm9uZz5TZWNvbmQgcGxhY2U6IENhbmFkYSwgPC9zdHJvbmc+PGEgaHJlZj0iL3VzZXIvUHJvZmlsZS5hc3B4P1VzZXJJRD01MDM5MzEiPjxzdHJvbmc+Qnlyb24gS25vbGw8L3N0cm9uZz48L2E+PGJyIC8+DQo8c3Ryb25nPlRoaXJkIHBsYWNlOiBDaGluYSwgPC9zdHJvbmc+PGEgaHJlZj0iL3VzZXIvUHJvZmlsZS5hc3B4P1VzZXJJRD0yMDY5MDYiPjxzdHJvbmc+TGluIEZ1bWluZzwvc3Ryb25nPjwvYT48c3Ryb25nPiA8L3N0cm9uZz48L2Rpdj4NCjxkaXY+PHN0cm9uZz48YnIgLz4NCjwvc3Ryb25nPjwvZGl2Pg0KPGgzPjx1Pk1hc2hVcDwvdT48L2gzPg0KPGRpdj48c3Ryb25nPkZpcnN0IHBsYWNlOiBVbml0ZWQgU3RhdGVzLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSWQ9MTQ0NjgiPjxzdHJvbmc+Q1VSSU9VUzwvc3Ryb25nPjwvYT48L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+U2Vjb25kIHBsYWNlICh0aWUpOiZuYnNwO1BvbGFuZCwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTEzMTA1Ij48c3Ryb25nPk1vbmFzdGVyeSBvZiBJbm5vdmF0aW9uczwvc3Ryb25nPjwvYT48L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+U2Vjb25kJm5ic3A7cGxhY2UgKHRpZSk6Jm5ic3A7U2luZ2Fwb3JlLCA8YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSWQ9MTcwNjUiPjxzdHJvbmc+UGxhbmV0S1k8L3N0cm9uZz48L2E+PHN0cm9uZz4mbmJzcDs8L3N0cm9uZz48L3N0cm9uZz48c3Ryb25nPiZuYnNwOzwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48L2Rpdj4NCjxkaXY+PHN0cm9uZz48YnIgLz4NCjwvc3Ryb25nPjwvZGl2Pg0KPGgzPjx1PlBob3RvZ3JhcGh5PC91PjwvaDM+DQo8ZGl2PjxzdHJvbmc+Rmlyc3QgcGxhY2U6IENyb2F0aWEsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xODE2OCI+PHN0cm9uZz5UZWFtIFZvb2RvbyBEZWxpcml1bTwvc3Ryb25nPjwvYT48L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+U2Vjb25kIHBsYWNlOiBTaW5nYXBvcmUsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNzY1MSI+PHN0cm9uZz5Xb29sZ2F0aGVyaW5nPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48c3Ryb25nPlRoaXJkIHBsYWNlOiBKYXBhbiwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE1NzMxIj48c3Ryb25nPlRlcmFkYSA8L3N0cm9uZz48L2E+PC9kaXY+DQo8ZGl2PjwvZGl2Pg0KPGRpdj48c3Ryb25nPjxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8aDM+PHU+U2hvcnQgRmlsbTwvdT48L2gzPg0KPGRpdj48c3Ryb25nPkZpcnN0IHBsYWNlOiBVbml0ZWQgS2luZ2RvbSwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE3OTg3Ij48c3Ryb25nPkZ1bGhhbSBGb3VyPC9zdHJvbmc+PC9hPjxiciAvPg0KPC9kaXY+DQo8ZGl2PjxzdHJvbmc+U2Vjb25kIHBsYWNlOiBJbmRpYSwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE4MjA5Ij48c3Ryb25nPkNoZW5uYWlDb29sZXJzPC9zdHJvbmc+PC9hPjxiciAvPg0KPC9kaXY+DQo8ZGl2PjxzdHJvbmc+VGhpcmQgcGxhY2U6Jm5ic3A7VWtyYWluZSwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTEzMTQ3Ij48c3Ryb25nPkp1c3Q0RnVuPC9zdHJvbmc+PC9hPjxiciAvPg0KPGJyIC8+DQo8L2Rpdj4NCjxoMz48dT5EZXNpZ248L3U+PC9oMz4NCjxkaXY+PHN0cm9uZz5GaXJzdCBwbGFjZTogQnJhemlsLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSWQ9MTU3NzQiPjxzdHJvbmc+V2lsbGJ1cm48YnIgLz4NCjwvc3Ryb25nPjwvYT48L2Rpdj4NCjxkaXY+PHN0cm9uZz5TZWNvbmQgcGxhY2U6IFVuaXRlZCBTdGF0ZXMsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xODEzMiI+PHN0cm9uZz5lWGNoYW5nZUZ1bjwvc3Ryb25nPjwvYT48L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+VGhpcmQgcGxhY2U6IEZyYW5jZSwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE1MzIyIj48c3Ryb25nPlBhaW5kZXBpY2VzPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48c3Ryb25nPiZuYnNwOzwvc3Ryb25nPjwvZGl2Pg0KPGgyPjIwMDkmbmJzcDtBd2FyZHM8L2gyPg0KPGRpdj48c3Ryb25nPjx1PlVubGltaXRlZCBQb3RlbnRpYWwgTXVsdGlQb2ludCBFZHVjYXRpb24gQXdhcmQ8L3U+PGJyIC8+DQpGaXJzdCBwbGFjZTogSW5kaWEsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNDgzMiI+PHN0cm9uZz5UcmFpbGJsYXplcnM8L3N0cm9uZz48L2E+PGJyIC8+DQo8YnIgLz4NCjwvZGl2Pg0KPGRpdj48c3Ryb25nPjx1PlVubGltaXRlZCBQb3RlbnRpYWwgRGVzaWduIGZvciBEZXZlbG9wbWVudCBBd2FyZDwvdT48YnIgLz4NCkZpcnN0IHBsYWNlOiBNYWxheXNpYSwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE0NzAwIj48c3Ryb25nPkNPU01JQzxiciAvPg0KPC9zdHJvbmc+PC9hPjxzdHJvbmc+U2Vjb25kIHBsYWNlOiBDaGluYSwmbmJzcDs8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSWQ9MTU4MDgiPjxzdHJvbmc+VW5pcXVlIFN0dWRpbzwvc3Ryb25nPjwvYT48c3Ryb25nPiA8L3N0cm9uZz48L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+VGhpcmQgcGxhY2U6IE1hbGF5c2lhLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSWQ9MTQ1MTciPjxzdHJvbmc+Q2Fwcmljb3JuPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48c3Ryb25nPjxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+PHU+SW50ZXJvcGVyYWJpbGl0eSBBd2FyZDwvdT4gPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+Rmlyc3QgcGxhY2U6IEJyYXppbCwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTEzOTkwIj48c3Ryb25nPlByb2F0aXZhIFRlYW1zPC9zdHJvbmc+PC9hPjxiciAvPg0KPC9kaXY+DQo8ZGl2PjxzdHJvbmc+U2Vjb25kIHBsYWNlOiBQb2xhbmQsJm5ic3A7PC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE4OTE3Ij48c3Ryb25nPkZ0ZWFtczwvc3Ryb25nPjwvYT48c3Ryb25nPiA8L3N0cm9uZz48L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+VGhpcmQgcGxhY2U6IEpvcmRhbiwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE3OTAzIj48c3Ryb25nPkVDUkFNPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48YnIgLz4NCjxzdHJvbmc+PHU+QWNjZXNzaWJpbGl0eSBBd2FyZDwvdT4gPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+Rmlyc3QgcGxhY2U6IFNhdWRpIEFyYWJpYSwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE3OTc0Ij48c3Ryb25nPkFUU1Q8YnIgLz4NCjwvc3Ryb25nPjwvYT48L2Rpdj4NCjxkaXY+PHN0cm9uZz5TZWNvbmQgcGxhY2U6IE1leGljbywgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE1NzIyIj48c3Ryb25nPklnbmlzIE5vdmE8L3N0cm9uZz48L2E+PC9kaXY+DQo8ZGl2PjwvZGl2Pg0KPGRpdj48c3Ryb25nPkhvbm9yYWJsZSBNZW50aW9uKHMpOiBKb3JkYW4sIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNzkwMiI+PHN0cm9uZz5FQ1JBTTwvc3Ryb25nPjwvYT48c3Ryb25nPjsgVW5pdGVkIFN0YXRlcywgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE4MjM1Ij48c3Ryb25nPlRlbGVXZWI8L3N0cm9uZz48L2E+PHN0cm9uZz47IENoaW5hLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSWQ9MTgxMTciPjxzdHJvbmc+SXNlZTwvc3Ryb25nPjwvYT48c3Ryb25nPjsgQmVsZ2l1bSwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE4MjU5Ij48c3Ryb25nPlBTQTwvc3Ryb25nPjwvYT48L2Rpdj4NCjxkaXY+PGJyIC8+DQo8c3Ryb25nPjx1PkFjY2Vzc2libGUgRGVzaWduIEF3YXJkPC91PjxiciAvPg0KVW5pdGVkIFN0YXRlcywgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE4MTMyIj48c3Ryb25nPmVYY2hhbmdlRnVuPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48YnIgLz4NCjxzdHJvbmc+PHU+VGFibGV0IEFjY2Vzc2liaWxpdHkgQXdhcmQ8L3U+PGJyIC8+DQpGaXJzdCBwbGFjZTogVW5pdGVkIFN0YXRlcywgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE4NzIzIj48c3Ryb25nPkF1cmF0ZWNoPC9zdHJvbmc+PC9hPjxiciAvPg0KPHN0cm9uZz5TZWNvbmQgcGxhY2U6IEJyYXppbCwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE4Njg3Ij48c3Ryb25nPklDLVVuaWNhbXA8L3N0cm9uZz48L2E+PC9kaXY+DQo8ZGl2PjxiciAvPg0KPHN0cm9uZz48dT5QYXJhbGxlbCBDb21wdXRpbmcgQXdhcmQ8L3U+PGJyIC8+DQpGaXJzdCBwbGFjZTogSW5kaWEsJm5ic3A7PC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTE4NTMxIj48c3Ryb25nPkJpb2xsZWw8L3N0cm9uZz48L2E+PHN0cm9uZz4gPGJyIC8+DQo8YnIgLz4NCjwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48c3Ryb25nPjx1PkguRS4gTXJzLiBTdXphbm5lIE11YmFyYWsgU3BlY2lhbCBBd2FyZDwvdT4gPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+Rmlyc3QgcGxhY2U6IFBvbGFuZCwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE4ODM3Ij48c3Ryb25nPmtBTVVmbGFnZTwvc3Ryb25nPjwvYT48YnIgLz4NCjwvZGl2Pg0KPGRpdj48c3Ryb25nPlNlY29uZCBwbGFjZTogRWd5cHQsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xODg5NSI+PHN0cm9uZz5CaWcgQnVkZHk8L3N0cm9uZz48L2E+PC9kaXY+DQo8ZGl2PjwvZGl2Pg0KPGRpdj48c3Ryb25nPlRoaXJkIHBsYWNlOiBGcmFuY2UsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xODg3NCI+PHN0cm9uZz5XaWtpQ2hpbGRQcm90ZWN0PC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48dT48YnIgLz4NCjxzdHJvbmc+V2luZG93cyBNb2JpbGUgQXdhcmQgV2lubmVyczwvc3Ryb25nPjwvdT48c3Ryb25nPiZuYnNwOzwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48c3Ryb25nPkNyb2F0aWEsIDxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNTkwOSI+VGVhbSBFeHBsb3JlcjwvYT48YnIgLz4NCkluZG9uZXNpYSwgPGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlkPTE2MTc5Ij5CaWcgQmFuZyA8L2E+PGJyIC8+DQpCcmF6aWwsIDxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNjM4MSI+VmlydHVhbCBEcmVhbXMgPC9hPjxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+PHU+PGJyIC8+DQpMaXZlIFNlcnZpY2VzIEF3YXJkPC91PiZuYnNwOzwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48c3Ryb25nPkZpcnN0IHBsYWNlOiBGcmFuY2UsIDxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JZD0xNTcyOCI+SGVscCdBZ2VkPC9hPjwvc3Ryb25nPg0KPGRpdj48c3Ryb25nPlNlY29uZCBwbGFjZTogU2VyYmlhLCA8YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSWQ9MTQ4NTciPkJyYWluV2F2ZTwvYT48L3N0cm9uZz48L2Rpdj4NCjwvZGl2Pg0KPGRpdj48L2Rpdj4NCjxkaXY+PHN0cm9uZz4mbmJzcDs8L3N0cm9uZz48L2Rpdj4NCjxwPk1vcmUgdGhhbiAzMDAsMDAwIHN0dWRlbnRzIGZyb20gb3ZlciAxNDIgY291bnRyaWVzIGVudGVyZWQgdGhlIDIwMDkgY29tcGV0aXRpb24uIFRoZSB0aGVtZSBvZiAyMDEwIEltYWdpbmUgQ3VwIGlzICJJbWFnaW5lIGEgd29ybGQgd2hlcmUgdGVjaG5vbG9neSBoZWxwcyBzb2x2ZSB0aGUgd29ybGQncyB0b3VnaGVzdCBwcm9ibGVtcy4iIDwvcD4NCjxwPlRoZSBJbWFnaW5lIEN1cCB3YXMgZm91bmRlZCBpbiAyMDAzLiBXb3JsZHdpZGUgRmluYWxzIGhvc3QgY291bnRyaWVzIGhhdmUgc3Bhbm5lZCB0aGUgZ2xvYmUgZnJvbSBTcGFpbiwgdG8gQnJhemlsLCB0byBKYXBhbiwgdG8gSW5kaWEsIHRvIFNvdXRoIEtvcmVhLCB0byBGcmFuY2UgYW5kIGxhc3QgeWVhciwgaW4gRWd5cHQuIFRoZSAyMDEwIFdvcmxkd2lkZSBGaW5hbHMgd2lsbCB0YWtlIHBsYWNlIGluIFBvbGFuZC48L3A+DQo8cD5UaGUgImN1cCIgaXRzZWxmLCBhIHRyb3BoeSBmaXJzdCBhd2FyZGVkIGluIDIwMDMgd2hlbiBTb2Z0d2FyZSBEZXNpZ24gd2FzIHRoZSBvbmx5IGNhdGVnb3J5LCBoYXMgc3BlbnQgdGltZSB3aXRoIHRoZSBTb2Z0d2FyZSBEZXNpZ24gY2hhbXBpb25zIGluIHRoZSBVbml0ZWQgU3RhdGVzICgyMDAzLTIwMDQpLCBGcmFuY2UgKDIwMDQtMjAwNSksIFJ1c3NpYSAoMjAwNS0yMDA2KSwgSXRhbHkgKDIwMDYtMjAwNyksIFRoYWlsYW5kICgyMDA3LTIwMDgpLCBBdXN0cmFsaWEgKDIwMDgtMjAwOSkgYW5kIFJvbWFuaWEgKDIwMDktMjAxMCkuPC9wPg0KPGRpdj48c3Ryb25nPg0KPGhyIC8+DQo8L3N0cm9uZz48L2Rpdj4NCjxoMj4mbmJzcDs8L2gyPg0KPGgyPkltYWdpbmUgQ3VwIDIwMDggV2lubmVycyA8L2gyPg0KPGRpdj48YnIgLz4NCjxzdHJvbmc+V29ybGR3aWRlIEZpbmFsczo8L3N0cm9uZz4gUGFyaXMsIEZyYW5jZTxiciAvPg0KPHN0cm9uZz5UaGVtZTo8L3N0cm9uZz4gIkltYWdpbmUgYSB3b3JsZCB3aGVyZSB0ZWNobm9sb2d5IGVuYWJsZXMgYSBzdXN0YWluYWJsZSBlbnZpcm9ubWVudC4iPC9kaXY+DQo8ZGl2PjxzdHJvbmc+PGJyIC8+DQo8L3N0cm9uZz48L2Rpdj4NCjxoMz5Tb2Z0d2FyZSBEZXNpZ248L2gzPg0KPGRpdj48c3Ryb25nPkZpcnN0IHBsYWNlOiBBdXN0cmFsaWEsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD0xMjQxMCI+PHN0cm9uZz5UZWFtIFNPQUs8L3N0cm9uZz48L2E+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+U2Vjb25kIHBsYWNlOiBTbG92YWtpYSwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTc5MzgiPjxzdHJvbmc+VGVhbSBIb3VzZWtlZXBlcnM8L3N0cm9uZz48L2E+PHN0cm9uZz4gPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+VGhpcmQgcGxhY2U6IEh1bmdhcnksIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD0xMjYxMiI+PHN0cm9uZz5UZWFtIERpZ2l0YWxNYW5pYTwvc3Ryb25nPjwvYT48c3Ryb25nPiA8L3N0cm9uZz48L2Rpdj4NCjxkaXY+PHN0cm9uZz48YnIgLz4NCjwvc3Ryb25nPjwvZGl2Pg0KPGgzPkVtYmVkZGVkIERldmVsb3BtZW50PC9oMz4NCjxkaXY+PHN0cm9uZz5GaXJzdCBwbGFjZTogU2luZ2Fwb3JlLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9MTA2MzUiPjxzdHJvbmc+VGVhbSBUcmFpbCBCbGF6ZXJzPC9zdHJvbmc+PC9hPjxzdHJvbmc+IDwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48c3Ryb25nPlNlY29uZCBwbGFjZTogVElFIDxiciAvPg0KSXJlbGFuZCwgPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTExMzE1Ij48c3Ryb25nPlRlYW0gQWNpZFJhaW48L3N0cm9uZz48L2E+PHN0cm9uZz4gPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+Q2hpbmEsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD0xMDkzMSI+PHN0cm9uZz5UZWFtIFdpbmdzPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48c3Ryb25nPlRoaXJkIHBsYWNlOiBQb2xhbmQsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD05NDM3Ij48c3Ryb25nPlRlYW0gQWVyb0BQVVQ8L3N0cm9uZz48L2E+PHN0cm9uZz4mbmJzcDsgPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+PGJyIC8+DQo8L3N0cm9uZz48L2Rpdj4NCjxoMz5HYW1lIERldmVsb3BtZW50PC9oMz4NCjxkaXY+PHN0cm9uZz5GaXJzdCBwbGFjZTogQnJhemlsLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9NzA4MiI+PHN0cm9uZz5UZWFtIE1vdGhlciBHYWlhIFN0dWRpbzwvc3Ryb25nPjwvYT48c3Ryb25nPiA8L3N0cm9uZz48L2Rpdj4NCjxkaXY+PHN0cm9uZz5TZWNvbmQgcGxhY2U6IEJlbGdpdW0sIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD05MDAxIj48c3Ryb25nPlRlYW0gRHJ1bmsgUHVwcHkgUHJvZHVjdGlvbnM8L3N0cm9uZz48L2E+PHN0cm9uZz4mbmJzcDs8L3N0cm9uZz48L2Rpdj4NCjxkaXY+PHN0cm9uZz5UaGlyZCBwbGFjZTogS29yZWEsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD05Mjg0Ij48c3Ryb25nPlRlYW0gR09NWjwvc3Ryb25nPjwvYT48c3Ryb25nPiZuYnNwOzxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+PGJyIC8+DQo8L3N0cm9uZz48L2Rpdj4NCjxoMz5Qcm9qZWN0IEhvc2hpbWkgUHJvZ3JhbW1pbmcgQmF0dGxlPC9oMz4NCjxkaXY+PHN0cm9uZz5GaXJzdCBwbGFjZTogUnVzc2lhLCA8L3N0cm9uZz48c3Ryb25nPlRlYW0gUmVkIERldmlsczwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48c3Ryb25nPlNlY29uZCBwbGFjZTogQ2hpbmEsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD04ODkyIj48c3Ryb25nPlRlYW0gWmVwaHlyPC9zdHJvbmc+PC9hPjxzdHJvbmc+Jm5ic3A7IDwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48c3Ryb25nPlRoaXJkIHBsYWNlOiBVa3JhaW5lLCA8L3N0cm9uZz48c3Ryb25nPlRlYW0gRHJlYW0gVGVhbSA8L3N0cm9uZz48L2Rpdj4NCjxkaXY+PHN0cm9uZz48YnIgLz4NCjwvc3Ryb25nPjwvZGl2Pg0KPGgzPklUIENoYWxsZW5nZTwvaDM+DQo8ZGl2PjxzdHJvbmc+Rmlyc3QmbmJzcDtwbGFjZTogRnJhbmNlPC9zdHJvbmc+LCA8YSBocmVmPSIvdXNlci9Qcm9maWxlLmFzcHg/VXNlcklEPTcyMjIiPjxzdHJvbmc+SmVhbi1CZW5vaXQgUGF1eDwvc3Ryb25nPjwvYT48c3Ryb25nPiA8YnIgLz4NClNlY29uZCBwbGFjZTogUm9tYW5pYTwvc3Ryb25nPiwgPGEgaHJlZj0iL3VzZXIvUHJvZmlsZS5hc3B4P1VzZXJJRD0xMjA1MzkiPjxzdHJvbmc+Q29zbWluLVZpb3JlbCBJbGllPC9zdHJvbmc+PC9hPjxzdHJvbmc+IDwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48c3Ryb25nPlRoaXJkIHBsYWNlOiBDaGluYSwgPC9zdHJvbmc+PGEgaHJlZj0iL3VzZXIvUHJvZmlsZS5hc3B4P1VzZXJJRD0xMjEyMTAiPjxzdHJvbmc+WWFuIExpdTwvc3Ryb25nPjwvYT48L2Rpdj4NCjxkaXY+PHN0cm9uZz48YnIgLz4NCjwvc3Ryb25nPjwvZGl2Pg0KPGgzPkFsZ29yaXRobTwvaDM+DQo8ZGl2PjxzdHJvbmc+Rmlyc3QgcGxhY2U6IFVrcmFpbmUsIDwvc3Ryb25nPjxhIGhyZWY9Ii91c2VyL1Byb2ZpbGUuYXNweD9Vc2VySUQ9Mzk4OTkiPjxzdHJvbmc+Um9tYW4gS29zaGx5YWs8L3N0cm9uZz48L2E+PHN0cm9uZz4gPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+U2Vjb25kIHBsYWNlOiBIdW5nYXJ5LCA8L3N0cm9uZz48YSBocmVmPSIvdXNlci9Qcm9maWxlLmFzcHg/VXNlcklEPTE3MTQwIj48c3Ryb25nPlN6aWx2ZXN6dGVyIFN6ZWJlbmk8L3N0cm9uZz48L2E+PHN0cm9uZz4gPC9zdHJvbmc+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+VGhpcmQgcGxhY2U6IEphcGFuLCA8L3N0cm9uZz48YSBocmVmPSIvdXNlci9Qcm9maWxlLmFzcHg/VXNlcklEPTEyNDE1Ij48c3Ryb25nPk5hb2hpcm8gVGFrYWhhc2hpPC9zdHJvbmc+PC9hPjxzdHJvbmc+IDwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48c3Ryb25nPjxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8aDM+UGhvdG9ncmFwaHk8L2gzPg0KPGRpdj48c3Ryb25nPkZpcnN0IHBsYWNlOiBVbml0ZWQgU3RhdGVzLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9MTIyNTYiPjxzdHJvbmc+VGVhbSBQcm92aXNpbzxiciAvPg0KPC9zdHJvbmc+PC9hPjxzdHJvbmc+U2Vjb25kIHBsYWNlOiBBdXN0cmlhLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9MTI1NzEiPjxzdHJvbmc+VGVhbSBBdXN0cmlhPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48c3Ryb25nPlRoaXJkIHBsYWNlOiBDcm9hdGlhLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9NzYzOSI+PHN0cm9uZz5UZWFtIFZvb2RvbyBEZWxpcnVtPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48c3Ryb25nPjxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8aDM+U2hvcnQgRmlsbTwvaDM+DQo8ZGl2PjxzdHJvbmc+Rmlyc3QgcGxhY2U6IEtvcmVhLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9Njg2NiI+PHN0cm9uZz5UZWFtIE5FSVA8L3N0cm9uZz48L2E+PC9kaXY+DQo8ZGl2PjxzdHJvbmc+U2Vjb25kIHBsYWNlOiBNZXhpY28sIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD04NjAwIj48c3Ryb25nPlRlYW0gTGF2YSBMYW1wPGJyIC8+DQo8L3N0cm9uZz48L2E+PHN0cm9uZz5UaGlyZCBwbGFjZTogQ2FuYWRhLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9OTU2NyI+PHN0cm9uZz5UZWFtIFJvYm90cmVlPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGgzPkludGVyZmFjZSBEZXNpZ248L2gzPg0KPGRpdj48c3Ryb25nPkZpcnN0IHBsYWNlOiBVbml0ZWQgU3RhdGVzLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9MTExNzYiPjxzdHJvbmc+VGVhbSBJVSBFY29WaXM8YnIgLz4NCjwvc3Ryb25nPjwvYT48c3Ryb25nPlNlY29uZCBwbGFjZTogQ2FuYWRhLCA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9MTA5MTMiPjxzdHJvbmc+VGVhbSBHcmVlTmV0IDxiciAvPg0KPC9zdHJvbmc+PC9hPjwvZGl2Pg0KPGRpdj48c3Ryb25nPlRoaXJkIHBsYWNlOiBGcmFuY2UsIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD0xMDkyNCI+PHN0cm9uZz5UZWFtIEVkZWx3ZWlzczwvc3Ryb25nPjwvYT48c3Ryb25nPiZuYnNwOzwvc3Ryb25nPjwvZGl2Pg0KPGRpdj48c3Ryb25nPjxiciAvPg0KPC9zdHJvbmc+PC9kaXY+DQo8aDI+MjAwOCBBY2hpZXZlbWVudCBBd2FyZHM8L2gyPg0KPHVsIHR5cGU9ImRpc2MiPg0KICAgIDxsaT48c3Ryb25nPlRoZSBSdXJhbCBJbm5vdmF0aW9uIEFjaGlldmVtZW50IEF3YXJkLCA8L3N0cm9uZz5zcG9uc29yZWQgYnkgTWljcm9zb2Z0J3MgVW5saW1pdGVkIFBvdGVudGlhbCBHcm91cCwmbmJzcDt3YXMgZGVzaWduZWQgdG8gcmVjb2duaXplIHRoZSBzb2Z0d2FyZSBzb2x1dGlvbiB0aGF0IGNvbnRyaWJ1dGVkIHRvd2FyZCBhIG1vcmUgc3VzdGFpbmFibGUgZW52aXJvbm1lbnQgYW5kIGJlc3QgaGVscGVkIHByb21vdGUgdGhlIHNvY2lhbCBhbmQgZWNvbm9taWMgZ3Jvd3RoIG9mIHVuZGVyc2VydmVkIHBvcHVsYXRpb25zIGluIGRldmVsb3BpbmcgY291bnRyaWVzIGFuZCByZWdpb25zLiBJdCB3YXMgd29uIGJ5IEluZG9uZXNpYSdzJm5ic3A7PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTg2NzEiPjxzdHJvbmc+VGVhbSBBbnRhcm11a2E8L3N0cm9uZz48L2E+LiA8L2xpPg0KICAgIDxsaT48c3Ryb25nPlRoZSBBY2Nlc3NpYmxlIFRlY2hub2xvZ3kgQWNoaWV2ZW1lbnQgQXdhcmQ8L3N0cm9uZz4sIHdhcyBkZXNpZ25lZCB0byByZWNvZ25pemUgdGhlIGludGVyZmFjZSBkZXNpZ24gc29sdXRpb24gdGhhdCBtYWRlIGl0IGVhc2llciBmb3IgYW55b25lIHRvIHNlZSwgaGVhciBhbmQgdXNlIGEgY29tcHV0ZXIsIGFuZCB0byBjdXN0b21pemUgdGhlaXIgY29tcHV0aW5nIGVudmlyb25tZW50IGFjY29yZGluZyB0byB0aGVpciBvd24gcHJlZmVyZW5jZXMsIG5lZWRzIGFuZCBhYmlsaXRpZXMuPHN0cm9uZz4gPC9zdHJvbmc+SXQgd2FzIHdvbiBieSA8c3Ryb25nPkplZmZyZXkgQmlnaGFtPC9zdHJvbmc+LCBhIFBoLkQuIGNhbmRpZGF0ZSBpbiBjb21wdXRlciBzY2llbmNlIGZyb20gdGhlIFVuaXZlcnNpdHkgb2YgV2FzaGluZ3RvbiwgVW5pdGVkIFN0YXRlcywgZm9yIDxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD0xMjY5NSI+PHN0cm9uZz5Qcm9qZWN0IFdlYkFueXdoZXJlPC9zdHJvbmc+PC9hPi4gQW4gYWRkaXRpb25hbCBvbnNpdGUgY2hhbGxlbmdlIHdhcyB3b24gYnkgRnJhbmNlJ3MmbmJzcDs8YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9MTA3NjYiPjxzdHJvbmc+VGVhbSBKaXZBZDwvc3Ryb25nPjwvYT4uPHN0cm9uZz4gPC9zdHJvbmc+PC9saT4NCiAgICA8bGk+PHN0cm9uZz5UaGUgSW50ZXJvcGVyYWJpbGl0eSBBY2hpZXZlbWVudCBBd2FyZDwvc3Ryb25nPiwgd2FzIGRlc2lnbmVkIHRvIHJlY29nbml6ZSB0aGUgc29mdHdhcmUgc29sdXRpb24gdGhhdCBiZXN0IGxldmVyYWdlZCBNaWNyb3NvZnQgdGVjaG5vbG9naWVzIHRvIGNvbm5lY3QgcGVvcGxlLCBkYXRhIG9yIGRpdmVyc2Ugc3lzdGVtcyB0byBoZWxwIGFkZHJlc3MgcmVhbC13b3JsZCBjdXN0b21lciBuZWVkcy4gSXQmbmJzcDt3YXMgd29uIGJ5IEluZGlhJ3MgPGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTg1NTYiPjxzdHJvbmc+VGVhbSBTS0FOPC9zdHJvbmc+PC9hPi4gPC9saT4NCiAgICA8bGk+PHN0cm9uZz5UaGUgV2luZG93cyBMaXZlIEFjaGlldmVtZW50IEF3YXJkPC9zdHJvbmc+LCB3YXMgZGVzaWduZWQgdG8gcmVjb2duaXplIHRoZSBzb2Z0d2FyZSBzb2x1dGlvbiB0aGF0IG1hZGUgdGhlIGJlc3QgdXNlIG9mIHRoZSBXaW5kb3dzIExpdmUgcGxhdGZvcm0gYW5kIGFkZHMgbmV3IHNvY2lhbCBkaW1lbnNpb25zIHRvIGJvdGggbmV3IGFuZCBvbGQgd2Vic2l0ZXMgYW5kIHdlYiBwcm9qZWN0cy4gSXQmbmJzcDt3YXMgd29uIGJ5IFNwYWluJ3MgPGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTEyNzgwIj48c3Ryb25nPldpbmRvd3MgRHJpdmU8L3N0cm9uZz48L2E+LiA8L2xpPg0KICAgIDxsaT48c3Ryb25nPlRoZSBFbmdpbmVlcmluZyBFeGNlbGxlbmNlIEFjaGlldmVtZW50IEF3YXJkPC9zdHJvbmc+LCBzcG9uc29yZWQgYnkgTWljcm9zb2Z0J3MgRW50ZXJwcmlzZSBFbmdpbmVlcmluZyBDZW50ZXIsJm5ic3A7d2FzIGRlc2lnbmVkIHRvIHJlY29nbml6ZSB0aHJlZSBvdXRzdGFuZGluZyB0ZWFtcyBmcm9tIHRoZSBTb2Z0d2FyZSBEZXZlbG9wbWVudCBjYXRlZ29yeSBjcmVhdGVkIHNvbHV0aW9ucyB0aGF0IGRlbW9uc3RyYXRlZCB0aGUgcG90ZW50aWFsIHRvIGJlIGRldmVsb3BlZCB0byBzY2FsZSB3aXRoIGZvY3VzZWQgZ3VpZGFuY2UgZnJvbSBhIE1pY3Jvc29mdCBlbmdpbmVlci4gSXQgd2FzIHdvbiBieSB0aGUgZm9sbG93aW5nOjxzdHJvbmc+IDwvc3Ryb25nPjwvbGk+DQogICAgPHVsIHR5cGU9ImRpc2MiPg0KICAgICAgICA8bGk+PHN0cm9uZz5CdWxnYXJpYTwvc3Ryb25nPiZuYnNwOyAtIDxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD0xMjQ5NCI+PHN0cm9uZz5UZWFtIEF0bGFzPC9zdHJvbmc+PC9hPjwvbGk+DQogICAgICAgIDxsaT48c3Ryb25nPlVTQTwvc3Ryb25nPiAtIDxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD04MDY4Ij48c3Ryb25nPlRlYW0gU3Bhcng8L3N0cm9uZz48L2E+PC9saT4NCiAgICAgICAgPGxpPjxzdHJvbmc+UnVzc2lhPC9zdHJvbmc+IC0gPGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTExNjUxIj48c3Ryb25nPlRlYW0gSWduaXRpb248L3N0cm9uZz48L2E+PGJyIC8+DQogICAgICAgIDwvbGk+DQogICAgPC91bD4NCjwvdWw+DQo8aDI+SW1hZ2luZSBDdXAgSW5ub3ZhdGlvbiBBY2NlbGVyYXRvciBQcm9ncmFtPC9oMj4NCjxkaXY+PHN0cm9uZz5UaGUgc2l4IDIwMDggRmluYWxpc3QgdGVhbXMgY2hvc2VuIHRvIHBhcnRpY2lwYXRlIGluIHRoZSBJbWFnaW5lIEN1cCBJbm5vdmF0aW9uIEFjY2VsZXJhdG9yIHByb2dyYW0gYXJlOiA8L3N0cm9uZz4NCjxkaXY+PHN0cm9uZz4mbmJzcDs8L3N0cm9uZz48L2Rpdj4NCjwvZGl2Pg0KPHVsIHN0eWxlPSJtYXJnaW4tdG9wOiAwaW4iIHR5cGU9ImRpc2MiPg0KICAgIDxsaT48c3Ryb25nPkF1c3RyYWxpYSAtIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD0xMjQxMCI+PHN0cm9uZz5UZWFtIFNPQUsgPC9zdHJvbmc+PC9hPjxzdHJvbmc+KFNtYXJ0IE9wZXJhdGlvbmFsIEFncmljdWx0dXJhbCB0b29sS2l0KTwvc3Ryb25nPjwvbGk+DQogICAgPGxpPjxzdHJvbmc+RnJhbmNlIC0gPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTc0NDEiPjxzdHJvbmc+VGVhbSBXZWxsIEsnSG9tZTwvc3Ryb25nPjwvYT48L2xpPg0KICAgIDxsaT48c3Ryb25nPkdlcm1hbnkgLSA8L3N0cm9uZz48YSBocmVmPSIvTXlTdHVmZi9NeVRlYW0uYXNweD9UZWFtSUQ9MTE3MzQiPjxzdHJvbmc+VGVhbSBQb2luVC1Qb3dlciBpbiBUaW1lPC9zdHJvbmc+PC9hPjwvbGk+DQogICAgPGxpPjxzdHJvbmc+SHVuZ2FyeSAtIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD0xMjYxMiI+PHN0cm9uZz5UZWFtIERpZ2l0YWwgTWFuaWE8L3N0cm9uZz48L2E+PHN0cm9uZz48L3N0cm9uZz48L2xpPg0KICAgIDxsaT48c3Ryb25nPlNsb3Zha2lhIC0gPC9zdHJvbmc+PGEgaHJlZj0iL015U3R1ZmYvTXlUZWFtLmFzcHg/VGVhbUlEPTc5MzgiPjxzdHJvbmc+VGVhbSBIb3VzZWtlZXBlcnM8L3N0cm9uZz48L2E+PHN0cm9uZz4mbmJzcDs8L3N0cm9uZz48L2xpPg0KICAgIDxsaT48c3Ryb25nPlNvdXRoIEFmcmljYSAtIDwvc3Ryb25nPjxhIGhyZWY9Ii9NeVN0dWZmL015VGVhbS5hc3B4P1RlYW1JRD0xMjc1OCI+PHN0cm9uZz5UZWFtIFNtaWxlPGJyIC8+DQogICAgPC9zdHJvbmc+PC9hPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTogJ1ZlcmRhbmEnLCAnc2Fucy1zZXJpZic7IGNvbG9yOiAjMzUzNTM1OyBmb250LXNpemU6IDlwdDsgbXNvLWZhcmVhc3QtZm9udC1mYW1pbHk6IENhbGlicmk7IG1zby1hbnNpLWxhbmd1YWdlOiBFTi1VUzsgbXNvLWZhcmVhc3QtbGFuZ3VhZ2U6IEVOLVVTOyBtc28tYmlkaS1sYW5ndWFnZTogQVItU0E7IG1zby1iaWRpLWZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgbXNvLWZhcmVhc3QtdGhlbWUtZm9udDogbWlub3ItbGF0aW4iPiZuYnNwOzwvbGk+DQo8L3VsPg0KPC9zcGFuPmQCAw8WAh8LBacbPHA+DQo8aDM+MjAwOTogQ2Fpcm8sIEVneXB0PC9oMz4NCjxwPiZuYnNwOzwvcD4NCjxwPlRoZW1lOiBJbWFnaW5lIGEgd29ybGQgd2hlcmUgdGVjaG5vbG9neSBoZWxwcyBzb2x2ZSB0aGUgdG91Z2hlc3QgcHJvYmxlbXMgZmFjaW5nIHVzIHRvZGF5LjwvcD4NCjxwPldvcmxkd2lkZSBDb21wZXRpdG9yczoNCjx1bD4NCiAgICA8bGk+MzAwLDAwMCByZWdpc3RlcmVkPC9saT4NCiAgICA8bGk+NTksMDAwIHN0dWRlbnRzJm5ic3A7c2lnbmVkIHVwIDwvbGk+DQogICAgPGxpPjgsMDMyIHN0dWRlbnRzIGNvbXBldGVkPC9saT4NCiAgICA8bGk+NDQzIGZpbmFsaXN0cyB0cmF2ZWxlZCB0byBDYWlybywgRWd5cHQ8L2xpPg0KICAgIDxsaT48YSBocmVmPSJodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcHJlc3NwYXNzL3ByZXNzLzIwMDkvanVsMDkvMDctMDdJbWFnaW5lQ3VwMjAwOVdpbm5lcnNQUi5tc3B4IiB0YXJnZXQ9Il9ibGFuayI+TWljcm9zb2Z0IFByZXNzIFBhc3MgTmV3cyBSZWxlYXNlOiBNaWNyb3NvZnQgQW5ub3VuY2VzIDIwMDkgSW1hZ2luZSBDdXAgV2lubmVyczwvYT4mbmJzcDsgPC9saT4NCjwvdWw+DQo8cD4mbmJzcDs8L3A+DQo8cD4NCjxoMz4yMDA4OiBQYXJpcywgRnJhbmNlPC9oMz4NCjxwPiZuYnNwOzwvcD4NCjxwPlRoZW1lOiBJbWFnaW5lIGEgd29ybGQgd2hlcmUgdGVjaG5vbG9neSBlbmFibGVzIGEgc3VzdGFpbmFibGUgZW52aXJvbm1lbnQuIDwvcD4NCjxwPldvcmxkd2lkZSBDb21wZXRpdG9yczoNCjx1bD4NCiAgICA8bGk+T3ZlciAyMTAsMDAwIHJlZ2lzdGVyZWQ8L2xpPg0KICAgIDxsaT41OSwwMDAgc3R1ZGVudHMgY29tcGV0ZWQgZnJvbSAxMjYgY291bnRyaWVzPC9saT4NCiAgICA8bGk+MTIxIGZpbmFsaXN0IHRlYW1zPC9saT4NCiAgICA8bGk+PGEgaHJlZj0iaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL1ByZXNzcGFzcy9wcmVzcy8yMDA4L2p1bDA4LzA3LTA4SUNXSU5ORVJTUFIubXNweCIgdGFyZ2V0PSJfYmxhbmsiPk1pY3Jvc29mdCBQcmVzcyBQYXNzIE5ld3MgUmVsZWFzZTogTWljcm9zb2Z0IEFubm91bmNlcyAyMDA4IEltYWdpbmUgQ3VwIFdpbm5lcnM8L2E+IDwvbGk+DQo8L3VsPg0KPHA+Jm5ic3A7PC9wPg0KPHA+DQo8aDM+MjAwNzogU2VvdWwsIFNvdXRoIEtvcmVhPC9oMz4NCjxwPiZuYnNwOzwvcD4NCjxwPlRoZW1lOiBJbWFnaW5lIGEgd29ybGQgd2hlcmUgdGVjaG5vbG9neSBlbmFibGVzIGEgYmV0dGVyIGVkdWNhdGlvbiBmb3IgYWxsLiA8L3A+DQo8cD5Xb3JsZHdpZGUgQ29tcGV0aXRvcnM6DQo8dWw+DQogICAgPGxpPk92ZXIgMTAwLDAwMCByZWdpc3RlcmVkPC9saT4NCiAgICA8bGk+NTksMDAwIHN0dWRlbnRzIGNvbXBldGVkIGZyb20gMTI2IGNvdW50cmllczwvbGk+DQogICAgPGxpPjEyMCBmaW5hbGlzdCB0ZWFtcyA8L2xpPg0KPC91bD4NCjxwPiZuYnNwOzwvcD4NCjxwPg0KPGgzPjIwMDY6IERlbGhpLCBJbmRpYTwvaDM+DQo8cD4mbmJzcDs8L3A+DQo8cD5UaGVtZTogSW1hZ2luZSBhIHdvcmxkIHdoZXJlIHRlY2hub2xvZ3kgZW5hYmxlcyB1cyB0byBsaXZlIGhlYWx0aGllciBsaXZlcy4gPC9wPg0KPHA+V29ybGR3aWRlIENvbXBldGl0b3JzOg0KPHVsPg0KICAgIDxsaT42OCwwMDAgcmVnaXN0ZXJlZDwvbGk+DQogICAgPGxpPjI0LDAwMCBzdHVkZW50cyBjb21wZXRlZCBmcm9tIDEwMCBjb3VudHJpZXM8L2xpPg0KICAgIDxsaT43NiBmaW5hbGlzdCB0ZWFtczwvbGk+DQogICAgPGxpPjxhIGhyZWY9Imh0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS9wcmVzc3Bhc3MvcHJlc3MvMjAwNi9hdWcwNi8wOC0xMUltYWdpbmVDdXBXaW5uZXJzUFIubXNweCIgdGFyZ2V0PSJfYmxhbmsiPk1pY3Jvc29mdCBQcmVzc1Bhc3MgTmV3cyBSZWxlYXNlOiBNaWNyb3NvZnQgQW5ub3VuY2VzIEltYWdpbmUgQ3VwIDIwMDYgV2lubmVyczwvYT4gPC9saT4NCjwvdWw+DQo8cD4mbmJzcDs8L3A+DQo8cD4NCjxoMz4yMDA1OiBZb2tvaGFtYSwgSmFwYW48L2gzPg0KPHA+Jm5ic3A7PC9wPg0KPHA+VGhlbWU6IEltYWdpbmUgYSB3b3JsZCB3aGVyZSB0ZWNobm9sb2d5IGRpc3NvbHZlcyB0aGUgYm91bmRhcmllcyBiZXR3ZWVuIHVzLiA8L3A+DQo8cD5Xb3JsZHdpZGUgQ29tcGV0aXRvcnM6DQo8dWw+DQogICAgPGxpPjMwLDAwMCByZWdpc3RlcmVkPC9saT4NCiAgICA8bGk+MTcsMDAwIHN0dWRlbnRzIGNvbXBldGVkIGZyb20gOTcgY291bnRyaWVzPC9saT4NCiAgICA8bGk+ODYgZmluYWxpc3QgdGVhbXM8L2xpPg0KICAgIDxsaT48YSBocmVmPSJodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcHJlc3NwYXNzL3ByZXNzLzIwMDUvYXVnMDUvMDgtMDFJbWFnaW5lQ3VwQXdhcmRzUFIubXNweCIgdGFyZ2V0PSJfYmxhbmsiPk1pY3Jvc29mdCBQcmVzc1Bhc3MgTmV3cyBSZWxlYXNlOiBNaWNyb3NvZnQgQW5ub3VuY2VzIEltYWdpbmUgQ3VwIDIwMDUgV2lubmVyczwvYT4gPC9saT4NCjwvdWw+DQo8cD4mbmJzcDs8L3A+DQo8cD4NCjxoMz4yMDA0OiBTYW8gUGF1bG8sIEJyYXppbDwvaDM+DQo8cD4mbmJzcDs8L3A+DQo8cD5UaGVtZTogIkltYWdpbmUgYSB3b3JsZCB3aGVyZSBzbWFydCB0ZWNobm9sb2d5IG1ha2VzIGV2ZXJ5ZGF5IGxpZmUgZWFzaWVyLiIgPC9wPg0KPHA+V29ybGR3aWRlIENvbXBldGl0b3JzOg0KPHVsPg0KICAgIDxsaT4xMCwwMDAgc3R1ZGVudHMgZnJvbSA5MCBDb3VudHJpZXM8L2xpPg0KICAgIDxsaT41MCBmaW5hbGlzdCB0ZWFtczwvbGk+DQogICAgPGxpPjxhIGhyZWY9Imh0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS9wcmVzc3Bhc3MvcHJlc3MvMjAwNC9qdWwwNC8wNy0wNmNoYW1waW9uczA0cHIubXNweCIgdGFyZ2V0PSJfYmxhbmsiPk1pY3Jvc29mdCBQcmVzc1Bhc3MgTmV3cyBSZWxlYXNlOiBNaWNyb3NvZnQgQ3Jvd25zIEltYWdpbmUgQ3VwIDIwMDQgV2lubmVyczwvYT4gPC9saT4NCjwvdWw+DQo8cD4mbmJzcDs8L3A+DQo8cD4NCjxoMz4yMDAzOiBCYXJjZWxvbmEsIFNwYWluPC9oMz4NCjxwPiZuYnNwOzwvcD4NCjxwPlRoZW1lOiAiTGluayBiZXR3ZWVuIHBlb3BsZSwgaW5mb3JtYXRpb24sIHN5c3RlbXMsIGFuZCBkZXZpY2VzLCB1c2luZyBXZWIgc2VydmljZXMgYW5kIC5ORVQgYXMgdGhlIHNwcmluZ2JvYXJkLiIgPC9wPg0KPHA+V29ybGR3aWRlIENvbXBldGl0b3JzOg0KPHVsPg0KICAgIDxsaT4xLDAwMCBzdHVkZW50cyBmcm9tIDI1IGNvdW50cmllczwvbGk+DQogICAgPGxpPjE1IEZpbmFsaXN0IFRlYW1zPC9saT4NCiAgICA8bGk+T25lIFdpbm5lcjogVHUgTmd1eWVuPC9saT4NCiAgICA8bGk+PGEgaHJlZj0iaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3ByZXNzcGFzcy9wcmVzcy8yMDAzL25vdjAzLzExLTE0aW1hZ2luZWN1cDIwMDRwci5tc3B4IiB0YXJnZXQ9Il9ibGFuayI+TWljcm9zb2Z0IFByZXNzUGFzcyBOZXdzIFJlbGVhc2U6IE1pY3Jvc29mdCdzIEplZmYgUmFpa2VzIFByZXNlbnRzIDIwMDMgV2lubmVyIFR1IE5ndXllbiA8L2E+PC9saT4NCjwvdWw+DQo8cD4mbmJzcDs8L3A+ZAIFDxYCHwsFBA0KDQpkAg4PDxYCHwcFBUNBUkxBZGRki9Iojx0d0FUcrtTbmnK64spI19I=" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="exploreimaginecup.aspx_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="exploreimaginecup.aspx_files/ScriptResource.js" type="text/javascript"></script>
+<script src="exploreimaginecup.aspx_files/ScriptResource_002.js" type="text/javascript"></script>
+<div>
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWIgLkzIicDAKYh6jqAQKhjNWAAgLbs6bfDwL+o4L6DgK/mqfFAQLt4ICzDwKR7cD7AQKN7YS9BgLR7eDPDgKw7NCFBwLC76gsAsLv3IQHAqjszKIMAvbgpKEGAt3gwMMOAv3g0KUGAozm3PcMAvTmvP4MAu7mlJcBAqzh5OcCAvL1naoNAp//wuoJAsTjqNYIAvLh9JULAsPviMcEAq/hyMYNArTt6OoIAp3jtIAMArrjuNsHArDnqLYGAsnmnI8LApiO/cgBAsy7q6AN3r4BaT6w2umUz4IHPrQbdX3yusY=" type="hidden">
+</div>
+     <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager_Login', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 600);
+//]]>
+</script>
+
+     <input name="ctl00$ctl00$hidden_CMSChangeFlag" id="ctl00_ctl00_hidden_CMSChangeFlag" value="false" type="hidden">
+    <input name="ctl00$ctl00$hidden_CMSIsReverDraftVisible" id="ctl00_ctl00_hidden_CMSIsReverDraftVisible" value="false" type="hidden">
+    <input name="ctl00$ctl00$hidden_CMSIsRevertDraftAvilableAfterEdit" id="ctl00_ctl00_hidden_CMSIsRevertDraftAvilableAfterEdit" value="false" type="hidden">
+    <input name="ctl00$ctl00$hidden_signup09_email" id="ctl00_ctl00_hidden_signup09_email" type="hidden">
+        <div id="container">
+            <div style="height: 128px;"><a href="http://imaginecup.com/Default.aspx"><img src="exploreimaginecup.aspx_files/logo.png" class="logoLink" alt="Imagine Cup"></a>
+            <script type="text/javascript" language="javascript">
+                swapImage(); 
+                </script><img src="exploreimaginecup.aspx_files/technology_poster.png"><img src="exploreimaginecup.aspx_files/education_poster.png"> 
+            
+            </div>
+            <div id="content">
+             <noscript>
+<div id="ctl00_ctl00_no_script_nav" class="no_script_nav"> <DIV
+style='float: left; padding-left: 10px; padding-right: 10px;'><a
+href='/default.aspx'<strong>Home</strong></a><br/>&nbsp;&nbsp;<a
+href='/default.aspx'>Imagine Cup Home</a><br/></div><DIV style='float:
+left; padding-left: 10px; padding-right: 10px;'><a
+style='cursor:default;'><strong>Compete</strong></a><br/>&nbsp;&nbsp;<a
+href='/About/Welcome.aspx'>Start Here</a><br/>&nbsp;&nbsp;<a
+href='/Registration/Default.aspx'>Register</a><br/>&nbsp;&nbsp;<a
+href='/Competition/Overview.aspx'>Competition
+Overview</a><br/>&nbsp;&nbsp;<a
+style='cursor:default;'><strong>Competitions</strong></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=37'>Software
+Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=40'>Embedded
+Development</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=38'>Game
+Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=39'>Digital
+Media</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=41'>IT
+Challenge</a><br/>&nbsp;&nbsp;<a
+href='/CompetitionsContent/Competition/awards_at_a_glance.aspx'>Award
+Overview</a><br/>&nbsp;&nbsp;<a
+style='cursor:default;'><strong>Awards</strong></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=46'>Envisioning
+2020 Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=45'>Internet
+Explorer 8 Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=42'>Interoperability
+Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=44'>Next
+Generation Web Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=43'>Touch &
+Tablet Accessibility Award</a><br/>&nbsp;&nbsp;<a
+href='/Competition/Leaderboard.aspx'>Leaderboards</a><br/></div><DIV
+style='float: left; padding-left: 10px; padding-right: 10px;'><a
+style='cursor:default;'><strong>Learn</strong></a><br/>&nbsp;&nbsp;<a
+href='/Support/FAQ.aspx'>FAQ</a><br/>&nbsp;&nbsp;<a
+href='/About/WhatIs.aspx'>What is the Imagine
+Cup?</a><br/>&nbsp;&nbsp;<a
+href='/Competition/ResourcesfromMicrosoftLearning.aspx'>Microsoft
+Learning Resources</a><br/>&nbsp;&nbsp;<a
+href='/CompetitionsContent/learn/key_technologies.aspx'>Key
+Technologies</a><br/>&nbsp;&nbsp;<a
+href='/Support/MentorResources.aspx'>Mentor
+Resources</a><br/>&nbsp;&nbsp;<a
+href='http://imaginecup.com/CompetitionsContent/MDG.aspx'>2010 Theme
+and MDGs</a><br/></div><DIV style='float: left; padding-left: 10px;
+padding-right: 10px;'><a
+style='cursor:default;'><strong>Socialize</strong></a><br/>&nbsp;&nbsp;<a
+style='cursor:default;'><strong>Forums</strong></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/'>All Forums</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/18.aspx'>Software
+Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/20.aspx'>Embedded
+Development</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/63.aspx'>Game Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/113.aspx'>Digital
+Media</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/forums/16.aspx'>IT
+Challenge</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/120.aspx'>Who Owns Your Idea</a><br/>&nbsp;&nbsp;<a
+href='/blogs/imagine_cup_finals/default.aspx'>Imagine Cup
+Blog</a><br/>&nbsp;&nbsp;<a
+href='/About/MicrosoftStudentPrograms.aspx'>Student
+Programs</a><br/>&nbsp;&nbsp;<a
+href='/CompetitionsContent/ImagineCupSuccessStories.aspx'>Success
+Stories</a><br/></div><DIV style='float: left; padding-left: 10px;
+padding-right: 10px;'><a
+style='cursor:default;'><strong>Explore</strong></a><br/>&nbsp;&nbsp;<a
+href='/Support/exploreimaginecup.aspx'>Explore Our
+History</a><br/>&nbsp;&nbsp;<a href='/About/Sponsors.aspx'>Our
+Sponsors</a><br/></div> </div> </noscript>
+                <div id="menuContainer">
+                    <!--Read the dynamically genetrated HTML for the menu -->
+                <ul id="nav">
+                    <li class="navHome"><a href="http://imaginecup.com/default.aspx">Home</a><ul><li class="navAll"><a href="http://imaginecup.com/default.aspx">Imagine Cup Home</a></li></ul></li><li class="navCompete"><a style="cursor: default;">Compete</a><ul><li class="navAll"><a href="http://imaginecup.com/About/Welcome.aspx">Start Here</a></li><li class="navAll"><a href="http://imaginecup.com/Registration/Default.aspx">Register</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/Overview.aspx">Competition Overview</a></li><li><a style="cursor: default;">Competitions</a><ul><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=37">Software Design</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=40">Embedded Development</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=38">Game Design</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=39">Digital Media</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=41">IT Challenge</a></li></ul></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/Competition/awards_at_a_glance.aspx">Award Overview</a></li><li><a style="cursor: default;">Awards</a><ul><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=46">Envisioning 2020 Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=45">Internet Explorer 8 Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=42">Interoperability Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=44">Next Generation Web Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=43">Touch &amp; Tablet Accessibility Award</a></li></ul></li><li class="navAll"><a href="http://imaginecup.com/Competition/Leaderboard.aspx">Leaderboards</a></li></ul></li><li class="navLearn"><a style="cursor: default;">Learn</a><ul><li class="navAll"><a href="http://imaginecup.com/Support/FAQ.aspx">FAQ</a></li><li class="navAll"><a href="http://imaginecup.com/About/WhatIs.aspx">What is the Imagine Cup?</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/ResourcesfromMicrosoftLearning.aspx">Microsoft Learning Resources</a></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/learn/key_technologies.aspx">Key Technologies</a></li><li class="navAll"><a href="http://imaginecup.com/Support/MentorResources.aspx">Mentor Resources</a></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/MDG.aspx">2010 Theme and MDGs</a></li></ul></li><li class="navSocialize"><a style="cursor: default;">Socialize</a><ul><li><a style="cursor: default;">Forums</a><ul><li class="navAll"><a href="http://imaginecup.com/forums/">All Forums</a></li><li class="navAll"><a href="http://imaginecup.com/forums/18.aspx">Software Design</a></li><li class="navAll"><a href="http://imaginecup.com/forums/20.aspx">Embedded Development</a></li><li class="navAll"><a href="http://imaginecup.com/forums/63.aspx">Game Design</a></li><li class="navAll"><a href="http://imaginecup.com/forums/113.aspx">Digital Media</a></li><li class="navAll"><a href="http://imaginecup.com/forums/16.aspx">IT Challenge</a></li><li class="navAll"><a href="http://imaginecup.com/forums/120.aspx">Who Owns Your Idea</a></li></ul></li><li class="navAll"><a href="http://imaginecup.com/blogs/imagine_cup_finals/default.aspx">Imagine Cup Blog</a></li><li class="navAll"><a href="http://imaginecup.com/About/MicrosoftStudentPrograms.aspx">Student Programs</a></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/ImagineCupSuccessStories.aspx">Success Stories</a></li></ul></li><li class="navExplore"><a style="background: transparent none repeat scroll 0% 0%; cursor: default; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Explore</a><ul><li class="navAll"><a href="http://imaginecup.com/Support/exploreimaginecup.aspx">Explore Our History</a></li><li class="navAll"><a href="http://imaginecup.com/About/Sponsors.aspx">Our Sponsors</a></li></ul></li>
+                </ul>
+                 <div id="ctl00_ctl00_div_Language" style="padding: 7px 6px 7px 0px; text-align: right;">
+                    <div id="languageContainer">
+                        <span style="padding: 0px; width: 150px; color: rgb(110, 110, 110);">
+                            <select name="ctl00$ctl00$DropDownList_PageLanguage" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$DropDownList_PageLanguage\',\'\')', 0)" id="ctl00_ctl00_DropDownList_PageLanguage" class="masterDDL">
+	<option value="id-id">Bahasa</option>
+	<option value="bg-bg">Bulgarian</option>
+	<option value="cs-cz">Česky</option>
+	<option value="de-de">Deutsch</option>
+	<option value="et-ee">Eesti</option>
+	<option selected="selected" value="en-us">English</option>
+	<option value="es-es">Español</option>
+	<option value="fr-fr">Français</option>
+	<option value="hr-hr">Hrvatski</option>
+	<option value="it-it">Italiano</option>
+	<option value="hu-hu">Magyar&nbsp;</option>
+	<option value="pl-pl">Polski</option>
+	<option value="pt-pt">Português</option>
+	<option value="pt-br">Português Brasileiro</option>
+	<option value="sk-sk">slovenčina</option>
+	<option value="sl">slovenski</option>
+	<option value="sr-latn-cs">Srpski</option>
+	<option value="vi-vn">Tiếng Việt</option>
+	<option value="tr-tr">Türkçe</option>
+	<option value="el-gr">Ελληνικά</option>
+	<option value="ru-ru">Русский</option>
+	<option value="ar-ae">العربية‏</option>
+	<option value="ko-kr">한국어</option>
+	<option value="ja-jp">日本語</option>
+	<option value="zh-cn">简体中文</option>
+	<option value="zh-tw">繁體中文</option>
+
+</select>
+                        </span>
+                    </div>
+                </div>
+                </div>
+                
+                 <div>
+                <center>
+                    
+                </center>
+            </div>                       
+            <div class="signInStrip" style="width: 100%; height: 100%;">                    
+                <div class="signInStripLeft" style="width: 100%; background-color: rgb(232, 9, 42);">
+                        <div class="signInStripLeftPad">
+                        <div id="ctl00_ctl00_header_login" style="vertical-align: middle;">
+                            <table width="100%">
+                                <tbody><tr>
+                                    <td style="width: 40%;">
+                                        <div>
+                                            &nbsp;
+                                        </div>
+                                    </td>
+                                    <td style="width: 60%;">
+                                        <div style="text-align: right; padding-right: 5px;">
+                                            <a style="color: White;" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=10&amp;ct=1244007729&amp;rver=5.0.3265.0&amp;wp=MCMBI&amp;wreply=https:%2F%2Fprofile.microsoft.com%2FRegSysProfileCenter%2Fwizard.aspx%3Fwizid%3D9489462d-6b5c-40ed-8009-9a4f350d3703%26lcid%3D1033%26ci%3D104861&amp;lc=1033&amp;cb=LCID%3D1033%26WizID%3D9489462d-6b5c-40ed-8009-9a4f350d3703%26brand%3DMicrosoft&amp;id=74335" target="_blank">
+                                                Sign Up for Microsoft Student Newsletter 
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">
+                            You are not signed in.
+                                        <a id="ctl00_ctl00_HyperLink_Register" class="signInStrip" href="http://imaginecup.com/Registration/Default.aspx">Register</a>
+                            <span id="ctl00_ctl00_orLable"> or </span>
+                            
+                                        <a onclick="ShowFrame();ShowFrame(); return false;" id="ctl00_ctl00_HyperLink_LogIn" class="signInStrip" onmouseover="this.style.cursor='pointer'" href="javascript:__doPostBack('ctl00$ctl00$HyperLink_LogIn','')">Sign In.</a>
+                            
+                                    </td>
+                                    <td style="width: 60%;">
+                                        <div style="vertical-align: bottom; text-align: right; padding-right: 5px;">
+                                            <a id="ctl00_ctl00_HyperLink1" class="signInStrip" href="http://imaginecup.com/Competition/Rules-Regulations.aspx">Rules</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink2" class="signInStrip" href="http://imaginecup.com/Legal/CodeOfConduct.aspx">Code of Conduct</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink3" class="signInStrip" href="http://imaginecup.com/Legal/TermsOfUse.aspx">Terms of Use</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink4" class="signInStrip" href="http://imaginecup.com/Legal/PrivacyStatement.aspx">Privacy Policy</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink5" class="signInStrip" href="http://imaginecup.com/Support/ContactUs.aspx">Get Help</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        
+                                
+                        </div>
+                    </div>
+                
+            </div>            
+            <div id="ctl00_ctl00_Iframe_Lock" style="background-image: url(IC09_Background_Login_Invisible.png); z-index: 1; position: absolute; background-color: transparent; width: 100%; display: none; height: 884px; top: 0px; left: 0px;">
+                <div id="ctl00_ctl00_Div_CloseFrame" style="position: absolute; z-index: 100; top: 128px; left: 150px;">
+                    <iframe id="ctl00_ctl00_LoginFrame" style="border: medium none ; display: none;" allowtransperancy="true" src="exploreimaginecup.aspx_files/LoginPopUp.htm" width="376px" frameborder="0" height="268px" scrolling="no"></iframe>
+                    <a id="ctl00_ctl00_closeLink" onclick="CloseIframe();" style="left: 330px; top: 1px; font-size: 7pt; color: White; display: none; position: absolute; z-index: 100; cursor: pointer;">CLOSE</a>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div id="Page_Body">
+                
+    
+    
+    <div id="ctl00_ctl00_ContentPlaceHolder_HeaderBackground" class="CMSPageBackGroundGray">
+        <div id="genericHeadCMS">
+            <h2>
+                 <div id="ctl00_ctl00_ContentPlaceHolder_HeaderTitle" editable="yes">Explore the&nbsp;Imagine Cup's History</div></h2>
+        </div>
+    </div>
+    <div class="clearL">
+    </div>
+    
+    <table id="compBodyTable" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td id="compBodyLeft">
+                <div id="compBodyLeftPad">
+                    <div id="ctl00_ctl00_ContentPlaceHolder_ContentPlaceHolderCMS_R3_div_PageContent" editable="Yes"><h2>The World's Premier Student Technology Competition</h2>
+<br>
+<div>The Imagine Cup is one way Microsoft is encouraging young people
+to apply their imagination, their passion, and their creativity to
+technology innovations that can help make a difference in the world.
+Now in its eighth year, the Imagine Cup has grown to be a truly global
+competition focused on finding solutions to global
+issues.&nbsp;&nbsp;Below is a list of&nbsp;the 2009 and 2008 winners.
+For information on the winners of the Imagine Cup from 2003 through
+2007, please see the links on the right side of this page. </div>
+<br>
+<h2>Imagine Cup 2009&nbsp;Winners </h2>
+<div><strong>Worldwide Finals</strong>: Cairo, Egypt<br>
+<strong>Theme:</strong> "Imagine a world where technology helps solve the world's toughest problems."</div>
+<br>
+<h3><u>Software Design</u></h3>
+<strong>First place: Romania, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=15704"><strong>SYTECH</strong></a><strong> &nbsp; </strong>
+<div></div>
+<div></div>
+<div><strong>Second place: Russia, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=15860"><strong>Vital Lab</strong></a><strong> &nbsp; </strong>
+<div>
+<div></div>
+<div><strong>Third place: Brazil, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=16381"><strong>Virtual Dreams</strong></a><strong> </strong></div>
+<div></div>
+</div>
+</div>
+<br>
+<h3><u>Embedded Development</u></h3>
+<div><strong>First place:&nbsp;Korea, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=16337"><strong>Wafree</strong></a><br>
+<strong>Second place:&nbsp;China, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=17211"><strong>iSee</strong></a><strong>&nbsp; <br>
+</strong></div>
+<div><strong>Third place: Ukraine, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=14156"><strong>Intellectronics</strong></a><strong> </strong></div>
+<div></div>
+<br>
+<h3><u>Game Development</u></h3>
+<div><strong>First place: Brazil, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=16948"><strong>LEVV It</strong></a></div>
+<div></div>
+<div><strong>Second place: United States, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=16611"><strong>Epsylon Games</strong></a></div>
+<div><strong>Third place:&nbsp;United Kingdom, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=14378"><strong>Sanquine Labs</strong></a><br>
+<br>
+</div>
+<h3><u>IT Challenge</u></h3>
+<div><strong>First place: Romania, </strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=120539"><strong>Cosmin Ilie</strong></a><br>
+<strong>Second place:&nbsp;China, </strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=384527"><strong>Wu Chang</strong></a><strong>&nbsp;&nbsp;<br>
+</strong></div>
+<div><strong>Third place: Bolivia,&nbsp;</strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=149439"><strong>Miklos Cari Sivila</strong></a><strong> </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=7915"><br>
+</a></div>
+<div><strong><br>
+</strong></div>
+<h3><u>Robotics &amp; Algorithm</u> </h3>
+<div><strong>First&nbsp;place: Czech Republic, </strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=10769"><strong>Lukas Perutka</strong></a><br>
+</div>
+<div><strong>Second place: Canada, </strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=503931"><strong>Byron Knoll</strong></a><br>
+<strong>Third place: China, </strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=206906"><strong>Lin Fuming</strong></a><strong> </strong></div>
+<div><strong><br>
+</strong></div>
+<h3><u>MashUp</u></h3>
+<div><strong>First place: United States, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=14468"><strong>CURIOUS</strong></a></div>
+<div></div>
+<div><strong>Second place (tie):&nbsp;Poland, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=13105"><strong>Monastery of Innovations</strong></a></div>
+<div></div>
+<div><strong>Second&nbsp;place (tie):&nbsp;Singapore, <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=17065"><strong>PlanetKY</strong></a><strong>&nbsp;</strong></strong><strong>&nbsp;</strong></div>
+<div></div>
+<div><strong><br>
+</strong></div>
+<h3><u>Photography</u></h3>
+<div><strong>First place: Croatia, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18168"><strong>Team Voodoo Delirium</strong></a></div>
+<div></div>
+<div><strong>Second place: Singapore, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=17651"><strong>Woolgathering</strong></a></div>
+<div><strong>Third place: Japan, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=15731"><strong>Terada </strong></a></div>
+<div></div>
+<div><strong><br>
+</strong></div>
+<h3><u>Short Film</u></h3>
+<div><strong>First place: United Kingdom, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=17987"><strong>Fulham Four</strong></a><br>
+</div>
+<div><strong>Second place: India, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18209"><strong>ChennaiCoolers</strong></a><br>
+</div>
+<div><strong>Third place:&nbsp;Ukraine, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=13147"><strong>Just4Fun</strong></a><br>
+<br>
+</div>
+<h3><u>Design</u></h3>
+<div><strong>First place: Brazil, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=15774"><strong>Willburn<br>
+</strong></a></div>
+<div><strong>Second place: United States, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18132"><strong>eXchangeFun</strong></a></div>
+<div></div>
+<div><strong>Third place: France, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=15322"><strong>Paindepices</strong></a></div>
+<div><strong>&nbsp;</strong></div>
+<h2>2009&nbsp;Awards</h2>
+<div><strong><u>Unlimited Potential MultiPoint Education Award</u><br>
+First place: India, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=14832"><strong>Trailblazers</strong></a><br>
+<br>
+</div>
+<div><strong><u>Unlimited Potential Design for Development Award</u><br>
+First place: Malaysia, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=14700"><strong>COSMIC<br>
+</strong></a><strong>Second place: China,&nbsp;</strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=15808"><strong>Unique Studio</strong></a><strong> </strong></div>
+<div></div>
+<div><strong>Third place: Malaysia, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=14517"><strong>Capricorn</strong></a></div>
+<div><strong><br>
+</strong></div>
+<div><strong><u>Interoperability Award</u> </strong></div>
+<div><strong>First place: Brazil, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=13990"><strong>Proativa Teams</strong></a><br>
+</div>
+<div><strong>Second place: Poland,&nbsp;</strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18917"><strong>Fteams</strong></a><strong> </strong></div>
+<div></div>
+<div><strong>Third place: Jordan, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=17903"><strong>ECRAM</strong></a></div>
+<div><br>
+<strong><u>Accessibility Award</u> </strong></div>
+<div><strong>First place: Saudi Arabia, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=17974"><strong>ATST<br>
+</strong></a></div>
+<div><strong>Second place: Mexico, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=15722"><strong>Ignis Nova</strong></a></div>
+<div></div>
+<div><strong>Honorable Mention(s): Jordan, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=17902"><strong>ECRAM</strong></a><strong>; United States, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18235"><strong>TeleWeb</strong></a><strong>; China, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18117"><strong>Isee</strong></a><strong>; Belgium, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18259"><strong>PSA</strong></a></div>
+<div><br>
+<strong><u>Accessible Design Award</u><br>
+United States, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18132"><strong>eXchangeFun</strong></a></div>
+<div><br>
+<strong><u>Tablet Accessibility Award</u><br>
+First place: United States, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18723"><strong>Auratech</strong></a><br>
+<strong>Second place: Brazil, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18687"><strong>IC-Unicamp</strong></a></div>
+<div><br>
+<strong><u>Parallel Computing Award</u><br>
+First place: India,&nbsp;</strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=18531"><strong>Biollel</strong></a><strong> <br>
+<br>
+</strong></div>
+<div><strong><u>H.E. Mrs. Suzanne Mubarak Special Award</u> </strong></div>
+<div><strong>First place: Poland, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18837"><strong>kAMUflage</strong></a><br>
+</div>
+<div><strong>Second place: Egypt, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18895"><strong>Big Buddy</strong></a></div>
+<div></div>
+<div><strong>Third place: France, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=18874"><strong>WikiChildProtect</strong></a></div>
+<div><u><br>
+<strong>Windows Mobile Award Winners</strong></u><strong>&nbsp;</strong></div>
+<div><strong>Croatia, <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=15909">Team Explorer</a><br>
+Indonesia, <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=16179">Big Bang </a><br>
+Brazil, <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=16381">Virtual Dreams </a><br>
+</strong></div>
+<div><strong><u><br>
+Live Services Award</u>&nbsp;</strong></div>
+<div><strong>First place: France, <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=15728">Help'Aged</a></strong>
+<div><strong>Second place: Serbia, <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamId=14857">BrainWave</a></strong></div>
+</div>
+<div></div>
+<div><strong>&nbsp;</strong></div>
+<p>More than 300,000 students from over 142 countries entered the 2009
+competition. The theme of 2010 Imagine Cup is "Imagine a world where
+technology helps solve the world's toughest problems." </p>
+<p>The Imagine Cup was founded in 2003. Worldwide Finals host countries
+have spanned the globe from Spain, to Brazil, to Japan, to India, to
+South Korea, to France and last year, in Egypt. The 2010 Worldwide
+Finals will take place in Poland.</p>
+<p>The "cup" itself, a trophy first awarded in 2003 when Software
+Design was the only category, has spent time with the Software Design
+champions in the United States (2003-2004), France (2004-2005), Russia
+(2005-2006), Italy (2006-2007), Thailand (2007-2008), Australia
+(2008-2009) and Romania (2009-2010).</p>
+<div><strong>
+<hr>
+</strong></div>
+<h2>&nbsp;</h2>
+<h2>Imagine Cup 2008 Winners </h2>
+<div><br>
+<strong>Worldwide Finals:</strong> Paris, France<br>
+<strong>Theme:</strong> "Imagine a world where technology enables a sustainable environment."</div>
+<div><strong><br>
+</strong></div>
+<h3>Software Design</h3>
+<div><strong>First place: Australia, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12410"><strong>Team SOAK</strong></a></div>
+<div><strong>Second place: Slovakia, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=7938"><strong>Team Housekeepers</strong></a><strong> </strong></div>
+<div><strong>Third place: Hungary, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12612"><strong>Team DigitalMania</strong></a><strong> </strong></div>
+<div><strong><br>
+</strong></div>
+<h3>Embedded Development</h3>
+<div><strong>First place: Singapore, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=10635"><strong>Team Trail Blazers</strong></a><strong> </strong></div>
+<div><strong>Second place: TIE <br>
+Ireland, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=11315"><strong>Team AcidRain</strong></a><strong> </strong></div>
+<div><strong>China, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=10931"><strong>Team Wings</strong></a></div>
+<div><strong>Third place: Poland, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=9437"><strong>Team Aero@PUT</strong></a><strong>&nbsp; </strong></div>
+<div><strong><br>
+</strong></div>
+<h3>Game Development</h3>
+<div><strong>First place: Brazil, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=7082"><strong>Team Mother Gaia Studio</strong></a><strong> </strong></div>
+<div><strong>Second place: Belgium, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=9001"><strong>Team Drunk Puppy Productions</strong></a><strong>&nbsp;</strong></div>
+<div><strong>Third place: Korea, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=9284"><strong>Team GOMZ</strong></a><strong>&nbsp;<br>
+</strong></div>
+<div><strong><br>
+</strong></div>
+<h3>Project Hoshimi Programming Battle</h3>
+<div><strong>First place: Russia, </strong><strong>Team Red Devils</strong></div>
+<div><strong>Second place: China, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=8892"><strong>Team Zephyr</strong></a><strong>&nbsp; </strong></div>
+<div><strong>Third place: Ukraine, </strong><strong>Team Dream Team </strong></div>
+<div><strong><br>
+</strong></div>
+<h3>IT Challenge</h3>
+<div><strong>First&nbsp;place: France</strong>, <a href="http://imaginecup.com/user/Profile.aspx?UserID=7222"><strong>Jean-Benoit Paux</strong></a><strong> <br>
+Second place: Romania</strong>, <a href="http://imaginecup.com/user/Profile.aspx?UserID=120539"><strong>Cosmin-Viorel Ilie</strong></a><strong> </strong></div>
+<div><strong>Third place: China, </strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=121210"><strong>Yan Liu</strong></a></div>
+<div><strong><br>
+</strong></div>
+<h3>Algorithm</h3>
+<div><strong>First place: Ukraine, </strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=39899"><strong>Roman Koshlyak</strong></a><strong> </strong></div>
+<div><strong>Second place: Hungary, </strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=17140"><strong>Szilveszter Szebeni</strong></a><strong> </strong></div>
+<div><strong>Third place: Japan, </strong><a href="http://imaginecup.com/user/Profile.aspx?UserID=12415"><strong>Naohiro Takahashi</strong></a><strong> </strong></div>
+<div><strong><br>
+</strong></div>
+<h3>Photography</h3>
+<div><strong>First place: United States, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12256"><strong>Team Provisio<br>
+</strong></a><strong>Second place: Austria, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12571"><strong>Team Austria</strong></a></div>
+<div><strong>Third place: Croatia, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=7639"><strong>Team Voodoo Delirum</strong></a></div>
+<div><strong><br>
+</strong></div>
+<h3>Short Film</h3>
+<div><strong>First place: Korea, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=6866"><strong>Team NEIP</strong></a></div>
+<div><strong>Second place: Mexico, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=8600"><strong>Team Lava Lamp<br>
+</strong></a><strong>Third place: Canada, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=9567"><strong>Team Robotree</strong></a></div>
+<h3>Interface Design</h3>
+<div><strong>First place: United States, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=11176"><strong>Team IU EcoVis<br>
+</strong></a><strong>Second place: Canada, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=10913"><strong>Team GreeNet <br>
+</strong></a></div>
+<div><strong>Third place: France, </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=10924"><strong>Team Edelweiss</strong></a><strong>&nbsp;</strong></div>
+<div><strong><br>
+</strong></div>
+<h2>2008 Achievement Awards</h2>
+<ul type="disc">
+    <li><strong>The Rural Innovation Achievement Award, </strong>sponsored
+by Microsoft's Unlimited Potential Group,&nbsp;was designed to
+recognize the software solution that contributed toward a more
+sustainable environment and best helped promote the social and economic
+growth of underserved populations in developing countries and regions.
+It was won by Indonesia's&nbsp;<a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=8671"><strong>Team Antarmuka</strong></a>. </li>
+    <li><strong>The Accessible Technology Achievement Award</strong>,
+was designed to recognize the interface design solution that made it
+easier for anyone to see, hear and use a computer, and to customize
+their computing environment according to their own preferences, needs
+and abilities.<strong> </strong>It was won by <strong>Jeffrey Bigham</strong>, a Ph.D. candidate in computer science from the University of Washington, United States, for <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12695"><strong>Project WebAnywhere</strong></a>. An additional onsite challenge was won by France's&nbsp;<a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=10766"><strong>Team JivAd</strong></a>.<strong> </strong></li>
+    <li><strong>The Interoperability Achievement Award</strong>,
+was designed to recognize the software solution that best leveraged
+Microsoft technologies to connect people, data or diverse systems to
+help address real-world customer needs. It&nbsp;was won by India's <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=8556"><strong>Team SKAN</strong></a>. </li>
+    <li><strong>The Windows Live Achievement Award</strong>,
+was designed to recognize the software solution that made the best use
+of the Windows Live platform and adds new social dimensions to both new
+and old websites and web projects. It&nbsp;was won by Spain's <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12780"><strong>Windows Drive</strong></a>. </li>
+    <li><strong>The Engineering Excellence Achievement Award</strong>,
+sponsored by Microsoft's Enterprise Engineering Center,&nbsp;was
+designed to recognize three outstanding teams from the Software
+Development category created solutions that demonstrated the potential
+to be developed to scale with focused guidance from a Microsoft
+engineer. It was won by the following:<strong> </strong></li>
+    <ul type="disc">
+        <li><strong>Bulgaria</strong>&nbsp; - <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12494"><strong>Team Atlas</strong></a></li>
+        <li><strong>USA</strong> - <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=8068"><strong>Team Sparx</strong></a></li>
+        <li><strong>Russia</strong> - <a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=11651"><strong>Team Ignition</strong></a><br>
+        </li>
+    </ul>
+</ul>
+<h2>Imagine Cup Innovation Accelerator Program</h2>
+<div><strong>The six 2008 Finalist teams chosen to participate in the Imagine Cup Innovation Accelerator program are: </strong>
+<div><strong>&nbsp;</strong></div>
+</div>
+<ul style="margin-top: 0in;" type="disc">
+    <li><strong>Australia - </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12410"><strong>Team SOAK </strong></a><strong>(Smart Operational Agricultural toolKit)</strong></li>
+    <li><strong>France - </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=7441"><strong>Team Well K'Home</strong></a></li>
+    <li><strong>Germany - </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=11734"><strong>Team PoinT-Power in Time</strong></a></li>
+    <li><strong>Hungary - </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12612"><strong>Team Digital Mania</strong></a><strong></strong></li>
+    <li><strong>Slovakia - </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=7938"><strong>Team Housekeepers</strong></a><strong>&nbsp;</strong></li>
+    <li><strong>South Africa - </strong><a href="http://imaginecup.com/MyStuff/MyTeam.aspx?TeamID=12758"><strong>Team Smile<br>
+    </strong></a><span style="font-family: 'Verdana','sans-serif'; color: rgb(53, 53, 53); font-size: 9pt;">&nbsp;</span></li>
+</ul>
+</div>
+                </div>
+            </td>
+            <td id="compBodyRight">
+                <div id="compBodyRightPad">
+                    <div class="sideBox">
+                        <div id="ctl00_ctl00_ContentPlaceHolder_ContentPlaceHolderCMS_R3_div_SideBox1" editable="Yes"><p>
+</p><h3>2009: Cairo, Egypt</h3>
+<p>&nbsp;</p>
+<p>Theme: Imagine a world where technology helps solve the toughest problems facing us today.</p>
+<p>Worldwide Competitors:
+</p><ul>
+    <li>300,000 registered</li>
+    <li>59,000 students&nbsp;signed up </li>
+    <li>8,032 students competed</li>
+    <li>443 finalists traveled to Cairo, Egypt</li>
+    <li><a href="http://www.microsoft.com/presspass/press/2009/jul09/07-07ImagineCup2009WinnersPR.mspx" target="_blank">Microsoft Press Pass News Release: Microsoft Announces 2009 Imagine Cup Winners</a>&nbsp; </li>
+</ul>
+<p>&nbsp;</p>
+<p>
+</p><h3>2008: Paris, France</h3>
+<p>&nbsp;</p>
+<p>Theme: Imagine a world where technology enables a sustainable environment. </p>
+<p>Worldwide Competitors:
+</p><ul>
+    <li>Over 210,000 registered</li>
+    <li>59,000 students competed from 126 countries</li>
+    <li>121 finalist teams</li>
+    <li><a href="http://www.microsoft.com/Presspass/press/2008/jul08/07-08ICWINNERSPR.mspx" target="_blank">Microsoft Press Pass News Release: Microsoft Announces 2008 Imagine Cup Winners</a> </li>
+</ul>
+<p>&nbsp;</p>
+<p>
+</p><h3>2007: Seoul, South Korea</h3>
+<p>&nbsp;</p>
+<p>Theme: Imagine a world where technology enables a better education for all. </p>
+<p>Worldwide Competitors:
+</p><ul>
+    <li>Over 100,000 registered</li>
+    <li>59,000 students competed from 126 countries</li>
+    <li>120 finalist teams </li>
+</ul>
+<p>&nbsp;</p>
+<p>
+</p><h3>2006: Delhi, India</h3>
+<p>&nbsp;</p>
+<p>Theme: Imagine a world where technology enables us to live healthier lives. </p>
+<p>Worldwide Competitors:
+</p><ul>
+    <li>68,000 registered</li>
+    <li>24,000 students competed from 100 countries</li>
+    <li>76 finalist teams</li>
+    <li><a href="http://www.microsoft.com/presspass/press/2006/aug06/08-11ImagineCupWinnersPR.mspx" target="_blank">Microsoft PressPass News Release: Microsoft Announces Imagine Cup 2006 Winners</a> </li>
+</ul>
+<p>&nbsp;</p>
+<p>
+</p><h3>2005: Yokohama, Japan</h3>
+<p>&nbsp;</p>
+<p>Theme: Imagine a world where technology dissolves the boundaries between us. </p>
+<p>Worldwide Competitors:
+</p><ul>
+    <li>30,000 registered</li>
+    <li>17,000 students competed from 97 countries</li>
+    <li>86 finalist teams</li>
+    <li><a href="http://www.microsoft.com/presspass/press/2005/aug05/08-01ImagineCupAwardsPR.mspx" target="_blank">Microsoft PressPass News Release: Microsoft Announces Imagine Cup 2005 Winners</a> </li>
+</ul>
+<p>&nbsp;</p>
+<p>
+</p><h3>2004: Sao Paulo, Brazil</h3>
+<p>&nbsp;</p>
+<p>Theme: "Imagine a world where smart technology makes everyday life easier." </p>
+<p>Worldwide Competitors:
+</p><ul>
+    <li>10,000 students from 90 Countries</li>
+    <li>50 finalist teams</li>
+    <li><a href="http://www.microsoft.com/presspass/press/2004/jul04/07-06champions04pr.mspx" target="_blank">Microsoft PressPass News Release: Microsoft Crowns Imagine Cup 2004 Winners</a> </li>
+</ul>
+<p>&nbsp;</p>
+<p>
+</p><h3>2003: Barcelona, Spain</h3>
+<p>&nbsp;</p>
+<p>Theme: "Link between people, information, systems, and devices, using Web services and .NET as the springboard." </p>
+<p>Worldwide Competitors:
+</p><ul>
+    <li>1,000 students from 25 countries</li>
+    <li>15 Finalist Teams</li>
+    <li>One Winner: Tu Nguyen</li>
+    <li><a href="http://www.microsoft.com/presspass/press/2003/nov03/11-14imaginecup2004pr.mspx" target="_blank">Microsoft PressPass News Release: Microsoft's Jeff Raikes Presents 2003 Winner Tu Nguyen </a></li>
+</ul>
+<p>&nbsp;</p></div>
+                    </div>
+                    <div class="sideBox">
+                        <div id="ctl00_ctl00_ContentPlaceHolder_ContentPlaceHolderCMS_R3_div_SideBox2" editable="Yes">
+
+</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+
+   
+
+            </div>
+            
+            <div style="padding: 20px; background-color: White; font-size: 8pt; float: left;">
+      
+      
+      
+                <span id="ctl00_ctl00_Span_relatedLinks" editable="Yes"> 
+                    <table style="width: 760px; height: 105px;" border="0" cellpadding="2" cellspacing="2">
+                        <tbody>
+                            <tr>
+                            
+                                <td>
+                                    <h3>Software</h3>
+                                </td>
+                                <td>
+                                    <h3>Discounts</h3>
+                                </td>
+                                <td>
+                                    <h3>Student Activities</h3>
+                                </td>
+                                <td>
+                                    <h3>Student Resources</h3>
+                                </td>
+                                <td>
+                                    <h3>Fun Stuff</h3>
+                                </td>
+                            
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-7.aspx" target="_blank" class="footerMicrosoftLinks" title="Windows 7">Windows 7</a>
+                                </td>
+                                <td>
+                                    <a href="https://www.dreamspark.com/" target="_blank" class="footerMicrosoftLinks" title="DreamSpark">DreamSpark</a>
+                                </td>
+                                <td>
+                                    <a href="http://student-partners.com/default.aspx" target="_blank" class="footerMicrosoftLinks" title="Microsoft Student Partners">Microsoft Student Partners</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/default.aspx" target="_blank" class="footerMicrosoftLinks" title="MSCOM/Student">MSCOM/Student</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-media-center.aspx" target="_blank" class="footerMicrosoftLinks" title="Windows Media Center">Windows Media Center</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/expression-studio.aspx" target="_blank" class="footerMicrosoftLinks" title="Expression Studio">Expression Studio</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/learning/en/us/certification/cert-benefits.aspx" target="_blank" class="footerMicrosoftLinks" title="Certification Exams">Certification Exams</a>
+                                </td>
+                                <td>
+                                    <a href="http://imaginecup.com/Default.aspx" target="_blank" class="footerMicrosoftLinks" title="Imagine Cup">Imagine Cup</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/studentstobusiness/home/default.aspx" target="_blank" class="footerMicrosoftLinks" title="Students to Business">Students to Business</a>
+                                </td>
+                                <td>
+                                    <a href="http://research.microsoft.com/en-us/um/cambridge/projects/autocollage/" target="_blank" class="footerMicrosoftLinks" title="AutoCollage">AutoCollage</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/visual-studio.aspx" target="_blank" class="footerMicrosoftLinks" title="Visual Studio">Visual Studio</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/education/aerfind.aspx" target="_blank" class="footerMicrosoftLinks" title="Authorized Reseller Finder">Authorized Reseller Finder</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/rally/" target="_blank" class="footerMicrosoftLinks" title="Student Rally">Student Rally</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/career/own-your-future.aspx" target="_blank" class="footerMicrosoftLinks" title="Own Your Future">Own Your Future</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/funstuff/games-for-windows.aspx" target="_blank" class="footerMicrosoftLinks" title="Games for Windows">Games for Windows</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-live.aspx" target="_blank" class="footerMicrosoftLinks" title="Windows Live">Windows Live</a>
+                                </td>
+                                <td>
+                                    <a href="http://microsoft.journeyed.com/home.asp" target="_blank" class="footerMicrosoftLinks" title="JourneyEd">JourneyEd</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.facebook.com/microsoftstudent" target="_blank" class="footerMicrosoftLinks" title="Facebook">Facebook</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/learningspace/Products.aspx?prod=math" target="_blank" class="footerMicrosoftLinks" title="Microsoft Math">Microsoft Math</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/funstuff/xbox.aspx" target="_blank" class="footerMicrosoftLinks" title="Xbox">Xbox</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/office-2007.aspx" target="_blank" class="footerMicrosoftLinks" title="Microsoft Office">Microsoft Office</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/discounts/theultimatesteal-us/default.aspx" target="_blank" class="footerMicrosoftLinks" title="Microsoft Office">Microsoft Office</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.msstudentlounge.com/" target="_blank" class="footerMicrosoftLinks" title="Microsoft Student Lounge">Microsoft Student Lounge</a>
+                                </td>
+                                <td>
+                                    <a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=10&amp;ct=1243512578&amp;rver=5.0.3265.0&amp;wp=MCMBI&amp;wreply=https://profile.microsoft.com/RegSysProfileCenter/wizard.aspx?wizid=9489462d-6b5c-40ed-8009-9a4f350d3703&amp;lcid=1033&amp;ci=104861&amp;lc=1033&amp;" target="_blank" class="footerMicrosoftLinks" title="Student Newsletter">Student Newsletter</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-mobile.aspx" target="_blank" title="Windows Mobile">
+                                        Windows Mobile</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </span> 
+      
+            </div>
+            <div id="msLogo">
+                <span id="ctl00_ctl00_Label_Machinename" style="color: White; text-align: center; float: left;">CARLA</span>
+                <img src="exploreimaginecup.aspx_files/IC09_MSLogo.gif" alt="Microsoft">
+                </div>
+            <div class="footerStrip">
+                <div class="footerLeft">
+                    <div class="footerLeftPad">
+                        © Copyright 2009-2010 Microsoft Corporation. All Rights Reserved.
+                    </div>
+                </div>
+                <div class="footerRight">
+                    <div class="footerRightPad">
+                        <a id="ctl00_ctl00_A5" class="footerLink" href="http://imaginecup.com/Competition/Rules-Regulations.aspx">Rules</a>&nbsp;
+                        <a id="ctl00_ctl00_A6" class="footerLink" href="http://imaginecup.com/Legal/CodeOfConduct.aspx">Code of Conduct</a>&nbsp;
+                        <a id="ctl00_ctl00_A7" class="footerLink" href="http://imaginecup.com/Legal/TermsOfUse.aspx">Terms of Use</a>&nbsp;
+                        <a id="ctl00_ctl00_A8" class="footerLink" href="http://imaginecup.com/Legal/PrivacyStatement.aspx">Privacy Policy</a>&nbsp;
+                        <a id="ctl00_ctl00_A10" class="footerLink" href="http://imaginecup.com/Support/ContactUs.aspx">Get Help</a>&nbsp;
+                    </div>
+                </div>
+            </div>
+            <div>
+                <table width="100%">
+                    <tbody><tr>
+                        <td class="footerCredits" align="center">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footerCredits" align="center">
+                            <span id="ctl00_ctl00_Label_Credits" class="footerLeftPad">This site is developed and hosted for Microsoft by Fast Track Team, Inc.</span>
+                        </td>
+                    </tr>
+                </tbody></table>                                
+            </div>
+        </div>
+    </div>
+        
+     <input name="ctl00$ctl00$hf_TrackEdit" id="ctl00_ctl00_hf_TrackEdit" value="0" type="hidden">
+      
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+    
+    <form name="form_ITQuiz" method="post" action="">
+    <input name="ctl00$ctl00$hidden_UserId" id="ctl00_ctl00_hidden_UserId" type="hidden">
+    <input name="ctl00$ctl00$hidden_TimeStamp" id="ctl00_ctl00_hidden_TimeStamp" type="hidden">
+    <input name="ctl00$ctl00$hidden_ReturnUrl" id="ctl00_ctl00_hidden_ReturnUrl" type="hidden">
+    </form>
+    
+    
+<script src="exploreimaginecup.aspx_files/broker-config.js"></script></body></html>

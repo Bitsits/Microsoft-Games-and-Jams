@@ -1,0 +1,88 @@
+﻿.wpcTestAndTarget{overflow:hidden}
+.wpcUserTargetingHero{ overflow:hidden}
+.wpcSilverlight .downLevelExperience{display:table;#position:relative;overflow:hidden}
+.wpcSilverlight .downLevelExperience .middle{#position:absolute;#top:50%;display:table-cell;vertical-align:middle}
+.wpcSilverlight .downLevelExperience .inner{#position:relative;#top:-50%;#padding-left:1px;margin-left:auto;margin-right:auto}
+.wpcHomeDownloadExperience{/*background-color:white*/}
+.hdle_mo_oem{width:140px;margin-right:16px;float:left}
+.wpcHomeDownloadExperience .middle{#position:absolute;#top:50%;display:table-cell;vertical-align:middle}
+.wpcHomeDownloadExperience .inner{#position:relative;#top:-50%;#padding-left:1px;}
+.hdle_footer,.hdle_home,.hdle_discover_text{display:table}
+.hdle_text{float:left}
+.hdle_discover_text .wpcImageLink{margin-top:10px}
+.hdle_footer .wpcImageLinkCaption{width:100% !important;display:inline !important;margin-top:0px !important;margin-left:5px}
+.hdle_footer .wpc_ImageLink img{border:none}
+.hdle_footer a{text-decoration:none;float:left}
+.wpcImageLink{clear:both;overflow:hidden}
+.wpcImageLinkCaption{display:block;margin-top:9px;text-align:left}
+.wpc_ImageLink a img{display:inline;border-style:none}
+.wpcImageLink img{display:inline}
+.stItalic{font-style:italic}
+.stBold{font-weight:bold}
+.wpcSimpleText h1,.wpcSimpleText h2,.wpcSimpleText h3{margin:0;font-weight:normal}
+.rteRichText{ background:#FFFFFF;overflow:hidden} 
+.rteUiText{font-weight:bold}
+.rteAlertNote{padding-left:32px;margin-top:23px;background-image:url("http://i.microsoft.com/global/windowsphone/en-us//PublishingImages/Common/wpcRichText/note.png");background-position:0px 4px;background-repeat:no-repeat}
+.rteAlertTip{padding-left:32px;margin-top:23px;background-image:url("http://i.microsoft.com/global/windowsphone/en-us//PublishingImages/Common/wpcRichText/tip.png");background-position:0px 4px;background-repeat:no-repeat}
+.rteAlertWarning{padding-left:32px;margin-top:23px;background-image:url("http://i.microsoft.com/global/windowsphone/en-us//PublishingImages/Common/wpcRichText/warning.png");background-position:0px 4px;background-repeat:no-repeat}
+.rteNewTerm{font-style:italic}
+.rteTitle{margin-bottom:9px;display:block}
+.rteSubtitle{display:block;margin-bottom:9px}
+.rteCollapse{margin-top:32px}
+.rteCollapse > div > span.rteTitle{padding-left:32px;margin-top:35px}
+.rteCollapseTitle:hover{cursor:pointer}
+.rteCollapseDescription{padding-left:32px;display:none}
+.rteArrow{float:left}
+.rteDescription{}
+.rteBlock{width:100%}
+.rteLeft{width:50%;float:left;display:inline}
+.rteRight{width:50%;float:right;display:inline}
+.rteList{margin-top:0px;margin-bottom:0px}
+.rteList .rteTitle{margin-bottom:19px}
+.rteOrderedList{*margin-left:0;padding-left:0em;margin:0;list-style-type:none}
+.rteUnorderedList{*margin-left:0;padding-left:0em;margin:0;list-style-type:none}
+.rteOrderedItem{display:inline;float:left;*width:32px;#line-height:40px !important}
+.rteUnorderedItem{display:inline;float:left;*width:32px;line-height:20px !important;#line-height:34px !important}
+.rteItemBody{padding-left:32px;*padding-left:0px;*display:inline;*vertical-align:top}
+.rteItemBody .rteTitle{text-decoration:none;display:inline}
+.rteItemBody .rteDescription{*padding-left:32px}
+.rteItemBody > div.rteDescription:first-child{*margin-top:-18px}
+.rteImage{border:0;vertical-align:bottom;margin:0 3px}
+.rteLink{text-decoration:none}
+.wpcHeader{width:100%}
+.headerLinks{width:700px;margin-bottom:19px;float:right;/*text-align:right*/; height:40px;}
+.headerLinks .separator{color:#D2D2D3;font-family:Segoe UI,Helvetica,Arial,Sans-Serif;font-size:14px;line-height:0;margin:0 10px}
+
+.wpcSiteLogo{float:left}
+.wpcSiteLogo img{border:none}
+.wpcSiteLogo a:focus{outline:none}
+.snMasterNavigationMain{float:left}
+.snMasterNavigationMain .navItems{list-style:none outside none;position:relative;margin:0;padding:0;width:136px}
+.snMasterNavigationMain .navItems li a{white-space:nowrap;overflow:hidden;width:136px;display:block;*display:inline}
+.snMasterNavigationMain .navItems li .subNavItems{list-style:none outside none;position:absolute;padding:0;display:none;margin-left:150px;width:136px;top:0px;left:0px;height:100%}
+.snMasterNavigationMain .navItems li .subNavItems li{margin:0;padding:0;clear:both}
+.snFooterSeparator{margin:0px 7px}
+.searchBoxContainerWrapper{*position:absolute;*margin-left:235px;float:right;width:204px;height:36px}
+.wpcHeader .searchBoxText{padding:2px 5px;float:left;width:164px;height:15px;border:1px solid #fff;vertical-align:top;background:none transparent scroll repeat 0% 0%;background-color:#EEEEEE;margin-right:4px}
+.wpcHeader #searchBt{padding-top:3px}
+.hide{ display:none}
+.wpcLiveTileWrapper{overflow:hidden}
+.wpcLiveTileContainer{overflow:hidden;margin:14px 12px}
+.wpcLiveTile{cursor:pointer}
+.wpcLiveTile a{text-decoration:none}
+.wpcFooter{
+	margin:0;
+	padding: 10px 0 0;
+	float:clear;
+	width:100%;
+	border-top: 1px solid #CCCCCC;
+}
+.wpcFooter .wpcSiteNavigation{display:inline;float:left;max-width:760px}
+.wpcFooter #msLogo{float:right;text-align:right}
+.wpcFooter #msLogo img{border:none}
+.wpcFooter #msLogo span{display:block;margin-top:9px}
+
+.followUsComponent{#line-height:20px !important}
+.followUsComponent ul.followUsList{padding-left:0px;display:inline;margin-left:0px;height:14px}
+.followUsComponent ul.followUsList li{list-style-type:none;display:inline;margin-left:8px;margin-top:0px;margin-bottom:0px;padding:0px}
+.followUsComponent a{margin:0px;padding:0px}.followUsComponent img{border:none;vertical-align:middle;padding-bottom:2px}

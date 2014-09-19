@@ -1,0 +1,43 @@
+/* Not Laziness */
+
+
+h1 {
+text-align: center;
+font-size: medium;
+word-spacing: 30px
+}
+
+h2 {
+text-align: center;
+font-size: large;
+}
+
+h3 {
+text-align: center;
+font-size: medium;
+}
+
+p {
+margin-left: 30%;
+margin-right: 30%;
+text-align: justify;
+font-size: medium;
+line-height: 130%;
+}
+
+body {
+background-color: white;
+font-family: arial; serif;
+color: #black;
+word-spacing: normal;
+}
+
+a:link {
+color: #009000
+}
+a:visited {
+color: #808000
+}
+
+
+

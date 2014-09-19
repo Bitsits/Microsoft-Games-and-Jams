@@ -1,0 +1,627 @@
+﻿body {
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 11px;
+	margin:0;padding:0;
+}
+h1 { font-size:30px; color:#6dbe46; font-family: "Segoe UI",Helvetica,Arial,Sans-Serif; font-weight:normal; margin-bottom:10px; }
+
+h3.section { font-size:20px; color:#6dbe46; font-weight:normal; margin-bottom:10px; }
+#outer_container {
+    background-image: url("../img/bg.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-width: 1105px;
+    width: 100%;
+}
+#main_container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+    position: relative;
+    width: 928px;
+}
+#wpcPage{
+	width:928px;
+	/*margin-left:auto;
+	margin-right:auto;*/
+	text-align:left;
+	overflow:hidden
+}
+#wpcAux{
+	background: url("../img/wp_Aux_BG.png") 0px 0px no-repeat;
+	width:928px;
+	text-align:left;
+	overflow:hidden;
+	min-height:900px;
+}
+#wpcEnter{
+	background: url("../img/wp_Aux_BG.png") 0px 0px no-repeat;
+	width:928px;
+	text-align:left;
+	overflow:hidden;
+	min-height:700px;
+}
+#topPanel {width: 100%; margin: 15px 0 0px;}
+#topPanel .wpcSimpleText{float:left}
+
+#wpcHero{
+	margin: 0px 0px 12px;
+	width: 928px;
+	min-height: 400px;
+}
+#leftPanel{ width: 928px; height: 380px; }
+
+#bottomPanel{ width: 928px; margin: 52px 0 31px;}
+
+.leftHero{ background-color: rgb(255, 183, 15); color: #FFF; height: 241px; width: 542px;}
+.leftHero_Footer { padding: 16px 0pt; height: 81px; width: 542px; float: left;}
+.leftHero_Footer,.leftHero{display:table}
+.leftHero_footer .wpcPrizeCaption{color:#666666; width: 500px; padding:12px;}
+
+.heroPrizes { background: url("../img/hero_Prizes.png") 3px 3px no-repeat; width:543px; height:241px;}
+
+.leftHero_Header { padding: 0 0 16px; height: 36px; width: 542px; float: left; display:table;}
+
+a.leftHero_CTA { 
+	background: url("../img/wp_CTA_Enter.png") 3px 3px no-repeat;
+	width:270px;
+	height:50px;
+	display:table;
+	color: #FFFFFF;
+    font-family: "Segoe UI",Helvetica,Arial,Sans-Serif;
+    font-size: 18px;
+    line-height: 47px;
+    text-decoration: none;
+	text-align:center;
+}
+a.leftHero_CTA:hover {color:#99cc66;}
+
+#btnSubmit{ 
+	background: url("../img/wp_CTA_Submit.png") no-repeat scroll 3px 3px transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: table;
+    font-family: "Segoe UI",Helvetica,Arial,Sans-Serif;
+    font-size: 24px;
+    height: 50px;
+    line-height: 47px;
+	margin-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 270px;
+}
+
+.heroText{ font-size:14px; color:#FFF; line-height:18px; width:350px; }
+.heroSubText{ font-size:13px; color:#FFF; line-height:18px;}
+
+.rightHero_Header { padding: 0 0 16px; height: 71px; width: 168px; float: left; display:table;}
+.rightHero_Footer, .rightHero { display: table; }
+.rightHero {
+    background-color: #ff511f;
+    color: #FFFFFF;
+    height: 241px;
+    width: 168px;
+}
+.coolAppsText{ font-size:14px; color:#FFF; line-height:18px; }
+.coolAppsText a { color:#FFCC00;}
+.coolAppsText a:hover { color:#FFF;}
+.inline{ vertical-align:top;display:inline-block;*zoom:1;*display:inline}
+.module { width: 928px; margin: 15px 15px 15px 0px; }
+.resourceModule { width: 848px; margin: 0 0 20px 45px; }
+.resourceBoxes{	display: inline; float: left; padding-right: 12px; width: 200px; }
+.resourceSection{	display: inline; float: left; padding-right: 20px; }
+
+.boxes{	display: inline; float: left; padding-right: 20px; width: 212px; }
+.title{
+	display: block;
+    font-family: "Segoe UI",Helvetica,Arial,Sans-Serif;
+    font-size: 16px;
+    line-height: 19px;
+	margin-top: 12px;
+}s
+a.title, a.title:visited, .textFooter a  { color:#0000ff; text-decoration:underline;}
+a.title:hover, .textFooter a:hover{ color:#3366ff; text-decoration: none;}
+
+.boxText{
+	font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+	font-size: 14px;
+	line-height: 19px;
+	text-decoration: none;
+	color: #666;
+}
+.boxText a { color:#0000ff; text-decoration:underline; }
+.boxText a:hover { color:#3366ff; text-decoration:none; }
+.textSM { font-size: 12px;}
+.boxes img{ width: 212px; height: 136px; border: medium none; }
+
+.textFooter {
+    color: #666666;
+    font-family: "Segoe UI",Helvetica,Arial,Sans-Serif;
+    font-size: 12px;
+    line-height: 22px;
+    text-decoration: none;
+	margin-top: 60px
+}
+
+ul.textFooter {
+    padding-left:18px; list-style:square; color:#999999;
+}
+
+.textAlignmentLeft{text-align:left}
+.textAlignmentCenter{text-align:center}
+.textAlignmentRight{text-align:right}
+.zeroMarginAndPadding{margin-top:0px;margin-bottom:0px;padding:0px}
+.listStyleNone{list-style:none}div:focus,input[type="image"],span:focus,img:focus,a:focus{outline:none}.noFocus:focus{outline:none}
+.buttonHeader{float:right; width:700px}
+#SubmissionForm{width:848px; padding: 25px 45px; color:#666666;}
+.text-box {width:266px;}
+select {width:266px;}
+.SubmissionFormTitle {
+    margin-top: 5px;
+}
+#sharing{
+    /*clear: both;*/
+	float: right;
+    position: relative;
+    width: 232px;
+	top: 2px;
+}
+#sharing div.content
+{
+    padding-top: 0px;
+}
+#sharing div.content div.box
+{
+    width: 41px;
+    padding: 2px;
+    line-height: 22px;
+    float: right;
+    margin-left: 5px;
+    height: 41px;
+}
+#sharing div.content div.twitter
+{
+    padding-left: 2px;
+    background: url("../img/share_sprites.png") 2px -48px no-repeat;
+}
+#sharing div.content div.email
+{
+    padding-left: 2px;
+    background: url("../img/share_sprites.png") 2px 2px no-repeat;
+}
+#sharing div.content div.facebook
+{
+    padding-left: 2px;
+    background: url("../img/share_sprites.png") 2px -99px no-repeat;
+}
+.txtShare {color: #FFFFFF;
+    display: inline;
+	font-size: 12px;
+    padding: 15px 0 0 10px;
+    position: absolute;}
+#menu{
+    /*clear: both;*/
+	float: right;
+    position: relative;
+	padding-left: 4px;
+    /*width: 290px;*/
+}
+#menu div.content
+{
+    padding-top: 0px;
+}
+#menu div.content div.box
+{
+    width: 130px;
+    padding: 4px;
+    line-height: 22px;
+    float: right;
+    margin-right: 5px;
+    color: #999;
+    height: 24px;
+}
+
+a.menuButtons { 
+	background: url("../img/menu_bg.png") no-repeat scroll 1px 1px transparent;
+    color: #FFFFFF;
+    float: right;
+    font-family: "Segoe UI",Helvetica,Arial,Sans-Serif;
+    font-size: 18px;
+    height: 24px;
+    line-height: 22px;
+    margin-right: 5px;
+    padding: 10px 0 6px 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 130px;
+}
+a.menuButtons:hover {color:#99CC66;}
+
+.devices {
+    background: url("../img/bg_devices.gif") no-repeat scroll right bottom transparent;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.wpAuxTitle{
+    background: url("../img/wpAuxTitle.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-family: "Segoe UI",Helvetica,Arial,Sans-Serif;
+    font-size: 18px;
+	font-weight: bold;
+    height: 43px;
+    margin: 30px 0 0 4px;
+    padding: 4px 0 0 20px;
+	width:206px;
+}
+
+/**/
+    .accent, .accentHover:hover
+    {
+        color: #6BBD46 !important;
+    }
+    .accentBackground, .accentBackground:hover
+    {
+        background-color: #6BBD46 !important;
+    }
+    
+    
+        .Orange, .OrangeHover:hover
+        {
+            color: #F09609 !important;
+        }
+    
+        .Blue, .BlueHover:hover
+        {
+            color: #1BA1E2 !important;
+        }
+    
+        .Red, .RedHover:hover
+        {
+            color: #FE5815 !important;
+        }
+    
+        .Green, .GreenHover:hover
+        {
+            color: #6BBD46 !important;
+        }
+    
+ 
+    .styleA
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 13px;
+        color:#666;
+        line-height: 17px;
+        #line-height: 18px;
+        text-decoration: none;
+    }
+    
+    a.styleA:hover, a.styleA:active
+    {
+        color: #6BBD46;
+    }
+
+    .styleB
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        text-decoration: none;
+		background: none repeat scroll 0 0 #111111;
+		color: #FFFFFF;
+		font-size: 18px;
+		height: 24px;
+		line-height: 22px;
+		#line-height:24px;
+		margin-right: 10px;
+		padding: 4px;
+		width: 125px;
+    }
+    
+    a.styleB:hover
+    {
+        color: #6BBD46;
+    }
+
+    .styleC
+    {
+        font-family: "Segoe UI Light","Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 36px;
+        line-height: 42px;
+        #line-height: 47px;
+        text-decoration: none;
+        color: #6BBD46;
+    }
+
+    .styleCGray
+    {
+        color: #333333;
+    }
+
+    .styleD
+    {
+        font-family: "Segoe UI Light","Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 28px;
+        line-height: 36px;
+        #line-height: 37px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    a.styleD:hover
+    {
+        color: #6BBD46;
+    }
+
+    .styleE
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333;
+    }    
+    
+    .styleF
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration: none;
+        color: #666;
+    }
+    
+    a.styleF:hover, a.styleF
+    {
+        color: #6BBD46;
+    }
+    
+    .styleG
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 12px;
+        line-height: 22px;
+        text-decoration: none;
+        color: #666;
+    }    
+    
+    a.styleG:hover
+    {
+        color: #6BBD46;
+    }
+    
+    .styleH
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration: none;
+        color: #333;
+    }    
+    
+    a.styleH:hover, a.styleH:active
+    {
+        color: #6BBD46;
+    }
+    
+    .styleI
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration: none;
+        color: #000;
+    }      
+    
+    a.styleI:hover
+    {
+        color: #6BBD46;
+    }
+    
+    .styleJ
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing:0px;
+        text-decoration: none;
+        color: #6BBD46;
+    }         
+    
+    .styleK
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 22px;
+        color: #d2d2d2;
+    }
+    
+    .darkStyleL
+    {
+        font-family: "Segoe UI Light", "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 24px;
+        line-height: 32px;
+        #line-height: 33px;
+        text-decoration: none;
+        background-color: #241f20;
+        color: #fff;
+    }      
+
+    .lightStyleL
+    {
+        font-family: "Segoe UI Light", "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 24px;
+        line-height: 32px;
+        #line-height: 33px;
+        text-decoration: none;
+        background-color: #eee;
+        color: #333;
+    }
+    
+    .styleM
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 20px;
+        line-height: 15px;        
+        color: #6BBD46;
+    }      
+    
+    .styleN
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #666;
+    }      
+    
+    a.styleN:hover, a.styleN
+    {
+        color: #6BBD46;
+    }                     
+    
+    .styleO
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000;
+    }      
+
+    .styleP
+    {
+        font-family: Arial;
+        font-size: 12px;
+        line-height: 26px;
+        color: #6BBD46;
+    }      
+
+    .styleQ
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: #6BBD46;
+    }      
+    
+    .styleR
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #333;
+    }      
+    
+    a.styleR:hover, a.styleR:active
+    {
+        color: #6BBD46;
+    }      
+    
+    .styleS
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 13px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #fff;
+    }      
+    
+    a.styleS:hover
+    {
+        color: #ccc;
+    }      
+    
+    .styleU
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 36px;
+        line-height: 44px;
+        text-decoration: none;
+        color: #fff;
+    }      
+    
+    .styleT
+    {
+        font-family: "Segoe UI Light", Helvetica, Arial, Sans-Serif;
+        font-size: 42px;
+        line-height: 48px;
+        #line-height: 56px;
+        text-decoration: none;
+        color: #fff;
+    }         
+    
+    .styleV
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #333;
+    }      
+    
+    a.styleV, a.styleV:hover
+    {
+        color: #6BBD46;
+    }        
+    
+    .styleW
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #333;
+    }      
+    
+    a.styleW, a.styleW:hover
+    {
+        color: #6BBD46;
+    }    
+    
+    .styleX
+    {
+        font-family: "Segoe UI Light", "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 24px;
+        line-height: 30px;
+        text-decoration: none;
+        color: #6BBD46;
+    }    
+    
+    .styleY
+    {
+        font-family: "Segoe UI", Helvetica, Arial, Sans-Serif;
+        font-size: 13px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #666;
+    }           
+    
+    a.styleY:hover
+    {
+        color: #333;
+    }
+    
+    .styleZ
+    {
+        font-family: "Segoe UI", Tahoma, Verdana;
+        font-size: 18px;
+        line-height: 24px;
+        color: #999;
+    }
+    
+    .styleAA
+    {
+        font-family: "Segoe UI", Tahoma, Verdana;
+        font-size: 12px;
+        line-height: 16px;
+        color: #999;
+    }
+    
+    a.styleAA, a.styleAA:hover
+    {
+        color: #6BBD46;
+        text-decoration: none;
+    }
+

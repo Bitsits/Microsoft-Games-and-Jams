@@ -1,0 +1,1052 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+    <script type="text/javascript" src="Buildyourdream.aspx_files/jquery.js"></script>
+    <script type="text/javascript" src="Buildyourdream.aspx_files/ddaccordion.js">
+
+       
+
+    </script>
+    <style type="text/css">
+        .mypets
+        {
+            /*header of 1st demo*/
+            cursor: hand;
+            cursor: pointer;
+            padding: 2px 5px;
+            border: 1px solid gray;
+            background: #E1E1E1;
+        }
+        
+        .openpet
+        {
+            /*class added to contents of 1st demo when they are open*/
+            background: lightyellow;
+        }
+        
+        .technology
+        {
+            /*header of 2nd demo*/
+            cursor: hand;
+            cursor: pointer;
+            font: bold 14px Verdana;
+            margin: 10px 0;
+        }
+        
+        
+        .openlanguage
+        {
+            /*class added to contents of 2nd demo when they are open*/
+            color: green;
+        }
+        
+        .closedlanguage
+        {
+            /*class added to contents of 2nd demo when they are closed*/
+            color: red;
+        }
+    </style>
+    <script type="text/javascript">
+
+        //Initialize first demo:
+        ddaccordion.init({
+            headerclass: "mypets", //Shared CSS class name of headers group
+            contentclass: "thepet", //Shared CSS class name of contents group
+            revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+            mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+            collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+            defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+            onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+            animatedefault: false, //Should contents open by default be animated into view?
+            persiststate: true, //persist state of opened contents within browser session?
+            toggleclass: ["", "openpet"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+            togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+            animatespeed: "normal", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+            oninit: function (expandedindices) { //custom code to run when headers have initalized
+                //do nothing
+            },
+            onopenclose: function (header, index, state, isuseractivated) { //custom code to run whenever a header is opened or closed
+                //do nothing
+            }
+        })
+
+        //Initialize 2nd demo:
+        ddaccordion.init({
+            headerclass: "technology", //Shared CSS class name of headers group
+            contentclass: "thelanguage", //Shared CSS class name of contents group
+            revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+            mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+            collapseprev: false, //Collapse previous content (so only one open at any time)? true/false 
+            defaultexpanded: [], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+            onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+            animatedefault: false, //Should contents open by default be animated into view?
+            persiststate: false, //persist state of opened contents within browser session?
+            toggleclass: ["closedlanguage", "openlanguage"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+            togglehtml: ["prefix", "<img src='http://i13.tinypic.com/80mxwlz.gif' style='width:13px; height:13px' /> ", "<img src='http://i18.tinypic.com/6tpc4td.gif' style='width:13px; height:13px' /> "], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+            animatespeed: "normal", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+            oninit: function (expandedindices) { //custom code to run when headers have initalized
+                //do nothing
+            },
+            onopenclose: function (header, index, state, isuseractivated) { //custom code to run whenever a header is opened or closed
+                //do nothing
+            }
+        })
+
+    </script><style type="text/css">
+.thepet{display: none}
+a.hiddenajaxlink{display: none}
+</style><style type="text/css">
+.thelanguage{display: none}
+a.hiddenajaxlink{display: none}
+</style>
+    <script type="text/javascript" src="Buildyourdream.aspx_files/broker.js"></script>
+    <meta name="title" content="Microsoft Student India – Learn, Join the Community and Boost Your Career">
+    <meta name="description" content="Enhance your career with Microsoft Student India and get great discounts on programs and offers available just for students in India.">
+    <meta name="Keywords" content="Microsoft student India, Microsoft benefits for students in India, Microsoft benefits for students, enhance your career with Microsoft Student India, get jobs and internships, become a student partner, join Microsoft student community, attend events, Microsoft Student India">
+    <meta name="locale" content="en-in">
+    <meta name="WT.sp" content="_India_Student_">
+    <title>Microsoft Student India – Learn, Join the Community and Boost Your Career
+    </title>
+    <link rel="Stylesheet" type="text/css" href="Buildyourdream.aspx_files/student_styles.css">
+    <link rel="stylesheet" type="text/css" href="Buildyourdream.aspx_files/css_006.css">
+    <link rel="stylesheet" type="text/css" href="Buildyourdream.aspx_files/css_006_ie7.css">
+    <!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="css/css_006_ie7.css" />
+<![endif]-->
+    <script type="text/javascript" language="javascript"><!--
+        function showTabImages(obj) {
+            var str1 = "tab";
+            for (var i = 1; i <= 4; i++) {
+                str1 = str1 + i;
+                if (obj == str1) {
+                    document.getElementById(str1).src = "images/tab" + i + "_on.gif";
+                    str1 = "tab";
+                }
+                else {
+                    //alert(str);
+                    document.getElementById(str1).src = "images/tab" + i + "_off.gif";
+                    str1 = "tab";
+                }
+            }
+        } 
+//--></script>
+    <script language="javascript" type="text/JavaScript">
+
+
+        function showhide(idHide1, idHide2, idShow) {
+
+            var obj1 = document.getElementById(idShow);
+            var obj2 = document.getElementById(idHide1);
+            var obj3 = document.getElementById(idHide2);
+
+            obj1.style.display = "block";
+            obj2.style.display = "none";
+            obj3.style.display = "none";
+        }
+
+        function showtabon(id1, id2, id3) {
+            document.getElementById("first").src = "images/tab1_" + id1 + ".gif";
+            document.getElementById("second").src = "images/tab2_" + id2 + ".gif";
+            document.getElementById("third").src = "images/tab3_" + id3 + ".gif";
+
+        }
+    </script>
+    <script language="javascript" type="text/javascript">
+
+
+
+        var isInputqu = false;
+
+
+        function clearDefaultSearchLable() {
+            var searchBox = document.getElementById("ctl00_SearchControl_msviLSBtbox");
+            if (!isInputqu) {
+                searchBox.value = "";
+            }
+        }
+
+
+        function searchBoxFocused(defaultSearchLabel) {
+            var searchBoxInput = document.getElementById("ctl00_SearchControl_msviLSBtbox");
+
+            if (searchBoxInput.value == defaultSearchLabel) {
+                searchBoxInput.value = '';
+
+                searchBoxInput.style.fontStyle = '';
+                searchBoxInput.style.color = '#000000';
+
+            }
+        }
+
+        function searchBoxBlur(defaultSearchLabel) {
+            var searchBoxInput = document.getElementById("ctl00_SearchControl_msviLSBtbox");
+
+            if (searchBoxInput.value.replace(/(^\s*)|(\s*$)/g, '') == '') {
+                searchBoxInput.value = defaultSearchLabel;
+                searchBoxInput.style.fontStyle = 'Italic';
+                searchBoxInput.style.color = "#a1a1a1";
+
+                isInputqu = false;
+            }
+            else {
+                isInputqu = true;
+            }
+        }
+    </script>
+    <!-- New Added -->
+    <script type="text/javascript">
+        function checkEnter(e) {
+            var characterCode;
+            if (e && e.which) {
+                e = e;
+                characterCode = e.which;
+            }
+            else {
+                e = event;
+                characterCode = e.keyCode;
+            }
+
+            if (characterCode == 13) {
+                window.open('http://search.microsoft.com/results.aspx?mkt=en-IN&setlang=en-IN&q=' + document.getElementById
+("ctl00_SearchControl_msviLSBtbox").value, '_self');
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+    </script>
+    <style type="text/css">
+        .style1
+        {
+            font-weight: bold;
+            width: 368px;
+        }
+        .style2
+        {
+            width: 368px;
+        }
+        .style3
+        {
+            width: 368px;
+            height: 84px;
+        }
+        .style4
+        {
+            height: 84px;
+        }
+        .style5
+        {
+            width: 368px;
+            height: 323px;
+        }
+        .style6
+        {
+            height: 323px;
+        }
+        .img_outer
+        {
+            width: 566px;
+            height: auto;
+            padding: 3px;
+            border: 1px solid #4b8224;
+            background-color: #FFFFFF;
+        }
+        
+        .mdlContentTxt
+        {
+            padding: 0 0px 30px 25px;
+            height: 1200px;
+        }
+    </style>
+    <style type="text/css">
+        div asp:Image
+        {
+            border: 0;
+            cursor: hand;
+        }
+        .lhs_Bg
+        {
+            width: 165px;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+            text-align: left;
+        }
+        .lhs_Bg_top
+        {
+            background: url(images/lhsBg_top.png) no-repeat top;
+            height: 14px;
+            width: 100%;
+        }
+        .lhs_Bg_mid
+        {
+            background: url(images/lhsBg_mid.png) repeat-y top;
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+        .lhs_Bg_mid_text
+        {
+            padding: 8px;
+        }
+        
+        .lhs_Bg_bot
+        {
+            background: url(images/lhsBg_bot.png) no-repeat top;
+            width: 100%;
+            height: 14px;
+        }
+    </style>
+</head><body>
+    <div class="main_vis_bg">
+        <div class="main_vis_bg">
+            <div class="topLinks">
+                <div>
+                    India &nbsp;<a href="http://www.microsoft.com/worldwide">Change</a>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="searchCtrl" style="float: right; width: 298px; height: 30px; margin-top: 20px;">
+                    <div id="siteSearch">
+                        <div>
+                            <div class="msviLSBsform" id="msviLSBsform">
+                                
+                                <div id="msBing" style="display: block;">
+                                    <table>
+                                        <tbody><tr>
+                                            <td>
+                                            <input value="en-us" name="View" type="hidden">
+                                                <input value="iso-8859-1" name="charset" type="hidden">
+                                                <input value="Search Microsoft" id="ctl00_SearchControl_msviLSBtbox" class="msviLSBtbox" name="ctl00$SearchControl$msviLSBtbox" onblur="searchBoxBlur('Search Microsoft')" onfocus="searchBoxFocused('Search Microsoft')" style="font-style: italic; color: rgb(161, 161, 161); margin-top: 3px;" onkeypress="checkEnter(event)" type="text">
+                                            </td>
+                                            <td>
+                                                <span id="ctl00_SearchControl_msviLSBlogo" class="msviLSBlogo" title="results by Bing" style="vertical-align: middle; margin-bottom: 3px;">
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <input name="ctl00$SearchControl$msviLSBssearch" id="ctl00_SearchControl_msviLSBssearch" class="msviLSBssearch" src="Buildyourdream.aspx_files/Search_icon.gif" alt="Search Microsoft" style="margin-bottom: 3px; border: 0pt none; cursor: pointer;" onclick="window.open('http://search.microsoft.com/results.aspx?mkt=en-IN&amp;setlang=en-IN&amp;q='+ ctl00_SearchControl_msviLSBtbox.value, '_self')" type="image">
+                                            </td>
+                                            <td>
+                                                <input id="Image1" title="Search the Web" class="SimpleSearchWebButton" name="ctl00$SearchControl$SimpleSearchWebButton" src="Buildyourdream.aspx_files/en-US.gif" alt="Search the Web" style="border: 0pt none; margin-bottom: 3px; cursor: pointer;" onclick="javascript:window.open('http://www.kumo.com/search?mkt=en-in&amp;setlang=en-in&amp;q='+ctl00_SearchControl_msviLSBtbox.value +'&amp;form=MSSBMN', '_self')" type="image" align="absmiddle">
+                                                <input id="msviLSBWeb" onclick="" value="" title="" type="submit">
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    
+                                    <!-- /#msBing -->
+                                </div>
+                                
+                                
+                                <!-- /#msviLSBsform -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="Buildyourdream.aspx_files/trans.gif" alt="" width="1" height="137"></div>
+                <div align="right">
+                    <a href="https://profile.microsoft.com/RegSysProfileCenter/subscriptionwizard.aspx?wizid=af622f1b-9dd1-4e72-8762-86fd4301bd68&amp;lcid=16393">
+                        <img src="Buildyourdream.aspx_files/campus_spark.png" alt="Subscribe to Microsoft Campus Spark" width="260" height="120"></a></div>
+                <form name="Form1" method="post" action="Buildyourdream.aspx" id="Form1">
+<div>
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTkyMjg2ODIwNGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgkFFUxlZnROYXYkd2hhdHNfbmV3X2ltZwUYTGVmdE5hdiRnZXRfc29mdHdhcmVfaW1nBRRMZWZ0TmF2JGdldF9qb2JzX2ltZwUZTGVmdE5hdiRnZXRfY2VydGlmaWVkX2ltZwUhTGVmdE5hdiRtaWNyb3NvZnRfaW1hZ2luZV9jdXBfaW1nBSJMZWZ0TmF2JGJlY29tZV9zdHVkZW50X3BhcnRuZXJfaW1nBRpMZWZ0TmF2JGpvaW5fY29tbXVuaXR5X2ltZwUZTGVmdE5hdiRhdHRlbmRfZXZlbnRzX2ltZwUbTGVmdE5hdiRjb25uZWN0X3dpdGhfdXNfaW1nvV5vRlKGVP9gNXEnfmUuxUvOqZg=" type="hidden">
+</div>
+
+<div>
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCgK2v4SnDQK9tfyTDgK+wsSxDwLk1eW7CAKMroDFDwLKlsywDAL357moAwL9ssGIDQLb7MTnBgLA+6zlAyy+i4ZdYlYUorNvnOFlt5odauu/" type="hidden">
+</div>
+                <table class="mainLayoutTbl" border="0" cellpadding="0" cellspacing="0" width="">
+                    <tbody><tr>
+                        <td id="lftContent" width="191">
+                            
+<style>
+<!--
+#list1 li{
+padding-left:20px;
+}
+-->
+</style>
+<div id="lftMenu">
+    <div>
+        <img src="Buildyourdream.aspx_files/trans.gif" alt="" width="5" height="24"></div>
+    <div>
+        <input name="LeftNav$whats_new_img" id="LeftNav_whats_new_img" src="Buildyourdream.aspx_files/whats_new.png" alt="Whats New" style="height: 34px; width: 191px; border-width: 0px;" type="image">
+    </div>
+    <div>
+        <input name="LeftNav$get_software_img" id="LeftNav_get_software_img" src="Buildyourdream.aspx_files/get_software.png" alt="Get Software" style="height: 36px; width: 191px; border-width: 0px;" type="image"></div>
+    
+    <div>
+        <input name="LeftNav$get_jobs_img" id="LeftNav_get_jobs_img" src="Buildyourdream.aspx_files/get_jobs.png" alt="Get Jobs/Internships" style="height: 37px; width: 191px; border-width: 0px;" type="image"></div>
+    <div>
+        <input name="LeftNav$get_certified_img" id="LeftNav_get_certified_img" src="Buildyourdream.aspx_files/get_certified.png" alt="Get Certified" style="height: 34px; width: 191px; border-width: 0px;" type="image"></div>
+    <div>
+        <input name="LeftNav$microsoft_imagine_cup_img" id="LeftNav_microsoft_imagine_cup_img" src="Buildyourdream.aspx_files/microsoft_imagine_cup.png" alt="Microsoft Imagine Cup" style="height: 38px; width: 191px; border-width: 0px;" type="image"></div>
+
+    <div>
+        <input name="LeftNav$become_student_partner_img" id="LeftNav_become_student_partner_img" src="Buildyourdream.aspx_files/become_student_partner.png" alt="Become a Student Partner" style="height: 35px; width: 191px; border-width: 0px;" type="image"></div>
+    <div>
+        <input name="LeftNav$join_community_img" id="LeftNav_join_community_img" src="Buildyourdream.aspx_files/join_community.png" alt="Join a Community" style="height: 33px; width: 191px; border-width: 0px;" type="image"></div>
+    <div>
+        <input name="LeftNav$attend_events_img" id="LeftNav_attend_events_img" src="Buildyourdream.aspx_files/attend_events.png" alt="Attend Events" style="height: 35px; width: 191px; border-width: 0px;" type="image"></div>
+    <div>
+        <input name="LeftNav$connect_with_us_img" id="LeftNav_connect_with_us_img" src="Buildyourdream.aspx_files/connect_with_us.png" alt="Connect With Us" style="height: 35px; width: 191px; border-width: 0px;" type="image"></div>
+</div>
+<div align="center">
+    <div class="lhs_Bg">
+        <div class="lhs_Bg_top">
+        </div>
+        <div class="lhs_Bg_mid">
+            <div class="lhs_Bg_mid_text">
+                <div style="padding: 0px 0pt 0pt 15px; margin-left: -10px;">
+                    <img src="Buildyourdream.aspx_files/statsCounter.jpg" alt="Stats Counter"></div>
+                <div>
+                    <img src="Buildyourdream.aspx_files/trans.gif" alt="" width="5" height="8"></div>
+                <div>
+                    <ul style="margin-left: -20px;" id="list1">
+                        <li style="color: rgb(0, 0, 0);"><a href="http://www.student-partners.com/" target="_blank">
+                            Microsoft Student Partners - 708</a></li>
+                        <li style="color: rgb(0, 0, 0);"><a href="http://www.studenttechclubs.com/" target="_blank">
+                            Student Tech Clubs -
+                            <!--1410-->
+                            1529</a></li>
+                        <li style="color: rgb(0, 0, 0); padding-right: 2px;"><a href="http://www.s2bprogram.com/india" target="_blank">S2B Open Positions -
+                            <!--60-->
+                            47</a></li>
+                        <li style="color: rgb(0, 0, 0); padding-right: 2px;"><a href="http://www.s2bprogram.com/india" target="_blank">S2B Number of Employers - 306</a></li>
+                        <li style="color: rgb(0, 0, 0); padding-right: 2px;"><a href="http://www.s2bprogram.com/india" target="_blank">S2B Projects- 106</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lhs_Bg_bot">
+        </div>
+    </div>
+</div>
+<div style="margin-top: 15px; margin-bottom: 15px;" align="center">
+    <div class="lhs_Bg">
+        <!--<div class="lhs_Bg_top">
+        </div>
+        <div class="lhs_Bg_mid">
+            <div class="lhs_Bg_mid_text">
+                <div style="padding: 0px 0 10px 10px;">
+                    <img src="images/certifiable.gif" border="0" alt="Are You Certifiable?" /></div>
+                <div style="padding-left: 15px">
+                    <a href="http://www.microsoft.com/click/areyoucertifiable/" target="_blank">
+                        <img src="images/certificate.jpg" width="108" height="78" alt="Certification" border="0" /></a></div>
+            </div>
+        </div>
+        <div class="lhs_Bg_bot">-->
+
+</div>
+	<div align="center">
+                                        <a href="http://windows.microsoft.com/en-IN/internet-explorer/products/ie-9/home?icid=MSCOM_IN_StudentSite_LeftNav_TryOutTheBetaIE9" target="_blank">
+                                            <img src="Buildyourdream.aspx_files/IE9_banner.png" alt="" title="Microsoft Internet Explorer 9" border="0"></a></div><br><br>
+                                                
+                                               <div align="center">
+                                        <!--<a href="http://pinpoint.microsoft.com/en-IN/Default.aspx"
+                                            target="_blank">
+                                            <img src="images/Pinpoint_LHS1_150x300_122210.gif" alt="" border="0" alt="Microsoft Pinpoint"
+                                                title="Microsoft Pinpoint" /></a>--></div>
+        </div>
+    
+                        </td>
+                        <td id="mdlContent" width="678">
+                            <div style="position: relative;">
+                                <img src="Buildyourdream.aspx_files/mainContent_bgTop.png" alt=""></div>
+                            <div class="mdlContentBg">
+                                <div class="mdlContentTxt">
+                                    <table>
+                                        <tbody><tr>
+                                            <td style="width: 20%;">
+                                                &nbsp;
+                                            </td>
+                                            <td style="width: 600px; background: none repeat scroll 0% 0% rgb(255, 255, 255);">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="600">
+                                                    <tbody><tr>
+                                                        <td style="vertical-align: text-bottom;">
+                                                            <img src="Buildyourdream.aspx_files/img1.jpg" width="600" height="135">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="vertical-align: text-top;">
+                                                            <img src="Buildyourdream.aspx_files/img2.jpg">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-left: 47px;">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="553">
+                                                                <tbody><tr>
+                                                                    <td valign="top" width="332">
+                                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                                            <tbody><tr>
+                                                                                <td style="font-size: 12px; line-height: 17px; font-family: arial; color: rgb(119, 120, 123);">
+                                                                                    <p style="font-size: 15px; line-height: 17px; font-family: arial; color: rgb(107, 189, 70);">
+                                                                                        <strong>Create, Win and Get Famous!</strong></p>
+                                                                                    <p>
+                                                                        
+                Have you started building apps for Windows Phone 7 yet? 
+If not, then don’t wait
+                                                                        
+                anymore. Start building your apps and upload it on 
+AppHub before 30<sup>th</sup>
+                                                                        
+                April, 2011 to get instant recognition. The earlier you 
+upload, the closer you get
+                                                                        
+                to your dream of being an innovator among your friends!</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10">
+                                                                                    <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="10">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="font-size: 13px; font-family: arial; color: rgb(107, 189, 70); font-weight: bold;">
+                                                                                    So why wait? Get going now…..
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10">
+                                                                                    <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="10">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <table bgcolor="#ffffff" border="0" cellpadding="4" cellspacing="1">
+                                                                                        <tbody><tr>
+                                                                                            <td style="font-size: 16px; font-family: arial; color: rgb(255, 255, 255);" bgcolor="#5cae37" valign="top" width="167">
+                                                                                                <strong>Create!</strong>
+                                                                                            </td>
+                                                                                            <td style="font-size: 16px; font-family: arial; color: rgb(255, 255, 255);" bgcolor="#5cae37" valign="top" width="147">
+                                                                                                <strong>Win!*</strong>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 12px; line-height: 17px; font-family: arial; color: rgb(119, 120, 123);" bgcolor="#e8e8e8" valign="top">
+                                                                        
+                        One new Windows Phone 7 Application that <strong>gets submitted to AppHub</strong>
+                                                                                                within the campaign duration
+                                                                                            </td>
+                                                                                            <td style="font-size: 12px; line-height: 17px; font-family: arial; color: rgb(119, 120, 123);" bgcolor="#e8e8e8" valign="top">
+                                                                        
+                        Participation Certificate &amp; WP7 T-Shirt
+                                                                        
+                    </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 12px; line-height: 17px; font-family: arial; color: rgb(119, 120, 123);" bgcolor="#e8e8e8" valign="top">
+                                                                        
+                        One new Windows Phone 7 Application that <strong>gets certified for AppHub</strong>
+                                                                                                within the campaign duration
+                                                                                            </td>
+                                                                                            <td style="font-size: 12px; line-height: 17px; font-family: arial; color: rgb(119, 120, 123);" bgcolor="#e8e8e8" valign="top">
+                                                                        
+                        Merit Certificate and 250 GB USB Hard Drive
+                                                                        
+                    </td>
+                                                                                        </tr>
+                                                                                    </tbody></table>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="right">
+                                                                                    <a href="http://www.microsoft.com/india/student/Buildyourdream_terms.aspx">*Terms &amp;
+                                                                                        conditions</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                                                        <tbody><tr>
+                                                                                            <td style="font-weight: bold; font-size: 16px; font-family: Arial; color: rgb(107, 189, 70);">
+                                                                                                &nbsp;
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 12px; line-height: 17px; font-family: arial; color: rgb(119, 120, 123);">
+                                                                        
+                        The scheme is applicable on applications 
+submitted between <strong>1<sup>st</sup> November
+                                                                                                    2010 to 30<sup>th</sup> April 2011</strong>.
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-weight: bold; font-size: 16px; font-family: Arial; color: rgb(107, 189, 70);">
+                                                                                                &nbsp;
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-weight: bold; font-size: 16px; font-family: Arial; color: rgb(107, 189, 70);">
+                                                                                                <strong>Why should you develop on Windows Phone 7?</strong>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-size: 12px; line-height: 17px; font-family: arial; color: rgb(119, 120, 123);">
+                                                                                                <ol>
+                                                                                                    <li>3 weeks vs. 3 hours: Developing applications and games for Windows Phone 7 is easier
+                                                                                                        and faster. Watch this <a href="http://vimeo.com/13693106" style="color: rgb(33, 133, 236); text-decoration: underline;">testimonial</a> video to hear what students say!</li>
+                                                                                                    <li>It’s
+ about serious business. You can not only deploy Windows Phone 7 apps on
+ Marketplace
+                                                                        
+                                for free, but also earn some extra cash 
+off of it.</li>
+                                                                                                    <li>Power
+ your resume: You can distinguish yourself by mentioning it on their 
+resume
+                                                                        
+                                and get an early head-start in your 
+career! </li>
+                                                                                                </ol>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-weight: bold; font-size: 16px; font-family: Arial; color: rgb(107, 189, 70);">
+                                                                                                &nbsp;
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td style="font-weight: bold; font-size: 16px; font-family: Arial; color: rgb(107, 189, 70);">
+                                                                        
+                        Achieve your dreams early in your Life!<br>
+                                                                                                <span style="color: rgb(72, 145, 220);"><a href="http://www.dreamspark.com/" target="_blank" style="color: rgb(72, 145, 220);">Dream it</a>, <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=04704acf-a63a-4f97-952c-8b51b34b00ce&amp;displaylang=en" target="_blank" style="color: rgb(72, 145, 220);">Build it</a> and
+                                                                                                    <a href="http://create.msdn.com/" target="_blank" style="color: rgb(72, 145, 220);">Submit</a>
+                                                                                                    it today.</span>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td height="12">
+                                                                                                <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="12">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td height="10">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                                                    <tbody><tr>
+                                                                                                        <td style="font-size: 12px; font-family: arial; color: rgb(92, 174, 55);">
+                                                                                                            Follow us on:&nbsp;
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <a href="http://twitter.com/windowsphone" target="_blank">
+                                                                                                                <img src="Buildyourdream.aspx_files/img9.jpg" border="0"></a>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody></table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody></table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </td>
+                                                                    <td valign="top" width="221">
+                                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                                            <tbody><tr>
+                                                                                <td align="right" valign="top">
+                                                                                    <img src="Buildyourdream.aspx_files/img4.jpg" width="221" height="81">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="14">
+                                                                                    <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="14">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="padding-left: 13px;">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" width="187">
+                                                                                        <tbody><tr>
+                                                                                            <td>
+                                                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                                                    <tbody><tr>
+                                                                                                        <td valign="top" width="22">
+                                                                                                            <img src="Buildyourdream.aspx_files/img5.jpg">
+                                                                                                        </td>
+                                                                                                        <td style="font-size: 12px; font-family: arial; color: rgb(119, 120, 123);" valign="top">
+                                                                        
+                                    Register at the marketplace today by
+ using your DreamSpark ID. If you are student
+                                                                        
+                                    who is not yet registered on 
+DreamSpark, ask your college to write to <a href="mailto:dreams@microsoft.com" target="_blank" style="color: rgb(33, 133, 236); text-decoration: underline;">dreams@microsoft.com</a>
+                                                                        
+                                    to ask for Access keys that will 
+help you register faster.
+                                                                        
+                                </td>
+                                                                                                    </tr>
+                                                                                                </tbody></table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td height="7">
+                                                                                                <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="7">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="Buildyourdream.aspx_files/img6.jpg">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td height="7">
+                                                                                                <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="7">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                                                    <tbody><tr>
+                                                                                                        <td valign="top" width="22">
+                                                                                                            <img src="Buildyourdream.aspx_files/img5.jpg" alt="">
+                                                                                                        </td>
+                                                                                                        <td style="font-size: 12px; font-family: arial; color: rgb(119, 120, 123);" valign="top">
+                                                                                                            Download the <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=04704acf-a63a-4f97-952c-8b51b34b00ce&amp;displaylang=en" target="_blank" style="color: rgb(33, 133, 236); text-decoration: underline;">Windows Phone
+                                                                                                                Developer Tools</a>. It’s free!
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody></table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td height="7">
+                                                                                                <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="7">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="Buildyourdream.aspx_files/img6.jpg">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td height="7">
+                                                                                                <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="7">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                                                    <tbody><tr>
+                                                                                                        <td valign="top" width="22">
+                                                                                                            <img src="Buildyourdream.aspx_files/img5.jpg" alt="">
+                                                                                                        </td>
+                                                                                                        <td style="font-size: 12px; font-family: arial; color: rgb(119, 120, 123);" valign="top">
+                                                                        
+                                    Create or recompile your app or game
+ using the final tools and submit it to AppHub
+                                                                        
+                                    before 30<sup>th</sup> April, 2011.
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody></table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td height="22">
+                                                                                                &nbsp;
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <img src="Buildyourdream.aspx_files/img7.jpg">
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td bgcolor="#5cae37">
+                                                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                                                    <tbody><tr>
+                                                                                                        <td colspan="2" height="12">
+                                                                                                            <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="12">
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td valign="top">
+                                                                                                            <img src="Buildyourdream.aspx_files/img8.jpg" vspace="2">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <a href="http://social.msdn.microsoft.com/Forums/en-US/windowsphone7series" target="_blank" style="color: rgb(255, 255, 255); font-size: 12px; font-family: arial;">Windows Phone Developer
+                                                                                                                Forum</a>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="2" height="8">
+                                                                                                            <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="8">
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <img src="Buildyourdream.aspx_files/img8.jpg">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <a href="http://msdn.microsoft.com/en-us/library/ff402531%28v=VS.92%29.aspx" target="_blank" style="color: rgb(255, 255, 255); font-size: 12px; font-family: arial;">Platform Overview</a>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="2" height="8">
+                                                                                                            <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="8">
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <img src="Buildyourdream.aspx_files/img8.jpg">
+                                                                                                        </td>
+                                                                                                        <td>
+                                                                                                            <a href="http://charlespetzold.com/phone/index.html" target="_blank" style="color: rgb(255, 255, 255); font-size: 12px; font-family: arial;">Programming for windows</a>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td colspan="2" height="14">
+                                                                                                            <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="14">
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody></table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody></table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody></table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-left: 20px;">
+                                                            <table style="background: none repeat scroll 0% 0% rgb(255, 183, 15);" border="0" cellpadding="0" cellspacing="0" width="559">
+                                                                <tbody><tr>
+                                                                    <td height="13">
+                                                                        <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="13">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="font-family: arial; font-size: 12px; color: rgb(47, 47, 47); padding: 0pt 40px 0pt 27px;">
+                                                                        
+If you are developing or have already developed an app for Windows Phone
+ 7 &amp;
+                                                                        
+need help with testing, please reach out to us at <a href="mailto:winmo@g5web.com" target="_blank" style="color: rgb(47, 47, 47); font-weight: bold;">winmo@g5web.com</a>.
+                                                                        <br>
+                                                                        <br>
+                                                                        
+To engage with the Windows 7 Community or if you have any specific 
+queries, do visit
+                                                                        <a href="http://social.msdn.microsoft.com/Forums/en-US/windowsphone7series/threads" target="_blank" style="color: rgb(47, 47, 47); font-weight: bold;">Windows Phone Community
+                                                                            on MSDN Support</a> and <a href="http://forums.xna.com/forums/" target="_blank" style="color: rgb(47, 47, 47); font-weight: bold;">CCO Forums for XNA Developers</a>.
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td height="13">
+                                                                        <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="13">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-left: 20px;">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="559">
+                                                                <tbody><tr>
+                                                                    <td height="18">
+                                                                        <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="18">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td bgcolor="#babcc0" height="1">
+                                                                        <img src="Buildyourdream.aspx_files/spacer.gif" width="1" height="1">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody></table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody></table>
+                                            </td>
+                                            <td style="width: 50%;">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+                            </div>
+            
+            <div>
+                <img alt="Microsoft Student Website for India" src="Buildyourdream.aspx_files/mainContent_btm.png"></div>
+            </td>
+            <td width="176">
+                <div class="rhsSect1">
+                    <div style="padding: 28px 0pt 0pt 10px;">
+                        <img src="Buildyourdream.aspx_files/topLinks.gif" alt="Top Links for Students"></div>
+                    <div>
+                        <img src="Buildyourdream.aspx_files/trans.gif" alt="" width="5" height="10"></div>
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td style="padding-left: 20px;">
+                                <img src="Buildyourdream.aspx_files/ico_facebook.gif" alt="Join Us on Facebook" width="32" height="20">
+                            </td>
+                            <td valign="middle">
+                                <a href="http://www.facebook.com/microsoftindiastudent" target="_blank">Fan on Facebook</a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <div>
+                        <img src="Buildyourdream.aspx_files/trans.gif" alt="" width="5" height="20"></div>
+                    <table border="0" cellpadding="0" cellspacing="0" width="80%">
+                        <tbody><tr>
+                            <td style="padding-left: 20px;">
+                                <img src="Buildyourdream.aspx_files/ico_twitter.gif" alt="Follow Microsoft Student on Twitter" width="32" height="20">
+                            </td>
+                            <td valign="middle">
+                                <!--<a href="http://twitter.com/icindia" target="_blank">-->
+                                <a href="http://www.twitter.com/msindiastudent" target="_blank">Follow us on Twitter</a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <div>
+                        <img src="Buildyourdream.aspx_files/trans.gif" alt="" width="5" height="20"></div>
+                    <table border="0" cellpadding="0" cellspacing="0" width="80%">
+                        <tbody><tr>
+                            <td style="padding-left: 20px;">
+                                <img src="Buildyourdream.aspx_files/ico_blogs.gif" alt="Subscribe to Student Blogs" width="32" height="20">
+                            </td>
+                            <td valign="middle">
+                                <a href="http://blogs.msdn.com/icindia/" target="_blank">Subscribe to our Blogs</a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+                <div class="rhsSect4" style="padding-top: 90px; padding-left: 5px;">
+                    <div style="padding: 30px 0pt 10px 30px;">
+                        <img src="Buildyourdream.aspx_files/shivi_pro_1.jpg" alt="Shivi Agarwal – Career at Microsoft" style="width: 90px; height: 90px;" border="0">
+                    </div>
+                    &nbsp;Microsoft interviews are not difficult to crack...<br>
+                    <a href="http://www.microsoft.com/india/student/shivi_agarwal.aspx"><strong>Read more</strong></a>
+                    <div style="padding: 0px 0pt 10px 30px;">
+                        <img src="Buildyourdream.aspx_files/Anil_1.jpg" alt="Anil Lulla – New Job at Microsoft" style="width: 90px; height: 90px;" border="0">
+                    </div>
+                    The atmosphere at the MS campus had the edge...
+                    <br>
+                    <a href="http://www.microsoft.com/india/student/anil_lulla.aspx"><strong>Read more</strong></a>
+                    <div style="padding: 0px 0pt 10px 30px;">
+                        <img src="Buildyourdream.aspx_files/Vignesh.jpg" alt="Vignesh M – Experience at Microsoft " style="width: 90px; height: 90px;" border="0">
+                    </div>
+                    The Selection Process was full<br>
+                    of surprises...<br>
+                    <a href="http://www.microsoft.com/india/student/Vignesh_M.aspx"><strong>Read more</strong></a>
+                    <div style="padding: 0px 0pt 10px 30px;">
+                        <img src="Buildyourdream.aspx_files/AdityaJalan.jpg" alt="Aditya Jalan – Opportunity to Work with Microsoft" style="width: 90px; height: 90px;" border="0">
+                    </div>
+                    An awesome opportunity provided by the MSP team...
+                    <br>
+                    <a href="http://www.microsoft.com/india/student/Aditya_Jalan.aspx"><strong>Read more</strong></a>
+                </div>
+            </td>
+            </tr> </tbody></table>
+            <table id="btmContent" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td>
+                        <img alt="" src="Buildyourdream.aspx_files/trans.gif" width="191" height="10">
+                    </td>
+                    <td>
+                        <div>
+                            <img src="Buildyourdream.aspx_files/btmContent_top.jpg" alt="Student Site from Microsoft India" width="683" height="24"></div>
+                        <div class="btmContentBg">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td width="33%">
+                                        <div class="btmHd">
+                                            <img src="Buildyourdream.aspx_files/ico_educators.jpg" alt="Educators at Microsoft India" width="80" height="112">
+                                            <div class="btmCntHd">
+                                                Educators</div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="http://microsoft.com/faculty">Microsoft Faculty Connection</a></li>
+                                            <li><a href="http://msdn.microsoft.com/">MSDN Resources</a></li>
+                                            <li><a href="http://www.surveymonkey.com/s/WJ8PLFX">Faculty Connection Survey</a></li>
+                                        </ul>
+                                    </td>
+                                    <td class="lftPad30" width="33%">
+                                        <div class="btmHd">
+                                            <img src="Buildyourdream.aspx_files/ico_institutions.jpg" alt="Institutions Connected with Microsoft India" width="76" height="112">
+                                            <div class="btmCntHd">
+                                                Institutions</div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="http://msdn.microsoft.com/">MSDN AA</a></li>
+                                            <li><a href="http://microsoftitacademy.com/">IT Academy Program</a></li>
+                                            <li><a href="http://www.microsoft.com/learning/en/us/default.aspx">Microsoft Learning</a></li>
+                                        </ul>
+                                    </td>
+                                    <td class="lastTd lftPad30">
+                                        <div class="btmHd">
+                                            <img src="Buildyourdream.aspx_files/ico_funstuff.jpg" alt="Exciting Updates for Students" width="77" height="112">
+                                            <div class="btmCntHd">
+                                                Fun Stuff</div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="http://research.microsoft.com/en-us/um/cambridge/projects/autocollage/">
+                                                AutoCollage</a></li>
+                                            <li><a href="http://www.microsoft.com/student/en/us/software/windows-mobile.aspx">Windows
+                                                Mobile</a></li>
+                                            <li><a href="http://www.microsoft.com/student/en/us/funstuff/xbox.aspx">XBOX</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div>
+                            <img src="Buildyourdream.aspx_files/btmContent_btm.jpg" alt="Visit Microsoft Student India" width="683" height="38"></div>
+                    </td>
+                </tr>
+            </tbody></table>
+            </form>
+        </div>
+        <div id="footer">
+            <div class="footerTxt">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tbody><tr>
+                        <td align="right">
+                            <a href="http://www.microsoft.com/en/in/sitemap.aspx">Site Map</a> | <a href="http://go.microsoft.com/?linkid=317192">
+                                Manage Your Profile</a> | <a href="http://www.microsoft.com/india/connect/">Contact
+                                    Us</a> | <a href="http://www.microsoft.com/info/ind-en/cpyright.mspx">Terms of Use</a>
+                            | <a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-in.mspx">Trademarks</a>
+                            | <a href="http://www.microsoft.com/info/ind-en/privacy.mspx">Privacy Statement</a>
+                        </td>
+                        <td width="15%">
+                            <div>
+                                <img src="Buildyourdream.aspx_files/ms_logo_ftr.gif" alt="Microsoft" width="131" height="22"></div>
+                            <span style="padding: 10px 20px 0pt 0pt;">© 2010 Microsoft</span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        var gDomain = "m.webtrends.com";
+        var gDcsId = "dcsjwb9vb00000c932fd0rjc7_5p3t";
+        var gTrackEvents = 1;
+        var gFpc = "WT_FPC";
+        if (document.cookie.indexOf(gFpc + "=") == -1) {
+            document.write("<SCR" + "IPT TYPE='text/javascript' SRC='" + "http" + (window.location.protocol.indexOf('https:') == 0 ? 's'
+:
+'') + "://" + gDomain + "/" + gDcsId + "/wtid.js" + "'><\/SCR" + "IPT>");
+        }
+    </script>
+    <script src="Buildyourdream.aspx_files/wt.js" type="text/javascript"> 
+    </script>
+    <noscript>
+        <img alt="" border="0" name="DCSIMG" width="1" height="1" src="http://m.webtrends.com/dcsjwb9vb00000c932fd0rjc7_5p3t/njs.gif?dcsuri=/nojavascript&WT.js=No" />
+    </noscript>
+<script src="Buildyourdream.aspx_files/broker-config_s1.js"></script></body></html>

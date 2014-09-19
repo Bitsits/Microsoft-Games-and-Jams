@@ -1,0 +1,708 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, textarea, p, blockquote, th, td
+{
+	margin: 0;
+	padding: 0;
+}
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset, img
+{
+	border: 0;
+}
+address, caption, cite, code, dfn, em, th, var
+{
+	font-style: normal;
+	font-weight: normal;
+}
+caption, th
+{
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-size: 100%;
+	font-weight: normal;
+}
+h1, h2
+{
+	font-family: Segoe UI, Verdana, Arial, Sans-Serif;
+}
+a
+{	
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+}
+:focus
+{
+	outline: none;
+}
+input::-moz-focus-inner
+{
+	border: 0;
+}
+textarea
+{
+	overflow: auto;
+	resize: none;
+}
+html, body
+{
+	background: url('/images/bg-dwpc.png') repeat-x #313234;
+}
+body
+{
+	font: 12px Verdana, Arial, sans-serif;
+	color: #2f2e2e;
+	text-align: center;
+	line-height: 18px;
+}
+.wrap
+{
+	width: 100%;
+}
+.main
+{
+	width: 945px;
+	margin: 0 auto;
+	padding: 5px 19px;
+	text-align: left;
+	background: #d5d2d4;
+}
+.common
+{
+	/* min-height: 500px; */
+	padding: 5px 0;	
+	/* background-color: #258830; */
+	position: relative;
+}
+.cont
+{
+	float: right;
+	width: 722px;
+	margin-right: -8px;
+}
+
+.head
+{
+	overflow: hidden;
+	position: relative;
+	height: 170px;
+	margin: 0 0 1px;
+}
+.head .links
+{
+	overflow: hidden;
+	width: 100%;
+	height: 44px;
+}
+.head .social
+{
+	float: right;
+	margin: 11px 0 0;
+}
+.head .social li
+{
+	float: left;
+	margin: 0 0 0 4px;
+}
+.head .help
+{
+	position: relative;
+	left: -12px;
+	top: 13px;
+}
+.head .help li
+{
+	float: left;
+	padding: 0 12px;
+	border-right: 1px solid #3a3737;
+}
+.head .help li.last
+{
+	border: none;
+}
+.head .help a
+{
+	color: #3a3737;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.head .help a:hover
+{
+	text-decoration: underline;
+}
+.head .help select
+{
+	position: relative;
+	top: -3px;
+	font: 12px Arial, sans-serif;
+	border: 1px solid #c1c1c1;
+	background: #e7e7e7;
+}
+.head .search
+{
+	position: absolute;
+	left: 385px;
+	top: 7px;
+	width: 200px;
+	height: 23px;
+	background: url("/images/bg_search.png") no-repeat;
+}
+.head .search input[type="text"]
+{
+	float: left;
+	width: 155px;
+	height: 19px;
+	margin: 4px 4px 0 5px;
+	color: #656565;
+	font-weight: bold;
+	border: 0;
+}
+.head .search input[type="submit"]
+{
+	width: 19px;
+	height: 16px;
+	margin: 5px 0 0;
+	background: url("/images/btn_search.png") no-repeat #fff;
+	border: 0;
+	cursor: pointer;
+}
+.head .logo
+{
+	position: relative;
+	width: 100%;
+	height: 170px;
+	background: url("/images/masthd.jpg") no-repeat;
+}
+.head .logo a:first-child
+{
+	position: absolute;
+	top: 14px;
+	left: 42px;
+	width: 148px;
+	height: 148px;
+}
+.head .logo a:last-child
+{
+	position: absolute;
+	top: 66px;
+	right: 127px;
+	width: 220px;
+	height: 70px;
+}
+
+.nav
+{
+	height: 36px;
+	background: url("/images/bg-nav.png") repeat-x;
+}
+.nav > ul
+{
+	float: left;
+	padding: 3px 0;
+	height: 30px;
+}
+.nav > ul > li
+{
+	position: relative;
+	float: left;
+	height: 30px;
+	font: bold 12px 'Segoe UI Semibold' , 'Segoe UI' , Arial, sans-serif;
+}
+.nav > ul > li > a
+{
+	float: left;
+	height: 30px;
+	padding: 0 12px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 31px;
+	border-right: 1px solid #6a6969;
+}
+.nav > ul > li:first-child > a
+{
+	border: 0;
+	padding-left: 12px;
+	border-right: 1px solid #6a6969;
+}
+.nav > ul > li > a:hover, .nav > ul > li.act > a
+{
+	background: url("/images/bg-nav-act.png") repeat-x;
+	height: 36px;
+	line-height: 37px;
+	margin: -3px 0 0 -1px;
+	padding: 0 13px;
+	position: relative;
+	border: 0;
+}
+.nav > ul > li > ul
+{
+	position: absolute;
+	top: 30px;
+	left: 0;
+	display: none;
+	text-transform: uppercase;
+	border-top: 4px solid transparent;
+}
+.nav > ul > li > ul li
+{
+	float: none;
+	width: 100%;
+	height: 26px;
+	font: bold 12px/26px 'Segoe UI Semibold' , 'Segoe UI' , Arial, sans-serif;
+	white-space: nowrap;
+	background: transparent url("/images/bg-nav-sub.png") repeat-x;
+}
+.nav > ul > li > ul li a
+{
+	display: block;
+	height: 100%;
+	padding: 0 13px;
+	color: #fff;
+	font: bold 12px/26px 'Segoe UI Semibold' , 'Segoe UI' , Arial, sans-serif;
+	background: transparent url("/images/bg-nav-sub.png") repeat-x;
+}
+.nav > ul > li > ul li a:hover, .nav > ul > li > ul li.act a
+{
+	background-position: 0 -27px;
+}
+.nav > ul > li:hover ul
+{
+	display: block;
+}
+
+.footer
+{
+	overflow: hidden;
+	position: relative;
+	height: 65px;
+	padding: 10px 0 0;
+	font-size: 11px;
+	color: #333;
+	border-top: 1px solid #999;
+	margin-top: 10px;
+}
+.footer ul
+{
+	float: left;
+	padding-right: 10px;
+	position: relative;
+	left: -11px;
+	top: 0;
+}
+.footer ul li
+{
+	float: left;
+	padding: 0 11px;
+	border-left: 1px solid #3a3737;
+}
+.footer ul li a
+{
+	color: #3a3737;
+	text-decoration: none;
+	line-height: 1.1;
+}
+.footer ul li a:hover
+{
+	text-decoration: underline;
+}
+.footer span
+{
+	overflow: hidden;
+}
+.footer .microsoft
+{
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+.clr
+{
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	margin: 0;
+	font-size: 0;
+	background: none;
+	border: 0;
+}
+
+.clr-left
+{
+	clear: left;
+}
+
+
+/*****************************************/
+/* added styles for 1 & 2 column layouts */
+/*****************************************/
+
+/* font styles */
+.header
+{
+	font: 21px Segoe UI Semibold;
+	color: #ffffff;
+}
+
+/* single-column layout: e.g. "Connect" landing page" */
+.single-column
+{
+	background-color: #464343;
+	padding: 15px;
+	min-height: 475px;
+}
+
+/* two-column layout: e.g. "Solutions" page" */
+.left-column
+{
+	background-color: #464343;
+	min-height: 470px;
+	width: 630px;
+	padding: 15px;
+	float: left;
+}
+.right-column
+{
+	min-height: 475px;
+	width: 270px;
+	float: right;
+}
+.right-column-module
+{
+	background-color: #464343;
+	min-height: 470px;
+	width: 240px;
+	padding: 15px;
+}
+.gray
+{
+	background-color: #464343;
+	padding: 15px;
+}
+.white
+{
+	background-color: #ffffff;
+	padding: 15px;
+}
+
+
+
+/*	example styles for page modules */
+.green-module
+{
+	background: #19893d;
+	padding: 15px;
+	color: #ffffff;
+}
+.gray-module
+{
+	background: #3a3737;
+	padding: 15px;
+	padding: 15px;
+	color: #ffffff;
+}
+.white-module
+{
+	background: #ffffff;
+	padding: 15px;
+	padding: 15px;
+	color: #3a3737;
+}
+.title
+{
+	font: 21px segoe light, segoe UI, arial, sans-serif;
+	border-bottom: solid 1px #cccccc;
+	padding-bottom: 3px;
+}
+.subhead
+{
+	font: 14px segoe light, segoe UI, arial, sans-serif;
+}
+.headlinetext p
+{
+	font: bold 12px arial, sans-serif;
+	padding-top: 10px;
+}
+.text p
+{
+	font: 12px arial, sans-serif;
+	padding-top: 10px;
+}
+.link
+{
+	font: bold 12px arial, sans-serif;
+}
+.green-module .link
+{
+	color: #ffffff;
+}
+.gray-module .link
+{
+	color: #f0892a;
+}
+.white-module .title, .white-module .link
+{
+	color: #f0892a;
+}
+
+ul, ol
+{
+	margin: 5px 25px;
+}
+li
+{
+	margin: 4px 0px;
+}
+ol li ol
+{
+	list-style-type: lower-alpha;
+}
+
+.sidebar
+{
+	width: 228px;
+	/* float: left; */
+	margin-right: 5px;
+	margin-top: 5px;	
+	top: 0px;
+	bottom: 0px;
+	position: absolute;
+}
+
+.sidebar .logo
+{
+	height: 153px;		
+}
+
+.sidebar .sidenav
+{
+	background-color: #258830;
+	padding: 20px 10px;
+	color: #fff;
+	margin-top: 5px;
+	position: absolute;
+	top: 154px;
+	bottom: 5px;
+	width: 208px;
+}
+
+.sidebar .sidenav ul, .footer ul
+{
+	margin: 0px;
+	list-style: none;
+}
+
+.sidebar .sidenav li
+{
+	border-bottom: solid 1px #7cb883;
+	padding: 9px 4px;
+	margin: 0px;
+}
+
+.sidebar .sidenav a:link
+, .sidebar .sidenav a:hover
+, .sidebar .sidenav a:visited
+{
+	color: #fff;
+}
+
+.content 
+{
+	/* float: left; */
+	background-color: #fff;
+	width: 631px;
+	padding: 30px 50px 30px 30px;
+	position: relative;
+	margin-left: 234px;	
+	min-height: 500px;
+}
+
+h1
+{
+	color: #ef8c41;
+	font-size: 2.4em;
+	padding-bottom: 15px;
+}
+
+h2
+{
+	font-size: 1.3em;
+	padding-bottom: 10px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+h3
+{
+	font-weight: bold;
+	padding: 15px 0px;
+}
+
+p
+{
+	padding: 5px 0px 10px 0px;
+}
+
+/* Home Page */
+
+div.divider
+{	
+	color: #aaadb2;
+	margin: 15px -10px 20px -10px;	
+	border-top: solid 1px #aaadb2;
+	height: 1px;
+}
+
+.windows-phone
+{
+	float: right;
+	height: 404px;
+	width: 252px;
+	background-image: url(/images/windows-phone.png);
+	background-repeat: no-repeat;
+	margin: -37px -5px 150px 0px;
+}
+
+.important-dates
+{
+	color: #ef8c41;	
+	padding-bottom: 20px;
+}
+
+.important-dates span
+{
+	display: block; 
+	float: left;
+}
+
+.important-dates .label
+{
+	clear: left;
+	width: 105px;	
+}
+
+.breadcrumb
+{
+	color: #fff;
+	font-size: .9em;	
+	padding: 8px 10px;
+}
+
+.breadcrumb .selected
+{
+	font-weight: bold;
+}
+
+.breadcrumb a:link
+, .breadcrumb a:hover
+, .breadcrumb a:visited
+{
+	color: #fff;
+	text-decoration: underline;
+}
+
+
+.form-field, .section-header
+{
+	clear: left;
+}
+.section-header
+{
+	padding: 0px 0px 10px 65px;	
+	display: block;
+}
+.form-field .label, .form-field .field
+{
+	float: left;
+}
+.form-field .label
+{
+	width: 200px;
+	text-align: right;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+.form-field .field input
+{
+	width: 250px;
+	padding: 2px;	
+}
+.form-field .field textarea
+{
+	width: 350px;
+	padding: 2px;	
+}
+.field-section
+{
+	padding-bottom: 35px;	
+}
+
+.form-field.checkbox
+{
+	padding-left: 65px;
+	padding-top: 5px;
+}
+.checkbox label
+{
+	padding-left: 5px;
+}
+.buttons
+{
+	margin-left: 214px;
+}
+.validation 
+{
+	margin-left: 65px;
+	color: #ff0000;
+}
+
+.login ul
+{
+	color: #ff0000;
+}
+
+.validation ul 
+{	
+	margin-bottom: 25px;	
+}
+
+.login div
+{
+	padding: 5px 0px;
+}
+
+.admin
+{
+	padding-top: 15px;
+}
+
+.home h2
+{
+	font-weight: normal;
+}
+
+.copy
+{
+	padding-top: 5px;
+}
+
+h4
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.logout
+{
+	float: right;
+	margin-top: -13px;
+}

@@ -1,0 +1,227 @@
+.post-permalink .related, #menubar, #ad-300x250{
+	display:none;
+}
+#header_container, #header{
+	height:30px;
+}
+#splashPosts{
+	width: 1025px;
+	display: none;
+}
+#moreTopStories{
+	right:10px;
+}
+
+#footer{
+	margin-left: 30px;
+}
+
+#footer #siteinfo{
+	border-top: 0px;
+}
+
+#footer #sitelist{
+	display: block;
+}
+
+#header .topStory{
+	font-size: 0.7em;
+}
+
+#moreTopStories, #navigation, #sidebar, #toolbar, #timestamp img {
+	display: none;
+}
+
+#content #ghostTags {
+	float: none;
+	height: 26px;
+}
+
+#content #ghostTags span {
+	visibility: visible;
+}
+
+#content .post-permalink H1{
+	display: block;
+}
+
+#postMeta p, #post-supplement p {
+	margin-top: 2.5em;
+}
+
+body, #container, #content_container {
+	background: none;
+}
+
+body {
+	font-size: 1em;
+}
+#main {
+	left: 30px;
+	position: relative;
+	float: none;
+}
+h2 a {
+	font-weight: bold;
+}
+a.topTag {
+	font-size: 1em;
+}
+#comments {
+display: none;
+width: 100%;
+}
+
+.post {
+	clear: none;
+	width: 900px;
+	float: none;
+}
+
+#print-label {
+	/*
+	display: block ! important;
+	font-size: 36px;
+	margin-bottom: 30px;
+	*/
+	display: block ! important;
+	position: relative;
+	top: -40px;
+	left: 10px;
+	font-size: 36px;
+	clear: both;
+}
+
+#print-label img {
+	width: 48px;
+	height: 48px;
+}
+
+/* ads */
+h1 {
+display: none;
+}
+
+#content, #main, #sidebar {
+/*position: none;*/
+margin: 0;
+}
+#ad-leaderboard, #innerFloaterAd, #ad-300x250, #interruptor, #skyscrapper, #skyline, #post-supplement, .page_navigation, .comment-tools, .avatar, #comment_preview, #commentBoxWrapper {
+	display: none;
+}
+
+.post, hr.separator{
+	float: none;
+}
+
+hr.separator{
+	height: 1px;
+	border:1px #CECECE solid;
+	text-align: left;
+	margin: 12px auto 12px 0px;
+}
+
+.post h2, .post a.topTag, .metadata {
+	display:block;
+	page-break-after: avoid;
+}
+
+.post img{
+	display:block;
+	page-break-inside: avoid;
+}
+
+#topMenu,
+#rightbar,
+.excerpt object, 
+.tool-icon, #search,
+#userLinks{
+	display: none;
+}
+
+.excerpt a:link:after, .excerpt a:visited:after 
+.entry a:link:after, .entry a:visited:after {
+  content: " (" attr(href) ") ";
+}
+
+.post a.topTag{
+	display: inline;
+}
+
+#content_container{
+	overflow: visible;
+}
+
+.post-permalink .post-wrapper,
+#content .post-permalink .entry{
+	width: 100%;
+}
+
+#content .post-permalink #postMeta{
+	left: 605pt;
+}
+
+
+#header, 
+#rightbar > table, 
+#rightbar .postMeta .views, 
+#rightbar .postMeta .comments, 
+#mail2container .tools, 
+#editorControlsWidget, 
+object {
+    display: none !important; }
+
+#rightbar {
+    float: none !important; 
+    position: absolute !important; 
+    top: 30px !important; 
+    width: 100% !important; }
+
+#rightbar .postMeta {
+    border-bottom: 1px solid #EEEEEE !important; 
+    padding: 0 !important; 
+    float: right !important; 
+    width: 300px !important; }
+
+#rightbar .postMeta .date img, 
+#rightbar .postMeta .date {
+    float: left !important; 
+    border: none !important; 
+    padding: 0 !important; 
+    margin: 0 !important; }
+
+#mail2container {
+    float: left !important; 
+    border: none !important; 
+    margin: 0 !important; 
+    padding: 0 10px 0 0 !important; }
+
+#rightbar .postMeta .date {
+    border:none !important; }
+
+h1 {
+    margin-bottom: 32px !important; }
+
+#container, 
+#wrapper, 
+#content_container, 
+#main, 
+#content, 
+#content .post-permalink, 
+#content .post-permalink .entry, 
+#content .post-wrapper {
+    max-width: 100% !important; 
+    width: 100% !important; 
+    top: 0 !important; 
+    left: 0 !important; }
+
+#footer {
+    border-top: 1px solid #999999 !important; 
+    display: inline !important; }
+
+#footer map, 
+#footer img, 
+#footer #siteinfo {
+    display: none !important; }
+
+}

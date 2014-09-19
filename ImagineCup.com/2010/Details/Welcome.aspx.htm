@@ -1,0 +1,913 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_ctl00_Head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+<link href="Welcome.aspx_files/IC2010.css" type="text/css" rel="stylesheet"><link href="Welcome.aspx_files/style.css" type="text/css" rel="stylesheet"><link href="Welcome.aspx_files/subModal.css" type="text/css" rel="stylesheet"><title>
+	Imagine Cup Student Competition - Welcome
+</title>
+    <script language="JavaScript" type="text/javascript" src="Welcome.aspx_files/broker.js"></script>
+    <link href="Welcome.aspx_files/IC2010.css" type="text/css" rel="Stylesheet">
+    
+    <!--[if IE 6]>    
+        <script type="text/javascript" src="../script/DD_belatedPNG.min.js"></script>
+        <script>
+          /* EXAMPLE */
+          DD_belatedPNG.fix('img');
+        </script>
+    <![endif]-->  
+        <script type="text/javascript">
+            function swapImage() {
+            
+                theimages = new Array("technology_poster.png", "education_poster.png", "environment_poster.png", "medical_poster.png");
+            
+                //theimages = new Array("sign_girl.png", "sign_guy.png");
+                whichImageSecond = null;
+                whichImage = Math.floor(Math.random() * theimages.length);
+                whichImageSecond = Math.floor(Math.random() * theimages.length);
+
+                document.write('<img src="/App_Themes/Default/Images/' + theimages[whichImage] + '" />');
+               
+                if (whichImage == whichImageSecond) {
+                    if (whichImage == 0) {
+                        whichImageSecond = 1;
+                    }
+                    else {
+                        whichImageSecond = 0;
+                    }
+                }
+              
+                if (whichImageSecond != null) {
+                    document.write('<img src="/App_Themes/Default/Images/' + theimages[whichImageSecond] + '" />');
+                }
+            }
+    </script>   
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <link href="Welcome.aspx_files/IC2010.css" type="text/css" rel="stylesheet"><link href="Welcome.aspx_files/style.css" type="text/css" rel="stylesheet"><link href="Welcome.aspx_files/subModal.css" type="text/css" rel="stylesheet"><script charset="utf-8" id="injection_graph_func" src="Welcome.aspx_files/injection_graph_func.js"></script><script id="_nameHighlight_injection"></script><link class="skype_name_highlight_style" href="Welcome.aspx_files/injection_nh_graph.css" type="text/css" rel="stylesheet" charset="utf-8" id="_injection_graph_nh_css"><link href="Welcome.aspx_files/skypeplugin_dropdownmenu.css" type="text/css" rel="stylesheet" charset="utf-8" id="_skypeplugin_dropdownmenu_css"></head><body id="ctl00_ctl00_Master_Body" class="body3">
+ <script type="text/javascript">
+
+       function LaguageDDFunction(dropdownValue, fn_hidden_CMSChangeFlag_id, fn_DropDownList_PageLanguage_id) {
+           var CMSChangeFlag_1 = false;
+           CMSChangeFlag_1 = document.getElementById(fn_hidden_CMSChangeFlag_id);
+
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";
+           
+           if (CMSChangeFlag_1.value == 'true') {
+               
+               if (confirm('Are you sure you want to navigate away from this page?\n\nPage content will be saved and page will be unlocked.\n\nPress OK to continue, or Cancel to stay on the current page.')) {
+                   CMSChangeFlag_1.value = false;
+                   setTimeout('__doPostBack(\'' + fn_hidden_CMSChangeFlag_id + '\',\'\')', 0);
+               }
+               else {
+                   document.getElementById(fn_DropDownList_PageLanguage_id).value = dropdownValue;
+               }
+           }
+           else {
+               setTimeout('__doPostBack(\'' + fn_hidden_CMSChangeFlag_id + '\',\'\')', 0);
+           }
+       }
+
+       function ConfirmRevertDraft(CMSChangeFlag) {
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";
+           if (confirm('Do you really want to revert to earlier draft version of the page?')) {
+               DisableWarning(CMSChangeFlag);
+               return true;
+           }
+           else {
+               return false;
+           }
+       }
+       function DisableWarning(CMSChangeFlag) {
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";
+           document.getElementById(CMSChangeFlag).value = false;
+           return true;
+       }
+       // To show ConfirmCancel dialog box
+       function ConfirmRevertToLive(CMSChangeFlag) {
+           document.getElementById("ctl00_ctl00_hf_TrackEdit").value = "1";           
+           if (confirm('Warning: Changes have been made to this page. If you revert to live, these changes will be discarded, whether made by you or by others. Continue?')) {
+               DisableWarning(CMSChangeFlag)
+               return true;
+           }
+           else {
+               return false;
+           }
+       }
+
+       function GoTo(id) {
+           if (document.getElementById(id) != null) {
+               document.getElementById(id).focus();
+           }
+       }
+
+       function findX(obj) {
+           var curLeft = 0;
+           if (obj.offsetParent) {
+               while (1) {
+                   curLeft += obj.offsetLeft;
+                   if (!obj.offsetParent)
+                       break;
+                   obj = obj.offsetParent;
+               }
+           }
+           else {
+               if (obj.x)
+                   curLeft += obj.x;
+           }
+           return curLeft;
+       }
+
+       function Timer() {
+           this.obj = (arguments.length) ? arguments[0] : window;
+           return this;
+       }
+
+       // The set functions should be called with:
+       // - The name of the object method (as a string) (required)
+       // - The millisecond delay (required)
+       // - Any number of extra arguments, which will all be
+       //   passed to the method when it is evaluated.
+
+       Timer.prototype.setInterval = function(func, msec) {
+           var i = Timer.getNew();
+           var t = Timer.buildCall(this.obj, i, arguments);
+           Timer.set[i].timer = window.setInterval(t, msec);
+           return i;
+       }
+       Timer.prototype.setTimeout = function(func, msec) {
+           var i = Timer.getNew();
+           Timer.buildCall(this.obj, i, arguments);
+           Timer.set[i].timer = window.setTimeout("Timer.callOnce(" + i + ");", msec);
+           return i;
+       }
+
+       // The clear functions should be called with
+       // the return value from the equivalent set function.
+
+       Timer.prototype.clearInterval = function(i) {
+           if (!Timer.set[i]) return;
+           window.clearInterval(Timer.set[i].timer);
+           Timer.set[i] = null;
+       }
+       Timer.prototype.clearTimeout = function(i) {
+           if (!Timer.set[i]) return;
+           window.clearTimeout(Timer.set[i].timer);
+           Timer.set[i] = null;
+       }
+
+       // Private data
+
+       Timer.set = new Array();
+       Timer.buildCall = function(obj, i, args) {
+           var t = "";
+           Timer.set[i] = new Array();
+           if (obj != window) {
+               Timer.set[i].obj = obj;
+               t = "Timer.set[" + i + "].obj.";
+           }
+           t += args[0] + "(";
+           if (args.length > 2) {
+               Timer.set[i][0] = args[2];
+               t += "Timer.set[" + i + "][0]";
+               for (var j = 1; (j + 2) < args.length; j++) {
+                   Timer.set[i][j] = args[j + 2];
+                   t += ", Timer.set[" + i + "][" + j + "]";
+               } 
+           }
+           t += ");";
+           Timer.set[i].call = t;
+           return t;
+       }
+       Timer.callOnce = function(i) {
+           if (!Timer.set[i]) return;
+           eval(Timer.set[i].call);
+           Timer.set[i] = null;
+       }
+       Timer.getNew = function() {
+           var i = 0;
+           while (Timer.set[i]) i++;
+           return i;
+       }
+
+       startList = function() {
+           menus = document.getElementById("nav").getElementsByTagName("LI");
+           //alert('hi =>' + menus.length.toString());
+           for (i = 0; i < menus.length; i++) 
+           {
+               //alert(menus[i].Text);
+               menus[i].onmouseover = function() 
+               {
+                   //alert('menu');
+                   this.style.cursor = "pointer";
+
+                   //Start: menu to open up left or right
+                   winsize = document.body.offsetWidth;
+                   menusize = findX(this) + this.offsetWidth;
+                   if (((menusize + 100) >= winsize) && (this.offsetWidth > 100)) {
+                       this.className += " overleft";
+                   }
+                   else {
+                       this.className += " over";
+                   }
+                   //End: menu to open up left or right
+
+                   var pagename = window.location.pathname;
+                   var sPage = pagename.substring(pagename.lastIndexOf('/') + 1);
+
+                   sPage = sPage.toLowerCase();
+
+                   //                        if (sPage == "leaderboard.aspx")
+                   //                        {
+                   //                            window.document.getElementById("ctl00_ContentPlaceHolder_DropDownList_Competition").style.display="none";                            
+                   //                        }
+               }
+               menus[i].onmouseout = function() 
+               {
+                   this.style.cursor = "default";
+
+                   //Start: menu to open up left or right
+                   this.timer = new Timer(this);
+                   this.timer.setTimeout("out", 0);
+                   //End: menu to open up left or right
+
+                   var pagename = window.location.pathname;
+                   var sPage = pagename.substring(pagename.lastIndexOf('/') + 1);
+
+                   sPage = sPage.toLowerCase();
+
+                   if (sPage == "leaderboard.aspx") {
+                       if (window.document.getElementById("ctl00_ContentPlaceHolder_DropDownList_Competition") != null) {
+                           window.document.getElementById("ctl00_ContentPlaceHolder_DropDownList_Competition").style.display = "block";
+                       }
+                   }
+               }
+               menus[i].out = function() 
+               {
+                   this.className = this.className.replace("over", "");
+               }
+           }
+       }
+
+       window.onload = startList;
+
+       //Added by Deepali Shah to resolve issue 8610.
+       function SetFocus(ctrl) {
+           var o = document.getElementById(ctrl);
+           if ((o != undefined) && (o != null)) o.focus();
+       }
+
+       //Functions added by Dhawal
+       function ShowPopUp(DivPopUpID, SignInStripID, divLoginID, textboxEmailID) {
+           var DivPopUp = document.getElementById(DivPopUpID);
+           if (DivPopUp != null) {
+               //Following lines written by Dhawal for setting the position of the signin div 
+               var BrowserType = navigator.appName;
+               var BrowserVersion = parseInt(navigator.appVersion);
+               var SignInStrip = document.getElementById(SignInStripID);
+               var divLogin = document.getElementById(divLoginID);
+               divLogin.style.position = "absolute";
+               divLogin.style.top = findPosY(SignInStrip) + 0;
+               divLogin.style.left = findPosX(SignInStrip) - 21;
+               if (BrowserType == "Netscape") {
+                   var divLogin_top = findPosY(SignInStrip) + 0;
+                   divLogin.style.top = divLogin_top + '' + 'px';
+                   var divLogin_left = findPosX(SignInStrip) - 21;
+                   divLogin.style.left = divLogin_left + '' + 'px';
+               }
+               //Above lines written by Dhawal for setting the position of the signin div      
+               DivPopUp.style.display = "block";
+               //For setting the focus on the email textbox
+               //                    var textboxEmail = document.getElementById(textboxEmailID);
+               //                    textboxEmail.focus();                    
+           }
+       }
+
+       function ShowFrame() {
+       
+            //Modified the function By shivkant as the name of the Div is changed and also added few controls which are to be positioned.
+       
+           //var frame = document.getElementById("LoginFrame");
+           var BrowserType = navigator.appName;
+           //alert(BrowserType.toString());
+           var BrowserVersion = parseInt(navigator.appVersion);
+           //alert(BrowserVersion.toString());
+           var div_frame = document.getElementById('ctl00_ctl00_Div_CloseFrame');
+           var btn_close = document.getElementById('ctl00_ctl00_closeLink');
+           var frame = document.getElementById('ctl00_ctl00_LoginFrame');
+           var SignInStrip = document.getElementById('ctl00_ctl00_header_login');
+           div_frame.style.position = "absolute";
+           div_frame.style.top = findPosY(SignInStrip) + 0;
+           div_frame.style.left = findPosX(SignInStrip) - 21;
+            if (BrowserType == "Netscape")
+            {   
+                var frame_top = findPosY(SignInStrip) + 0;
+                div_frame.style.top = frame_top + '' + 'px';
+                var frame_left = findPosX(SignInStrip) - 21;
+                div_frame.style.left = frame_left + '' + 'px';
+            }
+            frame_left = frame_left + 200
+            frame_top = frame_top + 8
+            btn_close.style.display.left = frame_left + 'px';
+            btn_close.style.display.top = '8px';
+           btn_close.style.position = "absolute";
+           frame.style.display = "block";
+           frame.visible = true;
+           document.getElementById('ctl00_ctl00_closeLink').style.display='block';
+           document.getElementById('ctl00_ctl00_Iframe_Lock').style.display='block';
+       }
+
+       /*Functions added by Dhawal on 25th June 2008 to set the position of the login div*/
+       /*START*/
+       function findPosX(obj) {
+           var curleft = 0;
+           if (obj.offsetParent) {
+               while (1) {
+                   curleft += obj.offsetLeft;
+                   if (!obj.offsetParent) {
+                       break;
+                   }
+                   obj = obj.offsetParent;
+               }
+           }
+           else if (obj.x) {
+               curleft += obj.x;
+           }
+           return curleft;
+       }
+
+       function findPosY(obj) {
+           var curtop = 0;
+           if (obj.offsetParent) {
+               while (1) {
+                   curtop += obj.offsetTop;
+                   if (!obj.offsetParent) {
+                       break;
+                   }
+                   obj = obj.offsetParent;
+               }
+           }
+           else if (obj.y) {
+               curtop += obj.y;
+           }
+           return curtop;
+       }
+       /*END*/
+       /*Functions added by Dhawal on 25th June 2008 to set the position of the login div*/
+
+       function enableCompeteForITQuiz() {
+           //This function is added by Dhawal for resolving the javascript error from the IT Challenge Portal.
+       }
+       
+       function CloseIframe()
+       {
+            //FUnction added by shivkant for hiding the Iframe and the close button displayed on the Iframe.
+            //alert ('The function is Called');
+            window.document.getElementById('ctl00_ctl00_LoginFrame').style.display = 'none';
+            window.document.getElementById('ctl00_ctl00_Iframe_Lock').style.display = 'none';
+            window.document.getElementById('ctl00_ctl00_closeLink').style.display = 'none';
+
+        }
+
+
+        function ClearAllLinks() {
+            var a = document.getElementsByTagName("A");
+            for (var i = 0; i < a.length; i++) {
+                a[i].onclick = function() { return false; };
+            }
+
+            var b = document.getElementsByTagName("IMG");
+            for (var i = 0; i < b.length; i++) {
+                b[i].onclick = function() { return false; };
+            }
+        }
+
+       
+    </script> 
+    <form name="aspnetForm" method="post" action="Welcome.aspx" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__LASTFOCUS" id="__LASTFOCUS" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1NzcxMzQ3NjQPZBYCZg9kFgJmDw8WAh4ORWRpdGFibGVQYWdlSWQCtCNkFgICAw8WAh4FY2xhc3MFBWJvZHkzFgJmD2QWDgIHD2QWAgIBDxAPFgYeDkRhdGFWYWx1ZUZpZWxkBQZsb2NhbGUeDURhdGFUZXh0RmllbGQFBG5hbWUeC18hRGF0YUJvdW5kZ2QQFRoGQmFoYXNhCUJ1bGdhcmlhbgbEjGVza3kHRGV1dHNjaAVFZXN0aQdFbmdsaXNoCEVzcGHDsW9sCUZyYW7Dp2FpcwhIcnZhdHNraQhJdGFsaWFubwhNYWd5YXLCoAZQb2xza2kKUG9ydHVndcOqcxVQb3J0dWd1w6pzIEJyYXNpbGVpcm8Lc2xvdmVuxI1pbmEJc2xvdmVuc2tpBlNycHNraRBUacOqzIFuZyBWacOqzKN0CFTDvHJrw6dlEM6VzrvOu863zr3Ouc66zqwO0KDRg9GB0YHQutC40LkR2KfZhNi52LHYqNmK2KnigI8J7ZWc6rWt7Ja0CeaXpeacrOiqngznroDkvZPkuK3mlocM57mB6auU5Lit5paHFRoFaWQtaWQFYmctYmcFY3MtY3oFZGUtZGUFZXQtZWUFZW4tdXMFZXMtZXMFZnItZnIFaHItaHIFaXQtaXQFaHUtaHUFcGwtcGwFcHQtcHQFcHQtYnIFc2stc2sCc2wKc3ItbGF0bi1jcwV2aS12bgV0ci10cgVlbC1ncgVydS1ydQVhci1hZQVrby1rcgVqYS1qcAV6aC1jbgV6aC10dxQrAxpnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBAgVkAggPFgIeB1Zpc2libGVoFgwCAw8PFgIeDU9uQ2xpZW50Q2xpY2sFSWphdmFzY3JpcHQ6cmV0dXJuIENvbmZpcm1SZXZlcnREcmFmdCgnY3RsMDBfY3RsMDBfaGlkZGVuX0NNU0NoYW5nZUZsYWcnKTtkZAIFDw8WAh8GBUVqYXZhc2NyaXB0OnJldHVybiBEaXNhYmxlV2FybmluZygnY3RsMDBfY3RsMDBfaGlkZGVuX0NNU0NoYW5nZUZsYWcnKTtkZAIHDw8WAh8GBUVqYXZhc2NyaXB0OnJldHVybiBEaXNhYmxlV2FybmluZygnY3RsMDBfY3RsMDBfaGlkZGVuX0NNU0NoYW5nZUZsYWcnKTtkZAIJDw8WAh8GBUpqYXZhc2NyaXB0OnJldHVybiBDb25maXJtUmV2ZXJ0VG9MaXZlKCdjdGwwMF9jdGwwMF9oaWRkZW5fQ01TQ2hhbmdlRmxhZycpO2RkAgsPDxYCHwYFRWphdmFzY3JpcHQ6cmV0dXJuIERpc2FibGVXYXJuaW5nKCdjdGwwMF9jdGwwMF9oaWRkZW5fQ01TQ2hhbmdlRmxhZycpO2RkAg8PDxYCHgRUZXh0ZWRkAgkPZBYCAgUPD2QWBB4Hb25jbGljawUaU2hvd0ZyYW1lKCk7IHJldHVybiBmYWxzZTseC29ubW91c2VvdmVyBRt0aGlzLnN0eWxlLmN1cnNvcj0ncG9pbnRlcidkAgoPZBYGAgEPDxYCHwcFBFRydWVkZAIDDw8WAh8FaGRkAgUPDxYCHwdlZGQCCw9kFgICAQ9kFgICAQ8WAh4Dc3JjBVZodHRwczovL2ltYWdpbmVjdXAuY29tL0xvZ2luUG9wVXAuYXNweD9yZXR1cmw9aHR0cDovL2ltYWdpbmVjdXAuY29tL0Fib3V0L1dlbGNvbWUuYXNweGQCDA9kFgQCAQ8WAh8BBRVDTVNQYWdlQmFja0dyb3VuZEdyYXkWAgIBDxYCHglpbm5lcmh0bWwFGldlbGNvbWUgdG8gdGhlIEltYWdpbmUgQ3VwZAIDD2QWBgIBDxYCHwsFmyk8aDI+IjxlbT5Ib3cgYm9sZGx5IGRvIHlvdSBkYXJlIHRvIGRyZWFtPzwvZW0+IjwvaDI+DQo8ZGl2PjxzcGFuIHN0eWxlPSJsaW5lLWhlaWdodDogMTE1JTsgZm9udC1mYW1pbHk6ICdDYWxpYnJpJywgJ3NhbnMtc2VyaWYnOyBmb250LXNpemU6IDExcHQ7IG1zby1hc2NpaS10aGVtZS1mb250OiBtaW5vci1sYXRpbjsgbXNvLWZhcmVhc3QtZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nOyBtc28tZmFyZWFzdC10aGVtZS1mb250OiBtaW5vci1mYXJlYXN0OyBtc28taGFuc2ktdGhlbWUtZm9udDogbWlub3ItbGF0aW47IG1zby1iaWRpLWZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgbXNvLWJpZGktdGhlbWUtZm9udDogbWlub3ItYmlkaTsgbXNvLWFuc2ktbGFuZ3VhZ2U6IEVOLVVTOyBtc28tZmFyZWFzdC1sYW5ndWFnZTogRU4tVVM7IG1zby1iaWRpLWxhbmd1YWdlOiBBUi1TQSI+PHN0cm9uZz4mIzgyMTE7PC9zdHJvbmc+PC9zcGFuPiZuYnNwO1JheSBPenppZSwgTWljcm9zb2Z0IENoaWVmIFNvZnR3YXJlIEFyY2hpdGVjdCwgYXQgdGhlIEltYWdpbmUgQ3VwIDIwMDkmbmJzcDtXb3JsZHdpZGUgRmluYWxzLiA8YnIgLz4NCjxiciAvPg0KPC9kaXY+DQo8ZGl2Pk5vdyBpbiBpdHMgZWlnaHRoIHllYXIsIHRoZSBJbWFnaW5lIEN1cCBpcyBhIGdsb2JhbCBzdHVkZW50IHRlY2hub2xvZ3kgY29tcGV0aXRpb24gZm9jdXNlZCBvbiBmaW5kaW5nIHNvbHV0aW9ucyB0byByZWFsLXdvcmxkIGlzc3Vlcy4gVGhlIGNvbXBldGl0aW9uIGVuY291cmFnZXMgdGhlIHdvcmxkJ3MgbW9zdCB0YWxlbnRlZCBzb2Z0d2FyZSBkZXNpZ25lcnMsIHByb2dyYW1tZXJzLCBnYW1lIGRldmVsb3BlcnMsIGFuZCBkaWdpdGFsIG1lZGlhIGVudGh1c2lhc3RzIHRvIHRhY2tsZSwgaGVhZCBvbiwgaXNzdWVzIHJlbGF0ZWQgdG86IGh1bmdlciByZWxpZWYsIHBvdmVydHksIGVkdWNhdGlvbiwgZGlzZWFzZSBjb250cm9sLCBoZWFsdGhjYXJlLCB0aGUgZW52aXJvbm1lbnQsIGFuZCBvdGhlciBjcnVjaWFsJm5ic3A7cHJvYmxlbXMmbmJzcDtmYWNpbmcmbmJzcDtvdXIgd29ybGQgdG9kYXkuPC9kaXY+DQo8cD5Zb3UgY2FuOjwvcD4NCjx1bD4NCiAgICA8bGk+Q29udHJpYnV0ZSB5b3VyIHRhbGVudHMgdG8mbmJzcDtzb2x2aW5nIHNvbWUgb2YgdGhlIHRvdWdoZXN0IHByb2JsZW1zIGZhY2luZyB1cyB0b2RheSwgYW5kIG1heWJlIGV2ZW4gdHVybiB5b3VyIGlkZWFzIGludG8gYSBidXNpbmVzcy48YnIgLz4NCiAgICA8YnIgLz4NCiAgICA8L2xpPg0KICAgIDxsaT5MZWFybiBuZXcgdGVjaG5vbG9naWNhbCBza2lsbHMgYW5kIHRlc3QgeW91cnNlbGYgYWdhaW5zdCB0aGUgYnJpZ2h0ZXN0IHN0dWRlbnRzIG9uIHRoZSBwbGFuZXQuPGJyIC8+DQogICAgPGJyIC8+DQogICAgPC9saT4NCiAgICA8bGk+TWFrZSBuZXcgZnJpZW5kcyBmcm9tIGFyb3VuZCB0aGUgd29ybGQuIDxiciAvPg0KICAgIDxiciAvPg0KICAgIDwvbGk+DQogICAgPGxpPldpbiBjYXNoIGFuZCBwcml6ZXMsIGFuZCBldmVuJm5ic3A7YSBmcmVlJm5ic3A7dHJpcCB0byBQb2xhbmQgaW4gSnVseSAyMDEwIGZvciB0aGUgV29ybGR3aWRlIEZpbmFscy48YnIgLz4NCiAgICA8L2xpPg0KPC91bD4NCjxoMj4iPGVtPkltYWdpbmUgYSB3b3JsZCB3aGVyZSB0ZWNobm9sb2d5IGhlbHBzIHNvbHZlIHRoZSB0b3VnaGVzdCBwcm9ibGVtcy48L2VtPiIgPC9oMj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PlRoaXMgaXMgdGhlIHdvcmxkJ3MgcHJlbWllciBzdHVkZW50IHRlY2hub2xvZ3kgY29tcGV0aXRpb24gYW5kIHdlIGludml0ZSB5b3UgdG8gam9pbiB1cyEgU2luY2UgMjAwMiwgdGhlIEltYWdpbmUgQ3VwIGhhcyBiZWVuIGNoYWxsZW5naW5nIHRoZSB3b3JsZCdzIGJyaWdodGVzdCBzdHVkZW50cyB0byBzdGVwIHVwIGFuZCBtYWtlIGEgZGlmZmVyZW5jZS4gTGFzdCB5ZWFyLCBvdmVyIDMwMCwwMDAgc3R1ZGVudHMgZnJvbSAxNDIgY291bnRyaWVzL3JlZ2lvbnMgcmVnaXN0ZXJlZCBmb3IgdGhlIEltYWdpbmUgQ3VwIDIwMDkuJm5ic3A7PGJyIC8+DQo8YnIgLz4NCjxiciAvPg0KPC9kaXY+DQo8aDI+WW91ciBGaXJzdCBTdGVwczwvaDI+DQo8cD5HZXR0aW5nIHN0YXJ0ZWQgY2FuIHNvbWV0aW1lcyBiZSB0aGUgaGFyZGVzdCBzdGVwLiZuYnNwO0ZvbGxvdyB0aGVzZSBpbnN0cnVjdGlvbnMgY2FyZWZ1bGx5IGFuZCB5b3Ugd2lsbCBiZSBvbiB5b3VyIHdheSB0byBjb21wZXRpbmcgaW4gdGhlIEltYWdpbmUgQ3VwIDIwMTAuPC9wPg0KPHVsIHR5cGU9ImRpc2MiPg0KICAgIDxsaT48c3Ryb25nPlN0YXJ0IGhlcmUuIDwvc3Ryb25nPllvdSZuYnNwO211c3QmbmJzcDs8YSBocmVmPSIvUmVnaXN0cmF0aW9uL0RlZmF1bHQuYXNweCI+cmVnaXN0ZXI8L2E+IGluIG9yZGVyIHRvIGJlZ2luIHlvdXIgSW1hZ2luZSBDdXAgam91cm5leS4gPGJyIC8+DQogICAgPGJyIC8+DQogICAgPC9saT4NCiAgICA8bGk+PHN0cm9uZz5TdGF5IGNvbm5lY3RlZDwvc3Ryb25nPjogU3Vic2NyaWJlIHRvIG91ciBlLW5ld3NsZXR0ZXJzIHdoZW4geW91IHJlZ2lzdGVyLiZuYnNwO1RoaXMgaXMgdGhlJm5ic3A7PGVtPmJlc3Q8L2VtPiB3YXkgdG8gc3RheSB1cCB0byBkYXRlIG9uIHdoYXQgaXMgaGFwcGVuaW5nIHdpdGggeW91ciBjb21wZXRpdGlvbiBhbmQgd2l0aCB0aGUgSW1hZ2luZSBDdXAuIDxiciAvPg0KICAgIDxiciAvPg0KICAgIDwvbGk+DQogICAgPGxpPjxzdHJvbmc+RGVjaWRlIG9uIHdoaWNoIGNvbXBldGl0aW9ucyBmaXQgeW91ciB0YWxlbnRzIGFuZCBtb3RpdmF0aW9uczwvc3Ryb25nPjogPGEgaHJlZj0iL2NvbXBldGl0aW9uL292ZXJ2aWV3LmFzcHgiIG1jZV9ocmVmPSIvY29tcGV0aXRpb24vb3ZlcnZpZXcuYXNweCI+RXhwbG9yZSZuYnNwO3RoZSZuYnNwO292ZXJ2aWV3IG9mIDIwMTAmbmJzcDtjb21wZXRpdGlvbnM8L2E+Jm5ic3A7YW5kIGZpbmQgdGhlIG9uZXMgeW91IHdhbnQgdG8gY29tcGV0ZSBpbiEgPGJyIC8+DQogICAgPGJyIC8+DQogICAgPC9saT4NCiAgICA8bGk+PHN0cm9uZz5TaWduLVVwJm5ic3A7PC9zdHJvbmc+Zm9yJm5ic3A7eW91ciBjaG9zZW4gSW1hZ2luZSBDdXAgY29tcGV0aXRpb25zLiZuYnNwOzxhIGhyZWY9Ii9VcGRhdGVQcm9maWxlLmFzcHgiPlNpZ24gdXA8L2E+IGFuZCB5b3Ugd2lsbCBoYXZlJm5ic3A7YWNjZXNzIHRvIHNwZWNpZmljJm5ic3A7Y29tcGV0aXRpb24gZGV0YWlscywgZW50cnkgcmVxdWlyZW1lbnRzLCB0aW1lbGluZSwgYW5kIHRoZSBjb21wZXRpdG9yIDxhIGhyZWY9Ii9mb3J1bXMvIj5mb3J1bXM8L2E+LiZuYnNwOyZuYnNwOyZuYnNwOyA8YnIgLz4NCiAgICA8YnIgLz4NCiAgICA8L2xpPg0KICAgIDxsaT48c3Ryb25nPlRoaW5rIGFib3V0IHRoZSB0aGVtZS48L3N0cm9uZz4mbmJzcDtUaGUgdGhlbWUgZm9yIHRoZSBJbWFnaW5lJm5ic3A7Q3VwIDIwMTAmbmJzcDtpczombmJzcDsiPGVtPkltYWdpbmUgYSB3b3JsZCB3aGVyZSB0ZWNobm9sb2d5IGhlbHBzIHNvbHZlIHRoZSB0b3VnaGVzdCBwcm9ibGVtczwvZW0+LiIgV2hlbiBjb25zaWRlcmluZyB5b3VyIHByb2plY3QsJm5ic3A7Z2V0IGluc3BpcmVkIGFuZCBlZHVjYXRlZCBieSZuYnNwO3Jldmlld2luZyZuYnNwOzxhIGhyZWY9Ii9Db21wZXRpdGlvbnNDb250ZW50L01ERy5hc3B4Ij50aGUgMjAxMCBUaGVtZTwvYT4uJm5ic3A7Jm5ic3A7IDxiciAvPg0KICAgIDxiciAvPg0KICAgIDwvbGk+DQogICAgPGxpPjxzdHJvbmc+UmVhZDwvc3Ryb25nPiB0aGUgbGF0ZXN0Jm5ic3A7PGEgaHJlZj0iaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3ByZXNzcGFzcy9ldmVudHMvaW1hZ2luZWN1cC8iIHRhcmdldD0iX2JsYW5rIj5OZXdzPC9hPiBhYm91dCBJbWFnaW5lIEN1cCAyMDEwJm5ic3A7YW5kIG1lZXQgb3VyIHBhc3Qgd2lubmVycyBhbmQgZmluZCBpbnNwaXJhdGlvbiBpbiB0aGVpciA8YSBocmVmPSIvQ29tcGV0aXRpb25zQ29udGVudC9JbWFnaW5lQ3VwU3VjY2Vzc1N0b3JpZXMuYXNweCI+U3VjY2VzcyBTdG9yaWVzPC9hPi4gU3RheSB1cC10by1kYXRlIHRocm91Z2ggdGhlIEltYWdpbmUgQ3VwIDxhIGhyZWY9Ii9ibG9ncy9pbWFnaW5lX2N1cF9maW5hbHMvZGVmYXVsdC5hc3B4Ij5ibG9nPC9hPiwgam9pbiB1cyBvbiZuYnNwOzxhIGhyZWY9Imh0dHA6Ly93d3cuZmFjZWJvb2suY29tL21pY3Jvc29mdGltYWdpbmVjdXAiIHRhcmdldD0iX2JsYW5rIj5GYWNlYm9vazwvYT4gYW5kIGZvbGxvdyB1cyBvbiA8YSBocmVmPSJodHRwOi8vdHdpdHRlci5jb20vaW1hZ2luZWN1cCIgdGFyZ2V0PSJfYmxhbmsiPlR3aXR0ZXI8L2E+LiA8YnIgLz4NCiAgICA8YnIgLz4NCiAgICA8L2xpPg0KICAgIDxsaT48c3Ryb25nPkV4cGVyaWVuY2U8L3N0cm9uZz4gdGhlJm5ic3A7PGEgaHJlZj0iL0Rvd25sb2Fkcy9JQzA5X1dvcmxkX0Zlc3RpdmFsX09wZW5fNTAwa2JzLndtdiIgdGFyZ2V0PSJfYmxhbmsiPmV4Y2l0ZW1lbnQ8L2E+Jm5ic3A7YXQgbGFzdCB5ZWFyJ3MgV29ybGR3aWRlIEZpbmFscyBpbiBDYWlybywgRWd5cHQuPGJyIC8+DQogICAgPGJyIC8+DQogICAgPC9saT4NCiAgICA8bGk+PHN0cm9uZz5WaXNpdCB0aGUgY29tcGV0aXRpb24gZm9ydW1zPC9zdHJvbmc+IHRvIDxhIGhyZWY9Ii9Gb3J1bXMvIiBtY2VfaHJlZj0iL0ZvcnVtcy8iPnN0YXJ0IG1lZXRpbmcgb3RoZXIgc3R1ZGVudHM8L2E+IGxpa2UgeW91LiA8YnIgLz4NCiAgICA8YnIgLz4NCiAgICA8L2xpPg0KPC91bD4NCjxkaXY+V2VsY29tZSB0byB0aGUgSW1hZ2luZSBDdXAgMjAxMCZuYnNwO2NvbW11bml0eS4gV2UgbG9vayBmb3J3YXJkIHRvIHdvcmtpbmcgaGFyZCBhbmQgcGxheWluZyBoYXJkLCBhbmQgbW9zdCBvZiBhbGwsIHRvIHN1cHBvcnRpbmcgPGVtPnlvdTwvZW0+IGFzIHdlIHdvcmsgPHN0cm9uZz50b2dldGhlcjwvc3Ryb25nPiB0byBtYWtlIHRoaXMgd29ybGQgYSBiZXR0ZXIgcGxhY2UuIFdlIHdhbnQgdG8gc2VlJm5ic3A7PGVtPnlvdTwvZW0+IGluIFBvbGFuZCBpbiBKdWx5IDIwMTAhIDwvZGl2Pg0KPHA+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgJ3NlcmlmJzsgZm9udC1zaXplOiAxMnB0OyBtc28tZmFyZWFzdC1mb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbic7IG1zby1hbnNpLWxhbmd1YWdlOiBFTi1VUzsgbXNvLWZhcmVhc3QtbGFuZ3VhZ2U6IEVOLVVTOyBtc28tYmlkaS1sYW5ndWFnZTogQVItU0EiPjxmb250IGNvbG9yPSIjMDAwMDAwIj48L2ZvbnQ+PC9zcGFuPiZuYnNwOzwvcD4NCjxoMj48L2gyPg0KPGgyPjwvaDI+ZAIDDxYCHwsFBA0KDQpkAgUPFgIfCwWCBjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2Pg0KPGgzPkhlbHBmdWwmbmJzcDtMaW5rcyA8L2gzPg0KPHN0cm9uZz48YnIgLz4NCjxhIGhyZWY9Ii9SZWdpc3RyYXRpb24vRGVmYXVsdC5hc3B4Ij48c3Ryb25nPlJlZ2lzdGVyIE5vdyE8L3N0cm9uZz48L2E+PC9zdHJvbmc+PHN0cm9uZz48YSBocmVmPSIvU3VwcG9ydC9GQVEuYXNweCI+PHN0cm9uZz48YnIgLz4NCjxiciAvPg0KRkFRPC9zdHJvbmc+PC9hPjwvc3Ryb25nPiA8L2Rpdj4NCjxkaXY+PC9kaXY+DQo8ZGl2PiZuYnNwOzwvZGl2Pg0KPGRpdj48YSBocmVmPSIvQWJvdXQvV2hhdElzLmFzcHgiPjxzdHJvbmc+V2hhdCBpcyB0aGUgSW1hZ2luZSBDdXA/PC9zdHJvbmc+PC9hPiZuYnNwOzxiciAvPg0KPC9kaXY+DQo8ZGl2PjxzdHJvbmc+PGEgaHJlZj0iL0NvbXBldGl0aW9uL092ZXJ2aWV3LmFzcHgiPjxzdHJvbmc+PGJyIC8+DQpDb21wZXRpdGlvbiBPdmVydmlldzwvc3Ryb25nPiA8L2E+PC9zdHJvbmc+DQo8ZGl2PiZuYnNwOzwvZGl2Pg0KPGRpdj48YSBocmVmPSIvQ29tcGV0aXRpb25zQ29udGVudC9Db21wZXRpdGlvbi9hd2FyZHNfYXRfYV9nbGFuY2UuYXNweCI+PHN0cm9uZz5Bd2FyZHMgQXQtQS1HbGFuY2U8L3N0cm9uZz48L2E+PC9kaXY+DQo8L2Rpdj4NCjxkaXY+Jm5ic3A7PC9kaXY+DQo8ZGl2PjxzdHJvbmc+PGEgaHJlZj0iL2Jsb2dzL2ltYWdpbmVfY3VwX2ZpbmFscy9kZWZhdWx0LmFzcHgiPjxzdHJvbmc+SW1hZ2luZSBDdXAgQmxvZzwvc3Ryb25nPiA8L2E+PC9zdHJvbmc+PC9kaXY+ZAIODw8WAh8HBQVDQVJMQWRkZL0q9QkW31HuODM5Ylf6ilyhWgPR" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Welcome.aspx_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="Welcome.aspx_files/ScriptResource.js" type="text/javascript"></script>
+<script src="Welcome.aspx_files/ScriptResource_002.js" type="text/javascript"></script>
+<div>
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWIgLK36JZApiHqOoBAqGM1YACAtuzpt8PAv6jgvoOAr+ap8UBAu3ggLMPApHtwPsBAo3thL0GAtHt4M8OArDs0IUHAsLvqCwCwu/chAcCqOzMogwC9uCkoQYC3eDAww4C/eDQpQYCjObc9wwC9Oa8/gwC7uaUlwECrOHk5wIC8vWdqg0Cn//C6gkCxOOo1ggC8uH0lQsCw++IxwQCr+HIxg0CtO3o6ggCneO0gAwCuuO42wcCsOeotgYCyeacjwsCmI79yAECzLuroA1YF1iTOG9Cm3RowaEyR9F0Cy62nQ==" type="hidden">
+</div>
+     <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager_Login', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 600);
+//]]>
+</script>
+
+     <input name="ctl00$ctl00$hidden_CMSChangeFlag" id="ctl00_ctl00_hidden_CMSChangeFlag" value="false" type="hidden">
+    <input name="ctl00$ctl00$hidden_CMSIsReverDraftVisible" id="ctl00_ctl00_hidden_CMSIsReverDraftVisible" value="false" type="hidden">
+    <input name="ctl00$ctl00$hidden_CMSIsRevertDraftAvilableAfterEdit" id="ctl00_ctl00_hidden_CMSIsRevertDraftAvilableAfterEdit" value="false" type="hidden">
+    <input name="ctl00$ctl00$hidden_signup09_email" id="ctl00_ctl00_hidden_signup09_email" type="hidden">
+        <div id="container">
+            <div style="height: 128px;"><a href="http://imaginecup.com/Default.aspx"><img src="Welcome.aspx_files/logo.png" class="logoLink" alt="Imagine Cup"></a>
+            <script type="text/javascript" language="javascript">
+                swapImage(); 
+                </script><img src="Welcome.aspx_files/technology_poster.png"><img src="Welcome.aspx_files/education_poster.png"> 
+            
+            </div>
+            <div id="content">
+             <noscript>
+<div id="ctl00_ctl00_no_script_nav" class="no_script_nav"> <DIV
+style='float: left; padding-left: 10px; padding-right: 10px;'><a
+href='/default.aspx'<strong>Home</strong></a><br/>&nbsp;&nbsp;<a
+href='/default.aspx'>Imagine Cup Home</a><br/></div><DIV style='float:
+left; padding-left: 10px; padding-right: 10px;'><a
+style='cursor:default;'><strong>Compete</strong></a><br/>&nbsp;&nbsp;<a
+href='/About/Welcome.aspx'>Start Here</a><br/>&nbsp;&nbsp;<a
+href='/Registration/Default.aspx'>Register</a><br/>&nbsp;&nbsp;<a
+href='/Competition/Overview.aspx'>Competition
+Overview</a><br/>&nbsp;&nbsp;<a
+style='cursor:default;'><strong>Competitions</strong></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=37'>Software
+Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=40'>Embedded
+Development</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=38'>Game
+Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=39'>Digital
+Media</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=41'>IT
+Challenge</a><br/>&nbsp;&nbsp;<a
+href='/CompetitionsContent/Competition/awards_at_a_glance.aspx'>Award
+Overview</a><br/>&nbsp;&nbsp;<a
+style='cursor:default;'><strong>Awards</strong></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=46'>Envisioning
+2020 Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=45'>Internet
+Explorer 8 Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=42'>Interoperability
+Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=44'>Next
+Generation Web Award</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/Competition/mycompetitionportal.aspx?competitionId=43'>Touch &
+Tablet Accessibility Award</a><br/>&nbsp;&nbsp;<a
+href='/Competition/Leaderboard.aspx'>Leaderboards</a><br/></div><DIV
+style='float: left; padding-left: 10px; padding-right: 10px;'><a
+style='cursor:default;'><strong>Learn</strong></a><br/>&nbsp;&nbsp;<a
+href='/Support/FAQ.aspx'>FAQ</a><br/>&nbsp;&nbsp;<a
+href='/About/WhatIs.aspx'>What is the Imagine
+Cup?</a><br/>&nbsp;&nbsp;<a
+href='/Competition/ResourcesfromMicrosoftLearning.aspx'>Microsoft
+Learning Resources</a><br/>&nbsp;&nbsp;<a
+href='/CompetitionsContent/learn/key_technologies.aspx'>Key
+Technologies</a><br/>&nbsp;&nbsp;<a
+href='/Support/MentorResources.aspx'>Mentor
+Resources</a><br/>&nbsp;&nbsp;<a
+href='http://imaginecup.com/CompetitionsContent/MDG.aspx'>2010 Theme
+and MDGs</a><br/></div><DIV style='float: left; padding-left: 10px;
+padding-right: 10px;'><a
+style='cursor:default;'><strong>Socialize</strong></a><br/>&nbsp;&nbsp;<a
+style='cursor:default;'><strong>Forums</strong></a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/'>All Forums</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/18.aspx'>Software
+Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/20.aspx'>Embedded
+Development</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/63.aspx'>Game Design</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/113.aspx'>Digital
+Media</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/forums/16.aspx'>IT
+Challenge</a><br/>&nbsp;&nbsp;&nbsp;&nbsp;<a
+href='/forums/120.aspx'>Who Owns Your Idea</a><br/>&nbsp;&nbsp;<a
+href='/blogs/imagine_cup_finals/default.aspx'>Imagine Cup
+Blog</a><br/>&nbsp;&nbsp;<a
+href='/About/MicrosoftStudentPrograms.aspx'>Student
+Programs</a><br/>&nbsp;&nbsp;<a
+href='/CompetitionsContent/ImagineCupSuccessStories.aspx'>Success
+Stories</a><br/></div><DIV style='float: left; padding-left: 10px;
+padding-right: 10px;'><a
+style='cursor:default;'><strong>Explore</strong></a><br/>&nbsp;&nbsp;<a
+href='/Support/exploreimaginecup.aspx'>Explore Our
+History</a><br/>&nbsp;&nbsp;<a href='/About/Sponsors.aspx'>Our
+Sponsors</a><br/></div> </div> </noscript>
+                <div id="menuContainer">
+                    <!--Read the dynamically genetrated HTML for the menu -->
+                <ul id="nav">
+                    <li class="navHome"><a href="http://imaginecup.com/default.aspx">Home</a><ul><li class="navAll"><a href="http://imaginecup.com/default.aspx">Imagine Cup Home</a></li></ul></li><li class="navCompete"><a style="cursor: default;">Compete</a><ul><li class="navAll"><a href="http://imaginecup.com/About/Welcome.aspx">Start Here</a></li><li class="navAll"><a href="http://imaginecup.com/Registration/Default.aspx">Register</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/Overview.aspx">Competition Overview</a></li><li><a style="cursor: default;">Competitions</a><ul><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=37">Software Design</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=40">Embedded Development</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=38">Game Design</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=39">Digital Media</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=41">IT Challenge</a></li></ul></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/Competition/awards_at_a_glance.aspx">Award Overview</a></li><li><a style="cursor: default;">Awards</a><ul><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=46">Envisioning 2020 Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=45">Internet Explorer 8 Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=42">Interoperability Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=44">Next Generation Web Award</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/mycompetitionportal.aspx?competitionId=43">Touch &amp; Tablet Accessibility Award</a></li></ul></li><li class="navAll"><a href="http://imaginecup.com/Competition/Leaderboard.aspx">Leaderboards</a></li></ul></li><li class="navLearn"><a style="cursor: default;">Learn</a><ul><li class="navAll"><a href="http://imaginecup.com/Support/FAQ.aspx">FAQ</a></li><li class="navAll"><a href="http://imaginecup.com/About/WhatIs.aspx">What is the Imagine Cup?</a></li><li class="navAll"><a href="http://imaginecup.com/Competition/ResourcesfromMicrosoftLearning.aspx">Microsoft Learning Resources</a></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/learn/key_technologies.aspx">Key Technologies</a></li><li class="navAll"><a href="http://imaginecup.com/Support/MentorResources.aspx">Mentor Resources</a></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/MDG.aspx">2010 Theme and MDGs</a></li></ul></li><li class="navSocialize"><a style="cursor: default;">Socialize</a><ul><li><a style="cursor: default;">Forums</a><ul><li class="navAll"><a href="http://imaginecup.com/forums/">All Forums</a></li><li class="navAll"><a href="http://imaginecup.com/forums/18.aspx">Software Design</a></li><li class="navAll"><a href="http://imaginecup.com/forums/20.aspx">Embedded Development</a></li><li class="navAll"><a href="http://imaginecup.com/forums/63.aspx">Game Design</a></li><li class="navAll"><a href="http://imaginecup.com/forums/113.aspx">Digital Media</a></li><li class="navAll"><a href="http://imaginecup.com/forums/16.aspx">IT Challenge</a></li><li class="navAll"><a href="http://imaginecup.com/forums/120.aspx">Who Owns Your Idea</a></li></ul></li><li class="navAll"><a href="http://imaginecup.com/blogs/imagine_cup_finals/default.aspx">Imagine Cup Blog</a></li><li class="navAll"><a href="http://imaginecup.com/About/MicrosoftStudentPrograms.aspx">Student Programs</a></li><li class="navAll"><a href="http://imaginecup.com/CompetitionsContent/ImagineCupSuccessStories.aspx">Success Stories</a></li></ul></li><li class="navExplore"><a style="background: transparent none repeat scroll 0% 0%; cursor: default; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;">Explore</a><ul><li class="navAll"><a href="http://imaginecup.com/Support/exploreimaginecup.aspx">Explore Our History</a></li><li class="navAll"><a href="http://imaginecup.com/About/Sponsors.aspx">Our Sponsors</a></li></ul></li>
+                </ul>
+                 <div id="ctl00_ctl00_div_Language" style="padding: 7px 6px 7px 0px; text-align: right;">
+                    <div id="languageContainer">
+                        <span style="padding: 0px; width: 150px; color: rgb(110, 110, 110);">
+                            <select name="ctl00$ctl00$DropDownList_PageLanguage" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$DropDownList_PageLanguage\',\'\')', 0)" id="ctl00_ctl00_DropDownList_PageLanguage" class="masterDDL">
+	<option value="id-id">Bahasa</option>
+	<option value="bg-bg">Bulgarian</option>
+	<option value="cs-cz">Česky</option>
+	<option value="de-de">Deutsch</option>
+	<option value="et-ee">Eesti</option>
+	<option selected="selected" value="en-us">English</option>
+	<option value="es-es">Español</option>
+	<option value="fr-fr">Français</option>
+	<option value="hr-hr">Hrvatski</option>
+	<option value="it-it">Italiano</option>
+	<option value="hu-hu">Magyar&nbsp;</option>
+	<option value="pl-pl">Polski</option>
+	<option value="pt-pt">Português</option>
+	<option value="pt-br">Português Brasileiro</option>
+	<option value="sk-sk">slovenčina</option>
+	<option value="sl">slovenski</option>
+	<option value="sr-latn-cs">Srpski</option>
+	<option value="vi-vn">Tiếng Việt</option>
+	<option value="tr-tr">Türkçe</option>
+	<option value="el-gr">Ελληνικά</option>
+	<option value="ru-ru">Русский</option>
+	<option value="ar-ae">العربية‏</option>
+	<option value="ko-kr">한국어</option>
+	<option value="ja-jp">日本語</option>
+	<option value="zh-cn">简体中文</option>
+	<option value="zh-tw">繁體中文</option>
+
+</select>
+                        </span>
+                    </div>
+                </div>
+                </div>
+                
+                 <div>
+                <center>
+                    
+                </center>
+            </div>                       
+            <div class="signInStrip" style="width: 100%; height: 100%;">                    
+                <div class="signInStripLeft" style="width: 100%; background-color: rgb(232, 9, 42);">
+                        <div class="signInStripLeftPad">
+                        <div id="ctl00_ctl00_header_login" style="vertical-align: middle;">
+                            <table width="100%">
+                                <tbody><tr>
+                                    <td style="width: 40%;">
+                                        <div>
+                                            &nbsp;
+                                        </div>
+                                    </td>
+                                    <td style="width: 60%;">
+                                        <div style="text-align: right; padding-right: 5px;">
+                                            <a style="color: White;" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=10&amp;ct=1244007729&amp;rver=5.0.3265.0&amp;wp=MCMBI&amp;wreply=https:%2F%2Fprofile.microsoft.com%2FRegSysProfileCenter%2Fwizard.aspx%3Fwizid%3D9489462d-6b5c-40ed-8009-9a4f350d3703%26lcid%3D1033%26ci%3D104861&amp;lc=1033&amp;cb=LCID%3D1033%26WizID%3D9489462d-6b5c-40ed-8009-9a4f350d3703%26brand%3DMicrosoft&amp;id=74335" target="_blank">
+                                                Sign Up for Microsoft Student Newsletter 
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">
+                            You are not signed in.
+                                        <a id="ctl00_ctl00_HyperLink_Register" class="signInStrip" href="http://imaginecup.com/Registration/Default.aspx">Register</a>
+                            <span id="ctl00_ctl00_orLable"> or </span>
+                            
+                                        <a onclick="ShowFrame();ShowFrame(); return false;" id="ctl00_ctl00_HyperLink_LogIn" class="signInStrip" onmouseover="this.style.cursor='pointer'" href="javascript:__doPostBack('ctl00$ctl00$HyperLink_LogIn','')">Sign In.</a>
+                            
+                                    </td>
+                                    <td style="width: 60%;">
+                                        <div style="vertical-align: bottom; text-align: right; padding-right: 5px;">
+                                            <a id="ctl00_ctl00_HyperLink1" class="signInStrip" href="http://imaginecup.com/Competition/Rules-Regulations.aspx">Rules</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink2" class="signInStrip" href="http://imaginecup.com/Legal/CodeOfConduct.aspx">Code of Conduct</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink3" class="signInStrip" href="http://imaginecup.com/Legal/TermsOfUse.aspx">Terms of Use</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink4" class="signInStrip" href="http://imaginecup.com/Legal/PrivacyStatement.aspx">Privacy Policy</a>&nbsp;|
+                                            <a id="ctl00_ctl00_HyperLink5" class="signInStrip" href="http://imaginecup.com/Support/ContactUs.aspx">Get Help</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        
+                                
+                        </div>
+                    </div>
+                
+            </div>            
+            <div id="ctl00_ctl00_Iframe_Lock" style="background-image: url(IC09_Background_Login_Invisible.png); z-index: 1; position: absolute; background-color: transparent; width: 100%; display: none; height: 884px; top: 0px; left: 0px;">
+                <div id="ctl00_ctl00_Div_CloseFrame" style="position: absolute; z-index: 100; top: 128px; left: 150px;">
+                    <iframe id="ctl00_ctl00_LoginFrame" style="border: medium none ; display: none;" allowtransperancy="true" src="Welcome.aspx_files/LoginPopUp.htm" width="376px" frameborder="0" height="268px" scrolling="no"></iframe>
+                    <a id="ctl00_ctl00_closeLink" onclick="CloseIframe();" style="left: 330px; top: 1px; font-size: 7pt; color: White; display: none; position: absolute; z-index: 100; cursor: pointer;">CLOSE</a>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div id="Page_Body">
+                
+    
+    
+    <div id="ctl00_ctl00_ContentPlaceHolder_HeaderBackground" class="CMSPageBackGroundGray">
+        <div id="genericHeadCMS">
+            <h2>
+                 <div id="ctl00_ctl00_ContentPlaceHolder_HeaderTitle" editable="yes">Welcome to the Imagine Cup</div></h2>
+        </div>
+    </div>
+    <div class="clearL">
+    </div>
+    
+<table id="compBodyTable" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td id="compBodyLeft">
+                <div id="compBodyLeftPad">
+                    <div id="ctl00_ctl00_ContentPlaceHolder_ContentPlaceHolderCMS_R3_div_PageContent" editable="Yes"><h2>"<em>How boldly do you dare to dream?</em>"</h2>
+<div><span style="line-height: 115%; font-family: 'Calibri','sans-serif'; font-size: 11pt;"><strong>–</strong></span>&nbsp;Ray Ozzie, Microsoft Chief Software Architect, at the Imagine Cup 2009&nbsp;Worldwide Finals. <br>
+<br>
+</div>
+<div>Now in its eighth year, the Imagine Cup is a global student
+technology competition focused on finding solutions to real-world
+issues. The competition encourages the world's most talented software
+designers, programmers, game developers, and digital media enthusiasts
+to tackle, head on, issues related to: hunger relief, poverty,
+education, disease control, healthcare, the environment, and other
+crucial&nbsp;problems&nbsp;facing&nbsp;our world today.</div>
+<p>You can:</p>
+<ul>
+    <li>Contribute your talents to&nbsp;solving some of the
+toughest problems facing us today, and maybe even turn your ideas into
+a business.<br>
+    <br>
+    </li>
+    <li>Learn new technological skills and test yourself against the brightest students on the planet.<br>
+    <br>
+    </li>
+    <li>Make new friends from around the world. <br>
+    <br>
+    </li>
+    <li>Win cash and prizes, and even&nbsp;a free&nbsp;trip to Poland in July 2010 for the Worldwide Finals.<br>
+    </li>
+</ul>
+<h2>"<em>Imagine a world where technology helps solve the toughest problems.</em>" </h2>
+<div>&nbsp;</div>
+<div>This is the world's premier student technology competition and we
+invite you to join us! Since 2002, the Imagine Cup has been challenging
+the world's brightest students to step up and make a difference. Last
+year, over 300,000 students from 142 countries/regions registered for
+the Imagine Cup 2009.&nbsp;<br>
+<br>
+<br>
+</div>
+<h2>Your First Steps</h2>
+<p>Getting started can sometimes be the hardest step.&nbsp;Follow these
+instructions carefully and you will be on your way to competing in the
+Imagine Cup 2010.</p>
+<ul type="disc">
+    <li><strong>Start here. </strong>You&nbsp;must&nbsp;<a href="http://imaginecup.com/Registration/Default.aspx">register</a> in order to begin your Imagine Cup journey. <br>
+    <br>
+    </li>
+    <li><strong>Stay connected</strong>: Subscribe to our e-newsletters when you register.&nbsp;This is the&nbsp;<em>best</em> way to stay up to date on what is happening with your competition and with the Imagine Cup. <br>
+    <br>
+    </li>
+    <li><strong>Decide on which competitions fit your talents and motivations</strong>: <a href="http://imaginecup.com/competition/overview.aspx" mce_href="/competition/overview.aspx">Explore&nbsp;the&nbsp;overview of 2010&nbsp;competitions</a>&nbsp;and find the ones you want to compete in! <br>
+    <br>
+    </li>
+    <li><strong>Sign-Up&nbsp;</strong>for&nbsp;your chosen Imagine Cup competitions.&nbsp;<a href="http://imaginecup.com/UpdateProfile.aspx">Sign up</a> and you will have&nbsp;access to specific&nbsp;competition details, entry requirements, timeline, and the competitor <a href="http://imaginecup.com/forums/">forums</a>.&nbsp;&nbsp;&nbsp; <br>
+    <br>
+    </li>
+    <li><strong>Think about the theme.</strong>&nbsp;The theme for the Imagine&nbsp;Cup 2010&nbsp;is:&nbsp;"<em>Imagine a world where technology helps solve the toughest problems</em>." When considering your project,&nbsp;get inspired and educated by&nbsp;reviewing&nbsp;<a href="http://imaginecup.com/CompetitionsContent/MDG.aspx">the 2010 Theme</a>.&nbsp;&nbsp; <br>
+    <br>
+    </li>
+    <li><strong>Read</strong> the latest&nbsp;<a href="http://www.microsoft.com/presspass/events/imaginecup/" target="_blank">News</a> about Imagine Cup 2010&nbsp;and meet our past winners and find inspiration in their <a href="http://imaginecup.com/CompetitionsContent/ImagineCupSuccessStories.aspx">Success Stories</a>. Stay up-to-date through the Imagine Cup <a href="http://imaginecup.com/blogs/imagine_cup_finals/default.aspx">blog</a>, join us on&nbsp;<a href="http://www.facebook.com/microsoftimaginecup" target="_blank">Facebook</a> and follow us on <a href="http://twitter.com/imaginecup" target="_blank">Twitter</a>. <br>
+    <br>
+    </li>
+    <li><strong>Experience</strong> the&nbsp;<a href="http://imaginecup.com/Downloads/IC09_World_Festival_Open_500kbs.wmv" target="_blank">excitement</a>&nbsp;at last year's Worldwide Finals in Cairo, Egypt.<br>
+    <br>
+    </li>
+    <li><strong>Visit the competition forums</strong> to <a href="http://imaginecup.com/Forums/" mce_href="/Forums/">start meeting other students</a> like you. <br>
+    <br>
+    </li>
+</ul>
+<div>Welcome to the Imagine Cup 2010&nbsp;community. We look forward to
+working hard and playing hard, and most of all, to supporting <em>you</em> as we work <strong>together</strong> to make this world a better place. We want to see&nbsp;<em>you</em> in Poland in July 2010! </div>
+<p><span style="font-family: 'Times New Roman','serif'; font-size: 12pt;"><font color="#000000"></font></span>&nbsp;</p>
+<h2></h2>
+<h2></h2></div>
+                </div>
+            </td>
+            <td id="compBodyRight">
+                <div id="compBodyRightPad">
+                    <div class="sideBox">
+                        <div id="ctl00_ctl00_ContentPlaceHolder_ContentPlaceHolderCMS_R3_div_SideBox1" editable="Yes">
+
+</div>
+                    </div>
+                    <div class="sideBox">
+                        <div id="ctl00_ctl00_ContentPlaceHolder_ContentPlaceHolderCMS_R3_div_SideBox2" editable="Yes"><div>&nbsp;</div>
+<div>
+<h3>Helpful&nbsp;Links </h3>
+<strong><br>
+<a href="http://imaginecup.com/Registration/Default.aspx"><strong>Register Now!</strong></a></strong><strong><a href="http://imaginecup.com/Support/FAQ.aspx"><strong><br>
+<br>
+FAQ</strong></a></strong> </div>
+<div></div>
+<div>&nbsp;</div>
+<div><a href="http://imaginecup.com/About/WhatIs.aspx"><strong>What is the Imagine Cup?</strong></a>&nbsp;<br>
+</div>
+<div><strong><a href="http://imaginecup.com/Competition/Overview.aspx"><strong><br>
+Competition Overview</strong> </a></strong>
+<div>&nbsp;</div>
+<div><a href="http://imaginecup.com/CompetitionsContent/Competition/awards_at_a_glance.aspx"><strong>Awards At-A-Glance</strong></a></div>
+</div>
+<div>&nbsp;</div>
+<div><strong><a href="http://imaginecup.com/blogs/imagine_cup_finals/default.aspx"><strong>Imagine Cup Blog</strong> </a></strong></div></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+ 
+   
+
+            </div>
+            
+            <div style="padding: 20px; background-color: White; font-size: 8pt; float: left;">
+      
+      
+      
+                <span id="ctl00_ctl00_Span_relatedLinks" editable="Yes"> 
+                    <table style="width: 760px; height: 105px;" border="0" cellpadding="2" cellspacing="2">
+                        <tbody>
+                            <tr>
+                            
+                                <td>
+                                    <h3>Software</h3>
+                                </td>
+                                <td>
+                                    <h3>Discounts</h3>
+                                </td>
+                                <td>
+                                    <h3>Student Activities</h3>
+                                </td>
+                                <td>
+                                    <h3>Student Resources</h3>
+                                </td>
+                                <td>
+                                    <h3>Fun Stuff</h3>
+                                </td>
+                            
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-7.aspx" target="_blank" class="footerMicrosoftLinks" title="Windows 7">Windows 7</a>
+                                </td>
+                                <td>
+                                    <a href="https://www.dreamspark.com/" target="_blank" class="footerMicrosoftLinks" title="DreamSpark">DreamSpark</a>
+                                </td>
+                                <td>
+                                    <a href="http://student-partners.com/default.aspx" target="_blank" class="footerMicrosoftLinks" title="Microsoft Student Partners">Microsoft Student Partners</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/default.aspx" target="_blank" class="footerMicrosoftLinks" title="MSCOM/Student">MSCOM/Student</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-media-center.aspx" target="_blank" class="footerMicrosoftLinks" title="Windows Media Center">Windows Media Center</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/expression-studio.aspx" target="_blank" class="footerMicrosoftLinks" title="Expression Studio">Expression Studio</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/learning/en/us/certification/cert-benefits.aspx" target="_blank" class="footerMicrosoftLinks" title="Certification Exams">Certification Exams</a>
+                                </td>
+                                <td>
+                                    <a href="http://imaginecup.com/Default.aspx" target="_blank" class="footerMicrosoftLinks" title="Imagine Cup">Imagine Cup</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/studentstobusiness/home/default.aspx" target="_blank" class="footerMicrosoftLinks" title="Students to Business">Students to Business</a>
+                                </td>
+                                <td>
+                                    <a href="http://research.microsoft.com/en-us/um/cambridge/projects/autocollage/" target="_blank" class="footerMicrosoftLinks" title="AutoCollage">AutoCollage</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/visual-studio.aspx" target="_blank" class="footerMicrosoftLinks" title="Visual Studio">Visual Studio</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/education/aerfind.aspx" target="_blank" class="footerMicrosoftLinks" title="Authorized Reseller Finder">Authorized Reseller Finder</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/rally/" target="_blank" class="footerMicrosoftLinks" title="Student Rally">Student Rally</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/career/own-your-future.aspx" target="_blank" class="footerMicrosoftLinks" title="Own Your Future">Own Your Future</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/funstuff/games-for-windows.aspx" target="_blank" class="footerMicrosoftLinks" title="Games for Windows">Games for Windows</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-live.aspx" target="_blank" class="footerMicrosoftLinks" title="Windows Live">Windows Live</a>
+                                </td>
+                                <td>
+                                    <a href="http://microsoft.journeyed.com/home.asp" target="_blank" class="footerMicrosoftLinks" title="JourneyEd">JourneyEd</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.facebook.com/microsoftstudent" target="_blank" class="footerMicrosoftLinks" title="Facebook">Facebook</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/learningspace/Products.aspx?prod=math" target="_blank" class="footerMicrosoftLinks" title="Microsoft Math">Microsoft Math</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/funstuff/xbox.aspx" target="_blank" class="footerMicrosoftLinks" title="Xbox">Xbox</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/office-2007.aspx" target="_blank" class="footerMicrosoftLinks" title="Microsoft Office">Microsoft Office</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/discounts/theultimatesteal-us/default.aspx" target="_blank" class="footerMicrosoftLinks" title="Microsoft Office">Microsoft Office</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.msstudentlounge.com/" target="_blank" class="footerMicrosoftLinks" title="Microsoft Student Lounge">Microsoft Student Lounge</a>
+                                </td>
+                                <td>
+                                    <a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=10&amp;ct=1243512578&amp;rver=5.0.3265.0&amp;wp=MCMBI&amp;wreply=https://profile.microsoft.com/RegSysProfileCenter/wizard.aspx?wizid=9489462d-6b5c-40ed-8009-9a4f350d3703&amp;lcid=1033&amp;ci=104861&amp;lc=1033&amp;" target="_blank" class="footerMicrosoftLinks" title="Student Newsletter">Student Newsletter</a>
+                                </td>
+                                <td>
+                                    <a href="http://www.microsoft.com/student/en/us/software/windows-mobile.aspx" target="_blank" title="Windows Mobile">
+                                        Windows Mobile</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </span> 
+      
+            </div>
+            <div id="msLogo">
+                <span id="ctl00_ctl00_Label_Machinename" style="color: White; text-align: center; float: left;">CARLA</span>
+                <img src="Welcome.aspx_files/IC09_MSLogo.gif" alt="Microsoft">
+                </div>
+            <div class="footerStrip">
+                <div class="footerLeft">
+                    <div class="footerLeftPad">
+                        © Copyright 2009-2010 Microsoft Corporation. All Rights Reserved.
+                    </div>
+                </div>
+                <div class="footerRight">
+                    <div class="footerRightPad">
+                        <a id="ctl00_ctl00_A5" class="footerLink" href="http://imaginecup.com/Competition/Rules-Regulations.aspx">Rules</a>&nbsp;
+                        <a id="ctl00_ctl00_A6" class="footerLink" href="http://imaginecup.com/Legal/CodeOfConduct.aspx">Code of Conduct</a>&nbsp;
+                        <a id="ctl00_ctl00_A7" class="footerLink" href="http://imaginecup.com/Legal/TermsOfUse.aspx">Terms of Use</a>&nbsp;
+                        <a id="ctl00_ctl00_A8" class="footerLink" href="http://imaginecup.com/Legal/PrivacyStatement.aspx">Privacy Policy</a>&nbsp;
+                        <a id="ctl00_ctl00_A10" class="footerLink" href="http://imaginecup.com/Support/ContactUs.aspx">Get Help</a>&nbsp;
+                    </div>
+                </div>
+            </div>
+            <div>
+                <table width="100%">
+                    <tbody><tr>
+                        <td class="footerCredits" align="center">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footerCredits" align="center">
+                            <span id="ctl00_ctl00_Label_Credits" class="footerLeftPad">This site is developed and hosted for Microsoft by Fast Track Team, Inc.</span>
+                        </td>
+                    </tr>
+                </tbody></table>                                
+            </div>
+        </div>
+    </div>
+        
+     <input name="ctl00$ctl00$hf_TrackEdit" id="ctl00_ctl00_hf_TrackEdit" value="0" type="hidden">
+      
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+    
+    <form name="form_ITQuiz" method="post" action="">
+    <input name="ctl00$ctl00$hidden_UserId" id="ctl00_ctl00_hidden_UserId" type="hidden">
+    <input name="ctl00$ctl00$hidden_TimeStamp" id="ctl00_ctl00_hidden_TimeStamp" type="hidden">
+    <input name="ctl00$ctl00$hidden_ReturnUrl" id="ctl00_ctl00_hidden_ReturnUrl" type="hidden">
+    </form>
+    
+    
+<script src="Welcome.aspx_files/broker-config.js"></script></body></html>

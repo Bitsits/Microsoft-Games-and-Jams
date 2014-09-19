@@ -1,0 +1,12 @@
+
+	7 Mar	Imagine Cup ( Windows/XBox, WP7/Zune, Silverlight, WP7)
+	17 Feb 	IC Software (LOCAL) 
+
+Game Design: Windows(XNA)
+Game Design: Web (Silverlight)
+Game Design: Mobile (WP7)
+Windows Phone 7 (WP7)
+Software Design (Silverlight/ WP7)
+
+ADD IC team page(5)
+

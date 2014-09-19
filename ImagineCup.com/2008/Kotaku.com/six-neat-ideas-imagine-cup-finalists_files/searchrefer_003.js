@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3907/0/0/%2a/w;218973007;1-0;0;26688841;4307-300/250;33854531/33872409/1;;~okv=;ptile=1;sz=300x250;kw=neat game ideas for imagine cup;~aopt=2/1/96/0;~sscs=%3fhttp://www.eff.org/"><img src="http://static.2mdn.net/viewad/1344637/EFF-300x250.png" border=0 alt="Click here to find out more!"></a>');

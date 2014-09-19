@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3907/0/0/%2a/v;44306;0-0;0;26688841;2321-160/600;0/0/0;;~okv=;ptile=2;sz=160x600;kw=neat game ideas for imagine cup;~aopt=2/1/96/0;~sscs=%3f"><img src="http://static.2mdn.net/viewad/817-grey.gif" border=0 alt="Click here to find out more!"></a>');

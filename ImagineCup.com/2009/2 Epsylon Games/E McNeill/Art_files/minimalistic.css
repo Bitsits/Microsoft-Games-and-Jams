@@ -1,0 +1,15 @@
+H1 {
+	TEXT-ALIGN: center; FONT-SIZE: medium; WORD-SPACING: 30px
+}
+H2 {
+	TEXT-ALIGN: center; FONT-SIZE: large
+}
+H3 {
+	TEXT-ALIGN: center; FONT-SIZE: medium
+}
+P {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 130%; MARGIN-LEFT: 30%; FONT-SIZE: medium; MARGIN-RIGHT: 30%
+}
+BODY {
+	BACKGROUND-COLOR: white; FONT-FAMILY: arial; COLOR: rgb(0,0,0); WORD-SPACING: normal
+}

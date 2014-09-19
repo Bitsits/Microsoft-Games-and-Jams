@@ -1,0 +1,51 @@
+{ 
+ 
+var google_ads = new Array(); 
+var google_ad; 
+var google_radlinks = new Array(); 
+var google_radlink; 
+var google_info = new Object(); 
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BvxKxK4ErS8aBHpHOvAO5pbW-Aa6E3YABtpqioBPAjbcBsL0QEAEYASD2upgQKAM4AFCCwbj3AmDlqumD5A6yAQprb3Rha3UuY29tugEJNzI4eDkwX2pzyAEB2gE-aHR0cDovL2tvdGFrdS5jb20vNTAxMjk1Ni9zaXgtbmVhdC1pZGVhcy1pbWFnaW5lLWN1cC1maW5hbGlzdHOpAhwehgOWHbg-yALo8bcJqAMB6ANS6AMf6AMp9QMAAABE&amp;num=1&amp;sig=AGiWqtyxUgSZt7UzWj-KeWJbfZLMHowozA&amp;client=ca-pub-0457527031304647&amp;adurl=http://sem.komdat.com/vpLog.php%3Fid%3D10472%26page%3D90A57425-DBC5-42F6-93FE-AE2677540087%26chId%3D7%26kwId%3D37106886%26campId%3D101839"; 
+google_ad.visible_url = "www.siemens.com/answers"; 
+google_ad.line1 = "Cop 15 in Copenhagen"; 
+google_ad.line2 = "Siemens answers"; 
+google_ad.line3 = "the world&#39;s toughest questions."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BH_T5K4ErS8aBHpHOvAO5pbW-Abv14nHFnqatDLOdxYUJsMwLEAIYAiD2upgQKAM4AFDKgq-JBWDlqumD5A6yAQprb3Rha3UuY29tugEJNzI4eDkwX2pzyAEB2gE-aHR0cDovL2tvdGFrdS5jb20vNTAxMjk1Ni9zaXgtbmVhdC1pZGVhcy1pbWFnaW5lLWN1cC1maW5hbGlzdHOAAgGpAhwehgOWHbg-qAMB6ANS6AMf6AMp9QMAAABE&amp;num=2&amp;sig=AGiWqtx5J33aw_juGyd5qBOdDnKcwOp80g&amp;client=ca-pub-0457527031304647&amp;adurl=http://www.gamesindustry.com"; 
+google_ad.visible_url = "www.gamesindustry.com"; 
+google_ad.line1 = "Gamesindustry.com"; 
+google_ad.line2 = "The source for games, partners"; 
+google_ad.line3 = "and jobs in the games industry"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BTdwiK4ErS8aBHpHOvAO5pbW-AbGk1EGp0cPuAcCNtwGAph0QAxgDIPa6mBAoAzgAUN-z96wGYOWq6YPkDrIBCmtvdGFrdS5jb226AQk3Mjh4OTBfanPIAQHaAT5odHRwOi8va290YWt1LmNvbS81MDEyOTU2L3NpeC1uZWF0LWlkZWFzLWltYWdpbmUtY3VwLWZpbmFsaXN0c6kCpjHNeEMouz6oAwHoA1LoAx_oAyn1AwAAAEQ&amp;num=3&amp;sig=AGiWqtwgZTOWZyaVOxmdLjuhPnp5j6Nfog&amp;client=ca-pub-0457527031304647&amp;adurl=http://www.hilson.co.uk"; 
+google_ad.visible_url = "www.hilson.co.uk"; 
+google_ad.line1 = "Hilson Engineering"; 
+google_ad.line2 = "Dust control systems"; 
+google_ad.line3 = "Complete supply and installation"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "https://www.google.com/adsense/support/bin/request.py?contact\x3dabg_afc\x26url\x3dhttp://kotaku.com/5012956/six-neat-ideas-imagine-cup-finalists\x26hl\x3den\x26client\x3dca-pub-0457527031304647\x26adU\x3dwww.siemens.com/answers\x26adT\x3dCop+15+in+Copenhagen\x26adU\x3dwww.gamesindustry.com\x26adT\x3dGamesindustry.com\x26adU\x3dwww.hilson.co.uk\x26adT\x3dHilson+Engineering\x26gl\x3dIN"; 
+if (window.google_ad_request_done) { 
+google_ad_request_done(google_ads); 
+} 
+if (window.google_radlink_request_done) { 
+google_radlink_request_done(google_radlinks); 
+} 
+}

@@ -1,0 +1,251 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0121)https://imaginecup.com/LoginPopUp.aspx -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=8.0000" 
+http-equiv="X-UA-Compatible">
+<TITLE></TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<SCRIPT type=text/javascript>
+
+        //Function to reload the parent page. called from the Javascript code written in the Login button click event.
+        function LoginRedirect(Ret_url) {
+            //alert('url => ' + Ret_url.toString());
+            //alert("Logged In Successfuly.");
+            disableControls();
+            var lnk = window.document.getElementById('lnk_Redirect');
+            lnk.href = Ret_url.toString();
+
+            window.document.getElementById('lnk_Redirect').click();
+        }
+
+
+        //Added by shivkant to disable the controla and hide error messages when the form is submitted.
+        function disableControls() {
+            window.document.getElementById('childDivLogin').disabled = 'true';
+            window.document.getElementById('RequiredField_EmailAddress').style.display = 'none';
+            window.document.getElementById('RegularExpression_EmailAddress').style.display = 'none';
+            window.document.getElementById('RequiredField_Password').style.display = 'none';
+            window.document.getElementById('ErrorLabel_divSignin').style.display = 'none';
+            window.document.getElementById('HyperLink_LogIn_LiveID').disabled = 'true';
+            window.document.getElementById('img_LoginLiveID').disabled = 'true';
+            window.document.getElementById('ForgotPasswordLink').disabled = 'true';
+            window.document.getElementById('RegConfirmLink').disabled = 'true';
+            window.document.getElementById('EmailTextBox').disabled = 'true';
+            window.document.getElementById('PasswordTextBox').disabled = 'true';
+        }
+        
+    </SCRIPT>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.18702"></HEAD>
+<BODY 
+style="FONT-FAMILY: Verdana; MARGIN-LEFT: 0px; FONT-SIZE: small; MARGIN-RIGHT: 0px">
+<FORM id=form_Login onsubmit="javascript:return WebForm_OnSubmit();" method=post 
+name=form_Login 
+action=LoginPopUp.aspx?returl=http%3a%2f%2fimaginecup.com%2fCompetition%2fmycompetitionportal.aspx%3fcompetitionId%3d38 
+target=_parent>
+<DIV><INPUT id=__EVENTTARGET type=hidden name=__EVENTTARGET> <INPUT 
+id=__EVENTARGUMENT type=hidden name=__EVENTARGUMENT> <INPUT id=__VIEWSTATE 
+value=G5CTGupFl/VhcjRk92yoPl23ArnoK8NTYo2ZWgEgL7UWSVnpKU/4Cm2dnbeIBVumSlxG328mFtRHB4t1aMGA0jjTzHInuKe+K/xdpeD7ni4mV5bs0LFTcmvx2jVDrIsaSQ8dKhgnuiDyTuDfbEYrjfGZz0tPiAgW8DM315o3FJBOV2mVMzNNqmDzlMDms+uF4ql24GBJ/V48ckltkLPtH3J5bqy95l8VvTibxCvL6gQTh1OulI0mM8qYDbRP1iYB 
+type=hidden name=__VIEWSTATE> </DIV>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+var theForm = document.forms['form_Login'];
+if (!theForm) {
+    theForm = document.form_Login;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</SCRIPT>
+
+<SCRIPT type=text/javascript src="LoginPopUp_files/WebResource.axd"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="LoginPopUp_files/ScriptResourceCAM6XRZZ.axd"></SCRIPT>
+
+<SCRIPT type=text/javascript src="LoginPopUp_files/ScriptResource.axd"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="LoginPopUp_files/ScriptResource(1).axd"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</SCRIPT>
+
+<DIV><INPUT id=__VIEWSTATEENCRYPTED type=hidden name=__VIEWSTATEENCRYPTED> 
+<INPUT id=__EVENTVALIDATION 
+value=Hl9n+MIGkB5GpQ0FO6G16bdlkWSa/ByQ2R4vZexPZ6wWZX+AQ8UrjCzoDWdAT4aq 
+type=hidden name=__EVENTVALIDATION> </DIV>
+<DIV>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('LoginScriptManager', document.getElementById('form_Login'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tUpdatePanel_Login'], ['SignInButton'], [], 90);
+//]]>
+</SCRIPT>
+
+<DIV id=Panel1 
+onkeypress="javascript:return WebForm_FireDefaultButton(event, 'SignInButton')">
+<DIV id=UpdatePanel_Login>
+<DIV 
+style="BACKGROUND-IMAGE: url(IC09_Background_Login_Invisible.png); Z-INDEX: 1; POSITION: absolute; BACKGROUND-COLOR: transparent; WIDTH: 100%; DISPLAY: block; HEIGHT: 894px; TOP: 0px; LEFT: 0px" 
+id=divLogin><INPUT id=HiddenParentURL value=0 type=hidden name=HiddenParentURL> 
+<DIV 
+style="Z-INDEX: 1; BORDER-BOTTOM: #666666 thin solid; POSITION: absolute; BACKGROUND-COLOR: white; HEIGHT: 267px; BORDER-RIGHT: #666666 thin solid" 
+id=childDivLogin>
+<TABLE style="BACKGROUND-COLOR: #e8092a; WIDTH: 100%; HEIGHT: 10px" id=Div_Close 
+height=10>
+  <TBODY>
+  <TR>
+    <TD style="BACKGROUND-COLOR: #e8092a; MIN-HEIGHT: 10px" 
+  align=right></TD></TR></TBODY></TABLE>
+<TABLE style="PADDING-LEFT: 3px; PADDING-RIGHT: 2px">
+  <TBODY>
+  <TR>
+    <TD class=highTopPad colSpan=2>
+      <H3 
+      style="MARGIN: 0px; COLOR: #00aeef; FONT-SIZE: 10.5pt; FONT-WEIGHT: bold">&nbsp;&nbsp;Sign 
+      In</H3></TD></TR>
+  <TR>
+    <TD colSpan=2>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+          style="PADDING-BOTTOM: 0px; LINE-HEIGHT: 19px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-SIZE: 8pt; FONT-WEIGHT: bold; PADDING-TOP: 0px" 
+          colSpan=2><SPAN></SPAN><B>Please sign in below using your Imagine 
+            Cup sign in information. Windows Live ID users,<SPAN 
+            style="TEXT-DECORATION: none" id=span_Content2 editable="Yes"> 
+            </SPAN><A id=HyperLink_LogIn_LiveID 
+            href="http://login.live.com/wlogin.srf?appid=0016BFFD80003222&amp;alg=wsignin1.0" 
+            target=_parent><IMG 
+            style="BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px" 
+            id=img_LoginLiveID alt="Sign In" src="LoginPopUp_files/signin.gif" 
+            width=66 height=19></A><SPAN id=span_Content3 
+            editable="Yes"></SPAN>&nbsp;with your Live ID.</B></SPAN> </TD>
+          <TD></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD colSpan=2>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD></TD>
+          <TD></TD></TR>
+        <TR>
+          <TD style="TEXT-INDENT: 10px; FONT-SIZE: 8pt; FONT-WEIGHT: bold" 
+          align=left><SPAN id=EmailLabel>E-mail Address</SPAN> </TD>
+          <TD><INPUT style="WIDTH: 220px" id=EmailTextBox type=text 
+            name=EmailTextBox><BR><SPAN 
+            style="BACKGROUND-COLOR: red; DISPLAY: none; COLOR: white; FONT-SIZE: 8pt; FONT-WEIGHT: bold" 
+            id=RequiredField_EmailAddress>The E-mail address is required.</SPAN> 
+            <SPAN 
+            style="BACKGROUND-COLOR: red; DISPLAY: none; COLOR: white; FONT-SIZE: 8pt; FONT-WEIGHT: bold" 
+            id=RegularExpression_EmailAddress>Invalid E-mail address.</SPAN> 
+        </TD></TR>
+        <TR>
+          <TD style="TEXT-INDENT: 10px; FONT-SIZE: 8pt; FONT-WEIGHT: bold" 
+          align=left><SPAN id=PasswordLabel>Password</SPAN> </TD>
+          <TD><INPUT style="WIDTH: 220px" id=PasswordTextBox type=password 
+            name=PasswordTextBox><BR><SPAN 
+            style="BACKGROUND-COLOR: red; DISPLAY: none; COLOR: white; FONT-SIZE: 8pt; FONT-WEIGHT: bold" 
+            id=RequiredField_Password>The password is required.</SPAN> </TD></TR>
+        <TR>
+          <TD style="TEXT-INDENT: 7px; FONT-SIZE: 8pt; FONT-WEIGHT: bold" 
+          align=left><INPUT id=RememberMeCheckBox type=checkbox 
+            name=RememberMeCheckBox><LABEL for=RememberMeCheckBox>Remember 
+            Me</LABEL> </TD>
+          <TD style="FONT-SIZE: 8pt; FONT-WEIGHT: bold" align=left><SPAN 
+            style="BACKGROUND-COLOR: red; COLOR: white" 
+            id=ErrorLabel_divSignin></SPAN></TD></TR>
+        <TR>
+          <TD></TD>
+          <TD style="TEXT-INDENT: 10px; VERTICAL-ALIGN: top" align=right><INPUT id=SignInButton onclick='return (disableControls());WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("SignInButton", "", true, "divSignin", "", false, false))' value="Sign In" type=submit name=SignInButton> 
+          </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <DIV 
+      style="TEXT-INDENT: 10px; FLOAT: left; COLOR: red; FONT-SIZE: 7.5pt"><B>[</B><B><A 
+      style="COLOR: red" id=ForgotPasswordLink 
+      href="https://imaginecup.com/PasswordRecovery.aspx" target=_parent>I 
+      Forgot My Password</A></B><B>]</B> </DIV>
+      <DIV 
+      style="PADDING-RIGHT: 13px; FLOAT: right; COLOR: red; FONT-SIZE: 7.5pt"><B>[</B><B><A 
+      style="COLOR: red" id=RegConfirmLink 
+      href="https://imaginecup.com/Registration/ConfirmationMail.aspx" 
+      target=_parent>I Need To Confirm My Registration</A></B><B>]</B> 
+  </DIV></TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV></DIV><A 
+style="COLOR: #e30079" id=lnk_Redirect 
+href="https://imaginecup.com/Default.aspx" target=_parent></A>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("RequiredField_EmailAddress"), document.getElementById("RegularExpression_EmailAddress"), document.getElementById("RequiredField_Password"));
+//]]>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+var RequiredField_EmailAddress = document.all ? document.all["RequiredField_EmailAddress"] : document.getElementById("RequiredField_EmailAddress");
+RequiredField_EmailAddress.controltovalidate = "EmailTextBox";
+RequiredField_EmailAddress.errormessage = "The E-mail address is required.";
+RequiredField_EmailAddress.display = "Dynamic";
+RequiredField_EmailAddress.validationGroup = "divSignin";
+RequiredField_EmailAddress.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredField_EmailAddress.initialvalue = "";
+var RegularExpression_EmailAddress = document.all ? document.all["RegularExpression_EmailAddress"] : document.getElementById("RegularExpression_EmailAddress");
+RegularExpression_EmailAddress.controltovalidate = "EmailTextBox";
+RegularExpression_EmailAddress.errormessage = "Invalid E-mail address.";
+RegularExpression_EmailAddress.display = "Dynamic";
+RegularExpression_EmailAddress.validationGroup = "divSignin";
+RegularExpression_EmailAddress.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpression_EmailAddress.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)* *";
+var RequiredField_Password = document.all ? document.all["RequiredField_Password"] : document.getElementById("RequiredField_Password");
+RequiredField_Password.controltovalidate = "PasswordTextBox";
+RequiredField_Password.errormessage = "The password is required.";
+RequiredField_Password.display = "Dynamic";
+RequiredField_Password.validationGroup = "divSignin";
+RequiredField_Password.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredField_Password.initialvalue = "";
+//]]>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        Sys.Application.initialize();
+
+document.getElementById('RequiredField_EmailAddress').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredField_EmailAddress'));
+}
+
+document.getElementById('RegularExpression_EmailAddress').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpression_EmailAddress'));
+}
+
+document.getElementById('RequiredField_Password').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredField_Password'));
+}
+//]]>
+</SCRIPT>
+</FORM></BODY></HTML>

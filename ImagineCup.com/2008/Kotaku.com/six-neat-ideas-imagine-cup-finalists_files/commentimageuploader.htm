@@ -1,0 +1,93 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css" media="screen"> 
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	form {
+		margin: 0;
+		padding: 0;
+	}
+	.upload_hack {
+		position: relative;
+		width: 128px;
+		height: 24px;
+	}
+	.upload_hack .uploader {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 128px !important;
+		width: 0px;
+		height: 24px;
+		z-index: 2;
+		opacity: 0;
+		filter: alpha(opacity:0);
+	}
+	.upload_hack .ganjaButtonHolder {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 128px;
+		height: 20px;
+		display: block;
+		font-size:13px;
+		cursor: pointer;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		line-height: 20px;
+		margin: 0 0 auto auto;
+		overflow: visible;
+		z-index: 1;
+	}
+	
+	.ganjaButton {
+		background: transparent url(/assets/base.v8/img/ui/ganjabutton.png) top left no-repeat;
+		height: 19px !important;
+		height: 24px;
+		display: block;
+/*		border: 0 !important;*/
+		padding:5px 8px 0 12px;
+		text-align:center;
+		color: #111 !important;
+		font: 11px Helvetica, Arial, sans-serif !important;
+		font-weight: bold !important;
+		float: left;
+		text-decoration: none !important;
+		cursor: pointer;
+		width: 105px;
+	}
+ 
+	.ganjaButton:hover {
+		border: 0 !important;
+	}
+ 
+	.ganjaButtonHolder {
+		height: 24px;
+		float: left;
+	}
+ 
+	.ganjaButtonEnd {
+		background: transparent url(/assets/base.v8/img/ui/ganjabutton.png) top right no-repeat;
+		display: block;
+		float: left;
+		width: 3px;
+		height: 24px;
+	}
+ 
+	#upload_indicator {
+		display: none;
+		text-align: center;
+	}
+</style>
+
+</head><body><div id="upload_indicator"> 
+	<img src="commentimageuploader_data/progressIndicator_big.gif" width="20" height="20"> 
+</div> 
+<form method="post" enctype="multipart/form-data" action="/?op=comment_image_upload" class="inputcontrol cn_iuf image_upload_form" id="imguploaderform" onchange="document.getElementById('imguploaderform').style.display = 'none'; document.getElementById('upload_indicator').style.display = 'block'; this.submit();"> 
+	<input name="MAX_FILE_SIZE" value="2000000" type="hidden"> 
+	<div class="upload_hack"> 
+		<input id="commentImage" name="commentImage" onchange="document.getElementById('imguploaderform').style.display = 'none'; document.getElementById('upload_indicator').style.display = 'block'; document.getElementById('imguploaderform').submit();" size="0" class="uploader" type="file"> 
+		<div class="ganjaButtonHolder"><a class="ganjaButton" href="#">Select file</a><div class="ganjaButtonEnd"></div></div> 
+	</div> 
+</form></body></html>
